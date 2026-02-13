@@ -5,17 +5,17 @@ const Portfolio = () => {
     <section className="bg-white">
       
       {/* TOP LINE + TITLE */}
-      <div className="max-w-[1600px] mx-auto px-16 pt-16">
-        <div className="border-t border-[#c9b88a] pt-6">
-          <span className="text-xs tracking-widest text-black">
+      <div className="max-w-[1600px] mx-auto px-10 pt-none">
+        <div className="border-b border-[#c9b88a] pt-6 pb-3">
+          <span className="text-lg tracking-tight text-black">
             PORTFOLIO
           </span>
         </div>
       </div>
 
       {/* IMAGES GRID */}
-      <div className="max-w-[1600px] mx-auto px-16 py-16">
-        <div className="grid grid-cols-2 gap-12">
+      <div className="max-w-[1600px] mx-auto px-10 py-10">
+        <div className="grid grid-cols-2 gap-7">
 
           {/* LEFT IMAGE */}
           <div>
