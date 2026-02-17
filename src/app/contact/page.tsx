@@ -1,8 +1,13 @@
+import Form from '@/components/Contact/Form'
+import Hero from '@/components/Contact/Hero'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Hero />
+      <Form />
+    </div>
   )
 }
 

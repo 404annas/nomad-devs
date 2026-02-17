@@ -1,4 +1,4 @@
-import heroMainImg from "@/assets/heroMain.webp"
+import heroMainImg from "@/assets/contactMain.webp"
 
 const Hero = () => {
     return (
