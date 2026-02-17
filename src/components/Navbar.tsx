@@ -37,7 +37,7 @@ const Navbar = () => {
                 {/* Right Links */}
                 <div className="flex gap-40 items-center pt-8 justify-start">
                     <Link
-                        href="/about"
+                        href="/private-client"
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         Private Client
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </Link>
 
                     <Link
-                        href="/projects"
+                        href="/contact"
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         Contact
