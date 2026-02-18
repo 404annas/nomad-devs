@@ -13,9 +13,9 @@ const page = () => {
       <Importance />
       <Simply />
       <Founder />
-      <Team />
-      <Industry />
-      <Featured />
+      {/* <Team /> */}
+      {/* <Industry /> */}
+      {/* <Featured /> */}
     </div>
   )
 }

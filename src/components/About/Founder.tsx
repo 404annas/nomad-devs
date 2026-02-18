@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+import salehaImg from "@/assets/saleha.webp"
+
 const Founder = () => {
     return (
         <section className="w-full bg-white px-6 md:px-12">
@@ -12,8 +14,8 @@ const Founder = () => {
                 {/* 1. Left Column: Image Container */}
                 <div className="w-full md:w-[40%] relative min-h-[500px] md:min-h-[500px]">
                     <Image
-                        src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/b9023445-4802-43dd-8363-e55f3dc31579/KRL452-Nomad-Oakley-Gardens-40-1404.jpg?format=1500w"
-                        alt="Jack Simpson - Founder & Creative Director"
+                        src={salehaImg.src}
+                        alt="Saleha Ali Khan - Founder Of Dwell Rich Designz"
                         fill
                         className="object-cover"
                         priority
@@ -32,32 +34,24 @@ const Founder = () => {
                     >
                         {/* Name and Title */}
                         <h2 className="text-2xl md:text-3xl text-[#1a1a1a] mb-1">
-                            Jack Simpson
+                            Saleha Ali Khan
                         </h2>
                         <p className="text-xs md:text-sm text-[#1a1a1a] mb-10">
-                            Founder & Creative Director
+                            Founder Of Dwell Rich Designz
                         </p>
 
                         {/* Detailed Description */}
                         <div className="space-y-4 text-black text-sm md:text-base leading-tight font-medium">
                             <p>
-                                Jack is the creative mind behind Nomad, blending inspired interior design
-                                with practical commercial insight. With over 15 years of experience in
-                                development and design, he has successfully managed residential projects
-                                totalling more than £250 million, ranging from contemporary multi-unit
-                                developments to meticulous heritage restorations and bespoke private homes.
+                                I’m Saleha Ali Khan, and I founded Dwell Rich Designz with one clear vision: to create spaces that are not only beautifully designed but also flawlessly built. My background in interiors has given me a strong eye for detail, and today, with a full team by my side, we deliver projects that balance design, functionality, and long-lasting quality.
                             </p>
                             <p>
-                                Jack&apos;s design philosophy emphasises timeless elegance and architectural
-                                honesty, balancing beauty, functionality, and enduring value. His keen eye
-                                for proportion, materials, antiques, and artwork ensures that each project is
-                                thoughtfully curated, welcoming, and uniquely lasting.
+                                At Dwell Rich Designz, we are a comprehensive design and build company with a strong foothold in luxury interiors. We specialize in turnkey solutions, managing every aspect of a project — from architectural design and structural engineering to construction, interiors, and bespoke joinery. With a team of architects, surveyors, structural engineers, and contractors, we ensure seamless execution with precision and care.
                             </p>
                             <p>
-                                Under Jack&apos;s leadership, Nomad has delivered award-winning projects that
-                                redefine modern luxury, crafting homes that are as inviting and liveable as
-                                they are beautifully designed.
+                                At Dwell Rich Designz, we believe luxury is in the details — from natural light and thoughtful layouts to carefully selected materials and finishes. Every project is more than just a structure; it’s a space that carries your identity and enhances the way you live.
                             </p>
+                            <p>We proudly cater to both mid-range and high-end projects, serving home buyers, developers, investors, and HNI clients who value quality construction, design innovation, and attention to detail.</p>
                         </div>
                     </motion.div>
                 </div>

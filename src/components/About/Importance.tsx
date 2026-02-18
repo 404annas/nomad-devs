@@ -2,7 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CircleCheck } from 'lucide-react';
+
+import importanceImg from "@/assets/heroMain3.png"
 
 export const Importance = () => {
     return (
@@ -16,12 +18,10 @@ export const Importance = () => {
                 className="max-w-4xl mx-auto text-center mb-10"
             >
                 <h2 className="text-4xl md:text-5xl text-[#1a1a1a] mb-6 tracking-tight">
-                    Importance in every detail
+                    Our Design Process
                 </h2>
-                <p className="text-sm md:text-base text-black leading-tight max-w-lg mx-auto font-medium">
-                    Nomad Developments is a London-based Real Estate Developer, full service
-                    Interior Design Studio and Project Manager. Creating captivating and
-                    meticulously well-considered spaces. For individuals. For families. For life.
+                <p className="text-sm md:text-base text-black leading-tight max-w-3xl mx-auto font-medium">
+                    Every project is unique. We take time to understand your vision and create a strategy that reflects your individuality while drawing on our technical knowledge and craftsmanship. With our network of architects, structural engineers, contractors, and skilled tradespeople, we ensure a smooth process and an exceptional result. 
                 </p>
             </motion.div>
 
@@ -31,7 +31,7 @@ export const Importance = () => {
                 {/* Left Box: Large Image Slider */}
                 <div className="w-3/4 relative md:min-h-[550px]">
                     <Image
-                        src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/1741003097671-7P66W7W9IEOBPKHL0IE8/NomadPenthouse_0111_R_low.jpg"
+                        src={importanceImg.src}
                         alt="Luxury Interior"
                         fill
                         className="object-cover"
@@ -41,12 +41,35 @@ export const Importance = () => {
                 {/* Right Box: Content Box */}
                 <div className="w-full md:w-[35%] bg-[#F7F6F2] p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
                     <div className="max-w-lg">
-                        <p className="text-sm md:text-base text-black leading-tight font-medium mb-8">
-                            Our expertise covers multi-unit development projects, extensive
-                            renovations and bespoke private projects. Working in collaboration
-                            with a trusted team of highly skilled architects, designers and
-                            craftspeople enables us to deliver our vision without compromise.
+                        <p className="text-sm md:text-base text-black leading-tight font-medium mb-4">
+                            Whether it’s a high-end residential renovation, a mid-size residential, a bespoke joinery commission, or a commercial project, we deliver spaces that balance style, function, and durability. 
                         </p>
+                        <div className='flex flex-col gap-1 mb-8'>
+                            <div className='flex items-center gap-2'>
+                                <CircleCheck size={18}/>
+                                <p className="text-sm md:text-base text-black leading-tight font-medium">Work with Professional Process</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <CircleCheck size={18}/>
+                                <p className="text-sm md:text-base text-black leading-tight font-medium">Close Multi-Sectoral Cooperation</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <CircleCheck size={18}/>
+                                <p className="text-sm md:text-base text-black leading-tight font-medium">Bespoke - Customer Centric</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <CircleCheck size={18}/>
+                                <p className="text-sm md:text-base text-black leading-tight font-medium">Apply & Always Innovate Technology</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <CircleCheck size={18}/>
+                                <p className="text-sm md:text-base text-black leading-tight font-medium">Combining Creativity with Practice</p>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <CircleCheck size={18}/>
+                                <p className="text-sm md:text-base text-black leading-tight font-medium">Ensuring Sustainability & Friendliness</p>
+                            </div>
+                        </div>
 
                         <a
                             href="/projects"
