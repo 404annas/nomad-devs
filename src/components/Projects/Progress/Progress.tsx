@@ -5,6 +5,20 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Grid3X3 } from "lucide-react"; // Using a grid icon to mimic the logo in your image
 
+import logo from "@/assets/logo.webp"
+
+import homeProject1 from "@/assets/homeProject1.webp"
+import homeProject2 from "@/assets/homeProject2.webp"
+import homeProject3 from "@/assets/homeProject3.webp"
+import homeProject4 from "@/assets/homeProject4.webp"
+import homeProject5 from "@/assets/homeProject5.webp"
+import homeProject6 from "@/assets/homeProject6.webp"
+import homeProject7 from "@/assets/homeProject7.webp"
+import homeProject8 from "@/assets/homeProject8.webp"
+import homeProject9 from "@/assets/homeProject9.webp"
+import homeProject10 from "@/assets/homeProject10.webp"
+import homeProject11 from "@/assets/homeProject11.webp"
+
 interface Project {
   id: number;
   title: string;
@@ -15,21 +29,69 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "NOTTING HILL DUPLEX'S",
-    location: "NOTTING HILL",
-    image: "https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/df888868-5eab-49a9-84f8-b94666b175fe/STANLEY_CRESCENT-thumb.jpg?format=1500w", // Sketch style house
+    title: "Garden Design – Kingston",
+    location: "Residential",
+    image: homeProject1.src, // Sketch style house
   },
   {
     id: 2,
-    title: "KENSINGTON MANOR",
-    location: "SOUTH KENSINGTON",
-    image: "https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/9c182dce-7d8d-4336-92cd-663e26662a10/LANCASTER_ROAD-thumb.jpg?format=1500w", // Sketch style house
+    title: "Bathroom Design",
+    location: "Bathroom",
+    image: homeProject2.src, // Sketch style house
   },
   {
     id: 3,
-    title: "CHELSEA TOWNHOUSE",
-    location: "CHELSEA",
-    image: "https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/d0cb0ac6-3265-4a36-ac16-1e4b8bbcb6cf/Cheyne.jpg?format=1500w", // Brick building
+    title: "Kitchen Design",
+    location: "Kitchen",
+    image: homeProject3.src, // Brick building
+  },
+  {
+    id: 4,
+    title: "Renovation of a 3-Bedroom Holiday Home",
+    location: "Design and Build",
+    image: homeProject4.src, // Brick building
+  },
+  {
+    id: 5,
+    title: "Bespoke Joinery Projects",
+    location: "Joinery",
+    image: homeProject5.src, // Brick building
+  },
+  {
+    id: 6,
+    title: "Reception Central London, Chelsea",
+    location: "Residential",
+    image: homeProject6.src, // Brick building
+  },
+  {
+    id: 7,
+    title: "Surbiton Project Living and Hallway",
+    location: "Design and Build",
+    image: homeProject7.src, // Brick building
+  },
+  {
+    id: 8,
+    title: "Seven bed high-end project, Sutton",
+    location: "Residential",
+    image: homeProject8.src, // Brick building
+  },
+  {
+    id: 9,
+    title: "Twickenham",
+    location: "Residential",
+    image: homeProject9.src, // Brick building
+  },
+  {
+    id: 10,
+    title: "Sutton, London- Contemporary Style Extension & Renovation",
+    location: "Design and Build",
+    image: homeProject10.src, // Brick building
+  },
+  {
+    id: 11,
+    title: "Kingston Upon Thames",
+    location: "Design and Build",
+    image: homeProject11.src, // Brick building
   },
 ];
 
@@ -52,7 +114,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   const [hoverColor, setHoverColor] = useState<string>("#5F8D8B");
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
-  // Set a random color on mount (so it doesn't change on every re-render/hover)
   useEffect(() => {
     const random = HOVER_COLORS[Math.floor(Math.random() * HOVER_COLORS.length)];
     setHoverColor(random);
@@ -60,70 +121,69 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
   return (
     <motion.div
-      // --- Entrance Animation: Slide up from bottom ---
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }} // Stagger effect
-
-      className="relative w-full aspect-square cursor-pointer overflow-hidden group"
+      transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
+      className="relative w-full aspect-square cursor-pointer overflow-hidden group bg-[#f7f7f7]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* 1. The Image (Background) */}
-      <div className="w-full h-full flex items-end justify-center">
-        {/* Using a mix-blend mode or grayscale to make it look like a sketch if needed */}
-        <div className="relative w-full h-full">
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-105"
-          />
-        </div>
+      {/* 1. Main Background Project Image */}
+      <div className="relative w-full h-full p-8">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
+        />
       </div>
 
-      {/* 2. The Color Overlay (Fills on Hover) */}
+      {/* 2. Color Overlay */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: isHovered ? 1 : 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }} // Smooth fill
+        transition={{ duration: 0.4 }}
         style={{ backgroundColor: hoverColor }}
         className="absolute inset-0 z-10"
       />
 
-      {/* 3. The Content (Logo & Text) - Appears AFTER color fill */}
+      {/* 3. Hover Content (Logo & Text) */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
         <AnimatePresence>
           {isHovered && (
-            <>
-              {/* Logo Animation */}
+            <div className="flex flex-col items-center">
+              {/* Logo Section - Fixed dimension container */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
-                transition={{ duration: 0.3, delay: 0.3 }} // Delay ensures color fills first
-                className="mb-4"
+                transition={{ duration: 0.3, delay: 0.1 }}
+                className="relative w-24 h-24 mb-4" 
               >
-                {/* Custom SVG Icon representing the window logo in your reference */}
-                <Grid3X3 strokeWidth={1} size={48} className="text-black/80" />
+                <Image 
+                  src={logo} 
+                  alt="Logo" 
+                  fill 
+                  className="object-contain" // Logo ko white/visible karne ke liye
+                />
               </motion.div>
 
-              {/* Text Animation */}
+              {/* Text Section */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
-                transition={{ duration: 0.5, delay: 0.4 }} // Slightly later than logo
+                transition={{ duration: 0.4, delay: 0.2 }}
               >
-                <h3 className="text-2xl text-black/80 tracking-tight uppercase mb-2">
+                <h3 className="text-xl md:text-xl text-black tracking-tight uppercase mb-1 font-serif">
                   {project.title}
                 </h3>
-                <p className="text-xs text-black/60 tracking-[0.2em] uppercase">
+                <p className="text-[10px] text-black/80 tracking-[0.3em] uppercase">
                   {project.location}
                 </p>
               </motion.div>
-            </>
+            </div>
           )}
         </AnimatePresence>
       </div>
@@ -143,7 +203,7 @@ const Progress = () => {
         className="mb-10"
       >
         <h2 className="text-lg md:text-xl tracking-tight text-black uppercase mb-2">
-          Projects in Progress
+          Our Projects
         </h2>
         <div className="w-full h-[1px] bg-gray-500"></div>
       </motion.div>

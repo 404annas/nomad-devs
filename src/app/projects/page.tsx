@@ -9,9 +9,9 @@ const page = () => {
     <div>
       <Hero />
       <Progress />
-      <Latest />
-      <Portfolio />
-      <ContactForm /> {/* Yahan add kar diya */}
+      {/* <Latest /> */}
+      {/* <Portfolio /> */}
+      {/* <ContactForm /> Yahan add kar diya */}
     </div>
   )
 }
