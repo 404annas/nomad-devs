@@ -1,3 +1,4 @@
+import Featured from '@/components/About/Featured'
 import Founder from '@/components/About/Founder'
 import Hero from '@/components/About/Hero'
 import Importance from '@/components/About/Importance'
@@ -14,6 +15,7 @@ const page = () => {
       <Founder />
       <Team />
       <Industry />
+      <Featured />
     </div>
   )
 }
