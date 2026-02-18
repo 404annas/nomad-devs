@@ -1,10 +1,19 @@
+import Founder from '@/components/About/Founder'
 import Hero from '@/components/About/Hero'
-import React from 'react'
+import Importance from '@/components/About/Importance'
+import Industry from '@/components/About/Industry'
+import Simply from '@/components/About/Simply'
+import Team from '@/components/About/Team'
 
 const page = () => {
   return (
     <div>
       <Hero />
+      <Importance />
+      <Simply />
+      <Founder />
+      <Team />
+      <Industry />
     </div>
   )
 }
