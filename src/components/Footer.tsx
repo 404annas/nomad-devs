@@ -1,8 +1,11 @@
 'use client'
 
+import logo from "@/assets/logo.webp"
+
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Instagram, Youtube } from 'lucide-react' // Icons ke liye
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -12,16 +15,8 @@ export default function Footer() {
           
           {/* Column 1: Custom Logo (Exact as image) */}
           <div className="col-span-1">
-            <div className="relative w-12 h-12">
-                {/* Stylized N/Logo using SVG for precision */}
-                <svg viewBox="0 0 40 40" className="w-full h-full">
-                    {/* Vertical line */}
-                    <line x1="10" y1="10" x2="10" y2="35" stroke="black" strokeWidth="1.5" />
-                    {/* Diagonal line */}
-                    <line x1="10" y1="10" x2="30" y2="35" stroke="black" strokeWidth="1.5" />
-                    {/* Circle */}
-                    <circle cx="32" cy="8" r="3" stroke="black" strokeWidth="1" fill="none" />
-                </svg>
+            <div className="relative w-24 h-20">
+                <Image src={logo} alt="Logo" fill className="w-20 h-20"/>
             </div>
           </div>
 
@@ -34,18 +29,17 @@ export default function Footer() {
 
           {/* Column 3: Nav 2 */}
           <div className="flex flex-col space-y-1 text-[11px] tracking-[0.15em] uppercase font-medium">
-            <Link href="/private-clients" className="hover:opacity-50 transition-opacity">Private Clients</Link>
+            <Link href="/private-client" className="hover:opacity-50 transition-opacity">Private Clients</Link>
             <Link href="/contact" className="hover:opacity-50 transition-opacity">Contact</Link>
             <Link href="/privacy-policy" className="hover:opacity-50 transition-opacity">Privacy Policy</Link>
           </div>
 
           {/* Column 4: Contact Info */}
           <div className="flex flex-col space-y-1 text-[10px] tracking-[0.15em] uppercase font-medium">
-            <p>T: 020 3488 7202</p>
-            <p>E: INFO@NOMADDEVELOPMENTS.COM</p>
+            <p>T: 078033 26891</p>
+            <p>E: hello@designz.dwell-rich.com</p>
             <div className="pt-3">
-              <p>126 NEW KING&apos;S ROAD</p>
-              <p>LONDON, SW6 4LZ</p>
+              <p>Kingston Road, Kingston upon thames, Surrey, London, UK</p>
             </div>
           </div>
 
@@ -63,10 +57,10 @@ export default function Footer() {
 
             {/* Copyright Text (Aligned to the right) */}
             <div className="text-[10px] tracking-[0.12em] leading-[1.8] uppercase text-left md:text-left font-medium ">
-              <p>©2025</p>
-              <p>NOMAD PROPERTY LIMITED</p>
+              <p>©2026</p>
+              <p>Dwell-Rich Designz</p>
               <p>ALL RIGHTS RESERVED</p>
-              <p>WEBSITE BY DESK.™</p>
+              <p>Developed By <a href="http://techxudo.com" target="_blank">Techxudo</a></p>
             </div>
           </div>
 
