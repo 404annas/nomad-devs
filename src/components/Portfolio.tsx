@@ -1,9 +1,10 @@
-import React from "react";
+import portfolioImg1 from "@/assets/heroMain3.png"
+import portfolioImg2 from "@/assets/heroMain4.png"
 
 const Portfolio = () => {
   return (
     <section className="bg-white">
-      
+
       {/* TOP LINE + TITLE */}
       <div className="max-w-[1600px] mx-auto px-10 pt-none">
         <div className="border-b border-[#c9b88a] pt-6 pb-3">
@@ -20,16 +21,18 @@ const Portfolio = () => {
           {/* LEFT IMAGE */}
           <div>
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+              loading="lazy"
+              src={portfolioImg1.src}
               alt="Interior Kitchen"
-              className="w-full h-full object-cover"
+              className="w-full h-[400px] object-cover"
             />
           </div>
 
           {/* RIGHT IMAGE */}
           <div>
             <img
-              src="https://images.unsplash.com/photo-1600210492493-0946911123ea"
+              loading="lazy"
+              src={portfolioImg2.src}
               alt="Living Room"
               className="w-full h-full object-cover"
             />

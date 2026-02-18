@@ -1,12 +1,14 @@
 import Link from 'next/link';
+import logo from "@/assets/logo.webp"
+import Image from 'next/image';
 
 const Navbar = () => {
     return (
-        <nav className="absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-8 text-white">
+        <nav className="absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 text-white">
             <div className="grid grid-cols-3 items-start">
 
                 {/* Left Links */}
-                <div className="flex gap-40 items-center pt-8 justify-end">
+                <div className="flex gap-30 items-center pt-10 justify-end">
                     <Link
                         href="/about"
                         className="relative group uppercase tracking-tight text-base font-semibold"
@@ -25,17 +27,20 @@ const Navbar = () => {
                 </div>
 
                 {/* Center Logo */}
-                <div className="flex flex-col items-center justify-center text-center">
-                    <h1 className="text-4xl md:text-5xl tracking-wide leading-none">
-                        NOMAD
-                    </h1>
-                    <span className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] mt-1 opacity-90">
-                        Developments
-                    </span>
+                <div className="flex justify-center">
+                    <Link href={"/"} className="relative w-40 md:w-64 h-24 md:h-30">
+                        <Image
+                            src={logo}
+                            alt='Nomad Logo'
+                            fill
+                            priority
+                            className='object-contain'
+                        />
+                    </Link>
                 </div>
 
                 {/* Right Links */}
-                <div className="flex gap-40 items-center pt-8 justify-start">
+                <div className="flex gap-30 items-center pt-10 justify-start">
                     <Link
                         href="/private-client"
                         className="relative group uppercase tracking-tight text-base font-semibold"

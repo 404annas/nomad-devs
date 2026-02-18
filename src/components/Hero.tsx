@@ -1,4 +1,4 @@
-import heroMainImg from "@/assets/heroMain.webp"
+import heroMainImg from "@/assets/heroMain2.png"
 
 const Hero = () => {
     return (
@@ -18,7 +18,7 @@ const Hero = () => {
             {/* Bottom Content: Discover & Line */}
             <div className="absolute -bottom-10 left-0 w-full flex flex-col items-center pb-10 z-10 text-white">
                 <span className="uppercase tracking-[0.15em] text-base md:text-lg font-medium mb-6">
-                    Discover
+                    Shaping Your Signature Look
                 </span>
 
                 {/* The Vertical Line */}

@@ -1,5 +1,9 @@
 import React from "react";
 
+import aboutImg from "@/assets/aboutMain.webp"
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
 const About = () => {
   return (
     <>
@@ -11,9 +15,7 @@ const About = () => {
           </h1>
 
           <p className="mt-5 text-[15px] leading-6 text-gray-700 max-w-xl mx-auto">
-            Nomad is a London-based real estate developer, interior design
-            studio, and project manager. We create exceptional homes, both
-            for the market and for discerning private clients.
+            Dwell Rich – Established 2005
           </p>
         </div>
       </section>
@@ -23,30 +25,27 @@ const About = () => {
         <div className="max-w-[1500px] mx-auto px-8 md:px-10">
           {/* Grid with a clear gap (gap-10) between card and image */}
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 items-stretch">
-            
+
             {/* LEFT TEXT CARD - Specific beige background */}
             <div className="bg-[#f3f2ee] p-8 md:p-10 flex flex-col justify-center">
-              <p className="text-[17px] leading-5 text-black">
-                Whether we’re building for our own portfolio or delivering a
-                one-of-a-kind home for a private client, every space we create
-                is defined by design integrity, quality, and attention to
-                detail.
-                From concept to completion, our in-house team blends
-                development expertise with refined interiors, ensuring each
-                home tells a story and stands the test of time.
+              <h1 className="font-bold text-3xl pb-4 leading-none">Saleha Khan</h1>
+              <p className="text-[17px] leading-5 text-black pb-4">
+                I’m <strong>Saleha Ali Khan</strong>, and I founded Dwell Rich <strong>Designz</strong> with one clear vision: to create spaces that are not only beautifully designed but also flawlessly built. My background in interiors has given me a strong eye for detail, and today, with a full team by my side, we deliver projects that balance design, functionality, and long-lasting quality.
               </p>
+              <p className="text-[17px] leading-5 text-black">At Dwell Rich Designz, we are a comprehensive design and build company with a strong foothold in luxury interiors. We specialize in turnkey solutions, managing every aspect of a project — from architectural design and structural engineering to construction, interiors, and bespoke joinery. With a team of architects, surveyors, structural engineers, and contractors, we ensure seamless execution with precision and care. </p>
 
               <div className="mt-6">
-                <a href="#" className="text-[12px] tracking-[0.2em] border-b border-black pb-1 uppercase font-semibold inline-block">
-                  ABOUT US
-                </a>
+                <Link href="/about" className="text-[12px] tracking-[0.2em] border-b border-black pb-1.5 uppercase font-semibold flex items-center gap-2 w-fit">
+                  More ABOUT US <ArrowRight size={18}/>
+                </Link>
               </div>
             </div>
 
             {/* RIGHT IMAGE - Larger width as per image */}
             <div className="w-full h-[500px] md:h-[650px]">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c" // Replace with your actual image path
+                loading="lazy"
+                src={aboutImg.src} // Replace with your actual image path
                 alt="Modern Outdoor Area"
                 className="w-full h-full object-cover"
               />
