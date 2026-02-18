@@ -1,8 +1,12 @@
-import React from 'react'
+import Hero from '@/components/Private/Hero'
+import Service from '@/components/Private/Service'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Hero />
+      <Service />
+    </div>
   )
 }
 
