@@ -4,7 +4,7 @@ import logo from "@/assets/logo.webp"
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Instagram, Youtube } from 'lucide-react' // Icons ke liye
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react' // Icons ke liye
 import Image from "next/image"
 
 export default function Footer() {
@@ -47,11 +47,14 @@ export default function Footer() {
           <div className="flex flex-col items-start md:items-end space-y-6">
             {/* Social Icons */}
             <div className="flex gap-4">
-              <a href="#" className="hover:opacity-50 transition-opacity">
+              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-opacity">
                 <Instagram size={20} strokeWidth={1.5} />
               </a>
-              <a href="#" className="hover:opacity-50 transition-opacity">
-                <Youtube size={20} strokeWidth={1.5} />
+              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-opacity">
+                <Facebook size={20} strokeWidth={1.5} />
+              </a>
+              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-opacity">
+                <Linkedin size={20} strokeWidth={1.5} />
               </a>
             </div>
 

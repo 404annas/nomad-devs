@@ -6,23 +6,22 @@ const Form = () => {
 
                 {/* Left Column: Contact Details (Left side ki details) */}
                 <div className="flex flex-col justify-start space-y-12 text-[#1a1a1a]">
+                    <h1 className="text-4xl uppercase font-bold">Get in Touch</h1>
                     <p className="text-xl leading-tight max-w-sm">
-                        Please fill out the short contact form below or contact the team directly and we will be in touch.
+                        Are you planning to design your project but don’t know how to shape it? Leave your information for immediate consultation.
                     </p>
 
                     <div className="space-y-8 text-base font-medium tracking-wide">
                         <div className="leading-tight">
-                            <p>Tel: +44 (0) 20 3488 7202</p>
+                            <p>Call Us: 078033 26891</p>
                             <p>
-                                Email: <a href="mailto:info@nomaddevelopments.com" className="underline underline-offset-4 decoration-1">info@nomaddevelopments.com</a>
+                                Email: <a href="mailto:hello@designz.dwell-rich.com" className="underline underline-offset-4 decoration-1">hello@designz.dwell-rich.com</a>
                             </p>
                         </div>
 
                         <div className="leading-tight">
                             <p>Office address:</p>
-                            <p>126 New Kings Road</p>
-                            <p>London</p>
-                            <p>SW6 4LZ</p>
+                            <p>Kingston Road, Kingston upon thames, Surrey, London, UK</p>
                         </div>
                     </div>
                 </div>
