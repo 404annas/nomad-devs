@@ -7,7 +7,7 @@ import ContactForm from '@/components/Private/ContactForm' // Naya component imp
 const page = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <Progress />
       {/* <Latest /> */}
       {/* <Portfolio /> */}

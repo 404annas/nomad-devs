@@ -1,10 +1,21 @@
+"use client"
+
 import Link from 'next/link';
 import logo from "@/assets/logo.webp"
 import Image from 'next/image';
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+    const pathname = usePathname();
+
+    const isHomePage = pathname === "/";
+
     return (
-        <nav className="absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 text-white project-navbar">
+        <nav className={`
+            absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 transition-colors duration-300
+            ${isHomePage ? "text-white" : "text-black"} 
+            project-navbar
+        `}>
             <div className="grid grid-cols-3 items-start">
 
                 {/* Left Links */}

@@ -212,7 +212,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
 const Progress = () => {
   return (
-    <section className="w-full py-10 px-4 md:px-12 bg-white">
+    <section className="w-full py-10 px-4 md:px-12 pt-40 bg-white">
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}

@@ -1,6 +1,4 @@
-import React from "react";
-
-import aboutImg from "@/assets/aboutMain.webp"
+import aboutImg from "@/assets/heroMain6.png"
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -14,8 +12,8 @@ const About = () => {
             Design-Led Homes for Extraordinary Living
           </h1>
 
-          <p className="mt-5 text-[15px] leading-6 text-gray-700 max-w-xl mx-auto">
-            Dwell Rich – Established 2005
+          <p className="mt-5 text-[15px] leading-5 text-gray-700 max-w-xl mx-auto">
+            Bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
           </p>
         </div>
       </section>
@@ -28,11 +26,10 @@ const About = () => {
 
             {/* LEFT TEXT CARD - Specific beige background */}
             <div className="bg-[#f3f2ee] p-8 md:p-10 flex flex-col justify-center">
-              <h1 className="font-bold text-3xl pb-4 leading-none">Saleha Khan</h1>
               <p className="text-[17px] leading-5 text-black pb-4">
-                I’m <strong>Saleha Ali Khan</strong>, and I founded Dwell Rich <strong>Designz</strong> with one clear vision: to create spaces that are not only beautifully designed but also flawlessly built. My background in interiors has given me a strong eye for detail, and today, with a full team by my side, we deliver projects that balance design, functionality, and long-lasting quality.
+                Dwell Rich Designz  based in South London provides integrated architecture, interior design, and construction services for luxury and commercial developments. We partner with investors, developers, and private clients to translate vision into carefully executed, market-ready projects.
               </p>
-              <p className="text-[17px] leading-5 text-black">At Dwell Rich Designz, we are a comprehensive design and build company with a strong foothold in luxury interiors. We specialize in turnkey solutions, managing every aspect of a project — from architectural design and structural engineering to construction, interiors, and bespoke joinery. With a team of architects, surveyors, structural engineers, and contractors, we ensure seamless execution with precision and care. </p>
+              <p className="text-[17px] leading-5 text-black">Our portfolio spans bespoke residences and large-scale developments, each delivered with disciplined planning, refined detailing, and consistent quality.</p>
 
               <div className="mt-6">
                 <Link href="/about" className="text-[12px] tracking-[0.2em] border-b border-black pb-1.5 uppercase font-semibold flex items-center gap-2 w-fit">
