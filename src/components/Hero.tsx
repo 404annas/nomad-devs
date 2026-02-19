@@ -1,22 +1,28 @@
-import heroMainImg from "@/assets/heroMain5.png"
+import heroMainImg from "@/assets/heroMain7.png"
+import Image from "next/image";
 
 const Hero = () => {
     return (
-        <div className="relative min-h-screen w-full overflow-hidden">
+        <div className="relative h-auto w-full overflow-hidden">
 
             {/* Background Image Container */}
-            <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: `url(${heroMainImg.src})`,
-                }}
-            />
+            <div className="relative w-full">
+                <Image
+                    src={heroMainImg}
+                    alt="Hero Main"
+                    layout="responsive"
+                    width={1920} // Apni image ki actual width yahan likhein
+                    height={3000} // Apni image ki actual height yahan likhein taake aspect ratio sahi rahe
+                    priority
+                    className="w-full h-auto object-contain"
+                />
 
-            {/* Overlay Gradient (Optional: ensures white text is readable at top/bottom) */}
-            <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+                {/* Overlay: Isko image ke upar rakha hai */}
+                <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+            </div>
 
             {/* Bottom Content: Discover & Line */}
-            <div className="absolute -bottom-10 left-0 w-full flex flex-col items-center pb-10 z-10 text-white">
+            <div className="absolute -bottom-6 left-0 w-full flex flex-col items-center pb-10 z-10 text-white">
                 <span className="uppercase tracking-[0.15em] text-base md:text-lg font-medium mb-6">
                     Crafting Iconic Luxury Spaces for Visionary Investors | Developers | Private Clients
                 </span>

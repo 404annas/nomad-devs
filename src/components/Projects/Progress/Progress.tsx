@@ -7,17 +7,29 @@ import Link from "next/link";
 
 import logo from "@/assets/logo.webp"
 
-import homeProject1 from "@/assets/homeProject1.webp"
-import homeProject2 from "@/assets/homeProject2.webp"
-import homeProject3 from "@/assets/homeProject3.webp"
-import homeProject4 from "@/assets/homeProject4.webp"
-import homeProject5 from "@/assets/homeProject5.webp"
-import homeProject6 from "@/assets/homeProject6.webp"
-import homeProject7 from "@/assets/homeProject7.webp"
-import homeProject8 from "@/assets/homeProject8.webp"
-import homeProject9 from "@/assets/homeProject9.webp"
-import homeProject10 from "@/assets/homeProject10.webp"
-import homeProject11 from "@/assets/homeProject11.webp"
+// import homeProject1 from "@/assets/homeProject1.webp"
+// import homeProject2 from "@/assets/homeProject2.webp"
+// import homeProject3 from "@/assets/homeProject3.webp"
+// import homeProject4 from "@/assets/homeProject4.webp"
+// import homeProject5 from "@/assets/homeProject5.webp"
+// import homeProject6 from "@/assets/homeProject6.webp"
+// import homeProject7 from "@/assets/homeProject7.webp"
+// import homeProject8 from "@/assets/homeProject8.webp"
+// import homeProject9 from "@/assets/homeProject9.webp"
+// import homeProject10 from "@/assets/homeProject10.webp"
+// import homeProject11 from "@/assets/homeProject11.webp"
+
+import skel1 from "@/assets/skel1.jpeg"
+import skel2 from "@/assets/skel2.jpeg"
+import skel3 from "@/assets/skel3.jpeg"
+import skel4 from "@/assets/skel4.jpeg"
+import skel5 from "@/assets/skel5.png"
+import skel6 from "@/assets/skel6.png"
+import skel7 from "@/assets/skel7.png"
+import skel8 from "@/assets/skel8.png"
+import skel9 from "@/assets/skel9.png"
+import skel10 from "@/assets/skel10.png"
+import skel11 from "@/assets/skel11.png"
 
 import { data } from "@/components/Projects/projectsData";
 
@@ -34,77 +46,77 @@ const projects: Project[] = [
     id: 1,
     title: "Garden Design – Kingston",
     location: "Residential",
-    image: homeProject1.src,
+    image: skel1.src,
     slug: data[0]?.id || "garden-design-kingston",
   },
   {
     id: 2,
     title: "Bathroom Design",
     location: "Bathroom",
-    image: homeProject2.src,
+    image: skel2.src,
     slug: data[1]?.id || "bathroom-design",
   },
   {
     id: 3,
     title: "Kitchen Design",
     location: "Kitchen",
-    image: homeProject3.src,
+    image: skel3.src,
     slug: data[2]?.id || "kitchen-design",
   },
   {
     id: 4,
     title: "Renovation of a 3-Bedroom Holiday Home",
     location: "Design and Build",
-    image: homeProject4.src,
+    image: skel4.src,
     slug: data[3]?.id || "renovation-of-a-3-bedroom-holiday-home",
   },
   {
     id: 5,
     title: "Bespoke Joinery Projects",
     location: "Joinery",
-    image: homeProject5.src,
+    image: skel5.src,
     slug: data[5]?.id || "bespoke-joinery-projects",
   },
   {
     id: 6,
     title: "Reception Central London, Chelsea",
     location: "Residential",
-    image: homeProject6.src,
+    image: skel6.src,
     slug: data[8]?.id || "reception-central-london-chelsea",
   },
   {
     id: 7,
     title: "Surbiton Project Living and Hallway",
     location: "Design and Build",
-    image: homeProject7.src,
+    image: skel7.src,
     slug: data[4]?.id || "surbiton-project-living-and-hallway",
   },
   {
     id: 8,
     title: "Seven bed high-end project, Sutton",
     location: "Residential",
-    image: homeProject8.src,
+    image: skel8.src,
     slug: data[6]?.id || "seven-bed-high-end-project-sutton",
   },
   {
     id: 9,
     title: "Twickenham",
     location: "Residential",
-    image: homeProject9.src,
+    image: skel9.src,
     slug: data[7]?.id || "twickenham",
   },
   {
     id: 10,
     title: "Sutton, London- Contemporary Style Extension & Renovation",
     location: "Design and Build",
-    image: homeProject10.src,
+    image: skel10.src,
     slug: data[9]?.id || "sutton-london",
   },
   {
     id: 11,
     title: "Kingston Upon Thames",
     location: "Design and Build",
-    image: homeProject11.src,
+    image: skel11.src,
     slug: data[10]?.id || "kingston-upon-thames",
   },
 ];

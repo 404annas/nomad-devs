@@ -5,12 +5,11 @@ import { useParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Linkedin, Instagram, X, ChevronLeft, ChevronRight, Twitter } from "lucide-react";
-
-// Assuming your data import path remains the same
+import { X, ChevronLeft, ChevronRight, CheckCircle2 } from "lucide-react";
 import { data } from "@/components/Projects/projectsData";
 
-// Define the type to fix the TypeScript error
+import logo from "@/assets/logo.webp"
+
 type ProjectContent = string | { heading?: string; text: string | string[] };
 
 interface Project {
@@ -25,35 +24,18 @@ interface Project {
 const ProjectPage = () => {
   const params = useParams();
   const projectId = params.id as string;
-
-  // Cast the found data to the Project interface to fix the 'title' error
   const project = data.find((p) => p.id === projectId) as Project | undefined;
 
-  // Lightbox State
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // If project not found
-  if (!project) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[#111] text-white">
-        <div className="text-center">
-          <h1 className="text-4xl font-serif mb-4">Project Not Found</h1>
-          <Link href="/projects" className="text-white/70 hover:text-white underline">
-            Back to Projects
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  if (!project) return null;
 
-  // Helper to open lightbox
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
   };
 
-  // Helper to navigate lightbox
   const navigateLightbox = (direction: "next" | "prev") => {
     if (!project.images) return;
     if (direction === "next") {
@@ -63,182 +45,178 @@ const ProjectPage = () => {
     }
   };
 
+  // --- LOGIC: Handle Content Splitting ---
+  const firstItem = project.content[0];
+  let introText = "";
+  let hasRemainingText = false;
+
+  // Calculate Intro Text (First 2 sentences)
+  if (typeof firstItem === 'string') {
+    const sentences = firstItem.split('. ');
+    introText = sentences.slice(0, 2).join('. ') + (sentences.length > 2 ? '.' : '');
+    // Check if there are sentences left for the body
+    if (sentences.length > 2) hasRemainingText = true;
+  } else {
+    const text = Array.isArray(firstItem.text) ? firstItem.text.join(" ") : firstItem.text;
+    const sentences = text.split('. ');
+    introText = sentences.slice(0, 2).join('. ') + (sentences.length > 2 ? '.' : '');
+    if (sentences.length > 2) hasRemainingText = true;
+  }
+
+  // Check if there are more paragraphs beyond the first index
+  if (project.content.length > 1) hasRemainingText = true;
+
+
+  // Helper to render the remaining content
+  const renderRemainingContent = () => {
+    let remainingIntro = null;
+
+    // If first item was string, render the rest of it here
+    if (typeof firstItem === 'string') {
+      const sentences = firstItem.split('. ');
+      if (sentences.length > 2) {
+        remainingIntro = <p className="mb-6">{sentences.slice(2).join('. ')}</p>;
+      }
+    }
+
+    return (
+      <>
+        {remainingIntro}
+        {project.content.slice(1).map((item, index) => (
+          <div key={index} className="mb-8 last:mb-0">
+            {typeof item === 'string' ? (
+              <p className="leading-8 text-black">{item}</p>
+            ) : (
+              <div>
+                {item.heading && (
+                  <h3 className="text-[#1a1a1a] font-semibold uppercase tracking-wide mb-3 text-sm flex items-center gap-2">
+                    <span className="w-1 h-4 bg-black/80 block"></span> {item.heading}
+                  </h3>
+                )}
+                {Array.isArray(item.text) ? (
+                  <ul className="space-y-3 mt-2">
+                    {item.text.map((t, i) => (
+                      <li key={i} className="flex items-start gap-3 leading-relaxed text-gray-700 font-light">
+                        <CheckCircle2 size={16} className="mt-1 text-black/60 shrink-0" />
+                        <span>{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="leading-relaxed text-gray-700 font-light">{item.text}</p>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
+      </>
+    );
+  };
+
+  // --- UPDATED IMAGE LOGIC: 0,1 on Side, Rest Below ---
+  const allImages = project.images || [];
+  const sideImages = allImages.slice(0, 1); // Side images (0 and 1)
+  const remainingImages = allImages.slice(1); // All others starting from index 2
+
   return (
-    <div className="min-h-screen bg-[#0f0f0f] text-[#e0e0e0]">
+    <div className="min-h-screen bg-white text-black">
 
-      {/* 1. Header Section (Title Row) */}
-      <div className="max-w-[1400px] mx-auto px-6 pt-8 pb-2 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
-        <h1 className="text-3xl md:text-5xl font-semibold text-white tracking-tight capitalize">
-          {project.title || project.id.replace(/-/g, " ")}
-        </h1>
-        <span className="text-xs md:text-sm text-gray-400 uppercase tracking-tight font-medium mb-1">
-          [PROJECT DETAILS]
-        </span>
-      </div>
-
-      {/* 2. Hero Image Section */}
-      <div className="w-full h-[50vh] md:h-[80vh] relative mt-8 mb-10">
-        <Image
-          src={project.mainPic}
-          alt={project.id}
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-
-      {/* 3. Main Content Grid (Split Layout) */}
-      <div className="max-w-[1400px] mx-auto px-6 pb-10">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
-
-          {/* Left Column: Share / Info - MADE STICKY */}
-          {/* Added: lg:sticky, lg:top-24, lg:self-start */}
-          <div className="w-full lg:w-1/4 lg:sticky lg:top-24 lg:self-start h-fit flex flex-row lg:flex-col justify-between lg:justify-start items-center lg:items-start gap-4 border-b lg:border-b-0 border-white/10 pb-4 lg:pb-0 z-10">
-            <span className="text-base text-gray-400 font-medium">Share to:</span>
-
-            <div className="flex gap-3">
-              {[Facebook, Linkedin, Twitter, Instagram].map((Icon, i) => (
-                <button
-                  key={i}
-                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black hover:border-white cursor-pointer transition-all duration-300 group"
-                >
-                  <Icon size={16} />
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Column: Project Content text */}
-          <div className="w-full lg:w-3/4 space-y-8">
-            {Array.isArray(project.content) &&
-              project.content.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-white leading-relaxed text-base md:text-lg font-light"
-                >
-                  {typeof item === "string" ? (
-                    <p>{item}</p>
-                  ) : (
-                    <div className="mb-6">
-                      {item.heading && (
-                        <h3 className="text-xl font-medium text-white mb-4 mt-8">
-                          {item.heading}
-                        </h3>
-                      )}
-                      {Array.isArray(item.text) ? (
-                        <ul className="list-disc list-inside space-y-2 ml-4">
-                          {item.text.map((paragraph, idx) => (
-                            <li key={idx}>{paragraph}</li>
-                          ))}
-                        </ul>
-                      ) : (
-                        <p>{item.text}</p>
-                      )}
-                    </div>
-                  )}
-                </motion.div>
-              ))}
-          </div>
+      {/* 1. HERO SECTION */}
+      <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[550px] px-4 py-4">
+        {/* Left: Main Hero Image */}
+        <div className="relative w-full h-[500px] md:h-full">
+          <Image src={project.mainPic} alt="Hero" fill className="object-cover" priority />
         </div>
 
-        {/* 4. Image Gallery (Grid Layout) */}
-        {project.images && project.images.length > 0 && (
-          <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {project.images.map((img, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative aspect-[4/3] cursor-pointer group overflow-hidden"
-                onClick={() => openLightbox(index)}
-              >
-                <Image
-                  src={img}
-                  alt={`${project.id} gallery ${index}`}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-sm uppercase tracking-widest border border-white px-4 py-2">View</span>
-                </div>
-              </motion.div>
-            ))}
+        {/* Right: Gray Info Box */}
+        <div className="bg-[#aabebc] flex flex-col items-center justify-center p-4 text-center h-full">
+          <div className="mb-8 w-25 md:w-30 h-25 md:h-30 relative">
+            <Image src={logo} alt="Logo" fill className="object-contain" />
           </div>
-        )}
-
-        {/* Video Section */}
-        {project.video && (
-          <div className="mt-24 flex justify-center">
-            <video
-              controls
-              autoPlay
-              muted
-              className="w-full max-w-3xl h-[400px] shadow-md"
-              poster={project.mainPic}
-            >
-              <source src={project.video} type="video/mp4" />
-            </video>
+          <h1 className="text-2xl md:text-3xl text-[#1a1a1a] mb-6 uppercase tracking-tight leading-tight">
+            {project.title || project.id.replace(/-/g, " ")}
+          </h1>
+          <div className="text-base leading-7 text-[#1a1a1a] max-w-xl text-left mx-auto">
+            <p>{introText}</p>
           </div>
-        )}
+        </div>
       </div>
 
-      {/* ======================= */}
-      {/*    LIGHTBOX MODAL       */}
-      {/* ======================= */}
+      {/* 2. DYNAMIC CONTENT SECTION */}
+      {hasRemainingText ? (
+        <div className="max-w-[1300px] mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="text-sm md:text-base leading-8 text-black">
+            {renderRemainingContent()}
+          </div>
+          <div className="flex flex-col gap-6 sticky top-24">
+            {sideImages.map((img, idx) => (
+              <div key={idx} className="relative w-full h-[400px] md:h-[500px] cursor-pointer hover:opacity-95 transition-opacity duration-300 shadow-sm" onClick={() => openLightbox(idx)}>
+                <Image src={img} alt="Detail" fill className="object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="max-w-[1400px] mx-auto px-4 py-10">
+          {sideImages.length > 0 && (
+            <div className="grid grid-cols-1 gap-4">
+              {sideImages.map((img, idx) => (
+                <div key={idx} className="relative w-full h-[500px] cursor-pointer hover:opacity-95 transition-opacity" onClick={() => openLightbox(idx)}>
+                  <Image src={img} alt="Detail" fill className="object-cover" />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 3. REMAINING GALLERY GRID (All remaining images in grid-cols-2) */}
+      {remainingImages.length > 0 && (
+        <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+          {remainingImages.map((img, idx) => (
+            <div
+              key={idx}
+              className="relative w-full h-[400px] md:h-[500px] cursor-pointer hover:opacity-95 transition-opacity"
+              onClick={() => openLightbox(idx + 2)}
+            >
+              <Image src={img} alt="Gallery" fill className="object-cover" />
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* 4. VIDEO SECTION */}
+      {project.video && (
+        <div className="w-full bg-[#f9f9f9] py-10 flex justify-center">
+          <video
+            controls
+            className="w-full max-w-5xl h-auto shadow-xl"
+            poster={project.mainPic}
+          >
+            <source src={project.video} type="video/mp4" />
+          </video>
+        </div>
+      )}
+
+      {/* LIGHTBOX MODAL */}
       <AnimatePresence>
         {lightboxOpen && project.images && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 backdrop-blur-sm"
           >
+            <button onClick={() => setLightboxOpen(false)} className="absolute top-6 right-6 text-white/70 hover:text-white p-2 transition-colors duration-300 cursor-pointer"><X size={32} /></button>
 
-            {/* Close Button */}
-            <button
-              onClick={() => setLightboxOpen(false)}
-              className="absolute top-6 right-6 text-white/70 hover:text-white duration-300 cursor-pointer transition-colors p-2"
-            >
-              <X size={32} />
-            </button>
-
-            {/* Main Image Container */}
             <div className="relative w-full max-w-6xl h-[80vh]">
-              <Image
-                src={project.images[currentImageIndex]}
-                alt="Project Preview"
-                fill
-                className="object-contain"
-              />
+              <Image src={project.images[currentImageIndex]} alt="Preview" fill className="object-contain" />
             </div>
 
-            {/* Navigation Buttons */}
-            <button
-              onClick={(e) => { e.stopPropagation(); navigateLightbox("prev"); }}
-              className="absolute left-4 md:left-10 text-white/50 hover:text-white transition-colors p-2 bg-black/20 rounded-full hover:bg-black/50 cursor-pointer duration-300"
-            >
-              <ChevronLeft size={40} />
-            </button>
+            <button onClick={(e) => { e.stopPropagation(); navigateLightbox("prev"); }} className="absolute left-4 md:left-10 text-white/50 hover:text-white p-2 bg-black/20 rounded-full hover:bg-black/50 transition-all duration-300 cursor-pointer"><ChevronLeft size={40} /></button>
+            <button onClick={(e) => { e.stopPropagation(); navigateLightbox("next"); }} className="absolute right-4 md:right-10 text-white/50 hover:text-white p-2 bg-black/20 rounded-full hover:bg-black/50 transition-all duration-300 cursor-pointer"><ChevronRight size={40} /></button>
 
-            <button
-              onClick={(e) => { e.stopPropagation(); navigateLightbox("next"); }}
-              className="absolute right-4 md:right-10 text-white/50 hover:text-white transition-colors p-2 bg-black/20 rounded-full hover:bg-black/50 cursor-pointer duration-300"
-            >
-              <ChevronRight size={40} />
-            </button>
-
-            {/* Counter */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-sm tracking-widest">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-sm tracking-widest font-mono">
               {currentImageIndex + 1} / {project.images.length}
             </div>
-
           </motion.div>
         )}
       </AnimatePresence>

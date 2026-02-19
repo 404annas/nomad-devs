@@ -74,6 +74,7 @@ import project11_4 from "@/assets/project11-4.webp"
 export const data = [
     {
         id: "garden-design-kingston",
+        title: "garden design kingston",
         mainPic: homeProject1.src,
         content: [
             "In this beautifully designed garden, we’ve created a seamless blend of functionality and style that turns the outdoor space into a relaxing retreat while offering ample space for family activities. The focal point is the 6×2 meter patio, elegantly covered in patterned tiles. These tiles, featuring geometric shapes or intricate patterns, bring a stylish, modern touch to the garden. The same patterned tile design flows throughout the entire outdoor space, creating a visual pathway that guides you through the garden and provides a cohesive, polished look.",
@@ -236,6 +237,7 @@ export const data = [
     },
     {
         id: "kingston-upon-thames",
+        title: "kingston upon thames",
         mainPic: homeProject11.src,
         content: [
             "Based in the Royal Borough of Kingston, it is a Modern Home Oasis, renovated by Exclusif Desingz with a focus on minimalism, functionality, maximum usage of space and light. The carefully curated foyer is both inviting and practical. The minimalistic and uncluttered bedrooms allow free movement with subtle artwork and geometric wall décor. The home is layered with different types of lighting to create a well-balanced appearance, mood and aesthetics. The kitchen is a two-tone, sizeable, open-plan dining area with a modern kitchen island in a different shade, creating a simple yet striking contrast that is hard to family ignore. The two-tone kitchen remains stylishly cohesive with compact laminate as a worktop and splash back. The space has its aura, with beautiful white flowers as centre pieces. The house has a well-thought-of luxury His & Her full bathroom, which is versatile and valuable, packing many functions into a relatively small space. A black framed shower screen creates a spacious, open-plan walk-in shower at the room far end. The oval bathtub with sinuous lines recalls naturalistic and sensual elements. The space had double round chevron basins with double vanity units, allowing each one to have their own space. The beige wall tiles are an excellent backdrop to light the whole area. Clean lines and a muted colour palette define this modern, understated home, where simplicity meets elegance in every corner."
