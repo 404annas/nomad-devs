@@ -9,7 +9,7 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-10 pb-10 px-6 md:px-10">
+    <footer className="bg-black text-white pt-10 pb-10 px-6 md:px-10 project-footer">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-0 items-start">
           
@@ -31,7 +31,6 @@ export default function Footer() {
           <div className="flex flex-col space-y-1 text-xs tracking-tight uppercase font-medium">
             <Link href="/services" className="hover:opacity-50 transition-all duration-300">Services</Link>
             <Link href="/contact" className="hover:opacity-50 transition-all duration-300">Contact</Link>
-            <Link href="/privacy-policy" className="hover:opacity-50 transition-all duration-300">Privacy Policy</Link>
           </div>
 
           {/* Column 4: Contact Info */}

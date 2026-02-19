@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
     return (
-        <nav className="absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 text-white">
+        <nav className="absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 text-white project-navbar">
             <div className="grid grid-cols-3 items-start">
 
                 {/* Left Links */}

@@ -7,3 +7,9 @@ body {
   scroll-behavior: smooth;
   font-family: "Lora", serif;
 }
+
+/* Hide Navbar and Footer on project detail pages */
+body.project-detail-page .project-navbar,
+body.project-detail-page .project-footer {
+  display: none;
+}
