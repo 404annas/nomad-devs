@@ -22,7 +22,7 @@ const ContactForm = () => {
 
     return (
         <div className="flex justify-center items-start">
-            <form className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+            <form className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
 
                 {/* Name Field */}
                 <div className="group">
@@ -97,7 +97,7 @@ const ContactForm = () => {
                     <div className="mt-5">
                         <button
                             type="submit"
-                            className="bg-[#111111] text-white text-sm font-bold uppercase py-4 px-8 tracking-wider hover:bg-gray-900 transition-colors duration-300 cursor-pointer w-full md:w-auto"
+                            className="bg-[#111111] text-white text-sm font-bold uppercase py-4 px-8 tracking-wider hover:bg-gray-950 transition-colors duration-300 cursor-pointer w-full md:w-auto"
                         >
                             SEND REQUEST
                         </button>

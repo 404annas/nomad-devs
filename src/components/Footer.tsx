@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Column 3: Nav 2 */}
           <div className="flex flex-col space-y-1 text-[11px] tracking-[0.15em] uppercase font-medium">
-            <Link href="/private-client" className="hover:opacity-50 transition-opacity">Private Clients</Link>
+            <Link href="/services" className="hover:opacity-50 transition-opacity">Services</Link>
             <Link href="/contact" className="hover:opacity-50 transition-opacity">Contact</Link>
             <Link href="/privacy-policy" className="hover:opacity-50 transition-opacity">Privacy Policy</Link>
           </div>

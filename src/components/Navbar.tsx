@@ -42,10 +42,10 @@ const Navbar = () => {
                 {/* Right Links */}
                 <div className="flex gap-30 items-center pt-10 justify-start">
                     <Link
-                        href="/private-client"
+                        href="/services"
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
-                        Private Client
+                        Services
                         <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
 

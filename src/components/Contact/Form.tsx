@@ -15,14 +15,16 @@ const Form = () => {
 
                     <div className="space-y-8 text-base font-medium tracking-wide">
                         <div className="leading-tight">
-                            <p>Call Us: 078033 26891</p>
+                            <p className="mb-1"><strong>Call Us:</strong> 078033 26891</p>
                             <p>
-                                Email: <a href="mailto:hello@designz.dwell-rich.com" className="underline underline-offset-4 decoration-1">hello@designz.dwell-rich.com</a>
+                                <strong>Email:</strong> <a href="mailto:hello@designz.dwell-rich.com" className="underline underline-offset-4 decoration-1">hello@designz.dwell-rich.com</a>
                             </p>
+                            <p className="mt-1 mb-1"><strong>Time To Work:</strong> Mon – Sat: 9:30 am – 6:30 pm</p>
+                            <p><strong>Days To Work:</strong> Sunday & Holiday: Closed</p>
                         </div>
 
                         <div className="leading-tight">
-                            <p>Office address:</p>
+                            <p><strong>Office address:</strong></p>
                             <p>Kingston Road, Kingston upon thames, Surrey, London, UK</p>
                         </div>
                     </div>
