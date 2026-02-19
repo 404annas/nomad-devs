@@ -9,33 +9,33 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-white pt-10 pb-12 px-6 md:px-10 lg:px-10">
+    <footer className="bg-black text-white pt-10 pb-10 px-6 md:px-10">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-0 items-start">
           
           {/* Column 1: Custom Logo (Exact as image) */}
           <div className="col-span-1">
             <div className="relative w-24 h-20">
-                <Image src={logo} alt="Logo" fill className="w-20 h-20"/>
+                <Link href={"/"}><Image src={logo} alt="Logo" fill className="w-20 h-20 invert brightness-0"/></Link>
             </div>
           </div>
 
           {/* Column 2: Nav 1 */}
-          <div className="flex flex-col space-y-1 text-[11px] tracking-[0.15em] uppercase font-medium">
-            <Link href="/" className="hover:opacity-50 transition-opacity">Home</Link>
-            <Link href="/projects" className="hover:opacity-50 transition-opacity">Projects</Link>
-            <Link href="/about" className="hover:opacity-50 transition-opacity">About</Link>
+          <div className="flex flex-col space-y-1 text-xs tracking-tight uppercase font-medium">
+            <Link href="/" className="hover:opacity-50 transition-all duration-300">Home</Link>
+            <Link href="/projects" className="hover:opacity-50 transition-all duration-300">Projects</Link>
+            <Link href="/about" className="hover:opacity-50 transition-all duration-300">About</Link>
           </div>
 
           {/* Column 3: Nav 2 */}
-          <div className="flex flex-col space-y-1 text-[11px] tracking-[0.15em] uppercase font-medium">
-            <Link href="/services" className="hover:opacity-50 transition-opacity">Services</Link>
-            <Link href="/contact" className="hover:opacity-50 transition-opacity">Contact</Link>
-            <Link href="/privacy-policy" className="hover:opacity-50 transition-opacity">Privacy Policy</Link>
+          <div className="flex flex-col space-y-1 text-xs tracking-tight uppercase font-medium">
+            <Link href="/services" className="hover:opacity-50 transition-all duration-300">Services</Link>
+            <Link href="/contact" className="hover:opacity-50 transition-all duration-300">Contact</Link>
+            <Link href="/privacy-policy" className="hover:opacity-50 transition-all duration-300">Privacy Policy</Link>
           </div>
 
           {/* Column 4: Contact Info */}
-          <div className="flex flex-col space-y-1 text-[10px] tracking-[0.15em] uppercase font-medium">
+          <div className="flex flex-col space-y-1 text-xs tracking-tight uppercase font-medium">
             <p>T: 078033 26891</p>
             <p>E: hello@designz.dwell-rich.com</p>
             <div className="pt-3">
@@ -47,13 +47,13 @@ export default function Footer() {
           <div className="flex flex-col items-start md:items-end space-y-6">
             {/* Social Icons */}
             <div className="flex gap-4">
-              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-opacity">
+              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-all duration-300">
                 <Instagram size={20} strokeWidth={1.5} />
               </a>
-              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-opacity">
+              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-all duration-300">
                 <Facebook size={20} strokeWidth={1.5} />
               </a>
-              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-opacity">
+              <a href="https://myiartech.com/dwellrichwebsite/contact-us/#" target="_blank" className="hover:opacity-50 transition-all duration-300">
                 <Linkedin size={20} strokeWidth={1.5} />
               </a>
             </div>
