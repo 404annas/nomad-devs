@@ -16,13 +16,10 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
 
       {/* Bottom Content: Discover & Line */}
-      <div className="absolute -bottom-10 left-0 w-full flex flex-col items-center pb-10 z-10 text-white">
+      <div className="absolute -bottom-6 left-0 w-full flex flex-col items-center pb-10 z-10 text-white">
         <span className="uppercase tracking-[0.15em] text-base md:text-lg font-medium mb-6">
-          Discover
+          Crafting Iconic Luxury Spaces for Visionary Investors | Developers | Private Clients
         </span>
-
-        {/* The Vertical Line */}
-        <div className="h-16 w-[1px] bg-white/60"></div>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ const servicesData = [
 const Service = () => {
     return (
         <>
-            <h1 className='text-4xl px-10 pt-10 text-center'>Our Services</h1>
+            <h1 className='text-4xl px-10 text-center pt-50'>Our Services</h1>
             <div className="w-full min-h-screen bg-white py-10 px-4 flex justify-center items-center">
                 <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8">
 

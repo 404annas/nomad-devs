@@ -29,7 +29,7 @@ const ContactForm = () => {
                     <input
                         type="text"
                         placeholder="Your Name*"
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400"
+                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 text-sm"
                     />
                 </div>
 
@@ -38,7 +38,7 @@ const ContactForm = () => {
                     <input
                         type="text"
                         placeholder="Your Phone Number*"
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400"
+                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 text-sm"
                     />
                 </div>
 
@@ -47,7 +47,7 @@ const ContactForm = () => {
                     <input
                         type="email"
                         placeholder="Your Email Address*"
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400"
+                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 text-sm"
                     />
                 </div>
 
@@ -56,7 +56,7 @@ const ContactForm = () => {
                     <button
                         type="button"
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                        className={`w-full text-left p-4 flex justify-between cursor-pointer items-center border border-gray-300 border-b-0 focus:outline-none ${isDropdownOpen ? "bg-[#eeeeee]" : "bg-[#f8f8f8]"
+                        className={`w-full text-left p-4 flex justify-between cursor-pointer items-center border border-gray-300 border-b-0 text-sm focus:outline-none ${isDropdownOpen ? "bg-[#eeeeee]" : "bg-[#f8f8f8]"
                             }`}
                     >
                         <span className="text-black font-normal">{selectedOption}</span>
@@ -69,7 +69,7 @@ const ContactForm = () => {
 
                     {/* Dropdown Menu */}
                     {isDropdownOpen && (
-                        <div className="absolute left-0 right-0 bg-white border border-gray-200 border-t-0 shadow-sm z-10 max-h-64 overflow-y-auto">
+                        <div className="absolute left-0 right-0 bg-white border border-gray-200 border-t-0 shadow-sm z-10 max-h-64 overflow-y-auto text-sm">
                             <ul className="py-2">
                                 {dropdownOptions.map((option, index) => (
                                     <li
@@ -91,13 +91,13 @@ const ContactForm = () => {
                     <textarea
                         rows={5}
                         placeholder="Your Message..."
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 resize-none"
+                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 resize-none text-sm"
                     />
                     {/* Submit Button */}
                     <div className="mt-5">
                         <button
                             type="submit"
-                            className="bg-[#111111] text-white text-sm font-bold uppercase py-4 px-8 tracking-wider hover:bg-gray-950 transition-colors duration-300 cursor-pointer w-full md:w-auto"
+                            className="bg-[#111111] text-white text-xs font-bold uppercase py-4 px-8 tracking-wider hover:bg-gray-950 transition-colors duration-300 cursor-pointer w-full md:w-auto"
                         >
                             SEND REQUEST
                         </button>

@@ -5,7 +5,7 @@ import Service from '@/components/Services/Service'
 const page = () => {
   return (
     <div>
-        <Hero />
+        {/* <Hero /> */}
         <Service />
         <Approach />
     </div>

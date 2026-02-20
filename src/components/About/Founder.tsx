@@ -7,7 +7,7 @@ import salehaImg from "@/assets/saleha.webp"
 
 const Founder = () => {
     return (
-        <section className="w-full bg-white px-6 md:px-12">
+        <section className="w-full bg-white px-6 md:px-12 pb-10">
             {/* Split Layout: Image on Left, Content on Right */}
             <div className="flex flex-col md:flex-row w-full gap-8 items-stretch">
 
@@ -33,15 +33,15 @@ const Founder = () => {
                         className="max-w-lg"
                     >
                         {/* Name and Title */}
-                        <h2 className="text-2xl md:text-3xl text-[#1a1a1a] mb-1">
+                        <h2 className="text-2xl md:text-3xl text-[#1a1a1a] font-medium mb-1">
                             Saleha Ali Khan
                         </h2>
-                        <p className="text-xs md:text-sm text-[#1a1a1a] mb-10">
+                        <p className="text-xs md:text-sm text-[#1a1a1a] font-medium mb-10">
                             Founder Of Dwell Rich Designz
                         </p>
 
                         {/* Detailed Description */}
-                        <div className="space-y-4 text-black text-sm md:text-base leading-tight font-medium">
+                        <div className="space-y-4 text-black text-sm md:text-base leading-tight">
                             <p>
                                 I’m Saleha Ali Khan, and I founded Dwell Rich Designz with one clear vision: to create spaces that are not only beautifully designed but also flawlessly built. My background in interiors has given me a strong eye for detail, and today, with a full team by my side, we deliver projects that balance design, functionality, and long-lasting quality.
                             </p>

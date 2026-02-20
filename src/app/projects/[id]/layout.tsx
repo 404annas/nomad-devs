@@ -23,6 +23,6 @@ export default function ProjectLayout({
   return <>
     <Navbar />
     {children}
-    <Footer2 />
+    {/* <Footer2 /> */}
   </>;
 }

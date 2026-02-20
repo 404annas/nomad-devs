@@ -56,14 +56,14 @@ const Simply = () => {
             {/* Right Box: Content Box */}
             <div className="w-full md:w-[35%] bg-[#F7F6F2] p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
                 <div className="max-w-lg transition-opacity duration-300 ease-in-out">
-                    <h1 className="text-2xl md:text-3xl font-bold text-black mb-8">Our Procedure</h1>
+                    <h1 className="text-2xl md:text-3xl font-bold mb-8">Our Procedure</h1>
                     {/* Dynamic Title */}
-                    <h3 className="text-lg md:text-xl font-bold text-black mb-3">
+                    <h3 className="text-lg md:text-xl font-medium text-black mb-3">
                         {data[currentIndex].title}
                     </h3>
 
                     {/* Dynamic Description */}
-                    <p className="text-sm md:text-base text-black leading-tight font-medium mb-8">
+                    <p className="text-sm md:text-base text-black leading-tight mb-8">
                         {data[currentIndex].desc}
                     </p>
                 </div>  

@@ -30,6 +30,18 @@ import skel8 from "@/assets/skel8.png"
 import skel9 from "@/assets/skel9.png"
 import skel10 from "@/assets/skel10.png"
 import skel11 from "@/assets/skel11.png"
+import skel12 from "@/assets/skel12.png"
+import skel13 from "@/assets/skel13.png"
+import skel14 from "@/assets/skel14.png"
+import skel15 from "@/assets/skel15.png"
+import skel16 from "@/assets/skel16.png"
+import skel17 from "@/assets/skel17.png"
+import skel18 from "@/assets/skel18.png"
+import skel19 from "@/assets/skel19.png"
+import skel20 from "@/assets/skel20.png"
+import skel21 from "@/assets/skel21.png"
+import skel22 from "@/assets/skel22.png"
+import skel23 from "@/assets/skel23.png"
 
 import { data } from "@/components/Projects/projectsData";
 
@@ -118,6 +130,83 @@ const projects: Project[] = [
     location: "Design and Build",
     image: skel11.src,
     slug: data[10]?.id || "kingston-upon-thames",
+  },
+  {
+    id: 12,
+    title: "Cheam Surrey",
+    location: "Design and Build",
+    image: skel12.src,
+    slug: data[11]?.id || "cheam-surrey",
+  },
+  {
+    id: 13,
+    title: "Chelsea Flat",
+    location: "Design and Build",
+    image: skel13.src,
+    slug: data[12]?.id || "chelsea-flat",
+  },
+  {
+    id: 14,
+    title: "Gillian Road Sutton",
+    location: "Design and Build",
+    image: skel14.src,
+    slug: data[13]?.id || "gillian-road-sutton",
+  },
+  {
+    id: 15,
+    title: "Chiltren Drive Sutton",
+    location: "Design and Build",
+    image: skel15.src,
+    slug: data[14]?.id || "chiltren-drive-sutton",
+  },
+  {
+    id: 16,
+    title: "Holiday Home ( Air B&B ) Mitcham",
+    location: "Design and Build",
+    image: skel16.src,
+    slug: data[15]?.id || "holiday-home-mitcham",
+  },
+  {
+    id: 17,
+    title: "Harrow",
+    location: "Design and Build",
+    image: skel17.src,
+    slug: data[16]?.id || "harrow",
+  },
+  {
+    id: 18,
+    title: "Bromley",
+    location: "Design and Build",
+    image: skel18.src,
+    slug: data[17]?.id || "bromley",
+  },
+  {
+    id: 19,
+    title: "Biophilic Oasis Conservatory",
+    location: "Design and Build",
+    image: skel19.src,
+    slug: data[18]?.id || "biophilic-oasis-conservatory",
+  },
+  {
+    id: 20,
+    title: "Wine cellar in Leatherhead",
+    location: "Design and Build",
+    image: skel20.src,
+    slug: data[19]?.id || "wine-cellar-in-leatherhead",
+  },
+  {
+    id: 21,
+    title: "Collaborative Hub",
+    location: "Design and Build",
+    image: skel21.src,
+    slug: data[20]?.id || "collaborative-hub",
+  },
+  {
+    id: 22,
+    title: "Gilded Elegance Passage",
+    location: "Design and Build",
+    image: skel22.src,
+    slug: data[21]?.id || "gilded-elegance-passage",
   },
 ];
 

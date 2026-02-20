@@ -9,7 +9,7 @@ import Team from '@/components/About/Team'
 const page = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <Importance />
       <Simply />
       <Founder />

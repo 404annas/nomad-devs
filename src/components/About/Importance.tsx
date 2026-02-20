@@ -8,7 +8,7 @@ import importanceImg from "@/assets/heroMain3.png"
 
 export const Importance = () => {
     return (
-        <section className="w-full py-10 bg-white px-6 md:px-12">
+        <section className="w-full py-10 bg-white px-6 md:px-12 pt-50">
             {/* 1. Top Heading & Description */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export const Importance = () => {
                 <h2 className="text-4xl md:text-5xl text-[#1a1a1a] mb-6 tracking-tight">
                     Our Design Process
                 </h2>
-                <p className="text-sm md:text-base text-black leading-tight max-w-3xl mx-auto font-medium">
+                <p className="text-sm md:text-base text-black leading-tight max-w-3xl mx-auto">
                     Every project is unique. We take time to understand your vision and create a strategy that reflects your individuality while drawing on our technical knowledge and craftsmanship. With our network of architects, structural engineers, contractors, and skilled tradespeople, we ensure a smooth process and an exceptional result. 
                 </p>
             </motion.div>
@@ -41,7 +41,7 @@ export const Importance = () => {
                 {/* Right Box: Content Box */}
                 <div className="w-full md:w-[35%] bg-[#F7F6F2] p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
                     <div className="max-w-lg">
-                        <p className="text-sm md:text-base text-black leading-tight font-medium mb-4">
+                        <p className="text-sm md:text-base text-black leading-tight mb-4">
                             Whether it’s a high-end residential renovation, a mid-size residential, a bespoke joinery commission, or a commercial project, we deliver spaces that balance style, function, and durability. 
                         </p>
                         <div className='flex flex-col gap-1 mb-8'>
@@ -73,7 +73,7 @@ export const Importance = () => {
 
                         <a
                             href="/projects"
-                            className="text-[11px] tracking-[0.2em] uppercase font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity transition-all duration-300"
+                            className="text-xs uppercase font-medium border-b border-black pb-1 hover:opacity-60 transition-all duration-300"
                         >
                             View Projects
                         </a>

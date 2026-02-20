@@ -46,7 +46,7 @@ export default function Footer2() {
                     <div className="md:col-span-3 flex flex-col gap-4 pt-4">
                         <h4 className="text-xs uppercase text-gray-400 font-bold mb-2">Get in Touch</h4>
                         <div className="text-xs space-y-3 tracking-widest leading-relaxed uppercase">
-                            <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 flex items-center gap-2 text-sm"><Phone size={15} /> 078033 26891</p>
+                            <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 flex items-center gap-2"><Phone size={15} /> 078033 26891</p>
                             <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 flex items-center gap-2"><Mail size={15} /> hello@designz.dwell-rich.com</p>
                             <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 tracking-normal flex items-center gap-2">
                                 <MapPin size={15} />
