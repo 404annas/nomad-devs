@@ -240,7 +240,39 @@ import project20_3 from "@/assets/project20-3.jpg"
 import project20_4 from "@/assets/project20-4.jpg"
 import project20_5 from "@/assets/project20-5.jpg"
 import project20_6 from "@/assets/project20-6.jpg"
+import project20_7 from "@/assets/project20-7.jpg"
+import project20_8 from "@/assets/project20-8.jpg"
+import project20_9 from "@/assets/project20-9.jpg"
+import project20_10 from "@/assets/project20-10.jpg"
+import project20_11 from "@/assets/project20-11.jpg"
+import project20_12 from "@/assets/project20-12.jpg"
+import project20_13 from "@/assets/project20-13.jpg"
+import project20_14 from "@/assets/project20-14.jpg"
+import project20_15 from "@/assets/project20-15.jpg"
+import project20_16 from "@/assets/project20-16.jpg"
+import project20_17 from "@/assets/project20-17.jpg"
+import project20_18 from "@/assets/project20-18.jpg"
+import project20_19 from "@/assets/project20-19.jpg"
+import project20_20 from "@/assets/project20-20.jpg"
+import project20_21 from "@/assets/project20-21.jpg"
+import project20_22 from "@/assets/project20-22.jpg"
+import project20_23 from "@/assets/project20-23.jpg"
+import project20_24 from "@/assets/project20-24.jpg"
+import project20_25 from "@/assets/project20-25.jpg"
+import project20_26 from "@/assets/project20-26.jpg"
+import project20_27 from "@/assets/project20-27.jpg"
+import project20_28 from "@/assets/project20-28.jpg"
+import project20_29 from "@/assets/project20-29.jpg"
+import project20_30 from "@/assets/project20-30.jpg"
+import project20_31 from "@/assets/project20-31.jpg"
+import project20_32 from "@/assets/project20-32.jpg"
+import project20_33 from "@/assets/project20-33.jpg"
+import project20_34 from "@/assets/project20-34.jpg"
 
+import homeProject25 from "@/assets/homeProject35.jpg"
+import project21_1 from "@/assets/project21-1.jpg"
+import project21_2 from "@/assets/project21-2.jpg"
+import project21_3 from "@/assets/project21-3.jpg"
 
 export const data = [
     {
@@ -543,10 +575,17 @@ export const data = [
             "Dwell Rich Designz is a premier design and build company offering a comprehensive range of services, transforming spaces from concept to completion. With expertise in planning, construction, and bespoke craftsmanship, we provide tailored solutions to create exceptional residential properties."
         ],
         images: [
-            project20_1.src, project20_2.src, project20_3.src, project20_4.src, project20_5.src, project20_6.src
+            project20_7.src, project20_8.src, project20_9.src, project20_10.src, project20_11.src, project20_12.src, project20_13.src, project20_14.src, project20_15.src, project20_16.src, project20_17.src, project20_18.src, project20_19.src, project20_20.src, project20_21.src, project20_22.src, project20_23.src, project20_24.src, project20_25.src, project20_26.src, project20_27.src, project20_28.src, project20_29.src, project20_30.src, project20_31.src, project20_32.src, project20_33.src, project20_34.src
         ]
     },
     {
-        
+        id: "garage-conversion-in-dartford",
+        mainPic: homeProject25.src,
+        content: [
+            "In this beautifully designed garden, we’ve created a seamless blend of functionality and style that turns the outdoor space into a relaxing retreat while offering ample space for family activities. The focal point is the 6×2 meter patio, elegantly covered in patterned tiles. These tiles, featuring geometric shapes or intricate patterns, bring a stylish, modern touch to the garden. The same patterned tile design flows throughout the entire outdoor space, creating a visual pathway that guides you through the garden and provides a cohesive, polished look.",
+        ],
+        images: [
+            project21_1.src, project21_2.src, project21_3.src
+        ]
     }
 ]

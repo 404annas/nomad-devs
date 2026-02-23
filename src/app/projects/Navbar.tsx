@@ -25,7 +25,7 @@ const Navbar = () => {
             </div>
 
             {/* --- CENTER: NAVIGATION PILL --- */}
-            <div className="hidden md:flex items-center bg-[#282828] rounded-full px-8 py-3 gap-5">
+            <div className="hidden md:flex items-center bg-[#282828] rounded-full px-8 py-3 gap-5 -translate-x-11">
                 <div className="flex items-center gap-5">
                     <NavLink text="HOME" link="/"/>
                     <Separator />
@@ -39,8 +39,8 @@ const Navbar = () => {
 
             {/* --- RIGHT: BUTTON --- */}
             <div>
-                <Link href={"/contact"} className="group flex items-center gap-3 border border-white px-8 py-3 text-white text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer ease-in-out hover:bg-white hover:text-black">
-                    GET IN TOUCH
+                <Link href={"/contact"} className="group flex items-center gap-3 border border-white px-6 py-3 text-white text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer ease-in-out hover:bg-white hover:text-black">
+                    078033 2689 | hello@designz.dwell-rich.com
                     <ArrowRight
                         size={18}
                         strokeWidth={1.5}
