@@ -13,13 +13,13 @@ const Navbar = () => {
     return (
         <nav className={`
             absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 transition-colors duration-300
-            ${isHomePage ? "text-white" : "text-black"} 
+            ${isHomePage ? "text-black" : "text-black"} 
             project-navbar
         `}>
             <div className="grid grid-cols-3 items-start">
 
                 {/* Left Links */}
-                <div className="flex gap-30 items-center pt-10 justify-end">
+                <div className="flex gap-10 items-center pt-10 justify-end">
                     <Link
                         href="/about"
                         className="relative group uppercase tracking-tight text-base font-semibold"
@@ -33,6 +33,20 @@ const Navbar = () => {
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         Projects
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </Link>
+                    <Link
+                        href="/services"
+                        className="relative group uppercase tracking-tight text-base font-semibold"
+                    >
+                        Services
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </Link>
+                    <Link
+                        href="/contact"
+                        className="relative group uppercase tracking-tight text-base font-semibold"
+                    >
+                        Contact
                         <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                 </div>
@@ -51,22 +65,11 @@ const Navbar = () => {
                 </div>
 
                 {/* Right Links */}
-                <div className="flex gap-30 items-center pt-10 justify-start">
-                    <Link
-                        href="/services"
-                        className="relative group uppercase tracking-tight text-base font-semibold"
-                    >
-                        Services
-                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </Link>
+                <div className="flex gap-10 items-center pt-10 justify-start uppercase tracking-tight text-base font-semibold">
+                    <a href='tel:078033 2698' className='cursor-pointer'>078033 2689</a>
+                    <a href='mailto:hello@designz.dwell-rich.com' className='cursor-pointer'>hello@designz.dwell-rich.com</a>
 
-                    <Link
-                        href="/contact"
-                        className="relative group uppercase tracking-tight text-base font-semibold"
-                    >
-                        Contact
-                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                    </Link>
+                    
                 </div>
 
             </div>
