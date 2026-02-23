@@ -124,16 +124,16 @@ const ProjectPage = () => {
       {/* 1. HERO SECTION */}
       <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[550px] px-4 py-4">
         {/* Left: Main Hero Image */}
-        <div className="relative w-full h-[500px] md:h-full">
+        <div className="relative w-full h-[650px]">
           <Image src={project.mainPic} alt="Hero" fill className="object-cover" priority />
         </div>
 
         {/* Right: Gray Info Box */}
-        <div className="bg-[#aabebc] flex flex-col items-center justify-center p-4 text-center h-full">
+        <div className="bg-[#aabebc] flex flex-col items-center justify-center p-4 md:p-0 text-center h-full">
           <div className="mb-8 w-25 md:w-30 h-25 md:h-30 relative">
             <Image src={logo} alt="Logo" fill className="object-contain" />
           </div>
-          <h1 className="text-2xl md:text-3xl text-[#1a1a1a] font-bold mb-6 uppercase tracking-tight leading-tight">
+          <h1 className="text-2xl md:text-3xl text-[#1a1a1a] font-light mb-6 uppercase tracking-tight leading-tight">
             {project.title || project.id.replace(/-/g, " ")}
           </h1>
           <div className="text-base leading-7 text-[#1a1a1a] max-w-xl text-left mx-auto">
@@ -150,7 +150,7 @@ const ProjectPage = () => {
           </div>
           <div className="flex flex-col gap-6 sticky top-24">
             {sideImages.map((img, idx) => (
-              <div key={idx} className="relative w-full h-[400px] md:h-[500px] cursor-pointer hover:opacity-95 transition-opacity duration-300 shadow-sm" onClick={() => openLightbox(idx)}>
+              <div key={idx} className="relative w-full h-[400px] md:h-[600px] cursor-pointer hover:opacity-95 transition-opacity duration-300 shadow-sm" onClick={() => openLightbox(idx)}>
                 <Image src={img} alt="Detail" fill className="object-cover" />
               </div>
             ))}
@@ -176,7 +176,7 @@ const ProjectPage = () => {
           {remainingImages.map((img, idx) => (
             <div
               key={idx}
-              className="relative w-full h-[400px] md:h-[500px] cursor-pointer hover:opacity-95 transition-opacity"
+              className="relative w-full h-[400px] md:h-[650px] cursor-pointer hover:opacity-95 transition-opacity"
               onClick={() => openLightbox(idx + 2)}
             >
               <Image src={img} alt="Gallery" fill className="object-cover" />

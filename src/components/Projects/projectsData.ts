@@ -115,6 +115,10 @@ import project12_22 from "@/assets/project12-22.jpg"
 import project12_23 from "@/assets/project12-23.jpg"
 import project12_24 from "@/assets/project12-24.jpg"
 import project12_25 from "@/assets/project12-25.jpg"
+import project12_26 from "@/assets/project12-26.jpg"
+import project12_27 from "@/assets/project12-27.jpg"
+import project12_28 from "@/assets/project12-28.jpg"
+import project12_29 from "@/assets/project12-29.jpg"
 
 import homeProject13 from "@/assets/homeProject24.jpg"
 import project13_1 from "@/assets/project13-1.jpg"
@@ -193,6 +197,14 @@ import homeProject21 from "@/assets/homeProject32.webp"
 import homeProject22 from "@/assets/homeProject33.png"
 import project19_1 from "@/assets/project19-1.png"
 import project19_2 from "@/assets/project19-2.png"
+
+import homeProject23 from "@/assets/homeProject34.jpg"
+import project20_1 from "@/assets/project20-1.jpg"
+import project20_2 from "@/assets/project20-2.jpg"
+import project20_3 from "@/assets/project20-3.jpg"
+import project20_4 from "@/assets/project20-4.jpg"
+import project20_5 from "@/assets/project20-5.jpg"
+import project20_6 from "@/assets/project20-6.jpg"
 
 
 export const data = [
@@ -378,7 +390,7 @@ export const data = [
             "The strategy centred on maximising gross development value through scale, specification, and lifestyle-led design, transforming a low-density asset into a prime residential home positioned at the top end of the local market."
         ],
         images: [
-            project12_1.src, project12_2.src, project12_3.src, project12_4.src, project12_5.src, project12_6.src, project12_7.src, project12_8.src, project12_9.src, project12_10.src, project12_11.src, project12_12.src, project12_13.src, project12_14.src, project12_15.src, project12_16.src, project12_17.src, project12_18.src, project12_19.src, project12_20.src, project12_21.src, project12_22.src, project12_23.src, project12_24.src, project12_25.src
+            project12_1.src, project12_2.src, project12_3.src, project12_4.src, project12_5.src, project12_6.src, project12_7.src, project12_8.src, project12_9.src, project12_10.src, project12_11.src, project12_12.src, project12_13.src, project12_14.src, project12_15.src, project12_16.src, project12_17.src, project12_18.src, project12_19.src, project12_20.src, project12_21.src, project12_22.src, project12_23.src, project12_24.src, project12_25.src, project12_26.src, project12_27.src, project12_28.src, project12_29.src
         ]
     },
     {
@@ -488,5 +500,18 @@ export const data = [
         images: [
             project19_1.src, project19_2.src
         ]
+    },
+    {
+        id: "living-room-boho-eclectic-style",
+        mainPic: homeProject23.src,
+        content: [
+            "Dwell Rich Designz is a premier design and build company offering a comprehensive range of services, transforming spaces from concept to completion. With expertise in planning, construction, and bespoke craftsmanship, we provide tailored solutions to create exceptional residential properties."
+        ],
+        images: [
+            project20_1.src, project20_2.src, project20_3.src, project20_4.src, project20_5.src, project20_6.src
+        ]
+    },
+    {
+        
     }
 ]

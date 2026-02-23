@@ -89,13 +89,13 @@ const projects: Project[] = [
     image: skel5.src,
     slug: data[5]?.id || "bespoke-joinery-projects",
   },
-  {
-    id: 6,
-    title: "Reception Central London, Chelsea",
-    location: "Residential",
-    image: skel6.src,
-    slug: data[8]?.id || "reception-central-london-chelsea",
-  },
+  // {
+  //   id: 6,
+  //   title: "Reception Central London, Chelsea",
+  //   location: "Residential",
+  //   image: skel6.src,
+  //   slug: data[8]?.id || "reception-central-london-chelsea",
+  // },
   {
     id: 7,
     title: "Surbiton Project Living and Hallway",
@@ -103,13 +103,13 @@ const projects: Project[] = [
     image: skel7.src,
     slug: data[4]?.id || "surbiton-project-living-and-hallway",
   },
-  {
-    id: 8,
-    title: "Seven bed high-end project, Sutton",
-    location: "Residential",
-    image: skel8.src,
-    slug: data[6]?.id || "seven-bed-high-end-project-sutton",
-  },
+  // {
+  //   id: 8,
+  //   title: "Seven bed high-end project, Sutton",
+  //   location: "Residential",
+  //   image: skel8.src,
+  //   slug: data[6]?.id || "seven-bed-high-end-project-sutton",
+  // },
   {
     id: 9,
     title: "Twickenham",
@@ -117,13 +117,13 @@ const projects: Project[] = [
     image: skel9.src,
     slug: data[7]?.id || "twickenham",
   },
-  {
-    id: 10,
-    title: "Sutton, London- Contemporary Style Extension & Renovation",
-    location: "Design and Build",
-    image: skel10.src,
-    slug: data[9]?.id || "sutton-london",
-  },
+  // {
+  //   id: 10,
+  //   title: "Sutton, London- Contemporary Style Extension & Renovation",
+  //   location: "Design and Build",
+  //   image: skel10.src,
+  //   slug: data[9]?.id || "sutton-london",
+  // },
   {
     id: 11,
     title: "Kingston Upon Thames",
@@ -208,6 +208,13 @@ const projects: Project[] = [
     image: skel22.src,
     slug: data[21]?.id || "gilded-elegance-passage",
   },
+  {
+    id: 23,
+    title: "Living Room Boho Eclectic Style",
+    location: "Design and Build",
+    image: skel23.src,
+    slug: data[22]?.id || "living-room-boho-eclectic-style",
+  },
 ];
 
 interface ProjectCardProps {
@@ -243,8 +250,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
       className="relative w-full aspect-square cursor-pointer overflow-hidden group bg-[#f7f7f7]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
