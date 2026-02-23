@@ -1,4 +1,4 @@
-import heroMainImg from "@/assets/heroMain7.png"
+import heroMainImg from "@/assets/project12-28.jpg"
 import Image from "next/image";
 
 const Hero = () => {
@@ -11,14 +11,14 @@ const Hero = () => {
                     src={heroMainImg}
                     alt="Hero Main"
                     layout="responsive"
-                    width={1920} // Apni image ki actual width yahan likhein
+                    width={5000} // Apni image ki actual width yahan likhein
                     height={3000} // Apni image ki actual height yahan likhein taake aspect ratio sahi rahe
                     priority
                     className="w-full h-auto object-contain"
                 />
 
                 {/* Overlay: Isko image ke upar rakha hai */}
-                <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+                <div className="absolute inset-0 pointer-events-none" />
             </div>
 
             {/* Bottom Content: Discover & Line */}

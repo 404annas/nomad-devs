@@ -9,6 +9,22 @@ import project2_2 from "@/assets/project2-2.webp"
 import project2_3 from "@/assets/project2-3.webp"
 import project2_4 from "@/assets/project2-4.webp"
 import project2_5 from "@/assets/project2-5.webp"
+import project2_6 from "@/assets/project2-6.jpg"
+import project2_7 from "@/assets/project2-7.jpg"
+import project2_8 from "@/assets/project2-8.jpg"
+import project2_9 from "@/assets/project2-9.jpg"
+import project2_10 from "@/assets/project2-10.jpg"
+import project2_11 from "@/assets/project2-11.jpg"
+import project2_12 from "@/assets/project2-12.jpg"
+import project2_13 from "@/assets/project2-13.jpg"
+import project2_14 from "@/assets/project2-14.jpg"
+import project2_15 from "@/assets/project2-15.jpg"
+import project2_16 from "@/assets/project2-16.jpg"
+import project2_17 from "@/assets/project2-17.jpg"
+import project2_18 from "@/assets/project2-18.jpg"
+import project2_19 from "@/assets/project2-19.jpg"
+import project2_20 from "@/assets/project2-20.jpg"
+import project2_21 from "@/assets/project2-21.jpg"
 
 import homeProject3 from "@/assets/homeProject14.webp"
 import project3_1 from "@/assets/project3-1.webp"
@@ -20,6 +36,7 @@ import project3_6 from "@/assets/project3-6.webp"
 import project3_7 from "@/assets/project3-7.webp"
 import project3_8 from "@/assets/project3-8.webp"
 import project3_9 from "@/assets/project3-9.webp"
+import project3_10 from "@/assets/project3-10.jpg"
 
 import homeProject4 from "@/assets/homeProject15.webp"
 import project4_1 from "@/assets/project4-1.webp"
@@ -41,6 +58,24 @@ import project5_3 from "@/assets/project5-3.webp"
 import project5_4 from "@/assets/project5-4.webp"
 import project5_5 from "@/assets/project5-5.webp"
 import project5_6 from "@/assets/project5-6.webp"
+import project5_7 from "@/assets/project5-7.jpg"
+import project5_8 from "@/assets/project5-8.jpg"
+import project5_9 from "@/assets/project5-9.jpg"
+import project5_10 from "@/assets/project5-10.jpg"
+import project5_11 from "@/assets/project5-11.jpg"
+import project5_12 from "@/assets/project5-12.jpg"
+import project5_13 from "@/assets/project5-13.jpg"
+import project5_14 from "@/assets/project5-14.jpg"
+import project5_15 from "@/assets/project5-15.jpg"
+import project5_16 from "@/assets/project5-16.jpg"
+import project5_17 from "@/assets/project5-17.jpg"
+import project5_18 from "@/assets/project5-18.jpg"
+import project5_19 from "@/assets/project5-19.jpg"
+import project5_20 from "@/assets/project5-20.jpg"
+import project5_21 from "@/assets/project5-21.jpg"
+import project5_22 from "@/assets/project5-22.jpg"
+import project5_23 from "@/assets/project5-23.jpg"
+import project5_24 from "@/assets/project5-24.jpg"
 
 import homeProject8 from "@/assets/homeProject18.webp"
 import project8_1 from "@/assets/project8-1.webp"
@@ -231,7 +266,7 @@ export const data = [
             "Elevate your daily routine with bathroom spaces that blend spa-like serenity and modern elegance. Each design features clean lines, premium finishes, and functional layouts—crafted to create calm, luxurious retreats that feel as good as they look."
         ],
         images: [
-            project2_1.src, project2_2.src, project2_3.src, project2_4.src, project2_5.src
+            project2_1.src, project2_2.src, project2_3.src, project2_4.src, project2_5.src, project2_6.src, project2_7.src, project2_8.src, project2_9.src, project2_10.src, project2_11.src, project2_12.src, project2_13.src, project2_14.src, project2_15.src, project2_16.src, project2_17.src, project2_18.src, project2_19.src, project2_20.src, project2_21.src
         ]
     },
     {
@@ -244,7 +279,7 @@ export const data = [
             "In essence, our kitchens are more than just spaces for cooking; they’re sanctuaries where families come together, where design meets functionality, and where every detail is thoughtfully considered to create a truly exceptional living experience."
         ],
         images: [
-            project3_1.src, project3_2.src, project3_3.src, project3_4.src, project3_5.src, project3_6.src, project3_7.src, project3_8.src, project3_9.src
+            project3_1.src, project3_2.src, project3_3.src, project3_4.src, project3_5.src, project3_6.src, project3_7.src, project3_8.src, project3_9.src, project3_10.src
         ]
     },
     {
@@ -321,7 +356,7 @@ export const data = [
             "A celebration of craftsmanship and tailored design — each piece of joinery is custom-built to enhance your space. From elegant cabinetry to precision-fitted built-ins, this project brings together artisanal detail, functional beauty, and a finish that complements the architecture around it."
         ],
         images: [
-            project5_1.src, project5_2.src, project5_3.src, project5_4.src, project5_5.src, project5_6.src
+            project5_1.src, project5_2.src, project5_3.src, project5_4.src, project5_7.src, project5_8.src, project5_9.src, project5_10.src, project5_11.src, project5_12.src, project5_13.src, project5_14.src, project5_15.src, project5_16.src, project5_17.src, project5_18.src, project5_19.src, project5_20.src, project5_21.src, project5_22.src, project5_23.src, project5_24.src
         ]
     },
     {

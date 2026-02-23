@@ -55,13 +55,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 1,
-    title: "Garden Design – Kingston",
-    location: "Residential",
-    image: skel1.src,
-    slug: data[0]?.id || "garden-design-kingston",
-  },
-  {
     id: 2,
     title: "Bathroom Design",
     location: "Bathroom",
@@ -75,13 +68,13 @@ const projects: Project[] = [
     image: skel3.src,
     slug: data[2]?.id || "kitchen-design",
   },
-  {
-    id: 4,
-    title: "Renovation of a 3-Bedroom Holiday Home",
-    location: "Design and Build",
-    image: skel4.src,
-    slug: data[3]?.id || "renovation-of-a-3-bedroom-holiday-home",
-  },
+  // {
+  //   id: 4,
+  //   title: "Renovation of a 3-Bedroom Holiday Home",
+  //   location: "Design and Build",
+  //   image: skel4.src,
+  //   slug: data[3]?.id || "renovation-of-a-3-bedroom-holiday-home",
+  // },
   {
     id: 5,
     title: "Bespoke Joinery Projects",
@@ -214,6 +207,13 @@ const projects: Project[] = [
     location: "Design and Build",
     image: skel23.src,
     slug: data[22]?.id || "living-room-boho-eclectic-style",
+  },
+  {
+    id: 1,
+    title: "Garden Design – Kingston",
+    location: "Residential",
+    image: skel1.src,
+    slug: data[0]?.id || "garden-design-kingston",
   },
 ];
 
