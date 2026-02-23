@@ -1,3 +1,4 @@
+import { Calendar, Clock, Mail, MapPin, Phone, PhoneCall } from "lucide-react";
 import ContactForm from "./ContactForm";
 
 const Form = () => {
@@ -15,17 +16,28 @@ const Form = () => {
 
                     <div className="space-y-8 text-base font-medium tracking-wide">
                         <div className="leading-tight">
-                            <p className="mb-1"><strong>Call Us:</strong> 078033 26891</p>
-                            <p>
-                                <strong>Email:</strong> <a href="mailto:hello@designz.dwell-rich.com" className="underline underline-offset-4 decoration-1">hello@designz.dwell-rich.com</a>
+                            <p className="flex items-center gap-2 mb-2">
+                                <Phone size={20}/>
+                                <a href="tel:078033 26891">078033 26891</a>
                             </p>
-                            <p className="mt-1 mb-1"><strong>Time To Work:</strong> Mon – Sat: 9:30 am – 6:30 pm</p>
-                            <p><strong>Days To Work:</strong> Sunday & Holiday: Closed</p>
+                            <p className="flex items-center gap-2 mb-2">
+                                <Mail size={20}/>
+                                <a href="mailto:hello@designz.dwell-rich.com">hello@designz.dwell-rich.com</a>
+                            </p>
+                            <p className="flex items-center gap-2 mb-2">
+                                <Clock size={20}/>
+                                <p>Mon – Sat: 9:30 am – 6:30 pm</p>
+                            </p>
+                            <p className="flex items-center gap-2">
+                                <Calendar size={20}/>
+                                <p>Sunday & Holiday: Closed</p>
+                            </p>
                         </div>
 
                         <div className="leading-tight">
                             <p><strong>Office address:</strong></p>
-                            <p>Kingston Road, Kingston upon thames, Surrey, London, UK</p>
+                            <p className="flex items-center gap-2 pb-2 pt-2"><MapPin />Kingston Road, Kingston upon thames, Surrey, London, UK</p>
+                            <p className="flex items-center gap-2"><MapPin />Central London : 45 Albemarle Street, Mayfair, London W1S 4JL</p>
                         </div>
                     </div>
                 </div>

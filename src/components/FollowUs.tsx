@@ -47,7 +47,7 @@ export default function InstagramFollow() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 mb-10"
           >
-            <span className="text-sm font-sans uppercase tracking-widest">Projects</span>
+            <span className="text-base uppercase tracking-tight">Projects</span>
           </motion.div>
 
           {/* Image Grid - 5 columns on desktop */}
@@ -55,7 +55,7 @@ export default function InstagramFollow() {
             {instagramPosts.map((post, index) => (
               <motion.a
                 key={post.id}
-                href="https://www.instagram.com/nomaddevelopments/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.95 }}
