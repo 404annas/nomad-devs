@@ -7,13 +7,13 @@ const About = () => {
     <>
       {/* TOP INTRO / HERO - Clean and Compact */}
       <section className="bg-white pt-20 pb-12">
-        <div className="max-w-4xl mx-auto text-center px-6">
+        <div className="max-w-5xl mx-auto text-center px-6">
           <h1 className="text-[38px] md:text-[42px] leading-[1.1] font-serif text-black">
-            Design-Led Homes for Extraordinary Living
+            Crafting Iconic Luxury Spaces for Visionary Investors | Developers | Private Clients
           </h1>
 
-          <p className="mt-5 text-[15px] leading-5 text-gray-700 max-w-2xl mx-auto">
-            Crafting Iconic Luxury Spaces for Visionary Investors | Developers | Private Clients
+          <p className="mt-5 text-[15px] leading-5 text-gray-700 max-w-xl mx-auto">
+            Bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
           </p>
         </div>
       </section>

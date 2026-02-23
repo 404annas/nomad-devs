@@ -19,7 +19,14 @@ const Navbar = () => {
             <div className="grid grid-cols-3 items-start">
 
                 {/* Left Links */}
-                <div className="flex gap-10 items-center pt-10 justify-end">
+                <div className="flex gap-6 items-center pt-10 justify-end">
+                    <Link
+                        href="/"
+                        className="relative group uppercase tracking-tight text-base font-semibold"
+                    >
+                        Home
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    </Link>
                     <Link
                         href="/about"
                         className="relative group uppercase tracking-tight text-base font-semibold"
