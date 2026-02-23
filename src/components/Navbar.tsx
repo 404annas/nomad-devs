@@ -25,7 +25,7 @@ const Navbar = () => {
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         About
-                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
                     </Link>
 
                     <Link
@@ -33,21 +33,21 @@ const Navbar = () => {
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         Projects
-                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                     <Link
                         href="/services"
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         Services
-                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                     <Link
                         href="/contact"
                         className="relative group uppercase tracking-tight text-base font-semibold"
                     >
                         Contact
-                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute left-0 -bottom-0.5 h-[1px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                 </div>
 

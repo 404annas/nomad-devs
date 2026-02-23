@@ -52,6 +52,10 @@ export default function Footer2() {
                                 <MapPin size={15} />
                                 Kingston Road, Kingston upon Thames,<br /> Surrey, London, UK
                             </p>
+                            <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 tracking-normal flex items-center gap-2">
+                                <MapPin size={22} />
+                                Central London : 45 Albemarle Street, Mayfair, London W1S 4JL
+                            </p>
                         </div>
                     </div>
 

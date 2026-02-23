@@ -12,8 +12,8 @@ const About = () => {
             Design-Led Homes for Extraordinary Living
           </h1>
 
-          <p className="mt-5 text-[15px] leading-5 text-gray-700 max-w-xl mx-auto">
-            Bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
+          <p className="mt-5 text-[15px] leading-5 text-gray-700 max-w-2xl mx-auto">
+            Crafting Iconic Luxury Spaces for Visionary Investors | Developers | Private Clients
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ const About = () => {
 
               <div className="mt-6">
                 <Link href="/about" className="text-[12px] tracking-[0.2em] border-b border-black pb-1.5 uppercase font-semibold flex items-center gap-2 w-fit">
-                  More ABOUT US <ArrowRight size={18}/>
+                  More ABOUT US <ArrowRight size={18} />
                 </Link>
               </div>
             </div>
