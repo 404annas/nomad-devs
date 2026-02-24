@@ -21,8 +21,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nomad Developments",
-  description: "Develop you Home now with | Nomad Developers",
+  title: "Dwell Rich Designz",
+  description: "Premium interior design services for modern homes. Transform your space with our expert team, blending style and functionality to create your dream home. Contact us today for a consultation.",
 };
 
 export default function RootLayout({

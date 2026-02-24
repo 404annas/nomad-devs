@@ -42,7 +42,7 @@ export default function InstagramFollow() {
     // Outer white container with padding on all sides
     <section className="bg-white pb-8 px-4 md:px-12 lg:px-10">
       {/* Inner gray/beige container */}
-      <div className="bg-[#e9e7e3] py-10 px-8 md:px-16 lg:px-7">
+      <div className="bg-[#f3f3f3] py-10 px-8 md:px-16 lg:px-7">
         <div className="max-w-7xl mx-auto">
           {/* Follow Us Heading */}
           <motion.div

@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import Portfolio from '@/components/Portfolio'
 import Testimonials1 from '@/components/Testimonials1'
 import Testimonials2 from '@/components/Testimonials2'
+import WhyChooseUs from '@/components/WhyChooseUs'
 import React from 'react'
 
 const Home = () => {
@@ -13,7 +14,8 @@ const Home = () => {
         <Hero />
         <About />
         <Portfolio />
-        <Client />
+        {/* <Client /> */}
+        <WhyChooseUs />
         <FollowUs />
         <Testimonials1 />
         <Testimonials2 />
