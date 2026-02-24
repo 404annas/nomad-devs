@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import Approach from '@/components/Approach'
 import Client from '@/components/Client'
 import FollowUs from '@/components/FollowUs'
 import Hero from '@/components/Hero'
@@ -16,6 +17,7 @@ const Home = () => {
         <Portfolio />
         {/* <Client /> */}
         <WhyChooseUs />
+        <Approach />
         <FollowUs />
         <Testimonials1 />
         <Testimonials2 />
