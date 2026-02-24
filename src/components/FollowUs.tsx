@@ -13,22 +13,27 @@ const instagramPosts = [
   {
     id: 1,
     image: homeProject1.src,
+    link: "/projects/garden-design-kingston",
   },
   {
     id: 2,
     image: homeProject2.src,
+    link: "/projects/bathroom-design",
   },
   {
     id: 3,
     image: homeProject3.src,
+    link: "/projects/kitchen-design",
   },
   {
     id: 4,
     image: homeProject4.src,
+    link: "/projects/holiday-home-mitcham",
   },
   {
     id: 5,
     image: homeProject5.src,
+    link: "/projects/bespoke-joinery-projects",
   },
 ]
 
@@ -55,8 +60,7 @@ export default function InstagramFollow() {
             {instagramPosts.map((post, index) => (
               <motion.a
                 key={post.id}
-                href="/"
-                target="_blank"
+                href={post.link}
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.webp";
 import portfolioImg1 from "@/assets/heroMain3.png";
-import portfolioImg2 from "@/assets/heroMain4.png";
+import portfolioImg2 from "@/assets/homeProject34.jpg";
 import Link from "next/link";
 
 // --- Curated Colors (Same as Progress component) ---
@@ -116,9 +116,9 @@ const Portfolio = () => {
           {/* RIGHT IMAGE WITH HOVER */}
           <PortfolioHoverCard
             imgSrc={portfolioImg2.src}
-            title="reception central london chelsea"
+            title="living room boho eclectic style"
             location="Design & Build"
-            link="/projects/reception-central-london-chelsea"
+            link="/projects/living-room-boho-eclectic-style"
           />
 
         </div>

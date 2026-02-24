@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 
 import logo from "@/assets/logo.webp";
 
@@ -35,19 +36,17 @@ import skel23 from "@/assets/skel23.png";
 import { data } from "@/components/Projects/projectsData";
 
 // --- Updated Interface ---
-// Added 'category' to make filtering cleaner, though we can filter by 'location' too if needed.
-// Based on your prompt, I'm mapping your 'location' strings to the new categories or using a new field.
 interface Project {
   id: number;
   title: string;
   location: string;
   image: string;
   slug: string;
-  category: string; // Added for easier filtering
+  category: string;
 }
 
 // --- Filter Categories ---
-const FILTERS = ["All", "Residential", "Commercial", "International", "Garden"];
+const FILTERS = ["All", "Residential", "Commercial", "International", "Garden", "Kitchens", "Bathroom"];
 
 // --- Projects Data with Categories ---
 const projects: Project[] = [
@@ -57,7 +56,7 @@ const projects: Project[] = [
     location: "Design and Build",
     image: skel11.src,
     slug: data[10]?.id || "kingston-upon-thames",
-    category: "Residential", // Assuming Design and Build are mostly Residential
+    category: "Residential",
   },
   {
     id: 12,
@@ -121,7 +120,7 @@ const projects: Project[] = [
     location: "Bathroom",
     image: skel2.src,
     slug: data[1]?.id || "bathroom-design",
-    category: "Residential",
+    category: "Bathroom",
   },
   {
     id: 3,
@@ -129,7 +128,7 @@ const projects: Project[] = [
     location: "Kitchen",
     image: skel3.src,
     slug: data[2]?.id || "kitchen-design",
-    category: "Residential",
+    category: "Kitchens",
   },
   {
     id: 5,
@@ -161,7 +160,7 @@ const projects: Project[] = [
     location: "Design and Build",
     image: skel19.src,
     slug: data[18]?.id || "biophilic-oasis-conservatory",
-    category: "Garden", // Or Residential
+    category: "Garden",
   },
   {
     id: 20,
@@ -296,6 +295,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 const Progress = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Filter Logic
   useEffect(() => {
@@ -311,7 +311,7 @@ const Progress = () => {
 
   return (
     <section className="w-full py-10 px-4 md:px-12 pt-40 bg-white">
-      
+
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -325,30 +325,56 @@ const Progress = () => {
         </h2>
         <div className="w-full h-[1px] bg-gray-500 mb-6"></div>
 
-        {/* --- FILTER BOX --- */}
-        <div className="flex flex-wrap gap-4">
-          {FILTERS.map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(filter)}
-              className={`text-sm uppercase tracking-wider cursor-pointer px-4 py-2 border transition-all duration-300
-                ${
-                  activeFilter === filter
-                    ? "border-black bg-black text-white"
-                    : "border-gray-300 text-gray-500 hover:border-black hover:text-black"
-                }
-              `}
-            >
-              {filter}
-            </button>
-          ))}
+        {/* --- FILTER DROPDOWN --- */}
+        <div className="relative inline-block">
+          <button
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            className="flex items-center gap-2 text-sm uppercase tracking-wider cursor-pointer px-6 py-3 border border-gray-300 hover:border-black transition-all duration-300 bg-white"
+          >
+            <span>{activeFilter}</span>
+            <ChevronDown
+              size={16}
+              className={`transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+
+          <AnimatePresence>
+            {isDropdownOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+                className="absolute left-0 mt-2 w-48 bg-white border border-gray-300 shadow-lg z-50"
+              >
+                {FILTERS.map((filter) => (
+                  <button
+                    key={filter}
+                    onClick={() => {
+                      setActiveFilter(filter);
+                      setIsDropdownOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-2 text-sm cursor-pointer uppercase tracking-wider hover:bg-gray-100 transition-colors
+                      ${
+                        activeFilter === filter
+                          ? "bg-black text-white"
+                          : "text-gray-700"
+                      }
+                    `}
+                  >
+                    {filter}
+                  </button>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </motion.div>
 
       {/* Grid Section */}
       {filteredProjects.length > 0 ? (
-        <motion.div 
-          layout 
+        <motion.div
+          layout
           className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
         >
           <AnimatePresence>
@@ -370,9 +396,9 @@ const Progress = () => {
         </motion.div>
       ) : (
         // --- No Projects Found Message ---
-        <motion.div 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           className="py-20 text-center text-gray-400"
         >
           <p className="text-lg font-light">No projects found in this category.</p>

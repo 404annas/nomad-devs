@@ -298,7 +298,7 @@ export const data = [
             "Elevate your daily routine with bathroom spaces that blend spa-like serenity and modern elegance. Each design features clean lines, premium finishes, and functional layouts—crafted to create calm, luxurious retreats that feel as good as they look."
         ],
         images: [
-            project2_1.src, project2_2.src, project2_3.src, project2_4.src, project2_5.src, project2_6.src, project2_7.src, project2_8.src, project2_9.src, project2_10.src, project2_11.src, project2_12.src, project2_13.src, project2_14.src, project2_15.src, project2_16.src, project2_17.src, project2_18.src, project2_19.src, project2_20.src, project2_21.src
+            project2_1.src, project2_2.src, project2_3.src, project2_4.src, project2_5.src,  project2_7.src, project2_8.src, project2_9.src, project2_10.src, project2_11.src, project2_12.src, project2_13.src, project2_14.src, project2_15.src, project2_16.src, project2_17.src, project2_18.src, project2_19.src, project2_20.src, project2_21.src, project11_3.src, project11_16.src, project11_18.src, project12_16.src, project12_17.src, project12_18.src, project12_19.src, project12_20.src, project12_21.src, project12_22.src, project12_23.src, project12_24.src, project14_2.src, project14_3.src, project14_4.src, project14_5.src, project14_6.src, project16_8.src, project16_10.src, project16_13.src, project16_14.src, project17_9.src, project17_11.src, project17_12.src, project17_14.src,
         ]
     },
     {
@@ -446,7 +446,7 @@ export const data = [
             "Based in the Royal Borough of Kingston, it is a Modern Home Oasis, renovated by Exclusif Desingz with a focus on minimalism, functionality, maximum usage of space and light. The carefully curated foyer is both inviting and practical. The minimalistic and uncluttered bedrooms allow free movement with subtle artwork and geometric wall décor. The home is layered with different types of lighting to create a well-balanced appearance, mood and aesthetics. The kitchen is a two-tone, sizeable, open-plan dining area with a modern kitchen island in a different shade, creating a simple yet striking contrast that is hard to family ignore. The two-tone kitchen remains stylishly cohesive with compact laminate as a worktop and splash back. The space has its aura, with beautiful white flowers as centre pieces. The house has a well-thought-of luxury His & Her full bathroom, which is versatile and valuable, packing many functions into a relatively small space. A black framed shower screen creates a spacious, open-plan walk-in shower at the room far end. The oval bathtub with sinuous lines recalls naturalistic and sensual elements. The space had double round chevron basins with double vanity units, allowing each one to have their own space. The beige wall tiles are an excellent backdrop to light the whole area. Clean lines and a muted colour palette define this modern, understated home, where simplicity meets elegance in every corner."
         ],
         images: [
-            project11_1.src, project11_2.src, project11_3.src, project11_4.src, project11_5.src, project11_6.src, project11_7.src, project11_8.src, project11_9.src, project11_10.src, project11_11.src, project11_12.src, project11_13.src, project11_14.src, project11_15.src, project11_16.src, project11_17.src, project11_18.src, project11_19.src, project11_20.src,  project11_22.src, project11_23.src
+            project11_1.src, project11_2.src, project11_4.src, project11_5.src, project11_6.src, project11_7.src, project11_8.src, project11_9.src, project11_10.src, project11_11.src, project11_12.src, project11_13.src, project11_14.src, project11_15.src,  project11_17.src,  project11_19.src, project11_20.src,  project11_22.src, project11_23.src
         ]
     },
     {
@@ -457,7 +457,7 @@ export const data = [
             "The strategy centred on maximising gross development value through scale, specification, and lifestyle-led design, transforming a low-density asset into a prime residential home positioned at the top end of the local market."
         ],
         images: [
-            project12_1.src, project12_2.src, project12_3.src, project12_4.src, project12_5.src, project12_6.src, project12_7.src, project12_8.src, project12_9.src, project12_10.src, project12_11.src, project12_12.src, project12_13.src, project12_14.src, project12_15.src, project12_16.src, project12_17.src, project12_18.src, project12_19.src, project12_20.src, project12_21.src, project12_22.src, project12_23.src, project12_24.src, project12_25.src, project12_26.src, project12_27.src, project12_28.src, project12_29.src
+            project12_1.src, project12_2.src, project12_3.src, project12_4.src, project12_5.src, project12_6.src,  project12_10.src, project12_11.src, project12_12.src, project12_13.src, project12_14.src, project12_15.src,  project12_25.src, project12_26.src, project12_27.src, project12_28.src, project12_29.src
         ]
     },
     {
@@ -478,7 +478,7 @@ export const data = [
             "The property was comprehensively transformed through a full ground-floor renovation and strategic extension, repositioning it for the modern residential market. The internal layout was reconfigured to create a bright, open-plan kitchen and dining space, significantly enhancing flow, light, and functionality. A four-metre rear extension was added to increase the living footprint while remaining sympathetic to the scale of the original structure. The bathroom was fully refurbished, and a new loft was constructed, unlocking additional value and future-proofing the property. All works were delivered with a focus on efficient spend, practical design, and strong end-user appeal."
         ],
         images: [
-            project14_1.src, project14_2.src, project14_3.src, project14_4.src, project14_5.src, project14_6.src, project14_7.src, project14_8.src, project14_9.src
+            project14_1.src,  project14_7.src, project14_8.src, project14_9.src
         ]
     },
     {
@@ -500,7 +500,7 @@ export const data = [
             "The property was strategically repositioned and fully refurbished to function as a four-bedroom home with an additional study space, significantly increasing capacity and revenue potential. The internal layout was reworked to retain a bright open-plan kitchen and dining area, while clearly defining sleeping, working, and relaxation zones. This created a flexible environment suitable for holiday guests, corporate stays, and mid-term tenants. The property was finished and presented as a holiday-ready home, with durable materials, practical storage, and a layout designed to minimise ongoing maintenance while maximising guest comfort. Key operational features — including a private garden, garage, and a dedicated bin area — were incorporated into the overall planning, improving both functionality and management efficiency."
         ],
         images: [
-            project16_1.src, project16_2.src, project16_3.src, project16_4.src, project16_5.src, project16_6.src, project16_7.src, project16_8.src, project16_9.src, project16_10.src, project16_11.src, project16_12.src, project16_13.src, project16_14.src, project16_15.src, project16_16.src, project16_17.src, project16_18.src
+            project16_1.src, project16_2.src, project16_3.src, project16_4.src, project16_5.src, project16_6.src, project16_7.src,  project16_9.src,  project16_11.src, project16_12.src,  project16_15.src, project16_16.src, project16_17.src, project16_18.src
         ]
     },
     {
@@ -511,7 +511,7 @@ export const data = [
             "The property underwent a substantial redevelopment, anchored by a full-width, double-storey rear extension measuring approximately six metres by eight metres, delivering a significant increase in usable internal space and overall square footage. The extension transformed the ground floor into a broad, highly functional living environment, allowing for a reconfigured kitchen, dining, and family space that better suited modern living requirements. The scale of the build enabled a complete rethink of the internal layout, improving circulation, natural light, and spatial balance across the home. Alongside the structural works, the entire property was fully renovated, including a newly designed kitchen, refurbished bathrooms throughout, and consistent finishes and upgraded specifications across all living areas."
         ],
         images: [
-            project17_1.src, project17_2.src, project17_3.src, project17_4.src, project17_5.src, project17_6.src, project17_7.src, project17_8.src, project17_9.src, project17_10.src, project17_11.src, project17_12.src, project17_13.src, project17_14.src, project17_15.src
+            project17_1.src, project17_2.src, project17_3.src, project17_4.src, project17_5.src, project17_6.src, project17_7.src, project17_8.src,  project17_10.src,  project17_13.src,  project17_15.src
         ]
     },
     {
