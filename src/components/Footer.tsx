@@ -7,15 +7,15 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] text-white pt-4 pb-4 px-8 md:px-16 border-t border-white/5">
+    <footer className="bg-[#0A0A0A] text-white pt-4 pb-4 px-6 sm:px-8 md:px-16 border-t border-white/5">
       <div className="max-w-[1600px] mx-auto">
 
         {/* --- MAIN GRID --- */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 mb-10">
 
           {/* Column 1: Brand (Span 4) */}
           <div className="md:col-span-4 flex flex-col gap-2">
-            <div className="relative w-30 h-30 p-2">
+            <div className="relative w-25 sm:w-30 h-25 sm:h-30 p-2">
               <Link href="/">
                 <Image
                   src={logo}
@@ -25,7 +25,7 @@ export default function Footer() {
                 />
               </Link>
             </div>
-            <p className="text-gray-300 text-sm max-w-xs leading-normal">
+            <p className="text-gray-300 text-xs sm:text-sm max-w-xs leading-normal">
               Crafting sophisticated spaces with a blend of modern aesthetics and functional design.
             </p>
             <p className="text-sm">Company Registeration: (12592480)</p>
@@ -39,6 +39,7 @@ export default function Footer() {
               <FooterLink href="/projects" text="Projects" />
               <FooterLink href="/about" text="About Us" />
               <FooterLink href="/services" text="Services" />
+              <FooterLink href="/contact" text="Contact Us" />
             </nav>
           </div>
 

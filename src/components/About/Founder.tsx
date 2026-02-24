@@ -7,12 +7,12 @@ import salehaImg from "@/assets/saleha.webp"
 
 const Founder = () => {
     return (
-        <section className="w-full bg-white px-6 md:px-12 pb-10">
+        <section className="w-full bg-white px-4 sm:px-6 md:px-12 pb-10">
             {/* Split Layout: Image on Left, Content on Right */}
-            <div className="flex flex-col md:flex-row w-full gap-8 items-stretch">
+            <div className="flex flex-col lg:flex-row w-full gap-4 sm:gap-8 items-stretch">
 
                 {/* 1. Left Column: Image Container */}
-                <div className="w-full md:w-[40%] relative min-h-[500px] md:min-h-[500px]">
+                <div className="w-full lg:w-[40%] relative min-h-[500px] md:min-h-[500px]">
                     <Image
                         src={salehaImg.src}
                         alt="Saleha Ali Khan - Founder Of Dwell Rich Designz"
@@ -24,7 +24,7 @@ const Founder = () => {
 
                 {/* 2. Right Column: Text Content */}
                 {/* bg-[#F4F3EF] matches the soft off-white/beige background */}
-                <div className="w-full md:w-[60%] bg-[#F4F3EF] flex flex-col justify-center px-8 md:px-24 py-10">
+                <div className="w-full lg:w-[60%] bg-[#F4F3EF] flex flex-col justify-center px-4 sm:px-8 md:px-24 py-10">
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}

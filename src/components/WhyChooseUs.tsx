@@ -39,7 +39,7 @@ const features = [
 
 const WhyChooseUs = () => {
     return (
-        <section className="w-full bg-white py-10 px-6 md:px-12 lg:px-20 border-b border-gray-100">
+        <section className="w-full bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-20 border-b border-gray-100">
             <div className="max-w-7xl mx-auto">
 
                 <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
@@ -49,17 +49,17 @@ const WhyChooseUs = () => {
 
                         {/* Compact Header */}
                         <div className="mb-8">
-                            <h2 className="text-4xl font-serif text-black leading-tight">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-black leading-tight">
                                 Why Clients <span className="text-gray-400">Choose Us ?</span>
                             </h2>
                         </div>
 
                         {/* List Layout (No Boxes) */}
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-4 sm:gap-6">
                             {features.map((feature) => (
                                 <div
                                     key={feature.id}
-                                    className="group flex items-start gap-4 p-3 -ml-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-300"
+                                    className="group flex items-start gap-4 p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-300"
                                 >
                                     {/* Minimalist Icon */}
                                     <div className="shrink-0 mt-1">
@@ -76,7 +76,7 @@ const WhyChooseUs = () => {
                                         <h3 className="text-sm font-bold uppercase text-black group-hover:text-black transition-colors">
                                             {feature.title}
                                         </h3>
-                                        <p className="text-sm text-gray-500 font-light mt-1 leading-relaxed">
+                                        <p className="text-xs sm:text-sm text-gray-500 font-light mt-1 leading-normal">
                                             {feature.description}
                                         </p>
                                     </div>

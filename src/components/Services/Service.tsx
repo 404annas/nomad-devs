@@ -31,9 +31,9 @@ const servicesData = [
 const Service = () => {
     return (
         <>
-            <h1 className='text-4xl px-10 text-center pt-50'>Our Services</h1>
+            <h1 className='text-4xl px-10 text-center pt-40 sm:pt-50 font-serif'>Our Services</h1>
             <div className="w-full min-h-screen bg-white py-10 px-4 flex justify-center items-center">
-                <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8">
+                <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 sm:gap-8">
 
 
                     {servicesData.map((service) => (
@@ -50,7 +50,7 @@ const Service = () => {
                                     <div className="relative flex flex-col items-center justify-center text-center p-6 z-10">
                                         {/* Big Background Number */}
                                         <span
-                                            className="absolute text-[160px] font-bold leading-none text-transparent select-none"
+                                            className="absolute text-[140px] sm:text-[160px] font-bold leading-none text-transparent select-none"
                                             style={{
                                                 WebkitTextStroke: '2px #dddddd',
                                                 top: '50%',

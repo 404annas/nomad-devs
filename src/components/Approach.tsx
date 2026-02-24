@@ -30,15 +30,15 @@ const features = [
 
 const Approach = () => {
     return (
-        <section className="w-full bg-[#FAFAFA] py-10 px-6 md:px-12">
+        <section className="w-full bg-[#FAFAFA] py-10 px-4 sm:px-6 md:px-12">
             <div className="max-w-7xl mx-auto">
 
                 {/* Section Header */}
                 <div className="text-center mb-10 space-y-4">
-                    <h2 className="text-3xl md:text-4xl font-serif text-black tracking-wide">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-black tracking-wide">
                         Our <span className="text-gray-500">Approach</span>
                     </h2>
-                    <div className="h-[1px] w-24 bg-black mx-auto mt-6"></div>
+                    <div className="h-[1px] w-24 bg-black mx-auto mt-4"></div>
                 </div>
 
                 {/* Cards Layout - Adjusted for 4 in a row on large screens */}
@@ -46,7 +46,7 @@ const Approach = () => {
                     {features.map((feature) => (
                         <div
                             key={feature.id}
-                            className="group relative bg-white border border-gray-300 p-8 w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] hover:border-black transition-all duration-300 ease-in-out flex flex-col items-start"
+                            className="group relative bg-white border border-gray-300 p-6 sm:p-8 w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] hover:border-black transition-all duration-300 ease-in-out flex flex-col items-start"
                         >
                             {/* Icon */}
                             <div className="mb-6 p-3 bg-gray-100 rounded-none group-hover:bg-black transition-colors duration-300">

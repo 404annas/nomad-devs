@@ -136,7 +136,7 @@ const ProjectPage = () => {
           <h1 className="text-2xl md:text-3xl text-[#1a1a1a] font-light mb-6 uppercase tracking-tight leading-tight">
             {project.title || project.id.replace(/-/g, " ")}
           </h1>
-          <div className="text-base leading-7 text-[#1a1a1a] max-w-xl text-left mx-auto">
+          <div className="text-base leading-6 sm:leading-7 text-[#1a1a1a] max-w-xl text-left mx-auto">
             <p>{introText}</p>
           </div>
         </div>
@@ -144,8 +144,8 @@ const ProjectPage = () => {
 
       {/* 2. DYNAMIC CONTENT SECTION */}
       {hasRemainingText ? (
-        <div className="max-w-[1300px] mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <div className="text-sm md:text-base leading-8 text-black">
+        <div className="max-w-[1300px] mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-start">
+          <div className="text-sm md:text-base leading-7 sm:leading-8 text-black">
             {renderRemainingContent()}
           </div>
           <div className="flex flex-col gap-6 sticky top-24">

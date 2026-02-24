@@ -30,11 +30,11 @@ const approachData = [
 
 const Approach = () => {
     return (
-        <section className="w-full bg-white py-10 px-6 md:px-12 lg:px-20">
+        <section className="w-full bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-20">
 
             {/* Header Section */}
             <div className="max-w-7xl mx-auto mb-10 border-b border-gray-200 pb-8 text-center">
-                <h2 className="text-3xl md:text-4xl font-serif text-black uppercase tracking-tight text-center">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-black uppercase tracking-tight text-center">
                     We don’t just design — we deliver. Our Approach.
                 </h2>
                 <p className="mt-4 text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-none font-light text-center">

@@ -73,7 +73,7 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link }: { imgSrc: string,
                   exit={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.4, delay: 0.2 }}
                 >
-                  <h3 className="text-xl text-black tracking-tight uppercase mb-1 font-serif">
+                  <h3 className="text-lg sm:text-xl text-black tracking-tight uppercase mb-1 font-serif">
                     {title}
                   </h3>
                   <p className="text-[10px] text-black/80 tracking-[0.3em] uppercase">
@@ -93,8 +93,8 @@ const Portfolio = () => {
   return (
     <section className="bg-white">
       {/* TOP LINE + TITLE */}
-      <div className="max-w-[1600px] mx-auto px-10">
-        <div className="border-b border-[#c9b88a] pt-12 pb-3">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-10">
+        <div className="border-b border-[#c9b88a] pt-10 pb-3">
           <span className="text-lg tracking-tight text-black uppercase">
             PORTFOLIO
           </span>
@@ -102,7 +102,7 @@ const Portfolio = () => {
       </div>
 
       {/* IMAGES GRID */}
-      <div className="max-w-[1600px] mx-auto px-10 py-10">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-10 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
 
           {/* LEFT IMAGE WITH HOVER */}

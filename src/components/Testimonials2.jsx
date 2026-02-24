@@ -139,9 +139,18 @@ const Testimonials2 = () => {
   // --- States ---
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null); // For Modal
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   // Carousel Logic
-  const visibleCards = 2;
+  const visibleCards = isMobile ? 1 : 2;
   const maxIndex = reviews.length - visibleCards;
 
   const handlePrev = () => {
@@ -186,7 +195,7 @@ const Testimonials2 = () => {
         <div className="flex items-center justify-between mb-10 relative">
           <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-gray-200 -z-10 hidden md:block"></div>
           <div className="pr-6 z-10 mx-auto md:mx-0">
-            <h2 className="text-2xl sm:text-3xl font-bold text-black text-center px-4">
+            <h2 className="text-2xl sm:text-3xl font-serif text-black text-center px-4">
               User Reviews & Ratings
             </h2>
           </div>
@@ -213,13 +222,13 @@ const Testimonials2 = () => {
           {/* Summary Box */}
           <div className="shrink-0 w-full lg:w-[280px]">
             <div className="bg-gray-100 rounded-xl p-8 flex flex-col items-center justify-center h-full min-h-[200px]">
-              <span className="text-black text-6xl font-bold mb-2">4.8</span>
+              <span className="text-black text-5xl sm:text-6xl font-bold mb-2">4.8</span>
               <div className="flex gap-1 mb-2">
                 {Array(5).fill(0).map((_, i) => (
-                  <Star key={i} size={24} fill="#FFC107" stroke="#FFC107" />
+                  <Star key={i} size={20} fill="#FFC107" stroke="#FFC107" />
                 ))}
               </div>
-              <p className="text-gray-500 text-sm">based on 20+ reviews</p>
+              <p className="text-gray-500 text-sm">based on 16+ reviews</p>
             </div>
           </div>
 
@@ -227,10 +236,10 @@ const Testimonials2 = () => {
           <div className="flex-1 overflow-hidden relative">
             <div
               className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+              style={{ transform: `translateX(-${currentIndex * (100 / visibleCards)}%)` }}
             >
               {reviews.map((review) => (
-                <div key={review.id} className="min-w-[100%] md:min-w-[50%] px-3">
+                <div key={review.id} className="min-w-[100%] md:min-w-[50%] px-1 sm:px-3">
                   <div className="border border-gray-200 rounded-xl p-6 h-[250px] flex flex-col justify-between bg-gray-100 transition-all hover:shadow-md">
 
                     <div>

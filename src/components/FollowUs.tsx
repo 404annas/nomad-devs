@@ -40,9 +40,9 @@ const instagramPosts = [
 export default function InstagramFollow() {
   return (
     // Outer white container with padding on all sides
-    <section className="bg-white pb-8 px-4 md:px-12 lg:px-10">
+    <section className="bg-white pb-8 px-4 md:px-8 lg:px-10">
       {/* Inner gray/beige container */}
-      <div className="bg-[#f3f3f3] py-10 px-8 md:px-16 lg:px-7">
+      <div className="bg-[#f3f3f3] py-10 px-4 sm:px-8 md:px-16 lg:px-7">
         <div className="max-w-7xl mx-auto">
           {/* Follow Us Heading */}
           <motion.div
@@ -52,11 +52,11 @@ export default function InstagramFollow() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 mb-10"
           >
-            <span className="text-base uppercase tracking-tight">Projects</span>
+            <span className="text-lg uppercase tracking-tight">Projects</span>
           </motion.div>
 
           {/* Image Grid - 5 columns on desktop */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4">
             {instagramPosts.map((post, index) => (
               <motion.a
                 key={post.id}
@@ -70,6 +70,7 @@ export default function InstagramFollow() {
                 className="relative overflow-hidden group cursor-pointer aspect-square"
               >
                 <img
+                  loading="lazy"
                   src={post.image}
                   alt={`Instagram post ${post.id}`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

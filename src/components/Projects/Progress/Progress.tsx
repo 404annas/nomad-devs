@@ -277,7 +277,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.4, delay: 0.2 }}
               >
-                <h3 className="text-xl text-black tracking-tight leading-none uppercase mb-1 font-serif">
+                <h3 className="text-lg lg:text-xl text-black tracking-tight leading-none uppercase mb-1 font-serif">
                   {project.title}
                 </h3>
                 <p className="text-[10px] text-black/80 tracking-[0.3em] uppercase">

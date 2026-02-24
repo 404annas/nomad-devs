@@ -8,7 +8,7 @@ import importanceImg from "@/assets/heroMain3.png"
 
 export const Importance = () => {
     return (
-        <section className="w-full py-10 bg-white px-6 md:px-12 pt-50">
+        <section className="w-full py-10 bg-white px-4 sm:px-6 md:px-12 pt-40 sm:pt-50">
             {/* 1. Top Heading & Description */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export const Importance = () => {
                 transition={{ duration: 0.8 }}
                 className="max-w-4xl mx-auto text-center mb-10"
             >
-                <h2 className="text-4xl md:text-5xl text-[#1a1a1a] mb-6 tracking-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#1a1a1a] mb-6 tracking-tight">
                     Our Design Process
                 </h2>
                 <p className="text-sm md:text-base text-black leading-tight max-w-3xl mx-auto">
@@ -26,10 +26,10 @@ export const Importance = () => {
             </motion.div>
 
             {/* 2. The Two Boxes (Image Slider & Text Box) */}
-            <div className="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto gap-8 items-stretch">
+            <div className="flex flex-col lg:flex-row w-full max-w-[1400px] mx-auto gap-4 sm:gap-8 items-stretch">
 
                 {/* Left Box: Large Image Slider */}
-                <div className="w-3/4 relative md:min-h-[550px]">
+                <div className="lg:w-3/4 relative md:min-h-[550px]">
                     <Image
                         src={importanceImg.src}
                         alt="Luxury Interior"
@@ -39,12 +39,12 @@ export const Importance = () => {
                 </div>
 
                 {/* Right Box: Content Box */}
-                <div className="w-full md:w-[35%] bg-[#F7F6F2] p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
+                <div className="w-full lg:w-[35%] bg-[#F7F6F2] p-6 sm:p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
                     <div className="max-w-lg">
                         <p className="text-sm md:text-base text-black leading-tight mb-4">
                             Whether it’s a high-end residential renovation, a mid-size residential, a bespoke joinery commission, or a commercial project, we deliver spaces that balance style, function, and durability. 
                         </p>
-                        <div className='flex flex-col gap-1 mb-8'>
+                        <div className='flex flex-col gap-2 mb-8'>
                             <div className='flex items-center gap-2'>
                                 <CircleCheck size={18}/>
                                 <p className="text-sm md:text-base text-black leading-tight font-medium">Work with Professional Process</p>
@@ -80,7 +80,7 @@ export const Importance = () => {
                     </div>
 
                     {/* Bottom Navigation Arrows (Exact same as screenshot) */}
-                    <div className="absolute bottom-10 left-10 md:left-16 flex gap-6 text-[#1a1a1a]/30">
+                    <div className="absolute lg:block hidden bottom-10 left-10 md:left-16 flex gap-6 text-[#1a1a1a]/30">
                         <ArrowLeft size={20} className="cursor-pointer hover:text-black transition-all duration-300" strokeWidth={1.5} />
                         <ArrowRight size={20} className="cursor-pointer hover:text-black transition-all duration-300" strokeWidth={1.5} />
                     </div>

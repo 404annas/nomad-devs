@@ -41,10 +41,10 @@ const Simply = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row-reverse w-full max-w-[1400px] mx-auto gap-8 pb-10 bg-white px-6 md:px-12 items-stretch">
+        <div className="flex flex-col lg:flex-row-reverse w-full max-w-[1400px] mx-auto gap-4 sm:gap-8 pb-10 bg-white px-4 sm:px-6 md:px-12 items-stretch">
 
             {/* Left Box: Large Image Slider */}
-            <div className="w-3/4 relative md:min-h-[550px]">
+            <div className="lg:w-3/4 relative md:min-h-[550px]">
                 <Image
                     src={homeProject6.src}
                     alt="Luxury Interior"
@@ -54,9 +54,9 @@ const Simply = () => {
             </div>
 
             {/* Right Box: Content Box */}
-            <div className="w-full md:w-[35%] bg-[#F7F6F2] p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
+            <div className="w-full lg:w-[35%] bg-[#F7F6F2] p-8 sm:p-10 md:p-12 flex flex-col justify-center relative min-h-[400px]">
                 <div className="max-w-lg transition-opacity duration-300 ease-in-out">
-                    <h1 className="text-2xl md:text-3xl font-bold mb-8">Our Procedure</h1>
+                    <h1 className="text-2xl md:text-3xl font-serif mb-8">Our Procedure</h1>
                     {/* Dynamic Title */}
                     <h3 className="text-lg md:text-xl font-medium text-black mb-3">
                         {data[currentIndex].title}
