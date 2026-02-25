@@ -1,112 +1,151 @@
 "use client";
-import React, { useState } from "react";
-import { ChevronUp, ChevronDown } from "lucide-react";
 
-const ContactForm = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Defaulted to true to match screenshot
+import React, { useState } from "react";
+import { Facebook, Instagram, Linkedin, ArrowRight, ChevronDown } from "lucide-react";
+
+const ContactSection = () => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState("What do want to do?");
 
     const dropdownOptions = [
-        "Brick (Database)",
-        "Steel (Modern building material)",
-        "Beam (Load-bearing member in construction)",
-        "Floor (Horizontal surface of a building)",
-        "Concrete (Foundation)",
-        "Wood (Framing)",
+        "Interior Design",
+        "Architecture",
+        "Renovation",
+        "Consultation",
     ];
 
-    const handleOptionClick = (option: any) => {
-        setSelectedOption(option);
-        setIsDropdownOpen(false);
-    };
-
     return (
-        <div className="flex justify-center items-start">
-            <form className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section className="bg-[#F1F1EE] py-10 px-6 md:px-12 lg:px-12">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
 
-                {/* Name Field */}
-                <div className="group">
-                    <input
-                        type="text"
-                        placeholder="Your Name*"
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 text-sm"
-                    />
-                </div>
+                {/* --- LEFT SIDE: Contact Info --- */}
+                <div className="flex flex-col space-y-6">
 
-                {/* Phone Field */}
-                <div className="group">
-                    <input
-                        type="text"
-                        placeholder="Your Phone Number*"
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 text-sm"
-                    />
-                </div>
-
-                {/* Email Field */}
-                <div className="group">
-                    <input
-                        type="email"
-                        placeholder="Your Email Address*"
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 text-sm"
-                    />
-                </div>
-
-                {/* Custom Dropdown Field */}
-                <div className="relative group">
-                    <button
-                        type="button"
-                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                        className={`w-full text-left p-4 flex justify-between cursor-pointer items-center border border-gray-300 border-b-0 text-sm focus:outline-none ${isDropdownOpen ? "bg-[#eeeeee]" : "bg-[#f8f8f8]"
-                            }`}
-                    >
-                        <span className="text-black font-normal">{selectedOption}</span>
-                        {isDropdownOpen ? (
-                            <ChevronUp size={20} className="text-gray-500" />
-                        ) : (
-                            <ChevronDown size={20} className="text-gray-500" />
-                        )}
-                    </button>
-
-                    {/* Dropdown Menu */}
-                    {isDropdownOpen && (
-                        <div className="absolute left-0 right-0 bg-white border border-gray-200 border-t-0 shadow-sm z-10 max-h-64 overflow-y-auto text-sm">
-                            <ul className="py-2">
-                                {dropdownOptions.map((option, index) => (
-                                    <li
-                                        key={index}
-                                        onClick={() => handleOptionClick(option)}
-                                        className="px-4 py-3 text-gray-600 hover:bg-gray-100 cursor-pointer text-sm"
-                                    >
-                                        {option}
-                                    </li>
-                                ))}
-                            </ul>
+                    {/* Support */}
+                    <div>
+                        <h3 className="text-[#8F6573] text-2xl font-semibold mb-4">24/7 Support</h3>
+                        <div className="text-gray-800 text-base space-y-1">
+                            <p>Call Us: <span className="font-medium">078033 26891</span></p>
+                            <p>Mail Us: <span className="font-medium">hello@designz.dwell-rich.com</span></p>
                         </div>
-                    )}
-                </div>
+                    </div>
 
-                {/* Message Field - Positioned to match visual (Left side) */}
-                {/* Note: In standard forms this is usually full width, but strictly following the image grid */}
-                <div className="group md:col-span-2">
-                    <textarea
-                        rows={5}
-                        placeholder="Your Message..."
-                        className="w-full bg-[#f8f8f8] border border-gray-300 text-gray-600 p-4 focus:outline-none focus:border-gray-400 placeholder-gray-400 resize-none text-sm"
-                    />
-                    {/* Submit Button */}
-                    <div className="mt-5">
-                        <button
-                            type="submit"
-                            className="bg-[#111111] text-white text-xs font-bold uppercase py-4 px-8 tracking-wider hover:bg-gray-950 transition-colors duration-300 cursor-pointer w-full md:w-auto"
-                        >
-                            SEND REQUEST
-                        </button>
+                    {/* Address */}
+                    <div>
+                        <h3 className="text-[#8F6573] text-2xl font-semibold mb-4">Our Address</h3>
+                        <div className="text-gray-800 text-base leading-relaxed">
+                            <p><span className="font-semibold">Central London :</span> 45 Albemarle Street, Mayfair, London W1S 4JL</p>
+                            <p><span className="font-semibold">South London :</span> 416, Kingston road, KT1 3PB</p>
+                        </div>
+                    </div>
+
+                    {/* Time to Work */}
+                    <div>
+                        <h3 className="text-[#8F6573] text-2xl font-semibold mb-4">Time to Work</h3>
+                        <div className="text-gray-800 text-base">
+                            <p>Mon – Sat: 9:30 am – 6:30 pm</p>
+                            <p>Sunday & Holiday: Closed</p>
+                        </div>
+                    </div>
+
+                    {/* Social Media */}
+                    <div>
+                        <h3 className="text-[#8F6573] text-2xl font-semibold mb-6">Follow Us on Social Media</h3>
+                        <div className="flex gap-2">
+                            <a href="#" className="p-2.5 bg-[#1877F2] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                                <Facebook size={20} fill="currentColor" />
+                            </a>
+                            <a href="#" className="p-2.5 bg-[#E4405F] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                                <Instagram size={20} />
+                            </a>
+                            <a href="#" className="p-2.5 bg-[#0A66C2] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                                <Linkedin size={20} fill="currentColor" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-            </form>
-        </div>
+                {/* --- RIGHT SIDE: Form --- */}
+                <div className="relative">
+                    {/* Top Divider from screenshot */}
+                    <div className="border-t border-[#8F6573] w-full mb-10" />
+
+                    <h2 className="text-[#8B747D] text-4xl font-smibold uppercase tracking-tight mb-4">
+                        Get In Touch
+                    </h2>
+                    <p className="text-gray-700 text-lg mb-10 leading-normal max-w-xl">
+                        Are you planning to design your project but don’t know how to shape it?
+                        Leave your information for immediate consultation.
+                    </p>
+
+                    <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {/* Input fields with the same grey background as image */}
+                        <input
+                            type="text"
+                            placeholder="Your Name*"
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Your Phone Number*"
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500"
+                        />
+                        <input
+                            type="email"
+                            placeholder="Your Email Address*"
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500"
+                        />
+
+                        {/* Dropdown Field */}
+                        <div className="relative">
+                            <button
+                                type="button"
+                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                className="w-full border border-[#d8d8d8] p-4 text-sm text-gray-500 flex justify-between items-center"
+                            >
+                                {selectedOption}
+                                <ChevronDown size={18} />
+                            </button>
+
+                            {isDropdownOpen && (
+                                <div className="absolute top-full left-0 w-full bg-white border border-gray-100 shadow-xl z-50">
+                                    {dropdownOptions.map((opt) => (
+                                        <div
+                                            key={opt}
+                                            onClick={() => {
+                                                setSelectedOption(opt);
+                                                setIsDropdownOpen(false);
+                                            }}
+                                            className="p-3 text-sm hover:bg-gray-50 cursor-pointer text-gray-700"
+                                        >
+                                            {opt}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+
+                        <textarea
+                            placeholder="Your Message..."
+                            rows={6}
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500 md:col-span-2 resize-none"
+                        />
+
+                        {/* Black Button with Arrow */}
+                        <div className="md:col-span-2 mt-2">
+                            <button
+                                type="submit"
+                                className="bg-[#111111] text-white py-4 px-10 flex items-center justify-between gap-6 group hover:bg-black transition-all cursor-pointer"
+                            >
+                                <span className="text-xs font-bold uppercase">Send Enquiry</span>
+                                <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     );
 };
 
-export default ContactForm;
+export default ContactSection;

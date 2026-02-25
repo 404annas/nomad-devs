@@ -108,17 +108,17 @@ const Portfolio = () => {
           {/* LEFT IMAGE WITH HOVER */}
           <PortfolioHoverCard
             imgSrc={portfolioImg1.src}
-            title="Kingston Upon Thames"
+            title="All Projects"
             location="Design And Build"
-            link="/projects/kingston-upon-thames"
+            link="/projects"
           />
 
           {/* RIGHT IMAGE WITH HOVER */}
           <PortfolioHoverCard
             imgSrc={portfolioImg2.src}
-            title="living room boho eclectic style"
+            title="All Projects"
             location="Design & Build"
-            link="/projects/living-room-boho-eclectic-style"
+            link="/projects"
           />
 
         </div>

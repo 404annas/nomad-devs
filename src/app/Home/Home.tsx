@@ -5,6 +5,7 @@ import FollowUs from '@/components/FollowUs'
 import Hero from '@/components/Hero'
 import Hero2 from '@/components/Hero2'
 import Portfolio from '@/components/Portfolio'
+import Service from '@/components/Service'
 import Testimonials1 from '@/components/Testimonials1'
 import Testimonials2 from '@/components/Testimonials2'
 import WhyChooseUs from '@/components/WhyChooseUs'
@@ -19,8 +20,9 @@ const Home = () => {
         {/* <Client /> */}
         <WhyChooseUs />
         <Approach />
+        <Service />
         <FollowUs />
-        <Testimonials1 />
+        {/* <Testimonials1 /> */}
         <Testimonials2 />
     </div>
   )

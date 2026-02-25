@@ -34,11 +34,11 @@ const Navbar = () => {
                 {/* ======================= */}
                 <div className="hidden lg:grid grid-cols-3 items-start">
                     {/* Left Links */}
-                    <div className="flex gap-6 items-center pt-10 justify-end">
+                    <div className="flex gap-10 items-center pt-10 justify-end">
                         <NavLink href="/" text="Home" />
                         <NavLink href="/about" text="About" />
                         <NavLink href="/projects" text="Projects" />
-                        <NavLink href="/services" text="Services" />
+                        {/* <NavLink href="/services" text="Services" /> */}
                         <NavLink href="/contact" text="Contact" />
                     </div>
 
@@ -125,7 +125,7 @@ const Navbar = () => {
                         <MobileLink href="/" text="Home" onClick={() => setIsMobileMenuOpen(false)} />
                         <MobileLink href="/about" text="About" onClick={() => setIsMobileMenuOpen(false)} />
                         <MobileLink href="/projects" text="Projects" onClick={() => setIsMobileMenuOpen(false)} />
-                        <MobileLink href="/services" text="Services" onClick={() => setIsMobileMenuOpen(false)} />
+                        {/* <MobileLink href="/services" text="Services" onClick={() => setIsMobileMenuOpen(false)} /> */}
                         <MobileLink href="/contact" text="Contact" onClick={() => setIsMobileMenuOpen(false)} />
                     </div>
 

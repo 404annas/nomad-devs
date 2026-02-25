@@ -5,10 +5,8 @@ const Form = () => {
     return (
         // Main container ka background aur padding exact match karne ke liye
         <div className="bg-white flex items-center justify-center py-10 pt-40 sm:pt-50">
-            <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20 px-4 sm:px-6 lg:px-40 py-10 sm:py-20 bg-[#efeee9]">
 
-                {/* Left Column: Contact Details (Left side ki details) */}
-                <div className="flex flex-col justify-start space-y-10 sm:space-y-12 text-[#1a1a1a]">
+                {/* <div className="flex flex-col justify-start space-y-10 sm:space-y-12 text-[#1a1a1a]">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl uppercase font-bold">Get in Touch</h1>
                     <p className="text-base sm:text-lg leading-tight lg:max-w-sm">
                         Are you planning to design your project but don’t know how to shape it? Leave your information for immediate consultation.
@@ -40,11 +38,10 @@ const Form = () => {
                             <p className="flex items-center gap-2"><MapPin />Central London : 45 Albemarle Street, Mayfair, London W1S 4JL</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Right Column: The Form (Exact inputs aur lines) */}
                 <ContactForm />
-            </div>
         </div>
     );
 };

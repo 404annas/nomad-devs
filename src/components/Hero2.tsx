@@ -5,13 +5,15 @@ import Image from "next/image";
 
 // Import your images
 import heroImg1 from "@/assets/project12-28.jpg";
-import heroImg2 from "@/assets/project12-27.jpg";
-import heroImg3 from "@/assets/project12-29.jpg";
+import heroImg2 from "@/assets/homeProject36.png";
+import heroImg3 from "@/assets/homeProject37.png";
+import heroImg4 from "@/assets/homeProject38.png";
 
 const slides = [
     { id: 1, src: heroImg1, alt: "Luxury Interior 1" },
     { id: 2, src: heroImg2, alt: "Luxury Interior 2" },
     { id: 3, src: heroImg3, alt: "Luxury Interior 3" },
+    { id: 4, src: heroImg4, alt: "Luxury Interior 4" },
 ];
 
 const Hero2 = () => {
@@ -27,7 +29,7 @@ const Hero2 = () => {
     }, []);
 
     return (
-        <div className="relative w-full overflow-hidden bg-black">
+        <div className="relative w-full h-[200vh] overflow-hidden bg-black">
             
             {/* --- 1. THE "GHOST" SPACER IMAGE --- */}
             {/* This image is invisible (opacity-0) but it exists in the DOM 
