@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { X, ChevronLeft, ChevronRight, CheckCircle2 } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, CheckCircle2, ArrowRight } from "lucide-react";
 import { data } from "@/components/Projects/projectsData";
 
 import logo from "@/assets/logo.webp"
@@ -118,6 +118,21 @@ const ProjectPage = () => {
   const sideImages = allImages.slice(0, 1); // Side images (0 and 1)
   const remainingImages = allImages.slice(1); // All others starting from index 2
 
+  // --- Navigation Logic ---
+  const router = useRouter();
+  const currentIndex = data.findIndex((p) => p.id === projectId);
+  const prevProject = currentIndex > 0 ? data[currentIndex - 1] : null;
+  const nextProject = currentIndex < data.length - 1 ? data[currentIndex + 1] : null;
+
+  const handleNavigation = (direction: "prev" | "next") => {
+    window.scrollTo(0, 0);
+    if (direction === "prev" && prevProject) {
+      router.push(`/projects/${prevProject.id}`);
+    } else if (direction === "next" && nextProject) {
+      router.push(`/projects/${nextProject.id}`);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white text-black">
 
@@ -220,6 +235,45 @@ const ProjectPage = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* PROJECT NAVIGATION ARROWS */}
+      {(prevProject || nextProject) && (
+        <div className="w-full max-w-[1400px] mx-auto px-4 py-8 border-t border-gray-200">
+          <div className="flex items-center justify-between gap-4">
+            {/* Previous Button */}
+            {prevProject ? (
+              <button
+                onClick={() => handleNavigation("prev")}
+                className="flex items-center gap-3 px-6 py-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-300 group flex-1 max-w-xs cursor-pointer"
+              >
+                <ChevronLeft size={24} className="text-gray-600 group-hover:text-gray-900" />
+                <div className="text-left">
+                  <p className="text-xs text-gray-500 uppercase tracking-wide">Previous Project</p>
+                  <p className="text-sm font-medium text-gray-900 truncate uppercase">{prevProject.title || prevProject.id.replace(/-/g, " ")}</p>
+                </div>
+              </button>
+            ) : (
+              <div className="flex-1 max-w-xs" />
+            )}
+
+            {/* Next Button */}
+            {nextProject ? (
+              <button
+                onClick={() => handleNavigation("next")}
+                className="flex items-center gap-3 px-6 py-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-300 group flex-1 max-w-xs justify-end cursor-pointer"
+              >
+                <div className="text-right">
+                  <p className="text-xs text-gray-500 uppercase tracking-wide">Next Project</p>
+                  <p className="text-sm font-medium text-gray-900 truncate uppercase">{nextProject.title || nextProject.id.replace(/-/g, " ")}</p>
+                </div>
+                <ArrowRight size={24} className="text-gray-600 group-hover:text-gray-900" />
+              </button>
+            ) : (
+              <div className="flex-1 max-w-xs" />
+            )}
+          </div>
+        </div>
+      )}
 
     </div>
   );

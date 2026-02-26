@@ -67,13 +67,13 @@ export default function Footer() {
 
             {/* Social Icons with brand colors from image */}
             <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full">
+              <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full">
                 <Facebook size={18} fill="white" />
               </a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full">
+              <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full">
+              <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full">
                 <Linkedin size={18} fill="white" />
               </a>
             </div>

@@ -52,13 +52,13 @@ const ContactSection = () => {
                     <div>
                         <h3 className="text-[#8F6573] text-2xl font-semibold mb-6">Follow Us on Social Media</h3>
                         <div className="flex gap-2">
-                            <a href="#" className="p-2.5 bg-[#1877F2] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                            <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" className="p-2.5 bg-[#1877F2] text-white rounded-full hover:scale-110 transition-transform duration-300">
                                 <Facebook size={20} fill="currentColor" />
                             </a>
-                            <a href="#" className="p-2.5 bg-[#E4405F] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                            <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" className="p-2.5 bg-[#E4405F] text-white rounded-full hover:scale-110 transition-transform duration-300">
                                 <Instagram size={20} />
                             </a>
-                            <a href="#" className="p-2.5 bg-[#0A66C2] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                            <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" className="p-2.5 bg-[#0A66C2] text-white rounded-full hover:scale-110 transition-transform duration-300">
                                 <Linkedin size={20} fill="currentColor" />
                             </a>
                         </div>
