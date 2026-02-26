@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react'
 import { ShieldCheck, Gem, ListChecks, Coins, Globe, Star } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const features = [
     {
@@ -41,28 +44,51 @@ const WhyChooseUs = () => {
                 <div className="flex flex-col gap-10">
 
                     {/* Header Section */}
-                    <div className="text-center lg:text-left">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        className="text-center lg:text-left"
+                    >
                         <h2 className="text-3xl sm:text-4xl font-serif text-black leading-tight">
                             Why Clients <span className="text-gray-400">Choose Us?</span>
                         </h2>
-                        <div className="w-48 h-[1px] bg-black mt-2 mx-auto lg:mx-0"></div>
-                    </div>
+                        <motion.div 
+                            initial={{ scaleX: 0 }}
+                            whileInView={{ scaleX: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            className="w-48 h-[1px] bg-black mt-2 mx-auto lg:mx-0 origin-left"
+                        ></motion.div>
+                    </motion.div>
 
-                    {/* --- Cards Container (Flexbox for centering while keeping width equal) --- */}
+                    {/* --- Cards Container --- */}
                     <div className="w-full">
                         <div className="flex flex-wrap justify-center gap-6">
-                            {features.map((feature) => (
-                                <div
+                            {features.map((feature, index) => (
+                                <motion.div
                                     key={feature.id}
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "-50px" }}
+                                    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+                                    whileHover={{ y: -8, transition: { duration: 0.3 } }}
                                     className="group flex flex-col p-8 rounded-xl border border-[#cacaca] bg-[#F3F2EE] transition-all duration-300 hover:border-black/10 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
                                 >
                                     {/* Icon */}
-                                    <div className="mb-6 w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 group-hover:bg-black group-hover:border-black transition-all duration-300">
+                                    <motion.div 
+                                        initial={{ scale: 0.8, opacity: 0 }}
+                                        whileInView={{ scale: 1, opacity: 1 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
+                                        className="mb-6 w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 group-hover:bg-black group-hover:border-black transition-all duration-300"
+                                    >
                                         <feature.icon
                                             size={20}
                                             className="text-gray-600 group-hover:text-white transition-colors"
                                         />
-                                    </div>
+                                    </motion.div>
 
                                     {/* Content */}
                                     <h3 className="text-base font-bold uppercase tracking-tight text-black mb-3">
@@ -71,13 +97,19 @@ const WhyChooseUs = () => {
                                     <p className="text-sm text-gray-500 font-light leading-normal">
                                         {feature.description}
                                     </p>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>
 
                     {/* Video Section */}
-                    <div className="w-full h-[400px] lg:h-[500px]">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="w-full h-[400px] lg:h-[500px]"
+                    >
                         <div className="relative w-full h-full overflow-hidden rounded-xl bg-gray-50">
                             <video
                                 autoPlay
@@ -91,7 +123,7 @@ const WhyChooseUs = () => {
                             </video>
                             <div className="absolute inset-0 bg-black/5 pointer-events-none" />
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

@@ -14,8 +14,8 @@ const HOVER_COLORS = [
   "#4A5D4E", "#9A7B8B", "#7D8491", "#B48A78"
 ];
 
-// Reusable Hover Wrapper (Same to Same logic)
-const PortfolioHoverCard = ({ imgSrc, title, location, link }: { imgSrc: string, title: string, location: string, link: string }) => {
+// Reusable Hover Wrapper
+const PortfolioHoverCard = ({ imgSrc, title, location, link, index }: { imgSrc: string, title: string, location: string, link: string, index: number }) => {
   const [hoverColor, setHoverColor] = useState<string>("#5F8D8B");
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
@@ -25,7 +25,11 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link }: { imgSrc: string,
   }, []);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.7, delay: index * 0.2, ease: "easeOut" }}
       className="relative w-full h-[400px] cursor-pointer overflow-hidden group bg-[#f7f7f7]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -85,7 +89,7 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link }: { imgSrc: string,
           )}
         </AnimatePresence>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -94,11 +98,17 @@ const Portfolio = () => {
     <section className="bg-white">
       {/* TOP LINE + TITLE */}
       <div className="max-w-[1600px] mx-auto px-4 sm:px-10">
-        <div className="border-b border-[#c9b88a] pt-10 pb-3">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="border-b border-[#c9b88a] pt-10 pb-3"
+        >
           <span className="text-lg tracking-tight text-black uppercase">
             PORTFOLIO
           </span>
-        </div>
+        </motion.div>
       </div>
 
       {/* IMAGES GRID */}
@@ -111,6 +121,7 @@ const Portfolio = () => {
             title="All Projects"
             location="Design And Build"
             link="/projects"
+            index={0}
           />
 
           {/* RIGHT IMAGE WITH HOVER */}
@@ -119,6 +130,7 @@ const Portfolio = () => {
             title="All Projects"
             location="Design & Build"
             link="/projects"
+            index={1}
           />
 
         </div>

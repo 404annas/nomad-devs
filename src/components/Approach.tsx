@@ -16,8 +16,8 @@ interface FeatureCardProps extends Feature {
 // --- Floating Animation (Continuous Loop) ---
 const floatingVariants: Variants = {
     animate: (i: number) => ({
-        y: [0, -10, 0], // Smooth up and down
-        rotate: [0, i % 2 === 0 ? 3 : -3, 0], // Halka sa rotation swing
+        y: [0, -10, 0],
+        rotate: [0, i % 2 === 0 ? 3 : -3, 0],
         transition: {
             duration: 3 + i * 0.4,
             repeat: Infinity,
@@ -28,10 +28,15 @@ const floatingVariants: Variants = {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, count, index }) => {
     return (
-        <div className={`relative flex flex-col items-start p-8 md:p-10 bg-[#F2F2F2] border-r border-b border-gray-300 min-h-[460px] overflow-hidden first:border-l`}>
-            
+        <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: index * 0.15, ease: "easeOut" }}
+            className="relative flex flex-col items-start p-8 md:p-10 bg-[#F2F2F2] border-r border-b border-gray-300 min-h-[460px] overflow-hidden first:border-l"
+        >
+
             {/* Corner Accent Line */}
-            {/* <div className="absolute top-0 right-0 w-6 h-6 border-t border-r border-black/10" /> */}
 
             {/* --- Squares Container --- */}
             <div className="relative h-24 w-full mb-10">
@@ -43,11 +48,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, count, in
                         animate="animate"
                         className="absolute bg-black w-10 h-10"
                         style={{
-                            // Har square ki position image jaisi overlap mein
                             top: `${i * 14}px`,
                             left: `${i * 12}px`,
                             zIndex: 10 - i,
-                            opacity: 1 - i * 0.1, 
+                            opacity: 1 - i * 0.1,
                             transform: `rotate(${i * 10}deg)`
                         }}
                     />
@@ -63,38 +67,46 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, count, in
                     {description}
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
 export default function ServicesGrid() {
     const services: Feature[] = [
-        { 
-            title: "Value-Optimised Procurement", 
-            description: "Value-optimised procurement without compromising material quality or design intent.", 
-            count: 1 
+        {
+            title: "Value-Optimised Procurement",
+            description: "Value-optimised procurement without compromising material quality or design intent.",
+            count: 1
         },
-        { 
-            title: "Client-Centric Approach", 
-            description: "Experience design with a personal touch! Your dreams, our blueprint—unleashing home décor excellence just for you!", 
-            count: 2 
+        {
+            title: "Client-Centric Approach",
+            description: "Experience design with a personal touch! Your dreams, our blueprint—unleashing home décor excellence just for you!",
+            count: 2
         },
-        { 
-            title: "Environmental Responsibility", 
-            description: "Eco-chic transformations await! Dive into sustainable style with our budget-friendly, energy-smart designs!", 
-            count: 3 
+        {
+            title: "Environmental Responsibility",
+            description: "Eco-chic transformations await! Dive into sustainable style with our budget-friendly, energy-smart designs!",
+            count: 3
         },
-        { 
-            title: "Attention to Detail", 
-            description: "Crafting perfection in every detail! From space wizardry to color mastery and texture symphonies—immerse yourself!", 
-            count: 4 
+        {
+            title: "Attention to Detail",
+            description: "Crafting perfection in every detail! From space wizardry to color mastery and texture symphonies—immerse yourself!",
+            count: 4
         }
     ];
 
     return (
         <section className="bg-white py-10 px-4">
             <div className="max-w-[1400px] mx-auto">
-                {/* Fixed Grid for exactly 4 cards in a row on Desktop */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    className="mb-8"
+                >
+                    <h2 className="text-3xl font-serif text-black text-center">Our Approach</h2>
+                </motion.div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-300">
                     {services.map((service, index) => (
                         <FeatureCard

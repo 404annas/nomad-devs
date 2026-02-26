@@ -1,3 +1,5 @@
+"use client";
+
 import About from '@/components/About'
 import Approach from '@/components/Approach'
 import Client from '@/components/Client'

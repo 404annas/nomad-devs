@@ -46,10 +46,10 @@ export default function InstagramFollow() {
         <div className="max-w-7xl mx-auto">
           {/* Follow Us Heading */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="flex items-center gap-2 mb-10"
           >
             <span className="text-lg uppercase tracking-tight">Projects</span>
@@ -62,11 +62,11 @@ export default function InstagramFollow() {
                 key={post.id}
                 href={post.link}
                 rel="noopener noreferrer"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: index * 0.12, ease: "easeOut" }}
+                whileHover={{ scale: 1.08, y: -5, transition: { duration: 0.3 } }}
                 className="relative overflow-hidden group cursor-pointer aspect-square"
               >
                 <img
@@ -76,7 +76,12 @@ export default function InstagramFollow() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 bg-black/20"
+                />
               </motion.a>
             ))}
           </div>
