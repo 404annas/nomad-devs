@@ -1,10 +1,11 @@
 import { Calendar, Clock, Mail, MapPin, Phone, PhoneCall } from "lucide-react";
 import ContactForm from "./ContactForm";
+import Map from "./Map";
 
 const Form = () => {
     return (
         // Main container ka background aur padding exact match karne ke liye
-        <div className="bg-white flex items-center justify-center py-10 pt-40 sm:pt-50">
+        <div className="bg-white flex flex-col gap-10 items-center justify-center py-10 pt-40 sm:pt-50">
 
                 {/* <div className="flex flex-col justify-start space-y-10 sm:space-y-12 text-[#1a1a1a]">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl uppercase font-bold">Get in Touch</h1>
@@ -42,6 +43,7 @@ const Form = () => {
 
                 {/* Right Column: The Form (Exact inputs aur lines) */}
                 <ContactForm />
+                <Map />
         </div>
     );
 };
