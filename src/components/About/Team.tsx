@@ -3,27 +3,47 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+import team1 from "@/assets/team1.jpg"
+import team2 from "@/assets/team2.png"
+import team3 from "@/assets/team3.png"
+import team4 from "@/assets/team4.png"
+import team5 from "@/assets/team5.jpg"
+
 const teamMembers = [
     {
         id: 1,
-        name: "Tom Wood",
-        title: "Commercial Director",
-        image: "https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/a97b8931-9530-432b-905e-3e7fc99f36a6/Nomad_Tom_0116.jpg?format=500w",
-        description: "Tom is the Commercial Director at Nomad Developments. A Chartered Quantity Surveyor with 15 years of experience in prime and super-prime construction. He brings extensive expertise in managing high-value projects, ensuring seamless cost control, and driving efficiency across the company's developments. Tom's strategic approach and leadership help Nomad deliver exceptional results for clients."
+        name: "Ashley Newman",
+        title: "Architectural Services",
+        image: team1.src,
+        description: "He has been a key member of our team since the company’s inception. He oversees the planning and structural aspects of our projects, ensuring all work follows the approved architectural and structural drawings. He also provides valuable support and guidance whenever challenges arise."
     },
     {
         id: 2,
-        name: "Arabella Kaye",
-        title: "Senior Interior Designer",
-        image: "https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/370ca202-96ee-4115-b6d7-e606f0b7e543/KRL452-Nomad-Oakley-Gardens-41-1469.jpg?format=500w",
-        description: "Arabella has worked as an Interior Designer for the last decade. Arabella has a passion for innovation and timeless design. Her love to combine texture, colour and tone enables each project to enrich lifestyle with personality and longevity. Arabella has a diverse portfolio within the ultra prime luxury residential sector for high net-worth clients, controlling budgets of £5M+. Her extensive experience designing prestigious projects world-wide enables her to understand each space and design beautiful timeless homes."
+        name: "Zaeem Khan",
+        title: "Legal Advisor",
+        image: team2.src,
+        description: "He is our trusted legal advisor and has been closely involved with the company since its early days. He supports our real estate projects and developments by overseeing all legal aspects and ensuring compliance at every stage. His guidance plays a key role in helping projects move forward smoothly and securely."
     },
     {
         id: 3,
-        name: "James Taylor",
-        title: "Senior Interior Architect",
-        image: "https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/dea05f47-77ac-467b-ae79-2e5fabc26536/James+Headshot.jpg?format=500w",
-        description: "James draws subtle inspiration from his diverse upbringing, refined over a decade of international experience. Specialising in high-end multi-unit developments and private residences, he has cultivated a deep understanding of luxury design, craftsmanship, and innovation. His expertise lies in creating meticulously detailed spaces that seamlessly blend elegance with functionality. James believes in handcrafting authentic designs with precision and care, always striving to enhance the way individuals experience their environments. Through a highly personalised and attentive approach, he translates his clients' aspirations into timeless, meaningful spaces that foster a lasting connection."
+        name: "Muhammad Sufyan Moavia",
+        title: "Chartered Accountant – FCCA, CTA, ACA",
+        image: team3.src,
+        description: "He is our chartered accountant and has been an essential part of the company from the outset. He manages all financial and accounting matters while also supporting our clients with sound financial guidance. His strategic advice helps ensure projects are structured efficiently and delivered in a profitable and sustainable way."
+    },
+    {
+        id: 4,
+        name: "Khalil Ur Rahman",
+        title: "RICS Registered Valuer",
+        image: team4.src,
+        description: "He is our chartered surveyor and a valued member of our professional team. He supports us in property selection and contributes to project management when required. With strong expertise in cost analysis, he helps ensure our projects are commercially sound and well-informed."
+    },
+    {
+        id: 5,
+        name: "Syed",
+        title: "Digital & Technical Operations",
+        image: team5.src,
+        description: "He supports our development team by managing all back-end development and technical aspects of the business. He is responsible for our website, graphics, and overall digital infrastructure. His expertise ensures our systems run smoothly and our online presence remains strong and up to date."
     }
 ];
 
@@ -33,7 +53,7 @@ const Team = () => {
             {/* Section Heading */}
             <div className="w-full text-center mb-10">
                 <h2 className="text-3xl md:text-4xl text-[#1a1a1a]">
-                    Senior Team
+                    Our Team
                 </h2>
             </div>
 
@@ -49,7 +69,7 @@ const Team = () => {
                         className="flex flex-col"
                     >
                         {/* Member Image */}
-                        <div className="relative aspect-[4/5] w-full mb-8 overflow-hidden bg-gray-100">
+                        <div className="relative aspect-[5/5] w-full mb-8 overflow-hidden bg-gray-100">
                             <Image
                                 src={member.image}
                                 alt={member.name}

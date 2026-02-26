@@ -1,95 +1,93 @@
-'use client'
+"use client";
 
-import logo from "@/assets/logo.webp"
-import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
+import logo from "@/assets/logo.webp"; // Ensure path is correct
+import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] text-white pt-4 pb-4 px-6 sm:px-8 md:px-16 border-t border-white/5">
-      <div className="max-w-[1600px] mx-auto">
+    <footer className="bg-black text-white">
+      {/* --- Main Footer Content --- */}
+      <div className="max-w-[1440px] mx-auto px-6 py-4">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-center gap-10">
 
-        {/* --- MAIN GRID --- */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 mb-10">
+          {/* LEFT: Addresses (Stacked with Pin Icons) */}
+          <div className="flex flex-col gap-8 order-2 md:order-1 text-sm">
+            <div className="flex items-start gap-3">
+              <MapPin className="text-white mt-1 shrink-0" size={24} />
+              <p className="leading-relaxed">
+                <span className="font-bold">South London :</span> 416, <br />
+                Kingston road, KT1 3PB
+              </p>
+            </div>
 
-          {/* Column 1: Brand (Span 4) */}
-          <div className="md:col-span-4 flex flex-col gap-2">
-            <div className="relative w-25 sm:w-30 h-25 sm:h-30 p-2">
-              <Link href="/">
+            <div className="flex items-start gap-3">
+              <MapPin className="text-white mt-1 shrink-0" size={24} />
+              <p className="leading-relaxed">
+                <span className="font-bold">Central London :</span> 45 <br />
+                Albemarle Street, Mayfair, <br />
+                London W1S 4JL
+              </p>
+            </div>
+          </div>
+
+          {/* CENTER: Logo & Company Reg (Same as Image) */}
+          <div className="flex flex-col items-center text-center order-1 md:order-2">
+            <div className="mb-4">
+              <Link href={"/"}>
                 <Image
                   src={logo}
-                  alt="Logo"
-                  fill
-                  className="object-contain invert brightness-0 p-2"
+                  alt="Dwell Rich Logo"
+                  width={100}
+                  height={100}
+                  className="brightness-0 invert object-contain"
                 />
               </Link>
             </div>
-            <p className="text-gray-300 text-xs sm:text-sm max-w-xs leading-normal">
-              Crafting sophisticated spaces with a blend of modern aesthetics and functional design.
+            <h2 className="text-2xl font-semibold mb-1">Dwell Rich Ltd.</h2>
+            <p className="text-xs text-white">
+              (Company Registeration: 12592480)
             </p>
-            <p className="text-sm">Company Registeration: (12592480)</p>
           </div>
 
-          {/* Column 2: Quick Links (Span 2) */}
-          <div className="md:col-span-2 flex flex-col gap-4 pt-4">
-            <h4 className="text-xs tracking-wider uppercase text-gray-400 font-bold mb-2">Navigation</h4>
-            <nav className="flex flex-col space-y-3 text-xs uppercase tracking-widest font-medium">
-              <FooterLink href="/" text="Home" />
-              <FooterLink href="/projects" text="Projects" />
-              <FooterLink href="/about" text="About Us" />
-              <FooterLink href="/services" text="Services" />
-              <FooterLink href="/contact" text="Contact Us" />
-            </nav>
-          </div>
+          {/* RIGHT: Contact & Socials */}
+          <div className="flex flex-col items-end gap-6 order-3 text-right text-sm">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <Mail size={18} className="text-white" />
+                <a href="mailto:hello@designz.dwell-rich.com">hello@designz.dwell-rich.com</a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone size={18} className="text-white" />
+                <a href="tel:07803326891">078033 26891</a>
+              </div>
+            </div>
 
-          {/* Column 3: Contact (Span 3) */}
-          <div className="md:col-span-3 flex flex-col gap-4 pt-4">
-            <h4 className="text-xs uppercase text-gray-400 font-bold mb-2">Get in Touch</h4>
-            <div className="text-xs space-y-3 tracking-widest leading-relaxed uppercase">
-              <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 flex items-center gap-2"><Phone size={15}/> 078033 26891</p>
-              <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 flex items-center gap-2"><Mail size={15}/> hello@designz.dwell-rich.com</p>
-              <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 tracking-normal flex items-center gap-2">
-                <MapPin size={15}/>
-                Kingston Road, Kingston upon Thames,<br /> Surrey, London, UK
-              </p>
-              <p className="hover:text-gray-400 cursor-pointer transition-colors duration-300 tracking-normal flex items-center gap-2">
-                <MapPin size={22}/>
-                Central London : 45 Albemarle Street, Mayfair, London W1S 4JL
-              </p>
+            {/* Social Icons with brand colors from image */}
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full">
+                <Facebook size={18} fill="white" />
+              </a>
+              <a href="#" className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full">
+                <Linkedin size={18} fill="white" />
+              </a>
             </div>
           </div>
 
-          {/* Column 4: Socials (Span 3) */}
-          <div className="md:col-span-3 flex flex-col items-start gap-6 pt-4">
-            <h4 className="text-xs uppercase text-gray-400 font-bold mb-2">Follow Us</h4>
-            <div className="flex gap-4">
-              <SocialIcon icon={<Instagram size={18} />} href="#" />
-              <SocialIcon icon={<Facebook size={18} />} href="#" />
-              <SocialIcon icon={<Linkedin size={18} />} href="#" />
-            </div>
-          </div>
         </div>
       </div>
+
+      {/* --- COPYRIGHT BAR (Bottom Strip) --- */}
+      <div className="w-full border-t border-white/20 py-4 text-center">
+        <p className="text-xs font-semibold uppercase">
+          Copyright © 2026 DWELL RICH — All Rights Reserved.
+        </p>
+      </div>
     </footer>
-  )
+  );
 }
-
-// Sub-component for clean code (Navigation links)
-const FooterLink = ({ href, text }: { href: string; text: string }) => (
-  <Link href={href} className="group relative w-fit">
-    <span className="group-hover:text-gray-400 transition-colors duration-300">{text}</span>
-    <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
-  </Link>
-)
-
-// Sub-component for Social Icons
-const SocialIcon = ({ icon, href }: { icon: React.ReactNode; href: string }) => (
-  <a
-    href={href}
-    target="_blank"
-    className="text-white hover:text-gray-400 transition-all duration-300 transform hover:-translate-y-1"
-  >
-    {icon}
-  </a>
-)

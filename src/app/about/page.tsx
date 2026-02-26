@@ -13,7 +13,7 @@ const page = () => {
       <Importance />
       <Simply />
       <Founder />
-      {/* <Team /> */}
+      <Team />
       {/* <Industry /> */}
       {/* <Featured /> */}
     </div>
