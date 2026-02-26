@@ -118,11 +118,36 @@ const ProjectPage = () => {
   const sideImages = allImages.slice(0, 1); // Side images (0 and 1)
   const remainingImages = allImages.slice(1); // All others starting from index 2
 
-  // --- Navigation Logic ---
+  // --- Navigation Logic (matching Progress.tsx order) ---
   const router = useRouter();
-  const currentIndex = data.findIndex((p) => p.id === projectId);
-  const prevProject = currentIndex > 0 ? data[currentIndex - 1] : null;
-  const nextProject = currentIndex < data.length - 1 ? data[currentIndex + 1] : null;
+  
+  // Same order as Progress.tsx
+  const projectOrder = [
+    "kingston-upon-thames",
+    "cheam-surrey",
+    "chelsea-flat",
+    "gillian-road-sutton",
+    "chiltren-drive-sutton",
+    "holiday-home-mitcham",
+    "harrow",
+    "bromley",
+    "bathroom-design",
+    "kitchen-design",
+    "bespoke-joinery-projects",
+    "surbiton-project-living-and-hallway",
+    "twickenham",
+    "biophilic-oasis-conservatory",
+    "wine-cellar-in-leatherhead",
+    "collaborative-hub",
+    "gilded-elegance-passage",
+    "living-room-boho-eclectic-style",
+    "garage-conversion-in-dartford",
+    "garden-design-kingston",
+  ];
+  
+  const currentIndex = projectOrder.findIndex((id) => id === projectId);
+  const prevProject = currentIndex > 0 ? data.find((p) => p.id === projectOrder[currentIndex - 1]) : null;
+  const nextProject = currentIndex < projectOrder.length - 1 ? data.find((p) => p.id === projectOrder[currentIndex + 1]) : null;
 
   const handleNavigation = (direction: "prev" | "next") => {
     window.scrollTo(0, 0);

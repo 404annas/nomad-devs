@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* RIGHT: Contact & Socials */}
-          <div className="flex flex-col items-end gap-6 order-3 text-right text-sm">
+          <div className="flex flex-col gap-6 order-3 text-right text-sm">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-white" />
@@ -85,7 +85,7 @@ export default function Footer() {
       {/* --- COPYRIGHT BAR (Bottom Strip) --- */}
       <div className="w-full border-t border-white/20 py-4 text-center">
         <p className="text-xs font-semibold uppercase">
-          Copyright © 2026 DWELL RICH — All Rights Reserved.
+          Copyright © 2026 DWELL RICH DESIGNZ — All Rights Reserved.
         </p>
       </div>
     </footer>
