@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-import salehaImg from "@/assets/saleha.webp"
+import salehaImg from "@/assets/founder.webp"
 
 const Founder = () => {
     return (
