@@ -16,35 +16,35 @@ const servicesData = [
         id: "01",
         title: "ARCHITECTURAL DRAWINGS [ARCHITECTURAL SKETCH /MODEL]",
         desc: "Bespoke plans designed around your property and project goals",
-        photo: service1,
+        photo: service1.src,
         icon: <Ruler size={30} strokeWidth={1.3} />
     },
     {
         id: "02",
         title: "INTERIOR DESIGN [LUXURY INTERIOR STYLING]",
         desc: "Engineering solutions that guarantee strength, safety, and compliance",
-        photo: service2,
+        photo: service2.src,
         icon: <Sofa size={30} strokeWidth={1.3} />
     },
     {
         id: "03",
         title: "DEVELOPMENT & MASTER PLANNING [FEASIBILITY]",
         desc: "Complete project management for loft conversions, extensions, etc",
-        photo: service3,
+        photo: service3.src,
         icon: <Layers size={30} strokeWidth={1.3} />
     },
     {
         id: "04",
         title: "CONSTRUCTION & TURNKEY EXECUTION [SITE]",
         desc: "A seamless blend of interiors and craftsmanship, including mood boards, layouts, 2D/3D visuals, etc",
-        photo: service4,
+        photo: service4.src,
         icon: <Hammer size={30} strokeWidth={1.3} />
     },
     {
         id: "05",
         title: "JOINERY & CUSTOM CARFTMANSHIP",
         desc: "Elegant, functional environments for offices, retail, and hospitality",
-        photo: service5,
+        photo: service5.src,
         icon: <PenTool size={30} strokeWidth={1.3} />
     }
 ];
