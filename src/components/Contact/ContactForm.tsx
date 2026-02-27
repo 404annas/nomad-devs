@@ -1,11 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
-import { Facebook, Instagram, Linkedin, ArrowRight, ChevronDown } from "lucide-react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import { Facebook, Instagram, Linkedin, ArrowRight, ChevronDown, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
+interface FormData {
+    name: string;
+    phone: string;
+    email: string;
+    message: string;
+}
+
+type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 
 const ContactSection = () => {
+    // --- State Management ---
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState("What do want to do?");
+    const [selectedOption, setSelectedOption] = useState("What do you want to do?");
+
+    // Status handles: idle, loading (spinner), success (msg), error (msg)
+    const [status, setStatus] = useState<FormStatus>('idle');
+
+    // Form State
+    const [formData, setFormData] = useState<FormData>({
+        name: "",
+        phone: "",
+        email: "",
+        message: ""
+    });
 
     const dropdownOptions = [
         "Interior Design",
@@ -13,6 +35,62 @@ const ContactSection = () => {
         "Renovation",
         "Consultation",
     ];
+
+    // --- Handlers ---
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleOptionSelect = (opt: string) => {
+        setSelectedOption(opt);
+        setIsDropdownOpen(false);
+    };
+
+    const sendEmail = (e: FormEvent) => {
+        e.preventDefault();
+
+        // Basic Validation
+        if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+
+        setStatus('loading');
+
+        // Prepare Template Parameters
+        const templateParams = {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: selectedOption,
+            message: formData.message,
+            to_email: "info@dwellrich.co.uk"
+        };
+
+        // --- EMAILJS CONFIGURATION ---
+        // Replace with your actual credentials
+        emailjs.send(
+            "service_pqo6jbn",
+            "template_0vz25h4",
+            templateParams,
+            "w9I9cKsoU2sL3dS3k"
+        )
+            .then(() => {
+                // SUCCESS
+                setStatus('success');
+                // Clear Form
+                setFormData({ name: "", phone: "", email: "", message: "" });
+                setSelectedOption("What do you want to do?");
+
+                // Remove success message after 5 seconds
+                setTimeout(() => setStatus('idle'), 5000);
+            })
+            .catch((error) => {
+                // ERROR
+                console.error("EmailJS Error:", error);
+                setStatus('error');
+            });
+    };
 
     return (
         <section className="bg-[#F1F1EE] py-10 px-6 md:px-12 lg:px-12">
@@ -52,13 +130,13 @@ const ContactSection = () => {
                     <div>
                         <h3 className="text-[#8F6573] text-2xl font-semibold mb-6">Follow Us on Social Media</h3>
                         <div className="flex gap-2">
-                            <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" className="p-2.5 bg-[#1877F2] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                            <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="p-2.5 bg-[#1877F2] text-white rounded-full hover:scale-110 transition-transform duration-300">
                                 <Facebook size={20} fill="currentColor" />
                             </a>
-                            <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" className="p-2.5 bg-[#E4405F] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                            <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" rel="noreferrer" className="p-2.5 bg-[#E4405F] text-white rounded-full hover:scale-110 transition-transform duration-300">
                                 <Instagram size={20} />
                             </a>
-                            <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" className="p-2.5 bg-[#0A66C2] text-white rounded-full hover:scale-110 transition-transform duration-300">
+                            <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" rel="noreferrer" className="p-2.5 bg-[#0A66C2] text-white rounded-full hover:scale-110 transition-transform duration-300">
                                 <Linkedin size={20} fill="currentColor" />
                             </a>
                         </div>
@@ -67,10 +145,10 @@ const ContactSection = () => {
 
                 {/* --- RIGHT SIDE: Form --- */}
                 <div className="relative">
-                    {/* Top Divider from screenshot */}
+                    {/* Top Divider */}
                     <div className="border-t border-[#8F6573] w-full mb-10" />
 
-                    <h2 className="text-[#8B747D] text-4xl font-smibold uppercase tracking-tight mb-4">
+                    <h2 className="text-[#8B747D] text-4xl font-semibold uppercase tracking-tight mb-4">
                         Get In Touch
                     </h2>
                     <p className="text-gray-700 text-lg mb-10 leading-normal max-w-xl">
@@ -78,30 +156,45 @@ const ContactSection = () => {
                         Leave your information for immediate consultation.
                     </p>
 
-                    <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {/* Input fields with the same grey background as image */}
+                    <form onSubmit={sendEmail} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {/* Input fields */}
                         <input
                             type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
                             placeholder="Your Name*"
-                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500"
+                            required
+                            disabled={status === 'loading'}
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500 disabled:opacity-50"
                         />
                         <input
                             type="text"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
                             placeholder="Your Phone Number*"
-                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500"
+                            required
+                            disabled={status === 'loading'}
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500 disabled:opacity-50"
                         />
                         <input
                             type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
                             placeholder="Your Email Address*"
-                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500"
+                            required
+                            disabled={status === 'loading'}
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500 disabled:opacity-50"
                         />
 
                         {/* Dropdown Field */}
                         <div className="relative">
                             <button
                                 type="button"
-                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                                className="w-full border border-[#d8d8d8] p-4 text-sm text-gray-500 flex justify-between items-center"
+                                onClick={() => status !== 'loading' && setIsDropdownOpen(!isDropdownOpen)}
+                                className={`w-full border border-[#d8d8d8] p-4 text-sm text-gray-500 flex justify-between items-center bg-white ${status === 'loading' ? 'opacity-50' : ''}`}
                             >
                                 {selectedOption}
                                 <ChevronDown size={18} />
@@ -112,10 +205,7 @@ const ContactSection = () => {
                                     {dropdownOptions.map((opt) => (
                                         <div
                                             key={opt}
-                                            onClick={() => {
-                                                setSelectedOption(opt);
-                                                setIsDropdownOpen(false);
-                                            }}
+                                            onClick={() => handleOptionSelect(opt)}
                                             className="p-3 text-sm hover:bg-gray-50 cursor-pointer text-gray-700"
                                         >
                                             {opt}
@@ -126,20 +216,49 @@ const ContactSection = () => {
                         </div>
 
                         <textarea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
                             placeholder="Your Message..."
                             rows={6}
-                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500 md:col-span-2 resize-none"
+                            required
+                            disabled={status === 'loading'}
+                            className="w-full border border-[#d8d8d8] p-4 text-sm focus:outline-none placeholder-gray-500 md:col-span-2 resize-none disabled:opacity-50"
                         />
 
-                        {/* Black Button with Arrow */}
+                        {/* Submit Button Area */}
                         <div className="md:col-span-2 mt-2">
                             <button
                                 type="submit"
-                                className="bg-[#111111] text-white py-4 px-10 flex items-center justify-between gap-6 group hover:bg-black transition-all cursor-pointer"
+                                disabled={status === 'loading' || status === 'success'}
+                                className={`bg-[#111111] text-white py-4 px-10 flex items-center justify-between gap-6 group hover:bg-black transition-all cursor-pointer w-full md:w-auto ${status === 'loading' ? 'opacity-80 cursor-wait' : ''}`}
                             >
-                                <span className="text-xs font-bold uppercase">Send Enquiry</span>
-                                <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                                <span className="text-xs font-bold uppercase flex items-center gap-2">
+                                    {status === 'loading' ? (
+                                        <>Sending... <Loader2 size={16} className="animate-spin" /></>
+                                    ) : (
+                                        "Send Enquiry"
+                                    )}
+                                </span>
+                                {status !== 'loading' && (
+                                    <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+                                )}
                             </button>
+
+                            {/* Status Messages */}
+                            {status === 'success' && (
+                                <div className="mt-4 p-3 bg-green-50 border border-green-200 text-green-800 text-sm flex items-center gap-2 rounded-md">
+                                    <CheckCircle size={16} />
+                                    <span>Thank you! Your message has been sent successfully.</span>
+                                </div>
+                            )}
+
+                            {status === 'error' && (
+                                <div className="mt-4 p-3 bg-red-50 border border-red-200 text-red-800 text-sm flex items-center gap-2 rounded-md">
+                                    <AlertCircle size={16} />
+                                    <span>Something went wrong. Please try again later.</span>
+                                </div>
+                            )}
                         </div>
                     </form>
                 </div>
