@@ -45,7 +45,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="bg-[#F1F1EE] p-6 sm:p-8 md:p-10 flex flex-col justify-center"
+              className="bg-gray-100 p-6 sm:p-8 md:p-10 flex flex-col justify-center"
             >
               <p className="text-base sm:text-[17px] leading-5 text-black pb-4">
                 Dwell Rich Designz  based in South London provides integrated architecture, interior design, and construction services for luxury and commercial developments. We partner with investors, developers, and private clients to translate vision into carefully executed, market-ready projects.

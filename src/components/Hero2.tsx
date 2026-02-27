@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Import your images
+import heroImg4 from "@/assets/homeProject38.png";
 import heroImg1 from "@/assets/project12-28.jpg";
 import heroImg2 from "@/assets/homeProject36.png";
 import heroImg3 from "@/assets/homeProject37.png";
-import heroImg4 from "@/assets/homeProject38.png";
 
 const slides = [
     { id: 1, src: heroImg1, alt: "Luxury Interior 1" },

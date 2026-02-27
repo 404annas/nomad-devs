@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowRight, ArrowUpRight } from 'lucide-react'
 
 import homeProject1 from "@/assets/homeProject1.webp"
 import homeProject2 from "@/assets/homeProject2.webp"
@@ -57,11 +57,11 @@ export default function InstagramFollow() {
 
           {/* Image Grid - 5 columns on desktop */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4">
-            {instagramPosts.map((post, index) => (
-              <motion.a
+            {instagramPosts.map((post, index) => {
+              const openInNewTab = post.link.includes('bespoke-joinery')
+              return (
+              <motion.div
                 key={post.id}
-                href={post.link}
-                rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.9, y: 20 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -69,6 +69,13 @@ export default function InstagramFollow() {
                 whileHover={{ scale: 1.08, y: -5, transition: { duration: 0.3 } }}
                 className="relative overflow-hidden group cursor-pointer aspect-square"
               >
+                <a
+                  href={post.link}
+                  className="absolute inset-0 z-10"
+                  aria-label={`Open project ${post.id}`}
+                  target={openInNewTab ? "_blank" : undefined}
+                  rel={openInNewTab ? "noopener noreferrer" : undefined}
+                />
                 <img
                   loading="lazy"
                   src={post.image}
@@ -82,8 +89,16 @@ export default function InstagramFollow() {
                     <ArrowUpRight className="h-7 w-7 text-black" strokeWidth={2} />
                   </span>
                 </div>
-              </motion.a>
-            ))}
+                <a
+                  href="/projects"
+                  className="absolute bottom-2 right-4 z-20 text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1"
+                >
+                  <span>All Projects</span>
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
+              </motion.div>
+              )
+            })}
           </div>
         </div>
       </div>

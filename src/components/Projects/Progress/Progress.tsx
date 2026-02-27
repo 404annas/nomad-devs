@@ -46,7 +46,7 @@ interface Project {
 }
 
 // --- Filter Categories ---
-const FILTERS = ["All", "Residential", "Commercial", "International", "Garden", "Kitchens", "Bathroom"];
+const FILTERS = ["All", "Residential", "Commercial", "International", "Garden", "Kitchens", "Bathroom", "Joinery"];
 
 // --- Projects Data with Categories ---
 const projects: Project[] = [
@@ -56,6 +56,14 @@ const projects: Project[] = [
     location: "Design and Build",
     image: skel11.src,
     slug: data[10]?.id || "kingston-upon-thames",
+    category: "Residential",
+  },
+  {
+    id: 23,
+    title: "Living Room Boho Eclectic Style",
+    location: "Design and Build",
+    image: skel23.src,
+    slug: data[22]?.id || "living-room-boho-eclectic-style",
     category: "Residential",
   },
   {
@@ -187,14 +195,6 @@ const projects: Project[] = [
     category: "Residential",
   },
   {
-    id: 23,
-    title: "Living Room Boho Eclectic Style",
-    location: "Design and Build",
-    image: skel23.src,
-    slug: data[22]?.id || "living-room-boho-eclectic-style",
-    category: "Residential",
-  },
-  {
     id: 24,
     title: "Garage Conversion in Dartford",
     location: "Design and Build",
@@ -301,6 +301,10 @@ const Progress = () => {
   useEffect(() => {
     if (activeFilter === "All") {
       setFilteredProjects(projects);
+    } else if (activeFilter === "Joinery") {
+      setFilteredProjects(
+        projects.filter((project) => project.slug === "bespoke-joinery-projects")
+      );
     } else {
       const filtered = projects.filter(
         (project) => project.category === activeFilter
@@ -355,10 +359,9 @@ const Progress = () => {
                       setIsDropdownOpen(false);
                     }}
                     className={`w-full text-left px-4 py-2 text-sm cursor-pointer uppercase tracking-wider hover:bg-gray-100 transition-colors
-                      ${
-                        activeFilter === filter
-                          ? "bg-black text-white"
-                          : "text-gray-700"
+                      ${activeFilter === filter
+                        ? "bg-black text-white"
+                        : "text-gray-700"
                       }
                     `}
                   >
@@ -387,7 +390,11 @@ const Progress = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
               >
-                <Link href={`/projects/${project.slug}`}>
+                <Link
+                  href={`/projects/${project.slug}`}
+                  target={project.slug === "bespoke-joinery-projects" ? "_blank" : undefined}
+                  rel={project.slug === "bespoke-joinery-projects" ? "noopener noreferrer" : undefined}
+                >
                   <ProjectCard project={project} index={index} />
                 </Link>
               </motion.div>

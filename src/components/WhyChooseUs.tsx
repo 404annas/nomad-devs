@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
                         </motion.div>
 
                         {/* Points List */}
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-4">
                             {features.map((feature, index) => (
                                 <motion.div
                                     key={feature.id}
@@ -83,14 +83,14 @@ const WhyChooseUs = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true, margin: "-50px" }}
                                     transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
-                                    className="group flex items-start gap-5"
+                                    className="group flex items-start gap-5 bg-gray-100 p-3 rounded-xl"
                                 >
                                     {/* Icon Container */}
-                                    <div className="mt-1 w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-[#F1F1EE] border border-transparent group-hover:bg-black group-hover:border-black transition-all duration-500 shadow-sm">
+                                    <div className="mt-1 w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-black border-black transition-all duration-500 shadow-sm">
                                         <feature.icon
                                             strokeWidth={1.5}
                                             size={24}
-                                            className="text-gray-700 group-hover:text-white transition-colors duration-500"
+                                            className="text-white"
                                         />
                                     </div>
 
@@ -99,7 +99,7 @@ const WhyChooseUs = () => {
                                         <h3 className="text-base font-semibold uppercase tracking-tight text-black mb-1 group-hover:text-gray-700 transition-colors duration-300">
                                             {feature.title}
                                         </h3>
-                                        <p className="text-sm text-gray-500 font-light leading-relaxed">
+                                        <p className="text-sm text-gray-500 font-light leading-normal">
                                             {feature.description}
                                         </p>
                                     </div>

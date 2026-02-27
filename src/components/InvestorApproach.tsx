@@ -21,7 +21,7 @@ const InvestorApproach = () => {
                 {/* ======================== */}
                 {/*       LEFT CONTENT       */}
                 {/* ======================== */}
-                <div className="flex flex-col justify-center bg-[#EFEFEF] px-6 py-10 px-4 lg:px-12">
+                <div className="flex flex-col justify-center bg-gray-100 px-6 py-10 px-4 lg:px-12">
 
                     {/* Heading */}
                     <div className="mb-8">

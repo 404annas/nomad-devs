@@ -78,14 +78,22 @@ const Service = () => {
                                 <div className="relative h-full w-full rounded-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] will-change-transform transform-gpu">
 
                                     {/* --- FRONT SIDE --- */}
-                                    <div className="absolute inset-0 h-full w-full rounded-full bg-[#f4f4f2] border border-gray-400 [backface-visibility:hidden] flex items-center justify-center overflow-hidden shadow-sm cursor-pointer [transform:translateZ(0)]">
-                                        <div className="absolute inset-2 rounded-full border border-white pointer-events-none"></div>
+                                    <div className="absolute inset-0 h-full w-full rounded-full border border-gray-400 [backface-visibility:hidden] flex items-center justify-center overflow-hidden shadow-sm cursor-pointer [transform:translateZ(0)]">
+                                        <img
+                                            loading="lazy"
+                                            decoding="async"
+                                            src={service.photo}
+                                            alt={service.title}
+                                            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
+                                        />
+                                        <div className="absolute inset-0 bg-black/45"></div>
+                                        <div className="absolute inset-1 rounded-full border border-white pointer-events-none"></div>
 
                                         <div className="relative flex flex-col items-center justify-center text-center p-4 z-10 [transform:translateZ(0)]">
                                             <span
                                                 className="absolute text-[78px] sm:text-[88px] font-bold leading-none text-transparent select-none opacity-40"
                                                 style={{
-                                                    WebkitTextStroke: '1px #cccccc', // Thinner stroke to prevent blurring
+                                                    WebkitTextStroke: '1px rgba(255, 255, 255, 0.65)',
                                                     top: '50%',
                                                     left: '50%',
                                                     transform: 'translate(-50%, -50%)',
@@ -94,22 +102,14 @@ const Service = () => {
                                                 {service.id}
                                             </span>
 
-                                            <h3 className="relative text-sm font-medium uppercase tracking-tight text-black z-20 max-w-[135px] leading-4 drop-shadow-sm">
+                                            <h3 className="relative text-sm font-medium uppercase tracking-tight text-white z-20 max-w-[135px] leading-4 drop-shadow-sm">
                                                 {service.title}
                                             </h3>
                                         </div>
                                     </div>
 
                                     {/* --- BACK SIDE --- */}
-                                    <div className="absolute inset-0 h-full w-full rounded-full text-white [backface-visibility:hidden] [transform:rotateY(180deg)_translateZ(1px)] flex items-center justify-center px-4 text-center overflow-hidden [text-rendering:geometricPrecision]">
-                                        <img
-                                            loading="lazy"
-                                            decoding="async"
-                                            src={service.photo}
-                                            alt={service.title}
-                                            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
-                                        />
-                                        <div className="absolute inset-0 bg-black/55"></div>
+                                    <div className="absolute inset-0 h-full w-full rounded-full bg-black text-white [backface-visibility:hidden] [transform:rotateY(180deg)_translateZ(1px)] flex items-center justify-center px-4 text-center overflow-hidden [text-rendering:geometricPrecision]">
                                         <div className="relative z-10 flex flex-col items-center gap-2 [transform:translateZ(0)]">
                                             <span className="text-xl font-bold tracking-tighter leading-none">{service.id}</span>
                                             <p className="text-[10px] font-medium leading-tight max-w-[140px]">

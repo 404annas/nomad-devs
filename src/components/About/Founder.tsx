@@ -24,7 +24,7 @@ const Founder = () => {
 
                 {/* 2. Right Column: Text Content */}
                 {/* bg-[#F4F3EF] matches the soft off-white/beige background */}
-                <div className="w-full lg:w-[60%] bg-[#F4F3EF] flex flex-col justify-center px-4 sm:px-8 md:px-24 py-10">
+                <div className="w-full lg:w-[60%] bg-gray-100 flex flex-col justify-center px-4 sm:px-8 md:px-24 py-10">
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}

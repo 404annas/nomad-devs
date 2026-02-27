@@ -101,7 +101,7 @@ const ContactSection = () => {
 
                     {/* Support */}
                     <div>
-                        <h3 className="text-[#8F6573] text-2xl font-semibold mb-4">24/7 Support</h3>
+                        <h3 className="text-[#8F6573] text-2xl font-semibold mb-4">Contact Us</h3>
                         <div className="text-gray-800 text-base space-y-1">
                             <p>Call Us: <span className="font-medium">078033 26891</span></p>
                             <p>Mail Us: <span className="font-medium">hello@designz.dwell-rich.com</span></p>

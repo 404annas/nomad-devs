@@ -26,7 +26,7 @@ const CTA = () => {
                 {/* ======================== */}
                 {/*       LEFT SECTION       */}
                 {/* ======================== */}
-                <div className="bg-[#EEE5D8] flex-1 p-6 md:p-8 lg:p-10 flex flex-col justify-center items-start relative">
+                <div className="bg-gray-100 flex-1 p-6 md:p-8 lg:p-10 flex flex-col justify-center items-start relative">
 
                     {/* Small Heading */}
                     <h3 className="text-2xl md:text-3xl font-semibold text-black mb-0 tracking-tight">
@@ -56,7 +56,7 @@ const CTA = () => {
                 {/*       RIGHT SECTION      */}
                 {/* ======================== */}
                 {/* The background color is slightly darker/browner here as per design */}
-                <div className="bg-[#DFCAB0] lg:w-[45%] px-4 py-10 flex items-center justify-center">
+                <div className="bg-black lg:w-[45%] px-4 py-10 flex items-center justify-center">
 
                     {/* 2x2 Grid */}
                     <div className="grid grid-cols-2 gap-4 w-full h-full max-w-md lg:max-w-[400px]">
