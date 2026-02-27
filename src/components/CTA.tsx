@@ -34,7 +34,7 @@ const CTA = () => {
                     </h3>
 
                     {/* Cursive Heading */}
-                    <h2 className={`${scriptFont.className} text-6xl md:text-7xl font-black text-black leading-none mb-6 mt-10`}>
+                    <h2 className={`${scriptFont.className} text-5xl sm:text-6xl md:text-7xl font-black text-black leading-none mb-6 mt-10`}>
                         Something Exceptional
                     </h2>
 
@@ -56,7 +56,7 @@ const CTA = () => {
                 {/*       RIGHT SECTION      */}
                 {/* ======================== */}
                 {/* The background color is slightly darker/browner here as per design */}
-                <div className="bg-[#DFCAB0] lg:w-[45%] py-10 flex items-center justify-center">
+                <div className="bg-[#DFCAB0] lg:w-[45%] px-4 py-10 flex items-center justify-center">
 
                     {/* 2x2 Grid */}
                     <div className="grid grid-cols-2 gap-4 w-full h-full max-w-md lg:max-w-[400px]">

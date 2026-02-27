@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from 'react' // useEffect aur useRef add kiya
-import { ShieldCheck, Gem, ListChecks, Coins, Globe, Star } from 'lucide-react'
+import React, { useEffect, useRef } from 'react'
+import { ShieldCheck, Gem, ListChecks, Coins, Globe } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const features = [
@@ -8,7 +8,7 @@ const features = [
         id: 1,
         title: "Premium Client Experience",
         description: "Seamless communication, detailed reporting, and total transparency.",
-        icon: Star,
+        icon: ShieldCheck,
     },
     {
         id: 2,
@@ -48,78 +48,77 @@ const WhyChooseUs = () => {
     }, []);
 
     return (
-        <section className="w-full bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-20">
+        <section className="w-full bg-white py-10 px-4 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-                    {/* Header Section */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.7, ease: "easeOut" }}
-                        className="text-center lg:text-left"
-                    >
-                        <h2 className="text-3xl sm:text-4xl font-serif text-black leading-tight">
-                            Why Clients <span className="text-gray-400">Choose Us?</span>
-                        </h2>
+                    {/* --- Left Side: Header & Points --- */}
+                    <div className="w-full lg:w-1/2 flex flex-col gap-10">
+                        {/* Header Section */}
                         <motion.div
-                            initial={{ scaleX: 0 }}
-                            whileInView={{ scaleX: 1 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                            className="w-48 h-[1px] bg-black mt-2 mx-auto lg:mx-0 origin-left"
-                        ></motion.div>
-                    </motion.div>
+                            transition={{ duration: 0.7, ease: "easeOut" }}
+                            className="text-center lg:text-left"
+                        >
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-black leading-tight">
+                                Why Clients <span className="text-gray-400">Choose Us?</span>
+                            </h2>
+                            <motion.div
+                                initial={{ scaleX: 0 }}
+                                whileInView={{ scaleX: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6, delay: 0.3 }}
+                                className="w-47 h-[2px] bg-black mt-4 mx-auto lg:mx-0 origin-left"
+                            ></motion.div>
+                        </motion.div>
 
-                    {/* --- Cards Container --- */}
-                    <div className="w-full">
-                        <div className="flex flex-wrap justify-center gap-6">
+                        {/* Points List */}
+                        <div className="flex flex-col gap-6">
                             {features.map((feature, index) => (
                                 <motion.div
                                     key={feature.id}
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
+                                    initial={{ opacity: 0, x: -30 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true, margin: "-50px" }}
-                                    transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-                                    whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                                    className="group flex flex-col p-8 rounded-xl border border-[#cacaca] bg-[#F3F2EE] transition-all duration-300 hover:border-black/10 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+                                    transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
+                                    className="group flex items-start gap-5"
                                 >
-                                    <motion.div
-                                        initial={{ scale: 0.8, opacity: 0 }}
-                                        whileInView={{ scale: 1, opacity: 1 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
-                                        className="mb-6 w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 group-hover:bg-black group-hover:border-black transition-all duration-300"
-                                    >
+                                    {/* Icon Container */}
+                                    <div className="mt-1 w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-[#F1F1EE] border border-transparent group-hover:bg-black group-hover:border-black transition-all duration-500 shadow-sm">
                                         <feature.icon
-                                            size={20}
-                                            className="text-gray-600 group-hover:text-white transition-colors"
+                                            strokeWidth={1.5}
+                                            size={24}
+                                            className="text-gray-700 group-hover:text-white transition-colors duration-500"
                                         />
-                                    </motion.div>
+                                    </div>
 
-                                    <h3 className="text-base font-bold uppercase tracking-tight text-black mb-3">
-                                        {feature.title}
-                                    </h3>
-                                    <p className="text-sm text-gray-500 font-light leading-normal">
-                                        {feature.description}
-                                    </p>
+                                    {/* Text Content */}
+                                    <div className="flex flex-col">
+                                        <h3 className="text-base font-semibold uppercase tracking-tight text-black mb-1 group-hover:text-gray-700 transition-colors duration-300">
+                                            {feature.title}
+                                        </h3>
+                                        <p className="text-sm text-gray-500 font-light leading-relaxed">
+                                            {feature.description}
+                                        </p>
+                                    </div>
                                 </motion.div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Video Section */}
+                    {/* --- Right Side: Video Section --- */}
                     <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="w-full h-[400px] lg:h-[500px]"
+                        className="w-full lg:w-1/2 h-[350px] sm:h-[450px] lg:h-[550px]"
                     >
                         <div className="relative w-full h-full overflow-hidden rounded-xl bg-gray-50">
                             <video
-                                ref={videoRef} // Ref yahan attach kar di
+                                ref={videoRef}
                                 autoPlay
                                 loop
                                 muted
@@ -129,7 +128,6 @@ const WhyChooseUs = () => {
                                 <source src="/videos/chooseVideo.webm" type="video/webm" />
                                 Your browser does not support the video tag.
                             </video>
-                            <div className="absolute inset-0 bg-black/5 pointer-events-none" />
                         </div>
                     </motion.div>
 

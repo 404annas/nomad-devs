@@ -16,7 +16,7 @@ const InvestorApproach = () => {
 
     return (
         <section className="w-full bg-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 px-10 min-h-[500px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 px-4 sm:px-6 md:px-10 min-h-[500px]">
 
                 {/* ======================== */}
                 {/*       LEFT CONTENT       */}
@@ -25,10 +25,10 @@ const InvestorApproach = () => {
 
                     {/* Heading */}
                     <div className="mb-8">
-                        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-black leading-none mb-1">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-black leading-none mb-1">
                             Investor
                         </h2>
-                        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-700 leading-none">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-gray-700 leading-none">
                             Approach
                         </h2>
                     </div>
@@ -44,7 +44,7 @@ const InvestorApproach = () => {
 
                     {/* Checklist Section */}
                     <div>
-                        <h3 className="text-xl font-bold text-black mb-6">
+                        <h3 className="text-lg sm:text-xl font-bold text-black mb-6">
                             Investor services can include:
                         </h3>
                         <ul className="space-y-4">

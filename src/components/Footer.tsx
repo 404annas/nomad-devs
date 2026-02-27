@@ -10,12 +10,12 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white">
       {/* --- Main Footer Content --- */}
-      <div className="max-w-[1440px] mx-auto px-6 py-4">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-center gap-10">
+      <div className="max-w-[1440px] mx-auto px-6 py-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 md:gap-10">
 
           {/* LEFT: Addresses (Stacked with Pin Icons) */}
-          <div className="flex flex-col gap-8 order-2 md:order-1 text-sm">
-            <div className="flex items-start gap-3">
+          <div className="flex flex-col gap-8 order-2 md:order-1 text-sm w-full md:w-auto items-start">
+            <div className="flex items-start gap-3 text-left">
               <MapPin className="text-white mt-1 shrink-0" size={24} />
               <p className="leading-relaxed">
                 <span className="font-bold">South London :</span> 416, <br />
@@ -23,7 +23,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 text-left">
               <MapPin className="text-white mt-1 shrink-0" size={24} />
               <p className="leading-relaxed">
                 <span className="font-bold">Central London :</span> 45 <br />
@@ -34,7 +34,8 @@ export default function Footer() {
           </div>
 
           {/* CENTER: Logo & Company Reg (Same as Image) */}
-          <div className="flex flex-col items-center text-center order-1 md:order-2">
+          {/* Added w-full on mobile so it centers perfectly relative to the screen */}
+          <div className="flex flex-col items-center text-center order-1 md:order-2 w-full md:w-auto">
             <div className="mb-4">
               <Link href={"/"}>
                 <Image
@@ -53,27 +54,28 @@ export default function Footer() {
           </div>
 
           {/* RIGHT: Contact & Socials */}
-          <div className="flex flex-col gap-6 order-3 text-right text-sm">
+          {/* Changed text-right to left on mobile, right on md+ */}
+          <div className="flex flex-col gap-6 order-3 text-left md:text-right text-sm w-full md:w-auto items-start md:items-start">
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <Mail size={18} className="text-white" />
+              <div className="flex items-center gap-3 justify-start md:justify-start">
+                <Mail size={18} className="text-white shrink-0" />
                 <a href="mailto:hello@designz.dwell-rich.com">hello@designz.dwell-rich.com</a>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone size={18} className="text-white" />
+              <div className="flex items-center gap-3 justify-start md:justify-start">
+                <Phone size={18} className="text-white shrink-0" />
                 <a href="tel:07803326891">078033 26891</a>
               </div>
             </div>
 
             {/* Social Icons with brand colors from image */}
-            <div className="flex gap-3">
-              <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full">
+            <div className="flex gap-3 justify-start md:justify-end">
+              <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full">
                 <Facebook size={18} fill="white" />
               </a>
-              <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full">
+              <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full">
                 <Instagram size={18} />
               </a>
-              <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full">
+              <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full">
                 <Linkedin size={18} fill="white" />
               </a>
             </div>
@@ -83,7 +85,7 @@ export default function Footer() {
       </div>
 
       {/* --- COPYRIGHT BAR (Bottom Strip) --- */}
-      <div className="w-full border-t border-white/20 py-4 text-center">
+      <div className="w-full border-t border-white/20 py-4 px-4 text-center">
         <p className="text-xs font-semibold uppercase">
           Copyright © 2026 DWELL RICH DESIGNZ — All Rights Reserved.
         </p>
