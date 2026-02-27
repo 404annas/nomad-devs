@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Ruler, Sofa, Layers, Hammer, PenTool } from 'lucide-react'
+import Image from "next/image"
 
 import service1 from '@/assets/service1.jpg'
 import service2 from '@/assets/service2.jpg'
@@ -15,35 +16,35 @@ const servicesData = [
         id: "01",
         title: "ARCHITECTURAL DRAWINGS [ARCHITECTURAL SKETCH /MODEL]",
         desc: "Bespoke plans designed around your property and project goals",
-        photo: service1.src,
+        photo: service1,
         icon: <Ruler size={30} strokeWidth={1.3} />
     },
     {
         id: "02",
         title: "INTERIOR DESIGN [LUXURY INTERIOR STYLING]",
         desc: "Engineering solutions that guarantee strength, safety, and compliance",
-        photo: service2.src,
+        photo: service2,
         icon: <Sofa size={30} strokeWidth={1.3} />
     },
     {
         id: "03",
         title: "DEVELOPMENT & MASTER PLANNING [FEASIBILITY]",
         desc: "Complete project management for loft conversions, extensions, etc",
-        photo: service3.src,
+        photo: service3,
         icon: <Layers size={30} strokeWidth={1.3} />
     },
     {
         id: "04",
         title: "CONSTRUCTION & TURNKEY EXECUTION [SITE]",
         desc: "A seamless blend of interiors and craftsmanship, including mood boards, layouts, 2D/3D visuals, etc",
-        photo: service4.src,
+        photo: service4,
         icon: <Hammer size={30} strokeWidth={1.3} />
     },
     {
         id: "05",
         title: "JOINERY & CUSTOM CARFTMANSHIP",
         desc: "Elegant, functional environments for offices, retail, and hospitality",
-        photo: service5.src,
+        photo: service5,
         icon: <PenTool size={30} strokeWidth={1.3} />
     }
 ];
@@ -79,13 +80,15 @@ const Service = () => {
 
                                     {/* --- FRONT SIDE --- */}
                                     <div className="absolute inset-0 h-full w-full rounded-full border border-gray-400 [backface-visibility:hidden] flex items-center justify-center overflow-hidden shadow-sm cursor-pointer [transform:translateZ(0)]">
-                                        <img
-                                            loading="lazy"
-                                            decoding="async"
-                                            src={service.photo}
-                                            alt={service.title}
-                                            className="absolute inset-0 h-full w-full object-cover [transform:translateZ(0)]"
-                                        />
+                                        <div className="absolute inset-0">
+                                            <Image
+                                                src={service.photo}
+                                                alt={service.title}
+                                                fill
+                                                className="object-cover"
+                                                sizes="190px"
+                                            />
+                                        </div>
                                         <div className="absolute inset-0 bg-black/45"></div>
                                         <div className="absolute inset-1 rounded-full border border-white pointer-events-none"></div>
 
