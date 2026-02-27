@@ -3,10 +3,9 @@
 import React from 'react';
 
 const Map = () => {
-    // Google Maps Embed URLs for both locations
-    // Note: Standard iframe ek waqt mein ek hi location properly highlight karti hai
-    // isliye humne multiple coordinates ko view mein rakha hai.
-    const mapCenter = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39766.16853765181!2d-0.26462612760829445!3d51.4694432174384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760517590209f3%3A0xc3482708304918e7!2s45%20Albemarle%20St%2C%20London%20W1S%204JL%2C%20UK!5e0!3m2!1sen!2s!4v1715600000000!5m2!1sen!2s";
+    // Use directions embed so both endpoints are visible as map markers (A/B).
+    const mapCenter =
+        "https://maps.google.com/maps?saddr=45+Albemarle+Street,+Mayfair,+London+W1S+4JL&daddr=416+Kingston+Road,+Kingston+upon+Thames,+KT1+3PB&output=embed";
 
     return (
         <section className="w-full bg-white px-6 md:px-10 lg:px-12">
