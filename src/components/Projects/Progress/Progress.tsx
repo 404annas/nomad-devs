@@ -124,10 +124,10 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Kitchen Design",
+    title: "Kitchen / BAR",
     location: "Kitchen",
     image: skel3.src,
-    slug: data[2]?.id || "kitchen-design",
+    slug: data[2]?.id || "kitchen-design-bar",
     category: "Kitchens",
   },
   {

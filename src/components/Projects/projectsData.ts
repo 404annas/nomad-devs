@@ -37,6 +37,11 @@ import project3_7 from "@/assets/project3-7.webp"
 import project3_8 from "@/assets/project3-8.webp"
 import project3_9 from "@/assets/project3-9.webp"
 import project3_10 from "@/assets/project3-10.jpg"
+import project3_11 from "@/assets/project3-11.jpg"
+import project3_12 from "@/assets/project3-12.jpg"
+import project3_13 from "@/assets/project3-13.jpg"
+import project3_14 from "@/assets/project3-14.jpg"
+import project3_15 from "@/assets/project3-15.jpg"
 
 import homeProject4 from "@/assets/homeProject15.webp"
 import project4_1 from "@/assets/project4-1.webp"
@@ -76,6 +81,23 @@ import project5_21 from "@/assets/project5-21.jpg"
 import project5_22 from "@/assets/project5-22.jpg"
 import project5_23 from "@/assets/project5-23.jpg"
 import project5_24 from "@/assets/project5-24.jpg"
+import project5_25 from "@/assets/project5-25.jpg"
+import project5_26 from "@/assets/project5-26.jpg"
+import project5_27 from "@/assets/project5-27.jpg"
+import project5_28 from "@/assets/project5-28.jpg"
+import project5_29 from "@/assets/project5-29.jpg"
+import project5_30 from "@/assets/project5-30.jpg"
+import project5_31 from "@/assets/project5-31.jpg"
+import project5_32 from "@/assets/project5-32.jpg"
+import project5_33 from "@/assets/project5-33.jpg"
+import project5_34 from "@/assets/project5-34.jpg"
+import project5_35 from "@/assets/project5-35.jpg"
+import project5_36 from "@/assets/project5-36.jpg"
+import project5_37 from "@/assets/project5-37.jpg"
+import project5_38 from "@/assets/project5-38.jpg"
+import project5_39 from "@/assets/project5-39.jpg"
+import project5_40 from "@/assets/project5-40.jpg"
+import project5_41 from "@/assets/project5-41.jpg"
 
 import homeProject8 from "@/assets/homeProject18.webp"
 import project8_1 from "@/assets/project8-1.webp"
@@ -123,6 +145,9 @@ import project11_19 from "@/assets/project11-19.jpg"
 import project11_20 from "@/assets/project11-20.jpg"
 import project11_22 from "@/assets/project11-22.jpg"
 import project11_23 from "@/assets/project11-23.jpg"
+import project11_25 from "@/assets/project11-25.jpg"
+import project11_26 from "@/assets/project11-26.jpg"
+import project11_27 from "@/assets/project11-27.jpg"
 
 import homeProject12 from "@/assets/homeProject23.jpg"
 import project12_1 from "@/assets/project12-1.jpg"
@@ -302,7 +327,8 @@ export const data = [
         ]
     },
     {
-        id: "kitchen-design",
+        id: "kitchen-design-bar",
+        title: "Kitchen / BAR",
         mainPic: homeProject3.src,
         content: [
             "At our company, we view kitchens as the heart of every home, where families gather, memories are made, and culinary adventures unfold. Our portfolio showcases kitchens designed to stand the test of time, with timeless aesthetics that transcend fleeting trends.",
@@ -311,7 +337,7 @@ export const data = [
             "In essence, our kitchens are more than just spaces for cooking; they’re sanctuaries where families come together, where design meets functionality, and where every detail is thoughtfully considered to create a truly exceptional living experience."
         ],
         images: [
-            project3_1.src, project3_2.src, project3_3.src, project3_4.src, project3_5.src, project3_6.src, project3_7.src, project3_8.src, project3_9.src, project3_10.src
+            project3_1.src, project3_2.src, project3_3.src, project3_4.src, project3_5.src, project3_6.src, project3_7.src, project3_8.src, project3_9.src, project3_10.src, project3_11.src, project3_12.src, project3_13.src, project3_14.src, project3_15.src
         ]
     },
     {
@@ -388,7 +414,7 @@ export const data = [
             "A celebration of craftsmanship and tailored design — each piece of joinery is custom-built to enhance your space. From elegant cabinetry to precision-fitted built-ins, this project brings together artisanal detail, functional beauty, and a finish that complements the architecture around it."
         ],
         images: [
-            project5_1.src, project5_2.src, project5_3.src, project5_4.src, project5_7.src, project5_8.src, project5_9.src, project5_10.src, project5_11.src, project5_12.src, project5_13.src, project5_14.src, project5_15.src, project5_16.src, project5_17.src, project5_18.src, project5_19.src, project5_20.src, project5_21.src, project5_22.src, project5_23.src, project5_24.src
+            project5_1.src, project5_2.src, project5_3.src, project5_4.src, project5_7.src, project5_8.src, project5_9.src, project5_10.src, project5_11.src, project5_12.src, project5_13.src, project5_14.src, project5_15.src, project5_16.src, project5_17.src, project5_18.src, project5_19.src, project5_20.src, project5_21.src, project5_22.src, project5_23.src, project5_24.src, project5_25.src, project5_26.src, project5_27.src, project5_28.src, project5_29.src, project5_30.src, project5_31.src, project5_32.src, project5_33.src, project5_34.src, project5_35.src, project5_36.src, project5_37.src, project5_38.src, project5_39.src, project5_40.src, project5_41.src
         ]
     },
     {
@@ -446,7 +472,7 @@ export const data = [
             "Based in the Royal Borough of Kingston, it is a Modern Home Oasis, renovated by Exclusif Desingz with a focus on minimalism, functionality, maximum usage of space and light. The carefully curated foyer is both inviting and practical. The minimalistic and uncluttered bedrooms allow free movement with subtle artwork and geometric wall décor. The home is layered with different types of lighting to create a well-balanced appearance, mood and aesthetics. The kitchen is a two-tone, sizeable, open-plan dining area with a modern kitchen island in a different shade, creating a simple yet striking contrast that is hard to family ignore. The two-tone kitchen remains stylishly cohesive with compact laminate as a worktop and splash back. The space has its aura, with beautiful white flowers as centre pieces. The house has a well-thought-of luxury His & Her full bathroom, which is versatile and valuable, packing many functions into a relatively small space. A black framed shower screen creates a spacious, open-plan walk-in shower at the room far end. The oval bathtub with sinuous lines recalls naturalistic and sensual elements. The space had double round chevron basins with double vanity units, allowing each one to have their own space. The beige wall tiles are an excellent backdrop to light the whole area. Clean lines and a muted colour palette define this modern, understated home, where simplicity meets elegance in every corner."
         ],
         images: [
-            project11_1.src, project11_2.src, project11_4.src, project11_5.src, project11_6.src, project11_7.src, project11_8.src, project11_9.src, project11_10.src, project11_11.src, project11_12.src, project11_13.src, project11_14.src, project11_15.src,  project11_17.src,  project11_19.src, project11_20.src,  project11_22.src, project11_23.src
+            project11_1.src, project11_2.src, project11_4.src, project11_5.src, project11_6.src, project11_7.src, project11_8.src, project11_9.src, project11_10.src, project11_11.src, project11_12.src, project11_13.src, project11_14.src, project11_15.src,  project11_17.src,  project11_19.src, project11_20.src,  project11_22.src, project11_23.src, project11_25.src, project11_26.src, project11_27.src
         ]
     },
     {

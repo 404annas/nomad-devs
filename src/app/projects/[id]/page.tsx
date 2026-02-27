@@ -132,7 +132,7 @@ const ProjectPage = () => {
     "harrow",
     "bromley",
     "bathroom-design",
-    "kitchen-design",
+    "kitchen-design-bar",
     "bespoke-joinery-projects",
     "surbiton-project-living-and-hallway",
     "twickenham",
