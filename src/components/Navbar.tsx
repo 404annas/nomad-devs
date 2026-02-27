@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
 import logo from "@/assets/logo.webp";
-import { Menu, X, Phone, Mail, ArrowRight, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, Mail, ArrowRight } from 'lucide-react';
 import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
@@ -56,7 +56,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    {/* Right Links (Icons + Contact + WhatsApp) */}
+                    {/* Right Links (Icons + Contact) */}
                     <div className="flex gap-4 xl:gap-6 items-center justify-end whitespace-nowrap">
 
                         {/* Phone */}
@@ -71,15 +71,6 @@ const Navbar = () => {
                             <span>hello@designz.dwell-rich.com</span>
                         </a>
 
-                        {/* WhatsApp Button */}
-                        <a
-                            href='https://wa.me/07803326891'
-                            target='_blank'
-                            rel="noopener noreferrer"
-                            className='flex items-center gap-2 bg-[#25D366] text-white px-3 py-3 rounded-full hover:bg-[#20bd5a] transition-colors duration-300 text-sm font-semibold shadow-sm'
-                        >
-                            <FaWhatsapp size={22} fill="white" className="text-white" />
-                        </a>
                     </div>
                 </div>
 
@@ -173,6 +164,17 @@ const Navbar = () => {
 
                 </div>
             </div>
+
+            {/* Floating WhatsApp Button (All Pages) */}
+            <a
+                href='https://wa.me/07803326891'
+                target='_blank'
+                rel="noopener noreferrer"
+                aria-label="Chat on WhatsApp"
+                className='fixed bottom-5 right-5 z-[70] flex items-center justify-center h-14 w-14 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20bd5a] transition-colors duration-300'
+            >
+                <FaWhatsapp size={26} fill="white" className="text-white" />
+            </a>
         </>
     );
 };

@@ -1,6 +1,5 @@
 "use client";
-
-import React from 'react'
+import React, { useEffect, useRef } from 'react' // useEffect aur useRef add kiya
 import { ShieldCheck, Gem, ListChecks, Coins, Globe, Star } from 'lucide-react'
 import { motion } from 'framer-motion'
 
@@ -38,13 +37,23 @@ const features = [
 ]
 
 const WhyChooseUs = () => {
+    // Video element ko target karne ke liye ref
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            // Video ki speed yahan se set hogi (2.0 ka matlab double speed)
+            videoRef.current.playbackRate = 4.0;
+        }
+    }, []);
+
     return (
         <section className="w-full bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-20">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col gap-10">
 
                     {/* Header Section */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -54,7 +63,7 @@ const WhyChooseUs = () => {
                         <h2 className="text-3xl sm:text-4xl font-serif text-black leading-tight">
                             Why Clients <span className="text-gray-400">Choose Us?</span>
                         </h2>
-                        <motion.div 
+                        <motion.div
                             initial={{ scaleX: 0 }}
                             whileInView={{ scaleX: 1 }}
                             viewport={{ once: true }}
@@ -76,8 +85,7 @@ const WhyChooseUs = () => {
                                     whileHover={{ y: -8, transition: { duration: 0.3 } }}
                                     className="group flex flex-col p-8 rounded-xl border border-[#cacaca] bg-[#F3F2EE] transition-all duration-300 hover:border-black/10 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
                                 >
-                                    {/* Icon */}
-                                    <motion.div 
+                                    <motion.div
                                         initial={{ scale: 0.8, opacity: 0 }}
                                         whileInView={{ scale: 1, opacity: 1 }}
                                         viewport={{ once: true }}
@@ -90,7 +98,6 @@ const WhyChooseUs = () => {
                                         />
                                     </motion.div>
 
-                                    {/* Content */}
                                     <h3 className="text-base font-bold uppercase tracking-tight text-black mb-3">
                                         {feature.title}
                                     </h3>
@@ -103,7 +110,7 @@ const WhyChooseUs = () => {
                     </div>
 
                     {/* Video Section */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
@@ -112,13 +119,14 @@ const WhyChooseUs = () => {
                     >
                         <div className="relative w-full h-full overflow-hidden rounded-xl bg-gray-50">
                             <video
+                                ref={videoRef} // Ref yahan attach kar di
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/videos/chooseVideo.webm"  type="video/webm" />
+                                <source src="/videos/chooseVideo.webm" type="video/webm" />
                                 Your browser does not support the video tag.
                             </video>
                             <div className="absolute inset-0 bg-black/5 pointer-events-none" />
