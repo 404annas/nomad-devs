@@ -36,7 +36,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     "src/declarations.d.ts"
-, "src/components/Testimonials2.jsx"  ],
+, "src/components/Testimonials2.jsx", "src/components/Service.jsx"  ],
   "exclude": [
     "node_modules"
   ]
