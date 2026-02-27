@@ -7,6 +7,7 @@ import logo from "@/assets/logo.webp";
 import portfolioImg1 from "@/assets/heroMain3.png";
 import portfolioImg2 from "@/assets/homeProject34.jpg";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react"; // Imported ArrowRight
 
 // --- Curated Colors (Same as Progress component) ---
 const HOVER_COLORS = [
@@ -53,39 +54,61 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link, index }: { imgSrc: 
         className="absolute inset-0 z-10"
       />
 
-      {/* 3. Hover Content (Logo & Text) */}
+      {/* 3. Hover Content */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
         <AnimatePresence>
           {isHovered && (
-            <Link href={link}>
-              <div className="flex flex-col items-center">
-                {/* Logo Section */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.3, delay: 0.1 }}
-                  className="relative w-24 h-24 mb-4"
-                >
-                  <Image src={logo} alt="Logo" fill className="object-contain" />
-                </motion.div>
+            <>
+              {/* Centered Content Link */}
+              <Link href={link} className="z-10">
+                <div className="flex flex-col items-center">
+                  {/* Logo Section */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.3, delay: 0.1 }}
+                    className="relative w-24 h-24 mb-4"
+                  >
+                    <Image src={logo} alt="Logo" fill className="object-contain" />
+                  </motion.div>
 
-                {/* Text Section */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.4, delay: 0.2 }}
-                >
-                  <h3 className="text-lg sm:text-xl text-black tracking-tight uppercase mb-1 font-serif">
-                    {title}
-                  </h3>
-                  <p className="text-[10px] text-black/80 tracking-[0.3em] uppercase">
-                    {location}
-                  </p>
-                </motion.div>
-              </div>
-            </Link>
+                  {/* Text Section */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.4, delay: 0.2 }}
+                  >
+                    <h3 className="text-lg sm:text-xl text-black tracking-tight uppercase mb-1 font-serif">
+                      {title}
+                    </h3>
+                    <p className="text-[10px] text-black/80 tracking-[0.3em] uppercase">
+                      {location}
+                    </p>
+                  </motion.div>
+                </div>
+              </Link>
+
+              {/* Bottom Right 'Click To All Projects' Link */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 10 }}
+                transition={{ duration: 0.4, delay: 0.3 }}
+                className="absolute bottom-6 right-6 z-30"
+              >
+                <Link href="/projects" className="flex items-center gap-2 group/btn">
+                  <span className="text-xs sm:text-sm font-medium uppercase text-black">
+                    Click To All Projects
+                  </span>
+                  <ArrowRight
+                    size={16}
+                    className="text-black transition-transform duration-300 group-hover/btn:translate-x-1"
+                  />
+                </Link>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </div>
@@ -98,14 +121,14 @@ const Portfolio = () => {
     <section className="bg-white">
       {/* TOP LINE + TITLE */}
       <div className="max-w-[1600px] mx-auto px-4 sm:px-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="border-b border-[#c9b88a] pt-10 pb-3"
+          className="border-b border-black pt-10 pb-3"
         >
-          <span className="text-lg tracking-tight text-black uppercase">
+          <span className="text-lg tracking-tight text-black font-semibold uppercase">
             PORTFOLIO
           </span>
         </motion.div>

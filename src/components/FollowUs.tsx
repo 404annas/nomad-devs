@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { ArrowUpRight } from 'lucide-react'
 
 import homeProject1 from "@/assets/homeProject1.webp"
 import homeProject2 from "@/assets/homeProject2.webp"
@@ -76,12 +76,12 @@ export default function InstagramFollow() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* Hover overlay */}
-                <motion.div 
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute inset-0 bg-black/20"
-                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/35 transition-colors duration-300" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <span className="h-16 w-16 rounded-full bg-white/90 border border-white shadow-md backdrop-blur-sm flex items-center justify-center">
+                    <ArrowUpRight className="h-7 w-7 text-black" strokeWidth={2} />
+                  </span>
+                </div>
               </motion.a>
             ))}
           </div>

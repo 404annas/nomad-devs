@@ -33,20 +33,20 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, count, in
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: index * 0.15, ease: "easeOut" }}
-            className="relative flex flex-col items-start p-8 md:p-10 bg-[#F2F2F2] border-r border-b border-gray-300 min-h-[460px] overflow-hidden first:border-l"
+            className="relative flex flex-col items-start p-6 md:p-7 bg-[#F2F2F2] border-r border-b border-gray-300 min-h-[200px] overflow-hidden first:border-l"
         >
 
             {/* Corner Accent Line */}
 
             {/* --- Squares Container --- */}
-            <div className="relative h-24 w-full mb-10">
+            <div className="relative h-20 w-full mb-8">
                 {[...Array(count)].map((_, i) => (
                     <motion.div
                         key={i}
                         custom={i}
                         variants={floatingVariants}
                         animate="animate"
-                        className="absolute bg-black w-10 h-10"
+                        className="absolute bg-black w-8 h-8"
                         style={{
                             top: `${i * 14}px`,
                             left: `${i * 12}px`,
@@ -60,10 +60,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, count, in
 
             {/* --- Text Section --- */}
             <div className="mt-auto">
-                <h2 className="text-lg md:text-xl font-medium tracking-tight mb-5 uppercase text-black leading-tight">
+                <h2 className="text-base md:text-lg font-medium tracking-tight mb-4 uppercase text-black leading-tight">
                     {title}
                 </h2>
-                <p className="text-gray-500 text-sm md:text-base leading-normal">
+                <p className="text-gray-500 text-xs md:text-sm leading-normal">
                     {description}
                 </p>
             </div>
@@ -97,7 +97,7 @@ export default function ServicesGrid() {
 
     return (
         <section className="bg-white py-10 px-4">
-            <div className="max-w-[1400px] mx-auto">
+            <div className="max-w-[1100px] mx-auto">
                 <motion.div 
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}

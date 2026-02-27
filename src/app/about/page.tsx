@@ -10,8 +10,8 @@ const page = () => {
   return (
     <div>
       {/* <Hero /> */}
-      <Importance />
-      <Simply />
+      {/* <Importance /> */}
+      {/* <Simply /> */}
       <Founder />
       <Team />
       {/* <Industry /> */}

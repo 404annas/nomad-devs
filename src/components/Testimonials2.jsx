@@ -1,7 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Star, ChevronLeft, ChevronRight, X } from "lucide-react";
+import React, { useState } from "react";
+import { Star, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 const Testimonials2 = () => {
   // Data
@@ -137,29 +138,7 @@ const Testimonials2 = () => {
   ];
 
   // --- States ---
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null); // For Modal
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Detect screen size
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
-  // Carousel Logic
-  const visibleCards = isMobile ? 1 : 2;
-  const maxIndex = reviews.length - visibleCards;
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? 0 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev >= maxIndex ? prev : prev + 1));
-  };
 
   // --- Modal Handlers ---
   const openModal = (review) => {
@@ -199,22 +178,6 @@ const Testimonials2 = () => {
               User Reviews & Ratings
             </h2>
           </div>
-          <div className="pl-6 z-10 hidden md:flex items-center gap-4">
-            <button
-              onClick={handlePrev}
-              disabled={currentIndex === 0}
-              className={`p-2 rounded-full transition-colors cursor-pointer duration-300 ${currentIndex === 0 ? 'text-gray-300 bg-gray-50 hover:cursor-not-allowed' : 'text-gray-600 hover:bg-gray-100'}`}
-            >
-              <ChevronLeft size={24} strokeWidth={3} />
-            </button>
-            <button
-              onClick={handleNext}
-              disabled={currentIndex >= maxIndex}
-              className={`p-2 rounded-full transition-colors cursor-pointer duration-300 ${currentIndex >= maxIndex ? 'text-gray-300 bg-gray-50 hover:cursor-not-allowed' : 'text-gray-600 hover:bg-gray-100'}`}
-            >
-              <ChevronRight size={24} strokeWidth={3} />
-            </button>
-          </div>
         </div>
 
         {/* Content */}
@@ -232,16 +195,12 @@ const Testimonials2 = () => {
             </div>
           </div>
 
-          {/* Carousel */}
-          <div className="flex-1 overflow-hidden relative">
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * (100 / visibleCards)}%)` }}
-            >
+          {/* Marquee Carousel */}
+          <div className="flex-1 overflow-hidden relative flex items-center">
+            <Marquee gradient={false} speed={50} className="py-0.5">
               {reviews.map((review) => (
-                <div key={review.id} className="min-w-[100%] md:min-w-[50%] px-1 sm:px-3">
-                  <div className="border border-gray-200 rounded-xl p-6 h-[250px] flex flex-col justify-between bg-gray-100 transition-all hover:shadow-md">
-
+                <div key={review.id} className="w-[320px] md:w-[450px] mx-3">
+                  <div className="border border-gray-200 rounded-xl p-6 h-[250px] flex flex-col justify-between bg-gray-100 transition-all">
                     <div>
                       <div className="flex justify-between items-center mb-1">
                         <h3 className="text-black font-medium text-lg truncate pr-2 w-[70%]">
@@ -266,14 +225,8 @@ const Testimonials2 = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </Marquee>
           </div>
-        </div>
-
-        {/* Mobile Controls */}
-        <div className="flex md:hidden justify-center gap-4 mt-6">
-          <button onClick={handlePrev} disabled={currentIndex === 0} className="p-2 border rounded-full text-black"><ChevronLeft size={20} /></button>
-          <button onClick={handleNext} disabled={currentIndex >= reviews.length - 1} className="p-2 border rounded-full text-black"><ChevronRight size={20} /></button>
         </div>
 
       </div>

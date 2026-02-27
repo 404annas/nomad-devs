@@ -7,7 +7,7 @@ import salehaImg from "@/assets/saleha.webp"
 
 const Founder = () => {
     return (
-        <section className="w-full bg-white px-4 sm:px-6 md:px-12 pb-10">
+        <section className="w-full bg-white px-4 sm:px-6 md:px-12 pb-10 pt-40 sm:pt-50">
             {/* Split Layout: Image on Left, Content on Right */}
             <div className="flex flex-col lg:flex-row w-full gap-4 sm:gap-8 items-stretch">
 
