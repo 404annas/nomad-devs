@@ -10,27 +10,27 @@ const servicesData = [
     {
         id: "01",
         title: "ARCHITECTURAL DRAWINGS",
-        photo: service1,
+        photo: service1.src,
     },
     {
         id: "02",
         title: "STRUCTURAL DRAWINGS",
-        photo: service2,
+        photo: service2.src,
     },
     {
         id: "03",
         title: "CONSTRUCTION & RENOVATIONS",
-        photo: service3,
+        photo: service3.src,
     },
     {
         id: "04",
         title: "INTERIOR DESIGN & JOINERY",
-        photo: service4,
+        photo: service4.src,
     },
     {
         id: "05",
         title: "COMMERCIAL PROJECTS",
-        photo: service5,
+        photo: service5.src,
     }
 ]
 
