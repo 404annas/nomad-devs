@@ -51,7 +51,7 @@ const Speak = () => {
             <div className="lg:col-span-4 flex justify-between ">
               <img
                 src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/e921b42c-14e2-46cc-93a0-5aafd6166f65/Ted+Headshot.JPG?format=1500w"
-                alt="Senior Project Manager"
+                alt="Ted Keeling senior project manager for private client construction projects"
                 className="h-full w-[100%] object-cover"
               />
             </div>

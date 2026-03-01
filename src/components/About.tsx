@@ -76,7 +76,7 @@ const About = () => {
               <img
                 loading="lazy"
                 src={aboutImg.src}
-                alt="Modern Outdoor Area"
+                alt="Modern residential design and build outdoor area in South London"
                 className="w-full h-full object-cover"
               />
             </motion.div>

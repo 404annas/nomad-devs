@@ -39,7 +39,7 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link, index }: { imgSrc: 
       <div className="relative w-full h-full">
         <Image
           src={imgSrc}
-          alt={title}
+          alt={`${title} residential design and build portfolio showcase in ${location}`}
           fill
           className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
         />
@@ -70,7 +70,7 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link, index }: { imgSrc: 
                     transition={{ duration: 0.3, delay: 0.1 }}
                     className="relative w-24 h-24 mb-4"
                   >
-                    <Image src={logo} alt="Logo" fill className="object-contain" />
+                    <Image src={logo} alt="Dwell Rich Designz logo" fill className="object-contain" />
                   </motion.div>
 
                   {/* Text Section */}

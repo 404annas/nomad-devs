@@ -47,7 +47,7 @@ const Simply = () => {
             <div className="lg:w-3/4 relative md:min-h-[550px]">
                 <Image
                     src={homeProject6.src}
-                    alt="Luxury Interior"
+                    alt="Residential interior refurbishment and design build project in South London"
                     fill
                     className="object-cover"
                 />

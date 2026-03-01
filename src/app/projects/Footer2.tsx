@@ -19,7 +19,7 @@ export default function Footer2() {
                             <Link href="/">
                                 <Image
                                     src={logo}
-                                    alt="Logo"
+                                    alt="Dwell Rich Designz logo"
                                     fill
                                     className="object-contain invert brightness-0 p-2"
                                 />

@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Link href={"/"} onClick={() => setIsSidebarOpen(false)}>
                             <Image
                                 src={logo}
-                                alt='Dwell Rich Designz'
+                                alt='Dwell Rich Designz logo'
                                 fill
                                 className="object-contain p-1 invert brightness-0"
                             />
@@ -88,7 +88,7 @@ const Navbar = () => {
                 {/* Sidebar Header */}
                 <div className="flex items-center justify-between p-6 border-b border-white/10">
                     {/* <Link href="/"><span className="text-white text-base font-serif tracking-wider">MENU</span></Link> */}
-                    <Link href="/"><Image src={logo} alt='Logo' className='w-15 invert brightness-0'/></Link>
+                    <Link href="/"><Image src={logo} alt='Dwell Rich Designz logo' className='w-15 invert brightness-0'/></Link>
                     <button 
                         onClick={() => setIsSidebarOpen(false)}
                         className="text-white hover:text-gray-300 cursor-pointer transition-colors p-1"

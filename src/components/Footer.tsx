@@ -40,7 +40,7 @@ export default function Footer() {
               <Link href={"/"}>
                 <Image
                   src={logo}
-                  alt="Dwell Rich Logo"
+                  alt="Dwell Rich Designz logo"
                   width={100}
                   height={100}
                   className="brightness-0 invert object-contain"

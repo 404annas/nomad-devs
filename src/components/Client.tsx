@@ -40,7 +40,7 @@ const Client = () => {
                         <img
                             loading="lazy"
                             src={homeClientImg.src}
-                            alt="Private Client Interior"
+                            alt="Luxury private client interior design and build project in Surrey"
                             className="w-full h-full object-cover"
                         />
                     </div>

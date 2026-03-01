@@ -23,7 +23,7 @@ const Industry = () => {
                 <div className="w-full md:w-[65%] relative min-h-[400px] md:min-h-[500px]">
                     <Image
                         src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/1740780302934-YRVPR1GLQOV8Z92XHBMI/NomadPenthouse_0238_low.jpg"
-                        alt="Award Winning Project"
+                        alt="Award-winning luxury residential interior design and build project"
                         fill
                         className="object-cover"
                     />
@@ -44,7 +44,7 @@ const Industry = () => {
                             <div className="relative w-32 h-20 mx-auto mb-4">
                                 <Image
                                     src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/d57b801e-85ca-4a11-96f0-cd6cdd7d6fc9/rosefinch-logo.png?format=300w"
-                                    alt='Rosefinch Logo'
+                                    alt='Evening Standard New Homes Awards branding logo'
                                     fill
                                     className='object-contain'
                                 />
@@ -60,7 +60,7 @@ const Industry = () => {
                         <div className="relative w-24 h-24 mx-auto">
                             <Image
                                 src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/9d2ea123-b2fc-4e89-9d05-350dd448f4c5/_ES+NH_Awards+2022+Logo+winner+BLACK+ON+WHITE-01.png?format=300w"
-                                alt='Winner Badge'
+                                alt='Evening Standard New Homes Awards winner badge'
                                 fill
                                 className='object-contain'
                             />
@@ -82,7 +82,7 @@ const Industry = () => {
                 <div className="w-full md:w-[65%] relative min-h-[400px] md:min-h-[500px]">
                     <Image
                         src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/1740780302934-YRVPR1GLQOV8Z92XHBMI/NomadPenthouse_0238_low.jpg"
-                        alt="Award Winning Project"
+                        alt="Luxury interior architecture project recognized with UK industry awards"
                         fill
                         className="object-cover"
                     />
@@ -103,7 +103,7 @@ const Industry = () => {
                             <div className="relative w-32 h-20 mx-auto mb-4">
                                 <Image
                                     src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/d57b801e-85ca-4a11-96f0-cd6cdd7d6fc9/rosefinch-logo.png?format=300w"
-                                    alt='Rosefinch Logo'
+                                    alt='Evening Standard New Homes Awards branding logo'
                                     fill
                                     className='object-contain'
                                 />
@@ -119,7 +119,7 @@ const Industry = () => {
                         <div className="relative w-24 h-24 mx-auto">
                             <Image
                                 src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/9d2ea123-b2fc-4e89-9d05-350dd448f4c5/_ES+NH_Awards+2022+Logo+winner+BLACK+ON+WHITE-01.png?format=300w"
-                                alt='Winner Badge'
+                                alt='Evening Standard New Homes Awards winner badge'
                                 fill
                                 className='object-contain'
                             />

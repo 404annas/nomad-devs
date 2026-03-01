@@ -10,10 +10,10 @@ import heroImg1 from "@/assets/project12-28.jpg";
 import heroImg2 from "@/assets/homeProject36.png";
 
 const slides = [
-    { id: 4, src: heroImg4, alt: "Luxury Interior 4" },
-    { id: 1, src: heroImg1, alt: "Luxury Interior 1" },
-    { id: 2, src: heroImg2, alt: "Luxury Interior 2" },
-    { id: 3, src: heroImg3, alt: "Luxury Interior 3" },
+    { id: 4, src: heroImg4, alt: "Bespoke residential interior design and build project in South London" },
+    { id: 1, src: heroImg1, alt: "Luxury home renovation and design build project in Surrey" },
+    { id: 2, src: heroImg2, alt: "Modern open-plan interior refurbishment in Central London" },
+    { id: 3, src: heroImg3, alt: "Premium residential construction and interior design project in North Surrey" },
 ];
 
 const Hero2 = () => {
@@ -38,7 +38,7 @@ const Hero2 = () => {
             <div className="relative w-full">
                 <Image
                     src={slides[0].src}
-                    alt="Spacer"
+                    alt="Luxury design and build project showcase image"
                     priority
                     // These dimensions ensure the aspect ratio is calculated correctly
                     // Since you are importing the image, Next.js knows the width/height automatically

@@ -69,7 +69,7 @@ const InvestorApproach = () => {
                 <div className="relative w-full h-[400px] md:h-auto">
                     <Image
                         src={investorImg} // <--- Replace this with your actual image variable
-                        alt="Investor Approach Architecture"
+                        alt="Investor-focused residential development planning and design build strategy image"
                         fill
                         className="object-cover"
                         priority

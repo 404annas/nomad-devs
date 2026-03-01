@@ -47,7 +47,7 @@ const CTA = () => {
                     {/* Button */}
                     <Link href="/contact">
                         <button className="bg-[#111] text-white text-sm md:text-base font-medium px-8 py-4 rounded-lg hover:scale-95 transition-all duration-300 cursor-pointer uppercase tracking-wide">
-                            Click Here
+                            Book a Free Consultation
                         </button>
                     </Link>
                 </div>
@@ -65,7 +65,7 @@ const CTA = () => {
                         <div className="relative w-full aspect-square overflow-hidden rounded-sm">
                             <Image
                                 src={img1}
-                                alt="Interior 1"
+                                alt="Luxury kitchen and bar interior design project in South London"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-500"
                             />
@@ -75,7 +75,7 @@ const CTA = () => {
                         <div className="relative w-full aspect-square overflow-hidden rounded-sm">
                             <Image
                                 src={img2}
-                                alt="Interior 2"
+                                alt="Residential home renovation and interior styling project in Surrey"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-500"
                             />
@@ -85,7 +85,7 @@ const CTA = () => {
                         <div className="relative w-full aspect-square overflow-hidden rounded-sm">
                             <Image
                                 src={img3}
-                                alt="Interior 3"
+                                alt="Bespoke bathroom interior design and build project in Central London"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-500"
                             />
@@ -95,7 +95,7 @@ const CTA = () => {
                         <div className="relative w-full aspect-square overflow-hidden rounded-sm">
                             <Image
                                 src={img4}
-                                alt="Interior 4"
+                                alt="Modern residential interior refurbishment project in North Surrey"
                                 fill
                                 className="object-cover hover:scale-105 transition-transform duration-500"
                             />

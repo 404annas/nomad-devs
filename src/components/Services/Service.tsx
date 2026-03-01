@@ -44,7 +44,7 @@ const Service = () => {
                         <div key={service.id} className="relative h-[300px] w-[300px] rounded-full border border-gray-400 overflow-hidden shadow-sm">
                             <img
                                 src={service.photo}
-                                alt={service.title}
+                                alt={`${service.title} service image for residential design and build projects`}
                                 className="absolute inset-0 h-full w-full object-cover"
                                 loading="lazy"
                                 decoding="async"

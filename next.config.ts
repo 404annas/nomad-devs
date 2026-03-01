@@ -2,9 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  output: "export",
 
   images: {
-    formats:['image/avif', 'image/webp'],
+    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
     domains: ["images.unsplash.com"],
     remotePatterns: [
       {
@@ -15,6 +17,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;

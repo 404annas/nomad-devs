@@ -31,7 +31,7 @@ export const Service = () => {
                     <div className="w-3/4 relative md:min-h-[550px]">
                         <Image
                             src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/1750861545502-26KAV2K6COF1OOAK1QSH/NomadPenthouse_0214_R_low.jpg"
-                            alt="Luxury Interior"
+                            alt="Luxury private client residential interior design and build project"
                             fill
                             className="object-cover"
                         />
@@ -63,7 +63,7 @@ export const Service = () => {
                     <div className="w-3/4 relative md:min-h-[550px]">
                         <Image
                             src="https://images.squarespace-cdn.com/content/v1/63f8a91775cbc4414ec45764/1750861545502-26KAV2K6COF1OOAK1QSH/NomadPenthouse_0214_R_low.jpg"
-                            alt="Luxury Interior"
+                            alt="Bespoke private client home renovation and interior construction project"
                             fill
                             className="object-cover"
                         />

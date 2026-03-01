@@ -48,7 +48,7 @@ const Navbar = () => {
                         <Link href={"/"} className="relative w-40 md:w-64 h-24 md:h-32">
                             <Image
                                 src={logo}
-                                alt='Nomad Logo'
+                                alt='Dwell Rich Designz logo'
                                 fill
                                 priority
                                 className='object-contain'
@@ -82,7 +82,7 @@ const Navbar = () => {
                     <Link href={"/"} className="relative w-32 h-16 sm:w-40 sm:h-20 z-50">
                         <Image
                             src={logo}
-                            alt='Nomad Logo'
+                            alt='Dwell Rich Designz logo'
                             fill
                             priority
                             className='object-contain'
@@ -121,7 +121,7 @@ const Navbar = () => {
                     <div className="flex justify-between items-center p-6 pb-4">
                         {/* Logo inside Sidebar */}
                         <div className="relative w-24 h-16 opacity-80">
-                            <Image src={logo} alt="Logo" fill className="object-contain" />
+                            <Image src={logo} alt="Dwell Rich Designz logo" fill className="object-contain" />
                         </div>
 
                         <button

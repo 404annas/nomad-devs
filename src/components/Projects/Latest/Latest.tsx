@@ -76,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 <div className="relative w-full h-full">
                     <Image
                         src={project.image}
-                        alt={project.title}
+                        alt={`${project.title} design and build project in ${project.location}`}
                         fill
                         className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                     />

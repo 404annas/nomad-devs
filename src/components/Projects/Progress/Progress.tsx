@@ -243,7 +243,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className="relative w-full h-full p-8">
         <Image
           src={project.image}
-          alt={project.title}
+          alt={`${project.title} design and build project portfolio image in ${project.location}`}
           fill
           className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
         />
@@ -268,7 +268,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 transition={{ duration: 0.3, delay: 0.1 }}
                 className="relative w-24 h-24 mb-4"
               >
-                <Image src={logo} alt="Logo" fill className="object-contain" />
+                <Image src={logo} alt="Dwell Rich Designz logo" fill className="object-contain" />
               </motion.div>
 
               <motion.div

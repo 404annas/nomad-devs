@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="relative w-full">
                 <Image
                     src={heroMainImg}
-                    alt="Hero Main"
+                    alt="Luxury residential design and build project in Surrey"
                     layout="responsive"
                     width={5000} // Apni image ki actual width yahan likhein
                     height={3000} // Apni image ki actual height yahan likhein taake aspect ratio sahi rahe

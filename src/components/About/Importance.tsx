@@ -32,7 +32,7 @@ export const Importance = () => {
                 <div className="lg:w-3/4 relative md:min-h-[550px]">
                     <Image
                         src={importanceImg.src}
-                        alt="Luxury Interior"
+                        alt="Luxury interior design and build service showcase in Central London"
                         fill
                         className="object-cover"
                     />
