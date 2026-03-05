@@ -29,7 +29,7 @@ const Hero2 = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-[200vh] overflow-hidden bg-black">
+        <div className="relative w-full h-screen md:h-[200vh] overflow-hidden bg-black">
             
             {/* --- 1. THE "GHOST" SPACER IMAGE --- */}
             {/* This image is invisible (opacity-0) but it exists in the DOM 

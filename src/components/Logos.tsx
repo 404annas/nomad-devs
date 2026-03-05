@@ -29,7 +29,7 @@ const Logos = () => {
                     />
                 </div>
 
-                <div className="relative w-full h-32 md:h-40">
+                <div className="relative w-full h-32 md:h-40 ml-25 md:ml-0">
                     <Image
                         src={logo4}
                         alt="Kingston Green Business Community"
