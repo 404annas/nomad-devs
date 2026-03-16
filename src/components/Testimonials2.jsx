@@ -9,7 +9,7 @@ const Testimonials2 = () => {
   const reviews = [
     {
       id: 1,
-      name: "HU-571537304",
+      name: "John",
       date: "8 December, 2025",
       location: "London, UK",
       rating: 5,
@@ -17,7 +17,7 @@ const Testimonials2 = () => {
     },
     {
       id: 2,
-      name: "HU-584350361",
+      name: "Deepa",
       date: "9 June, 2025",
       location: "London, UK",
       rating: 5,
@@ -41,7 +41,7 @@ const Testimonials2 = () => {
     },
     {
       id: 5,
-      name: "HU-729207861",
+      name: "Rajiv",
       date: "17 October, 2024",
       location: "London, UK",
       rating: 5,
@@ -49,7 +49,7 @@ const Testimonials2 = () => {
     },
     {
       id: 6,
-      name: "HU-266002337",
+      name: "Alok",
       date: "23 September, 2024",
       location: "London, UK",
       rating: 5,
@@ -73,7 +73,7 @@ const Testimonials2 = () => {
     },
     {
       id: 9,
-      name: "HU-901874817",
+      name: "Jay",
       date: "6 September, 2024",
       location: "London, UK",
       rating: 4,
@@ -81,7 +81,7 @@ const Testimonials2 = () => {
     },
     {
       id: 10,
-      name: "HU-661104995",
+      name: "Katie",
       date: "6 September, 2024",
       location: "London, UK",
       rating: 5,
@@ -89,7 +89,7 @@ const Testimonials2 = () => {
     },
     {
       id: 11,
-      name: "HU-906191751",
+      name: "Brenda",
       date: "27 August, 2024",
       location: "London, UK",
       rating: 4,
