@@ -9,29 +9,29 @@ import { ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.webp";
 
 // --- Skeleton Imports ---
-import skel1 from "@/assets/skel1.jpeg";
-import skel2 from "@/assets/skel2.jpeg";
-import skel3 from "@/assets/skel3.jpeg";
+import skel1 from "@/assets/homeProject12.webp";
+import skel2 from "@/assets/homeProject13.webp";
+import skel3 from "@/assets/homeProject14.webp";
 import skel4 from "@/assets/skel4.jpeg";
-import skel5 from "@/assets/skel5.png";
-import skel6 from "@/assets/skel6.png";
-import skel7 from "@/assets/skel7.png";
+import skel5 from "@/assets/homeProject17.webp";
+import skel6 from "@/assets/homeProject35.jpg";
+import skel7 from "@/assets/homeProject16.webp";
 import skel8 from "@/assets/skel8.png";
-import skel9 from "@/assets/skel9.png";
+import skel9 from "@/assets/homeProject19.webp";
 import skel10 from "@/assets/skel10.png";
-import skel11 from "@/assets/skel11.png";
-import skel12 from "@/assets/skel12.png";
-import skel13 from "@/assets/skel13.png";
-import skel14 from "@/assets/skel14.png";
-import skel15 from "@/assets/skel15.png";
-import skel16 from "@/assets/skel16.png";
-import skel17 from "@/assets/skel17.png";
-import skel18 from "@/assets/skel18.png";
-import skel19 from "@/assets/skel19.png";
-import skel20 from "@/assets/skel20.png";
-import skel21 from "@/assets/skel21.png";
-import skel22 from "@/assets/skel22.png";
-import skel23 from "@/assets/skel23.png";
+import skel11 from "@/assets/homeProject22.webp";
+import skel12 from "@/assets/homeProject23.jpg";
+import skel13 from "@/assets/homeProject24.jpg";
+import skel14 from "@/assets/homeProject25.jpg";
+import skel15 from "@/assets/homeProject26.jpg";
+import skel16 from "@/assets/homeProject27.jpg";
+import skel17 from "@/assets/homeProject28.jpg";
+import skel18 from "@/assets/homeProject29.jpg";
+import skel19 from "@/assets/homeProject30.jpg";
+import skel20 from "@/assets/homeProject31.png";
+import skel21 from "@/assets/homeProject32.webp";
+import skel22 from "@/assets/homeProject33.png";
+import skel23 from "@/assets/homeProject34.jpg";
 
 import { data } from "@/components/Projects/projectsData";
 
@@ -245,7 +245,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           src={project.image}
           alt={`${project.title} design and build project portfolio image in ${project.location}`}
           fill
-          className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
+          className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
         />
       </div>
 
