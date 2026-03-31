@@ -35,12 +35,13 @@ const Navbar = () => {
                 {/* ======================= */}
                 <div className="hidden lg:grid grid-cols-3 items-center w-full">
                     {/* Left Links */}
-                    <div className="flex gap-8 xl:gap-10 items-center justify-end whitespace-nowrap">
+                    <div className="flex gap-4 xl:gap-6 items-center justify-start whitespace-nowrap">
                         <NavLink href="/" text="Home" />
                         <NavLink href="/about" text="About" />
                         <NavLink href="/projects" text="Projects" />
                         {/* <NavLink href="/services" text="Services" /> */}
                         <NavLink href="/contact" text="Contact" />
+                        <NavLink href="/process" text="Our Process" />
                     </div>
 
                     {/* Center Logo */}
@@ -139,6 +140,7 @@ const Navbar = () => {
                         <MobileLink href="/projects" text="Projects" onClick={() => setIsMobileMenuOpen(false)} />
                         {/* <MobileLink href="/services" text="Services" onClick={() => setIsMobileMenuOpen(false)} /> */}
                         <MobileLink href="/contact" text="Contact" onClick={() => setIsMobileMenuOpen(false)} />
+                        <MobileLink href="/process" text="Our Process" onClick={() => setIsMobileMenuOpen(false)} />
                     </div>
 
                     {/* --- Sidebar Footer (Dark Contact Block) --- */}
