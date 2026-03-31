@@ -99,6 +99,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
+
                 {/* Sidebar Links */}
                 <div className="flex flex-col flex-1 p-6 gap-4 overflow-y-auto">
                     <MobileNavLink text="HOME" link="/" onClick={() => setIsSidebarOpen(false)} />
