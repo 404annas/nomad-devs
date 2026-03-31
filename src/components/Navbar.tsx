@@ -134,7 +134,7 @@ const Navbar = () => {
                     </div>
 
                     {/* --- Sidebar Links (Middle) --- */}
-                    <div className="flex flex-col gap-2 px-8 mt-4 overflow-y-auto flex-1">
+                    <div className="flex flex-col px-8 mt-4 overflow-y-auto flex-1">
                         <MobileLink href="/" text="Home" onClick={() => setIsMobileMenuOpen(false)} />
                         <MobileLink href="/about" text="About" onClick={() => setIsMobileMenuOpen(false)} />
                         <MobileLink href="/projects" text="Projects" onClick={() => setIsMobileMenuOpen(false)} />
@@ -152,14 +152,14 @@ const Navbar = () => {
                                 <div className="p-2 border border-white/20 rounded-full group-hover:bg-white group-hover:text-black transition-all">
                                     <Phone size={18} />
                                 </div>
-                                <span className="text-lg font-light tracking-wide">078033 2689</span>
+                                <span className="text-xs font-light tracking-wide">078033 2689</span>
                             </a>
 
                             <a href='mailto:hello@designz.dwell-rich.com' className='flex items-center gap-4 group cursor-pointer'>
                                 <div className="p-2 border border-white/20 rounded-full group-hover:bg-white group-hover:text-black transition-all">
                                     <Mail size={18} />
                                 </div>
-                                <span className="text-sm md:text-base font-light tracking-wide break-all">hello@designz.dwell-rich.com</span>
+                                <span className="text-xs md:text-base font-light tracking-wide break-all">hello@designz.dwell-rich.com</span>
                             </a>
                         </div>
                     </div>
@@ -194,12 +194,12 @@ const MobileLink = ({ href, text, onClick }: { href: string; text: string; onCli
     <Link
         href={href}
         onClick={onClick}
-        className="group flex items-center justify-between py-4 border-b border-gray-100 last:border-b-0 hover:pl-2 transition-all duration-300"
+        className="group flex items-center justify-between py-2 border-b border-gray-100 last:border-b-0 hover:pl-2 transition-all duration-300"
     >
-        <span className="text-base font-serif text-[#1a1a1a] uppercase tracking-wide group-hover:text-black">
+        <span className="text-sm font-serif text-[#1a1a1a] uppercase tracking-wide group-hover:text-black">
             {text}
         </span>
-        <ArrowRight size={20} className="text-gray-700 group-hover:text-black transition-colors" />
+        <ArrowRight size={18} className="text-gray-700 group-hover:text-black transition-colors" />
     </Link>
 );
 

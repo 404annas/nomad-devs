@@ -100,7 +100,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Sidebar Links */}
-                <div className="flex flex-col flex-1 p-6 gap-5 overflow-y-auto">
+                <div className="flex flex-col flex-1 p-6 gap-4 overflow-y-auto">
                     <MobileNavLink text="HOME" link="/" onClick={() => setIsSidebarOpen(false)} />
                     <MobileNavLink text="ABOUT US" link="/about" onClick={() => setIsSidebarOpen(false)} />
                     <MobileNavLink text="PORTFOLIO" link="/projects" onClick={() => setIsSidebarOpen(false)} />
@@ -110,14 +110,14 @@ const Navbar = () => {
 
                 {/* Sidebar Footer (Contact Info) */}
                 <div className="p-6 border-t border-white/10 bg-[#111]">
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-2">
                         <Link href="tel:0780332689" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                             <Phone size={18} />
-                            <span className="text-sm tracking-wide">078033 2689</span>
+                            <span className="text-xs tracking-wide">078033 2689</span>
                         </Link>
                         <Link href="mailto:hello@designz.dwell-rich.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                             <Mail size={18} />
-                            <span className="text-sm tracking-wide break-all">hello@designz.dwell-rich.com</span>
+                            <span className="text-xs tracking-wide break-all">hello@designz.dwell-rich.com</span>
                         </Link>
                         
                         <Link href={"/contact"} onClick={() => setIsSidebarOpen(false)} className="mt-4 w-full group flex items-center justify-center gap-3 border border-white px-6 py-4 text-white text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer ease-in-out hover:bg-white hover:text-black">
@@ -158,10 +158,10 @@ const MobileNavLink = ({ text, link, onClick }: NavLinkProps & { onClick: () => 
         <Link 
             href={link} 
             onClick={onClick}
-            className="group flex items-center justify-between text-white text-base font-light tracking-wide border-b border-white/5 last:border-b-0 pb-4"
+            className="group flex items-center justify-between text-white text-sm font-light tracking-wide border-b border-white/5 last:border-b-0 pb-2"
         >
             {text}
-            <ArrowRight size={20} className="text-white/30 group-hover:text-white group-hover:translate-x-2 transition-all duration-300" />
+            <ArrowRight size={18} className="text-white/30 group-hover:text-white group-hover:translate-x-2 transition-all duration-300" />
         </Link>
     );
 };
