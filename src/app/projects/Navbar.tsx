@@ -5,6 +5,7 @@ import { ArrowRight, Menu, X, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from "@/assets/logo.webp";
+import { FaWhatsapp, FaGlobe } from "react-icons/fa";
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -131,6 +132,40 @@ const Navbar = () => {
                         </Link>
                     </div>
                 </div>
+            </div>
+
+            {/* Floating Website & WhatsApp Buttons */}
+            <div className='fixed bottom-5 right-5 z-[70] flex flex-col gap-2 items-center'>
+                {/* Website Icon with Popup */}
+                <div className='relative group'>
+                    {/* Popup Tooltip */}
+                    <div className='absolute bottom-full left-1/3 -translate-x-1/2 mb-2 px-3 py-1.5 bg-black text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none'>
+                        Visit Website
+                        {/* Arrow */}
+                        <div className='absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black'></div>
+                    </div>
+                    {/* Website Icon */}
+                    <a
+                        href='https://designz-silk.vercel.app/'
+                        target='_blank'
+                        rel="noopener noreferrer"
+                        aria-label="Visit Website"
+                        className='flex items-center justify-center h-14 w-14 rounded-full bg-[#1a1a1a] text-white shadow-lg hover:bg-[#333] transition-all duration-300 animate-bounce'
+                    >
+                        <FaGlobe size={26} />
+                    </a>
+                </div>
+
+                {/* WhatsApp Icon */}
+                <a
+                    href='https://wa.me/07803326891'
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    aria-label="Chat on WhatsApp"
+                    className='flex items-center justify-center h-14 w-14 rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#20bd5a] transition-colors duration-300'
+                >
+                    <FaWhatsapp size={26} fill="white" className="text-white" />
+                </a>
             </div>
         </>
     );
