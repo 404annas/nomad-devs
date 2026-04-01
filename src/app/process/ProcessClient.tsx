@@ -57,6 +57,7 @@ const ProcessClient = () => {
       <Navbar />
 
 
+
       <section className="pt-50 pb-10 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp}>
