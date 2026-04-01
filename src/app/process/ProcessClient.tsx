@@ -58,7 +58,7 @@ const ProcessClient = () => {
 
 
 
-      <section className="pt-50 pb-10 px-4">
+      <section className="pt-40 md:pt-50 pb-10 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp}>
             <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
