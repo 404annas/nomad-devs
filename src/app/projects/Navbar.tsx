@@ -46,9 +46,9 @@ const Navbar = () => {
                         <Separator />
                         <NavLink text="PORTFOLIO" link='/projects' />
                         <Separator />
-                        <NavLink text="CONTACT US" link='/contact' />
-                        <Separator />
                         <NavLink text="OUR PROCESS" link='/process' />
+                        <Separator />
+                        <NavLink text="CONTACT US" link='/contact' />
                     </div>
                 </div>
 
@@ -106,8 +106,8 @@ const Navbar = () => {
                     <MobileNavLink text="HOME" link="/" onClick={() => setIsSidebarOpen(false)} />
                     <MobileNavLink text="ABOUT US" link="/about" onClick={() => setIsSidebarOpen(false)} />
                     <MobileNavLink text="PORTFOLIO" link="/projects" onClick={() => setIsSidebarOpen(false)} />
-                    <MobileNavLink text="CONTACT US" link="/contact" onClick={() => setIsSidebarOpen(false)} />
                     <MobileNavLink text="OUR PROCESS" link="/process" onClick={() => setIsSidebarOpen(false)} />
+                    <MobileNavLink text="CONTACT US" link="/contact" onClick={() => setIsSidebarOpen(false)} />
                 </div>
 
                 {/* Sidebar Footer (Contact Info) */}

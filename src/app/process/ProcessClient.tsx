@@ -3,6 +3,14 @@
 import { motion } from "framer-motion";
 import { Ruler, HardHat, Paintbrush, Package, Truck, ShoppingCart } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Process/Hero";
+import About from "@/components/Process/About";
+import Process1 from "@/components/Process/Process1";
+import Process2 from "@/components/Process/Process2";
+import Process3 from "@/components/Process/Process3";
+import Process4 from "@/components/Process/Process4";
+import Process5 from "@/components/Process/Process5";
+import Process6 from "@/components/Process/Process6";
 
 const services = [
   {
@@ -58,7 +66,7 @@ const ProcessClient = () => {
 
 
 
-      <section className="pt-40 md:pt-50 pb-10 px-4">
+      {/* <section className="pt-40 md:pt-50 pb-10 px-4">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp}>
             <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">
@@ -123,7 +131,34 @@ const ProcessClient = () => {
             ))}
           </div>
         </div>
+      </section> */}
+
+      <Hero/>
+      <About />
+      <section className="py-10 px-6 bg-[#F3F4F6]">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-4 mb-16">
+            <h2 className="text-xs font-bold uppercase tracking-widest">Our Approach</h2>
+            <div className="h-px flex-1 bg-gray-300" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            {steps.map((step, i) => (
+              <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.1 }}>
+                <span className="text-3xl font-bold text-gray-400 mb-4 block">{step.num}</span>
+                <h3 className="text-sm font-bold uppercase mb-4 tracking-wider">{step.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
+      <Process1 />
+      <Process2 />
+      <Process3 />
+      <Process4 />
+      <Process5 />
+      <Process6 />
     </main>
   );
 };
