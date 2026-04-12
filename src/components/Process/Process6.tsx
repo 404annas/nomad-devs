@@ -14,6 +14,7 @@ const Process6 = () => {
           Delivery & Installation
         </h2>
 
+
         {/* Body Text */}
         <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
           <p>
