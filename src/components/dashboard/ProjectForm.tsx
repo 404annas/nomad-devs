@@ -136,8 +136,15 @@ export default function ProjectForm({ initialData, onSubmit, isLoading }: Projec
     if (!files || files.length === 0) return;
 
     setIsUploading(true);
-    const preset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET || "your_unsigned_preset";
-    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "your_cloud_name";
+    const preset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
+    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+
+    if (!preset || !cloudName) {
+      console.error("Cloudinary env vars missing:", { preset, cloudName });
+      toast.error("Upload configuration error");
+      setIsUploading(false);
+      return;
+    }
 
     try {
       const uploadPromises = Array.from(files).map(async (file) => {
