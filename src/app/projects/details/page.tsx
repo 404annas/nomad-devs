@@ -8,7 +8,7 @@ import { X, ChevronLeft, ChevronRight, CheckCircle2, ArrowRight, Loader2 } from 
 import { useQuery } from "@tanstack/react-query";
 import api from "@/lib/api";
 import logo from "@/assets/logo.webp";
-import Navbar from "../Navbar";
+import Link from "next/link";
 
 const ProjectPageContent = () => {
   const searchParams = useSearchParams();
@@ -25,6 +25,14 @@ const ProjectPageContent = () => {
     enabled: !!slug,
   });
 
+  const { data: allProjects } = useQuery({
+    queryKey: ["allProjects"],
+    queryFn: async () => {
+      const { data } = await api.get("/projects?limit=100");
+      return data.data;
+    },
+  });
+
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -37,6 +45,10 @@ const ProjectPageContent = () => {
   }
 
   if (!project) return <div className="min-h-screen flex items-center justify-center">Project not found</div>;
+
+  const currentIndex = allProjects?.findIndex((p: any) => p.slug === slug) ?? -1;
+  const prevProject = currentIndex > 0 ? allProjects[currentIndex - 1] : null;
+  const nextProject = currentIndex >= 0 && currentIndex < (allProjects?.length - 1) ? allProjects[currentIndex + 1] : null;
 
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
@@ -59,7 +71,6 @@ const ProjectPageContent = () => {
 
   return (
     <div className="min-h-screen bg-white text-black">
-      <Navbar />
       {/* 1. HERO SECTION */}
       <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[550px] px-4 py-4">
         <div className="relative w-full h-[650px]">
@@ -156,6 +167,33 @@ const ProjectPageContent = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* NAVIGATION SECTION */}
+      <div className="max-w-[1400px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-gray-100">
+        {prevProject ? (
+          <Link href={`/projects/details/?slug=${prevProject.slug}`} className="group flex items-center gap-4 text-left">
+            <div className="p-3 border border-gray-200 rounded-full group-hover:border-black transition-colors">
+              <ChevronLeft size={20} className="text-gray-400 group-hover:text-black transition-colors" />
+            </div>
+            <div>
+              <p className="text-[10px] font-bold uppercase text-gray-400">Previous</p>
+              <h4 className="text-sm font-bold uppercase text-black">{prevProject.title}</h4>
+            </div>
+          </Link>
+        ) : <div />}
+
+        {nextProject ? (
+          <Link href={`/projects/details/?slug=${nextProject.slug}`} className="group flex items-center gap-4 text-right justify-end">
+            <div>
+              <p className="text-[10px] font-bold uppercase text-gray-400">Next</p>
+              <h4 className="text-sm font-bold uppercase text-black">{nextProject.title}</h4>
+            </div>
+            <div className="p-3 border border-gray-200 rounded-full group-hover:border-black transition-colors">
+              <ArrowRight size={20} className="text-gray-400 group-hover:text-black transition-colors group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
+        ) : <div />}
+      </div>
     </div>
   );
 };
