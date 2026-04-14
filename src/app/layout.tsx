@@ -1,8 +1,12 @@
+"use client";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
+import { usePathname } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,24 +25,25 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata: Metadata = {
-  title: "Dwell Rich Designz",
-  description: "Premium interior design services for modern homes. Transform your space with our expert team, blending style and functionality to create your dream home. Contact us today for a consultation.",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const isDashboard = pathname?.startsWith("/dashboard");
+  const isProjectDetails = pathname?.startsWith("/projects/details");
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer/>
+        <Providers>
+          {!isDashboard && !isProjectDetails && <Navbar />}
+          {children}
+          {!isDashboard && <Footer/>}
+        </Providers>
       </body>
     </html>
   );

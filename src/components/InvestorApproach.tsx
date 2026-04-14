@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { SquareCheck } from "lucide-react";
 // Import your image here
-import investorImg from "@/assets/project14-1.jpg"; // Replace with your actual image path
+import investorImg from "@/assets/investor.jpg"; // Replace with your actual image path
 
 const InvestorApproach = () => {
     const services = [

@@ -28,7 +28,7 @@ const Navbar = () => {
         className={`
                 absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-4 transition-colors duration-300
                 ${isHomePage ? "text-black" : "text-black"} 
-                project-navbar
+                project-navbar public-navbar
             `}
       >
         {/* ======================= */}
