@@ -9,6 +9,7 @@ import { useQuery } from "@tanstack/react-query";
 import api from "@/lib/api";
 import logo from "@/assets/logo.webp";
 import Link from "next/link";
+import Navbar from "../Navbar";
 
 const ProjectPageContent = () => {
   const searchParams = useSearchParams();
@@ -71,6 +72,7 @@ const ProjectPageContent = () => {
 
   return (
     <div className="min-h-screen bg-white text-black">
+      <Navbar />
       {/* 1. HERO SECTION */}
       <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[550px] px-4 py-4">
         <div className="relative w-full h-[650px]">
