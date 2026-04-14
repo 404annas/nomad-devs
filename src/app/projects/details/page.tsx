@@ -169,14 +169,14 @@ const ProjectPageContent = () => {
       </AnimatePresence>
 
       {/* NAVIGATION SECTION */}
-      <div className="max-w-[1400px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-gray-100">
+      <div className="max-w-[1400px] mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-gray-200">
         {prevProject ? (
           <Link href={`/projects/details/?slug=${prevProject.slug}`} className="group flex items-center gap-4 text-left">
-            <div className="p-3 border border-gray-200 rounded-full group-hover:border-black transition-colors">
-              <ChevronLeft size={20} className="text-gray-400 group-hover:text-black transition-colors" />
+            <div className="p-3 border border-gray-400 rounded-full group-hover:border-black transition-colorall duration-300s">
+              <ChevronLeft size={20} className="text-gray-600 group-hover:text-black group-hover:-translate-x-1 transition-all duration-300" />
             </div>
             <div>
-              <p className="text-[10px] font-bold uppercase text-gray-400">Previous</p>
+              <p className="text-[10px] font-bold uppercase text-gray-400">Previous Project</p>
               <h4 className="text-sm font-bold uppercase text-black">{prevProject.title}</h4>
             </div>
           </Link>
@@ -185,11 +185,11 @@ const ProjectPageContent = () => {
         {nextProject ? (
           <Link href={`/projects/details/?slug=${nextProject.slug}`} className="group flex items-center gap-4 text-right justify-end">
             <div>
-              <p className="text-[10px] font-bold uppercase text-gray-400">Next</p>
+              <p className="text-[10px] font-bold uppercase text-gray-400">Next Project</p>
               <h4 className="text-sm font-bold uppercase text-black">{nextProject.title}</h4>
             </div>
-            <div className="p-3 border border-gray-200 rounded-full group-hover:border-black transition-colors">
-              <ArrowRight size={20} className="text-gray-400 group-hover:text-black transition-colors group-hover:translate-x-1 transition-transform" />
+            <div className="p-3 border border-gray-400 rounded-full group-hover:border-black transition-all duration-300">
+              <ChevronRight size={20} className="text-gray-600 group-hover:text-black group-hover:translate-x-1 transition-all duration-300" />
             </div>
           </Link>
         ) : <div />}
