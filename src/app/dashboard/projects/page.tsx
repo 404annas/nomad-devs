@@ -37,6 +37,7 @@ interface Project {
   category: string;
   status: 'published' | 'draft';
   isFeatured: boolean;
+  order: number;
   mainPic: { url: string };
 }
 
@@ -95,6 +96,7 @@ export default function ProjectsPage() {
     },
   });
 
+  
   const columns = useMemo(() => [
     columnHelper.accessor("title", {
       header: ({ column }) => (
