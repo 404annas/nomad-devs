@@ -11,6 +11,7 @@ interface FormData {
     message: string;
 }
 
+
 type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 
 const ContactSection = () => {
