@@ -137,14 +137,11 @@ const Navbar = () => {
             {/* Floating Website & WhatsApp Buttons */}
             <div className='fixed bottom-5 right-5 z-[70] flex flex-col gap-2 items-center'>
                 {/* Website Icon with Popup */}
-                <div className='relative group'>
-                    {/* Popup Tooltip */}
+                {/* <div className='relative group'>
                     <div className='absolute bottom-full left-1/3 -translate-x-1/2 mb-2 px-3 py-1.5 bg-black text-white text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none'>
                         Visit Website
-                        {/* Arrow */}
                         <div className='absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black'></div>
                     </div>
-                    {/* Website Icon */}
                     <a
                         href='https://designz-silk.vercel.app/'
                         target='_blank'
@@ -154,7 +151,7 @@ const Navbar = () => {
                     >
                         <FaGlobe size={26} />
                     </a>
-                </div>
+                </div> */}
 
                 {/* WhatsApp Icon */}
                 <a
