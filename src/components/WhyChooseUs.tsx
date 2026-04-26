@@ -114,7 +114,7 @@ const WhyChooseUs = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="w-full lg:w-1/2 h-[350px] sm:h-[450px] lg:h-[700px]"
+                        className="w-full lg:w-1/2 h-[350px] sm:h-[450px] lg:h-[750px]"
                     >
                         <div className="relative w-full h-full overflow-hidden rounded-xl bg-gray-50">
                             <video
