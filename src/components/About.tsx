@@ -1,6 +1,6 @@
 "use client";
 
-import aboutImg from "@/assets/heroMain6.png"
+import aboutImg from "@/assets/homeProject36.png"
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";

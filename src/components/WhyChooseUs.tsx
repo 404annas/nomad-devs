@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
     }, []);
 
     return (
-        <section className="w-full bg-white py-10 px-4 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
+        <section className="w-full bg-white py-10 px-4 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
@@ -114,18 +114,18 @@ const WhyChooseUs = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="w-full lg:w-1/2 h-[350px] sm:h-[450px] lg:h-[550px]"
+                        className="w-full lg:w-1/2 h-[350px] sm:h-[450px] lg:h-[700px]"
                     >
                         <div className="relative w-full h-full overflow-hidden rounded-xl bg-gray-50">
                             <video
-                                ref={videoRef}
+                                // ref={videoRef}
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
                                 className="absolute inset-0 w-full h-full object-cover"
                             >
-                                <source src="/videos/chooseVideo.webm" type="video/webm" />
+                                <source src="/videos/choose.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
