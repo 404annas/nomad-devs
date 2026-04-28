@@ -7,6 +7,7 @@ import CTA from '@/components/CTA';
 import FollowUs from '@/components/FollowUs'
 import Hero from '@/components/Hero'
 import Hero2 from '@/components/Hero2'
+import Hero3 from '@/components/Hero3'
 import InvestorApproach from '@/components/InvestorApproach';
 import Logos from '@/components/Logos';
 import Portfolio from '@/components/Portfolio'
@@ -19,7 +20,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='relative'>
-        <Hero2 />
+        <Hero3 />
         <About />
         <Portfolio />
         {/* <Client /> */}
