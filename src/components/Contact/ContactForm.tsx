@@ -132,7 +132,7 @@ const ContactSection = () => {
                     <div>
                         <h3 className="text-[#8F6573] text-2xl font-semibold mb-4 tracking-tight">Contact Us</h3>
                         <div className="text-gray-800 text-base space-y-2">
-                            <p className="flex gap-2">Call Us: <span className="font-semibold text-black">078033 26891</span></p>
+                            <p className="flex gap-2">Call Us: <span className="font-semibold text-black">+44 78033 26891</span></p>
                             <p className="flex gap-2">Mail Us: <span className="font-semibold text-black">hello@designz.dwell-rich.com</span></p>
                         </div>
                     </div>

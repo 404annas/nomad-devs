@@ -55,7 +55,7 @@ const Navbar = () => {
                 {/* --- RIGHT: DESKTOP BUTTON (Hidden below lg) --- */}
                 <div className="hidden lg:block">
                     <Link href={"/contact"} className="group flex items-center gap-3 border border-white px-6 py-3 text-white text-xs xl:text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer ease-in-out hover:bg-white hover:text-black">
-                        078033 2689 | hello@designz.dwell-rich.com
+                        +44 78033 26891 | hello@designz.dwell-rich.com
                         <ArrowRight
                             size={18}
                             strokeWidth={1.5}
@@ -113,9 +113,9 @@ const Navbar = () => {
                 {/* Sidebar Footer (Contact Info) */}
                 <div className="p-6 border-t border-white/10 bg-[#111]">
                     <div className="flex flex-col gap-2">
-                        <Link href="tel:0780332689" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
+                        <Link href="tel:+447803326891" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                             <Phone size={18} />
-                            <span className="text-xs tracking-wide">078033 2689</span>
+                            <span className="text-xs tracking-wide">+44 78033 26891</span>
                         </Link>
                         <Link href="mailto:hello@designz.dwell-rich.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                             <Mail size={18} />
@@ -155,7 +155,7 @@ const Navbar = () => {
 
                 {/* WhatsApp Icon */}
                 <a
-                    href='https://wa.me/07803326891'
+                    href='https://wa.me/447803326891'
                     target='_blank'
                     rel="noopener noreferrer"
                     aria-label="Chat on WhatsApp"

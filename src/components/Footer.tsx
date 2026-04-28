@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 justify-start md:justify-start">
                 <Phone size={18} className="text-white shrink-0" />
-                <a href="tel:07803326891">078033 26891</a>
+                <a href="tel:+447803326891">+44 78033 26891</a>
               </div>
             </div>
 

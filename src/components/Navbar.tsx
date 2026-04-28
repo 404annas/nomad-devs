@@ -62,11 +62,11 @@ const Navbar = () => {
           <div className="flex gap-4 xl:gap-6 items-center justify-end whitespace-nowrap">
             {/* Phone */}
             <a
-              href="tel:07803326891"
+              href="tel:+447803326891"
               className="flex items-center gap-2 uppercase tracking-tight text-sm xl:text-base font-semibold cursor-pointer hover:opacity-70 transition-opacity"
             >
               <Phone size={16} />
-              <span>078033 26891</span>
+              <span>+44 78033 26891</span>
             </a>
 
             {/* Email */}
@@ -183,14 +183,14 @@ const Navbar = () => {
 
             <div className="flex flex-col gap-2">
               <a
-                href="tel:0780332689"
+                href="tel:+447803326891"
                 className="flex items-center gap-4 group cursor-pointer"
               >
                 <div className="p-2 border border-white/20 rounded-full group-hover:bg-white group-hover:text-black transition-all">
                   <Phone size={18} />
                 </div>
                 <span className="text-xs font-light tracking-wide">
-                  078033 2689
+                  +44 78033 26891
                 </span>
               </a>
 
@@ -231,7 +231,7 @@ const Navbar = () => {
 
         {/* WhatsApp Icon */}
         <a
-          href="https://wa.me/07803326891"
+          href="https://wa.me/447803326891"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"

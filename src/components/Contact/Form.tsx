@@ -17,7 +17,7 @@ const Form = () => {
                         <div className="leading-tight">
                             <p className="flex items-center gap-2 mb-2">
                                 <Phone size={20}/>
-                                <a href="tel:078033 26891">078033 26891</a>
+                                <a href="tel:+447803326891">+44 78033 26891</a>
                             </p>
                             <p className="flex items-center gap-2 mb-2">
                                 <Mail size={20}/>
