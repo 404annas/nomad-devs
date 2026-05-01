@@ -20,7 +20,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='relative'>
-        <Hero3 />
+        <Hero2 />
         <About />
         <Portfolio />
         {/* <Client /> */}
