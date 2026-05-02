@@ -138,7 +138,7 @@ const ProcessClient = () => {
       <section className="py-10 px-6 bg-[#F3F4F6]">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-16">
-            <h2 className="text-xs font-bold uppercase tracking-widest">Our Approach</h2>
+            <h2 className="text-xs 2xl:text-base font-bold uppercase tracking-widest">Our Approach</h2>
             <div className="h-px flex-1 bg-gray-300" />
           </div>
 
@@ -146,8 +146,8 @@ const ProcessClient = () => {
             {steps.map((step, i) => (
               <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.1 }}>
                 <span className="text-3xl font-bold text-gray-400 mb-4 block">{step.num}</span>
-                <h3 className="text-sm font-bold uppercase mb-4 tracking-wider">{step.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
+                <h3 className="text-sm 2xl:text-lg font-bold uppercase mb-4 tracking-wider">{step.title}</h3>
+                <p className="text-sm 2xl:text-base text-gray-500 leading-normal">{step.desc}</p>
               </motion.div>
             ))}
           </div>

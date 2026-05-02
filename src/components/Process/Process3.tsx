@@ -1,4 +1,4 @@
-import interiorDesign from "@/assets/project20-7.jpg";
+import interiorDesign from "@/assets/home12.jpg";
 
 const Process3 = () => {
   return (

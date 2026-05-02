@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.webp";
-import portfolioImg1 from "@/assets/heroMain3.png";
+import portfolioImg1 from "@/assets/home2.jpg";
 import portfolioImg2 from "@/assets/homeProject23.jpg";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react"; // Imported ArrowRight

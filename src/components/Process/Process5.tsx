@@ -1,4 +1,4 @@
-import procurement from "@/assets/project3-1.webp";
+import procurement from "@/assets/home14.jpg";
 
 const Process5 = () => {
   return (

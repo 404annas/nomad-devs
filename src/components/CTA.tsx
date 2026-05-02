@@ -7,7 +7,7 @@ import { Great_Vibes } from "next/font/google";
 
 // Import your images here
 import img1 from "@/assets/project3-4.webp"; // Replace with your image
-import img2 from "@/assets/project15-3.jpg"; // Replace with your image
+import img2 from "@/assets/home9.jpeg"; // Replace with your image
 import img3 from "@/assets/project11-11.jpg"; // Replace with your image
 import img4 from "@/assets/project11-3.webp"; // Replace with your image
 

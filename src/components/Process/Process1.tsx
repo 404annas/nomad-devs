@@ -1,4 +1,4 @@
-import archDesign from "@/assets/project11-1.webp";
+import archDesign from "@/assets/home10.jpg";
 
 const Process1 = () => {
   return (

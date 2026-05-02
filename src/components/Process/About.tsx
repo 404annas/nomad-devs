@@ -16,7 +16,7 @@ const About = () => {
 
         {/* Right Column: Description */}
         <div className="flex flex-col justify-center h-full">
-          <p className="text-gray-600 font-light leading-7 text-xs md:text-sm">
+          <p className="text-gray-600 font-light leading-7 text-xs md:text-sm 2xl:text-base">
             We are a leading design and build company offering comprehensive architectural design, 
             interior design, and construction services across residential projects. Our full-service 
             team delivers seamless turnkey solutions, guiding each project from initial concept 

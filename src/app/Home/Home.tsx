@@ -12,6 +12,7 @@ import InvestorApproach from '@/components/InvestorApproach';
 import Logos from '@/components/Logos';
 import Portfolio from '@/components/Portfolio'
 import Service from '@/components/Service'
+import SixPIcs from '@/components/SixPIcs';
 import Testimonials1 from '@/components/Testimonials1'
 import Testimonials2 from '@/components/Testimonials2'
 import WhyChooseUs from '@/components/WhyChooseUs'
@@ -23,6 +24,7 @@ const Home = () => {
         <Hero2 />
         <About />
         <Portfolio />
+        <SixPIcs />
         {/* <Client /> */}
         <WhyChooseUs />
         <Approach />

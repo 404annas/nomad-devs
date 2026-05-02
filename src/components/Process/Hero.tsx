@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import heroImg1 from "@/assets/heroMain2.png";
-import heroImg2 from "@/assets/heroMain3.png";
-import heroImg3 from "@/assets/heroMain4.png";
-import heroImg4 from "@/assets/heroMain5.png";
-import heroImg5 from "@/assets/heroMain6.png";
+import heroImg1 from "@/assets/home9.jpg";
+
 import Link from "next/link";
 
 const Hero = () => {
   // Use the imported images here. I'm using high-quality placeholders for the demo.
   const images = [
     heroImg1.src,
-    heroImg2.src,
-    heroImg3.src,
-    heroImg4.src,
-    heroImg5.src,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,11 +26,11 @@ const Hero = () => {
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-black/50 transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 bg-black/30 transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${image})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${image})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

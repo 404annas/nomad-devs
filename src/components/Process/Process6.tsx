@@ -1,4 +1,4 @@
-import deliveryInstall from "@/assets/project7-1.webp";
+import deliveryInstall from "@/assets/home15.jpg";
 
 const Process6 = () => {
   return (

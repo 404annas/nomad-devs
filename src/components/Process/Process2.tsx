@@ -1,4 +1,4 @@
-import buildConst from "@/assets/project12-1.jpg";
+import buildConst from "@/assets/home11.jpg";
 
 const Process2 = () => {
   return (

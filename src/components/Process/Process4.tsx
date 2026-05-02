@@ -1,4 +1,4 @@
-import ffeDesign from "@/assets/project5-1.webp";
+import ffeDesign from "@/assets/home13.jpg";
 
 const Process4 = () => {
   return (

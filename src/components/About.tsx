@@ -1,6 +1,6 @@
 "use client";
 
-import aboutImg from "@/assets/homeProject36.png"
+import aboutImg from "@/assets/home.jpg"
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -26,7 +26,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-            className="mt-5 text-sm sm:text-[15px] leading-5 text-gray-700 max-w-xl mx-auto"
+            className="mt-5 text-sm md:text-base lg:text-[15px] leading-5 text-gray-700 max-w-xl mx-auto"
           >
             Bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
           </motion.p>
@@ -45,12 +45,12 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="bg-gray-100 p-6 sm:p-8 md:p-10 flex flex-col justify-center"
+              className="bg-[#F2F2F2] p-6 sm:p-8 md:p-10 flex flex-col justify-center"
             >
-              <p className="text-base sm:text-[17px] leading-5 text-black pb-4">
+              <p className="text-base sm:text-[17px] 2xl:text-xl leading-5 pb-4">
                 Dwell Rich Designz  based in South London provides integrated architecture, interior design, and construction services for luxury and commercial developments. We partner with investors, developers, and private clients to translate vision into carefully executed, market-ready projects.
               </p>
-              <p className="text-base sm:text-[17px] leading-5 text-black">Our portfolio spans bespoke residences and large-scale developments, each delivered with disciplined planning, refined detailing, and consistent quality.</p>
+              <p className="text-base sm:text-[17px] 2xl:text-xl leading-5 text-black">Our portfolio spans bespoke residences and large-scale developments, each delivered with disciplined planning, refined detailing, and consistent quality.</p>
 
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
@@ -59,7 +59,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="mt-6"
               >
-                <Link href="/about" className="text-[12px] tracking-[0.2em] border-b border-black pb-1.5 uppercase font-semibold flex items-center gap-2 w-fit group">
+                <Link href="/about" className="text-[12px] 2xl:text-base tracking-[0.1em] border-b border-black pb-1.5 uppercase font-semibold flex items-center gap-2 w-fit group">
                   More ABOUT US <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                 </Link>
               </motion.div>
