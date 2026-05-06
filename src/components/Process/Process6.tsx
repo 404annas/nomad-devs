@@ -16,7 +16,7 @@ const Process6 = () => {
 
 
         {/* Body Text */}
-        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
+        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm lg:text-base">
           <p>
             Our delivery and installation services ensure that every aspect of your project
             is executed with precision and care. From large architectural features to fine

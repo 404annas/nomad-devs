@@ -60,10 +60,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, count, in
 
             {/* --- Text Section --- */}
             <div className="mt-auto">
-                <h2 className="text-base md:text-lg font-medium tracking-tight mb-4 uppercase text-black leading-tight">
+                <h2 className="text-base md:text-lg lg:text-xl font-medium tracking-tight mb-4 uppercase text-black leading-tight">
                     {title}
                 </h2>
-                <p className="text-gray-500 text-xs md:text-sm leading-normal">
+                <p className="text-gray-500 text-xs md:text-sm lg:text-base leading-normal">
                     {description}
                 </p>
             </div>

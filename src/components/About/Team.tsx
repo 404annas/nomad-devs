@@ -80,10 +80,10 @@ const Team = () => {
 
                         {/* Member Info */}
                         <div className="space-y-1">
-                            <h3 className="text-lg text-[#1a1a1a]">
+                            <h3 className="text-lg lg:text-2xl text-[#1a1a1a]">
                                 {member.name}
                             </h3>
-                            <p className="text-[10px] -mt-1 font-semibold tracking-tight text-[#1a1a1a] uppercase">
+                            <p className="text-[10px] lg:text-xs -mt-1 font-semibold tracking-tight text-[#1a1a1a] uppercase">
                                 {member.title}
                             </p>
                             <p className="text-sm leading-tight text-black font-medium pt-4">

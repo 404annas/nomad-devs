@@ -15,7 +15,7 @@ const Process2 = () => {
         </h2>
 
         {/* Body Text */}
-        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
+        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm lg:text-base">
           <p>
             As experienced design and build contractors, our construction team delivers
             high-quality builds with precision and reliability. We execute projects

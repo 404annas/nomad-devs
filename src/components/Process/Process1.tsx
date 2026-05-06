@@ -15,7 +15,7 @@ const Process1 = () => {
         </h2>
 
         {/* Body Text */}
-        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
+        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm lg:text-base">
           <p>
             Our architectural design services cover every stage of your project,
             including concept development, detailed drawings, planning applications,

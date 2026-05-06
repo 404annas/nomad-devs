@@ -15,7 +15,7 @@ const Process4 = () => {
         </h2>
 
         {/* Body Text */}
-        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
+        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm lg:text-base">
           <p>
             Our FF&E design services (Furniture, Fixtures, and Equipment) bring together
             custom furniture design, premium materials, and carefully selected finishes

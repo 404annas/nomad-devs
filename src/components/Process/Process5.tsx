@@ -15,7 +15,7 @@ const Process5 = () => {
         </h2>
 
         {/* Body Text */}
-        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
+        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm lg:text-base">
           <p>
             Our procurement services ensure a seamless sourcing process for all materials,
             furnishings, and interior elements. Working with a trusted global network

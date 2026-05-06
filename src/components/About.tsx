@@ -26,7 +26,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-            className="mt-5 text-sm md:text-base lg:text-[15px] leading-5 text-gray-700 max-w-xl mx-auto"
+            className="mt-5 text-sm md:text-base lg:text-lg leading-5 text-gray-700 max-w-2xl mx-auto"
           >
             Bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
           </motion.p>

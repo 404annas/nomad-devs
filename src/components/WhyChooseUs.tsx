@@ -96,10 +96,10 @@ const WhyChooseUs = () => {
 
                                     {/* Text Content */}
                                     <div className="flex flex-col">
-                                        <h3 className="text-base font-semibold uppercase tracking-tight text-black mb-1 group-hover:text-gray-700 transition-colors duration-300">
+                                        <h3 className="text-base lg:text-lg font-semibold uppercase tracking-tight text-black mb-1 group-hover:text-gray-700 transition-colors duration-300">
                                             {feature.title}
                                         </h3>
-                                        <p className="text-sm text-gray-500 font-light leading-normal">
+                                        <p className="text-sm lg:text-base text-gray-500 font-light leading-tight">
                                             {feature.description}
                                         </p>
                                     </div>

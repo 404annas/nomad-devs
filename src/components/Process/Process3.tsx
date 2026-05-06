@@ -15,7 +15,7 @@ const Process3 = () => {
         </h2>
 
         {/* Body Text */}
-        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm">
+        <div className="space-y-8 text-[#4a4a4a] font-light leading-relaxed text-xs md:text-sm lg:text-base">
           <p>
             Our luxury interior design services focus on creating bespoke interiors
             that reflect each client's individual style and aspirations. We collaborate
