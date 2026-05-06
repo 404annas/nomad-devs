@@ -7,10 +7,10 @@ const About = () => {
         
         {/* Left Column: Heading */}
         <div className="flex flex-col">
-          <h2 className="text-[#6d665b] font-serif font-light text-2xl sm:text-3xl md:text-4xl leading-tight uppercase">
+          <h2 className="text-[#6d665b] font-regular text-2xl sm:text-3xl md:text-4xl leading-tight uppercase">
             Creating beautiful,<br />
-             comfortable <span className="italic lowercase font-thin tracking-normal">and</span> timeless <br />
-            interiors is <span className="italic lowercase font-thin tracking-normal">our</span> passion.
+             comfortable <span className="italic lowercase font-light tracking-normal">and</span> timeless <br />
+            interiors is <span className="italic lowercase font-light tracking-normal">our</span> passion.
           </h2>
         </div>
 

@@ -10,7 +10,7 @@ const Process4 = () => {
         <div className="absolute top-12 right-0 md:block hidden w-1/3 h-[1px] bg-gray-400"></div>
 
         {/* Main Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif text-[#333] mb-6 md:mb-10 leading-tight tracking-tight uppercase font-light">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#333] mb-6 md:mb-10 leading-tight tracking-tight uppercase">
           FF&E Design
         </h2>
 

@@ -89,7 +89,7 @@ const ProjectPageContent = () => {
           <div className="mb-8 w-25 md:w-30 h-25 md:h-30 relative">
             <Image src={logo} alt="Logo" fill className="object-contain" />
           </div>
-          <h1 className="text-2xl md:text-3xl text-[#1a1a1a] font-light mb-6 uppercase tracking-tight leading-tight">
+          <h1 className="text-2xl md:text-3xl text-[#1a1a1a] font-bold mb-6 uppercase tracking-tight leading-tight">
             {project.title}
           </h1>
           <div className="text-base leading-6 sm:leading-7 text-[#1a1a1a] max-w-xl text-left mx-auto px-4">

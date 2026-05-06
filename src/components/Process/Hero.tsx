@@ -40,7 +40,7 @@ const Hero = () => {
       {/* Content Overlay */}
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* Title: Using a serif font to match the image style */}
-        <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-serif mb-10 select-none">
+        <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-bold tracking-tight mb-10 select-none">
           OUR PROCESS
         </h1>
 

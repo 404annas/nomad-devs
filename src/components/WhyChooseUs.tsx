@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
                             transition={{ duration: 0.7, ease: "easeOut" }}
                             className="text-center lg:text-left"
                         >
-                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-black leading-tight">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black leading-tight">
                                 Why Clients <span className="text-gray-400">Choose Us?</span>
                             </h2>
                             <motion.div
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
                                 whileInView={{ scaleX: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.3 }}
-                                className="w-47 h-[2px] bg-black mt-4 mx-auto lg:mx-0 origin-left"
+                                className="w-47 h-[2px] bg-black mt-2 mx-auto lg:mx-0 origin-left"
                             ></motion.div>
                         </motion.div>
 

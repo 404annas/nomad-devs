@@ -16,7 +16,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="text-2xl md:text-[42px] leading-[1.1] font-serif text-black"
+            className="text-2xl md:text-[40px] leading-[1.1] font-bold text-black"
           >
             Crafting Iconic Luxury Spaces for Visionary Investors | Developers | Private Clients
           </motion.h1>

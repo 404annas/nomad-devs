@@ -105,7 +105,7 @@ export default function ServicesGrid() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="mb-8"
                 >
-                    <h2 className="text-3xl font-serif text-black text-center">Our Approach</h2>
+                    <h2 className="text-3xl font-bold text-black text-center">Our Approach</h2>
                 </motion.div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-gray-300">
                     {services.map((service, index) => (

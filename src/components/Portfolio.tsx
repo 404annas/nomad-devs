@@ -80,7 +80,7 @@ const PortfolioHoverCard = ({ imgSrc, title, location, link, index }: { imgSrc: 
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.4, delay: 0.2 }}
                   >
-                    <h3 className="text-lg sm:text-xl text-black tracking-tight uppercase mb-1 font-serif">
+                    <h3 className="text-lg sm:text-xl text-black tracking-tight uppercase mb-1 font-bold">
                       {title}
                     </h3>
                     <p className="text-[10px] text-black/80 tracking-[0.3em] uppercase">

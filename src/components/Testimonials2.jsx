@@ -174,7 +174,7 @@ const Testimonials2 = () => {
         <div className="flex items-center justify-between mb-10 relative">
           <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-gray-200 -z-10 hidden md:block"></div>
           <div className="pr-6 z-10 mx-auto md:mx-0">
-            <h2 className="text-2xl sm:text-3xl font-serif text-black text-center px-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-black text-center px-4">
               User Reviews & Ratings
             </h2>
           </div>

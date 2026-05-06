@@ -270,7 +270,7 @@ const MobileLink = ({
     onClick={onClick}
     className="group flex items-center justify-between py-2 border-b border-gray-100 last:border-b-0 hover:pl-2 transition-all duration-300"
   >
-    <span className="text-sm font-serif text-[#1a1a1a] uppercase tracking-wide group-hover:text-black">
+    <span className="text-sm font-regular text-[#1a1a1a] uppercase tracking-wide group-hover:text-black">
       {text}
     </span>
     <ArrowRight

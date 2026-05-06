@@ -44,9 +44,9 @@ const ContactSection = () => {
 
     const dropdownOptions = [
         "Interior Design",
-        "Architecture",
+        "Refurbishment",
         "Renovation",
-        "Consultation",
+        "Construction",
     ];
 
     // --- Captcha Logic ---
