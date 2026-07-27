@@ -213,7 +213,7 @@ export const getProjectKeywords = (projectId: string, projectTitle?: string): st
   );
 };
 
-export const getPageKeywords = (page: "home" | "services" | "projects" | "contact" | "about") => {
+export const getPageKeywords = (page: "home" | "services" | "projects" | "contact" | "about" | "blogs") => {
   const common = [
     "design and build company",
     "residential design and build",
@@ -261,6 +261,20 @@ export const getPageKeywords = (page: "home" | "services" | "projects" | "contac
         `cost estimate construction company ${location}`,
       ])
     );
+  }
+
+  if (page === "blogs") {
+    return unique([
+      "interior design blog",
+      "home renovation tips",
+      "design and build guides",
+      "London interior design blog",
+      "home extension advice",
+      "loft conversion guide",
+      "kitchen renovation tips",
+      "residential construction blog",
+      ...TARGET_LOCATIONS.map((location) => `design and build blog ${location}`),
+    ]);
   }
 
   return unique([

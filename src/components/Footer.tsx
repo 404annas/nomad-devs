@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from "@/assets/logo.webp"; // Ensure path is correct
-import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone, BookOpen } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -66,6 +66,12 @@ export default function Footer() {
                 <a href="tel:+447803326891">+44 78033 26891</a>
               </div>
             </div>
+
+            {/* Blogs Link */}
+            <a href="/blog/" className="flex items-center gap-2 text-sm font-semibold hover:underline">
+              <BookOpen size={16} />
+              Blogs
+            </a>
 
             {/* Social Icons with brand colors from image */}
             <div className="flex gap-3 justify-start md:justify-end">
