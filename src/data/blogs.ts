@@ -9,6 +9,7 @@ import homeProject22 from "@/assets/homeProject22.webp";
 import homeProject23 from "@/assets/homeProject23.jpg";
 import homeProject24 from "@/assets/homeProject24.jpg";
 import homeProject25 from "@/assets/homeProject25.jpg";
+import homeProject27 from "@/assets/homeProject27.jpg";
 
 export type ContentBlock =
   | { type: "paragraph"; text: string }
@@ -53,7 +54,7 @@ export const blogs: Blog[] = [
     image: homeProject1,
     imageAlt:
       "bespoke residential design and build project in South London",
-    publishedAt: "July 2026",
+    publishedAt: "June 2026",
     readTime: "13-16 min read",
     metaTitle:
       "How to Choose a Design and Build Company in South London",
@@ -517,7 +518,7 @@ export const blogs: Blog[] = [
       "Plan a South London home renovation with confidence. Learn about surveys, planning permission, building regulations, budgets, interiors and construction.",
     image: homeProject5,
     imageAlt: "home renovation design and build project in South London",
-    publishedAt: "July 2026",
+    publishedAt: "June 2026",
     readTime: "15-18 min read",
     metaTitle: "Home Renovation Design & Build South London | Guide",
     metaDescription:
@@ -1063,7 +1064,7 @@ export const blogs: Blog[] = [
       "Planning a house extension in South London? Learn when permission may be needed, how permitted development works, and what to prepare before building.",
     image: homeProject10,
     imageAlt: "house extension planning permission project in South London",
-    publishedAt: "July 2026",
+    publishedAt: "June 2026",
     readTime: "15-18 min read",
     metaTitle: "House Extension Planning Permission South London | Guide",
     metaDescription:
@@ -1562,7 +1563,7 @@ export const blogs: Blog[] = [
       "Planning a refined South London home? Learn how luxury interior design combines layout, lighting, materials, joinery and turnkey project delivery.",
     image: homeProject15,
     imageAlt: "luxury interior design by a South London interior designer",
-    publishedAt: "July 2026",
+    publishedAt: "June 2026",
     readTime: "16-19 min read",
     metaTitle: "Luxury Interior Designer South London | Dwell Rich Designz",
     metaDescription:
@@ -2067,7 +2068,7 @@ export const blogs: Blog[] = [
       "Planning a South London loft conversion? Learn about feasibility, permitted development, Building Regulations, design, budgeting and choosing the right builder.",
     image: homeProject20,
     imageAlt: "completed project by loft conversion builders in South London",
-    publishedAt: "July 2026",
+    publishedAt: "June 2026",
     readTime: "15-18 min read",
     metaTitle: "Loft Conversion Builders South London | Complete Guide",
     metaDescription:
@@ -3830,7 +3831,7 @@ export const blogs: Blog[] = [
     metaDescription:
       "Professional interior design project management in London for home renovations, extensions and refurbishments. Plan, coordinate and deliver your project with confidence.",
     primaryKeyword: "interior design project management London",
-    author: "Ayaan Khan",
+    author: "Dwell Rich Designz Editorial Team",
     content: [
       {
         type: "quick-answer",
@@ -4256,7 +4257,7 @@ export const blogs: Blog[] = [
     metaDescription:
       "How much does an interior designer cost in London? Compare hourly, fixed, percentage and procurement fees, what is included, and how to budget.",
     primaryKeyword: "interior designer cost London",
-    author: "Ayaan Khan",
+    author: "Dwell Rich Designz Editorial Team",
     content: [
       {
         type: "quick-answer",
@@ -4803,6 +4804,564 @@ export const blogs: Blog[] = [
           { text: "Dwell Rich Designz provides integrated architecture, interior design and construction services for residential and commercial projects, including turnkey delivery and bespoke elements. To receive a relevant fee proposal, share your property information, intended scope, budget range and target programme when " },
           { text: "booking a consultation", bold: true, href: "/contact/" },
           { text: "." },
+        ],
+      },
+    ],
+  },
+  {
+    id: "10",
+    slug: "interior-design-consultation-london",
+    title: "Interior Design Consultation in London: What to Expect, How to Prepare and What You Receive",
+    subtitle:
+      "A practical client guide to discovery calls, site consultations, project briefs, proposals, budgets and the next steps toward a professionally delivered interior.",
+    description:
+      "Planning an interior design consultation in London? Learn how to prepare, what designers assess, what you may receive and how to compare next steps.",
+    image: homeProject27,
+    imageAlt:
+      "interior design consultation in London reviewing property plans and project priorities",
+    publishedAt: "July 2026",
+    readTime: "16-20 min read",
+    metaTitle:
+      "Interior Design Consultation London: What to Expect",
+    metaDescription:
+      "Planning an interior design consultation in London? Learn how to prepare, what designers assess, what you may receive and how to compare next steps.",
+    primaryKeyword: "interior design consultation",
+    author: "Dwell Rich Designz Editorial Team",
+    content: [
+      {
+        type: "quick-answer",
+        text: "An interior design consultation is a structured meeting used to understand the property, the people using it, the required scope, the desired result, the budget, the timetable and any known constraints. It may be a short discovery call, an on-site advisory session or a detailed project workshop. The outcome may be verbal guidance, written notes, an initial scope, a fee proposal or recommendations for further surveys and specialist input. It is not automatically a complete design package.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "An " },
+          { text: "interior design consultation", bold: true },
+          { text: " is often the first structured step between having ideas for a property and knowing how to turn them into a realistic project. It gives the client an opportunity to explain what is not working, what the finished space should achieve and how much support may be needed. It also gives the designer an opportunity to understand the property, identify important constraints and decide whether the project is a suitable fit for the practice." },
+        ],
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "For a London home, apartment, renovation or commercial interior, this early discussion can be particularly valuable. Lease conditions, access restrictions, conservation considerations, existing services, limited storage, neighbour relationships and demanding delivery logistics may affect the project long before colours and furniture are selected. A useful consultation begins to connect the creative ambition with these practical realities." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains what an interior design consultation can include, how to prepare for one, what a designer may ask, what you might receive afterwards and how to decide whether to proceed. Exact services vary between practices, so the written consultation description and subsequent proposal should always remain the source of truth.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Is an Interior Design Consultation?",
+      },
+      {
+        type: "paragraph",
+        text: "At its simplest, a consultation is a focused exchange of information. The client explains the project and the designer asks questions that reveal the real requirements behind the request. A client may begin by saying that a room feels dark, cluttered or unfinished. The designer will usually need to understand how the room is used, who uses it, what must remain, which decisions have already been made, what work is possible and which limitations cannot be changed.",
+      },
+      {
+        type: "paragraph",
+        text: "The British Institute of Interior Design describes the client brief as a starting point that may emerge through conversation and should then be documented. That principle is central to a productive consultation. The meeting is not only about collecting inspiration; it is about beginning a reliable brief that can guide later design, cost and delivery decisions.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A consultation may cover interior decoration, space planning, lighting, finishes, furniture, bespoke joinery, kitchens, bathrooms, renovation coordination or a complete " },
+          { text: "design-and-build project", bold: true, href: "/process/" },
+          { text: ". The service should be named carefully because the word consultation alone does not tell the client how much analysis, preparation or follow-up is included." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What a Consultation Is Not",
+      },
+      {
+        type: "paragraph",
+        text: "A first meeting should create clarity, but it cannot responsibly replace every later service. Unless the appointment expressly includes them, a consultation is not usually a measured survey, a structural assessment, a planning opinion, a complete technical drawing package, a contractor tender, a procurement service or continuous site management.",
+      },
+      {
+        type: "paragraph",
+        text: "A designer may identify that a wall, bathroom position, ventilation route or electrical plan requires specialist review, but that early observation is not the same as a formal engineering or compliance decision. Similarly, an initial budget conversation helps test alignment; it is not a fixed construction quotation. Clear boundaries protect the client from acting on incomplete information and protect the project from premature commitments.",
+      },
+      {
+        type: "decision-box",
+        text: "A useful consultation distinguishes between observations, assumptions, recommendations and confirmed deliverables. Before relying on any output for purchasing or construction, check whether it is advisory, concept-level or issued for implementation.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "When Should You Book an Interior Design Consultation?",
+      },
+      {
+        type: "paragraph",
+        text: "The best time is usually before major decisions become expensive to reverse. Early professional input can help a client test whether the intended layout, quality level, budget and programme belong together. It can also prevent isolated decisions such as ordering a kitchen, choosing flooring or fixing lighting positions from limiting the overall design later.",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Before purchasing a property that will require substantial alteration or fit-out",
+          "Before an architect or contractor develops a scheme without a coordinated interior brief",
+          "When a renovation idea feels too broad and the first priorities are unclear",
+          "Before committing to a kitchen, bathroom, lighting or bespoke-joinery package",
+          "When several rooms need a consistent design direction rather than separate decorative fixes",
+          "When a client needs help deciding between concept-only, full-service interior design and integrated design-and-build delivery",
+          "When the project has stalled because decision-makers disagree about scope, style, budget or sequencing",
+          "When an existing quotation seems incomplete and the client needs to understand which design information is still missing",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The earlier a designer becomes involved, the greater the opportunity to coordinate the interior with architecture, services, procurement and construction.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Different Types of Interior Design Consultation",
+      },
+      {
+        type: "table",
+        headers: ["Consultation format", "Typical purpose", "Possible outcome"],
+        rows: [
+          ["Introductory discovery call", "Usually remote and relatively short. Used to understand the project at a high level, confirm location and timing, discuss likely scope and decide whether a more detailed meeting is appropriate.", "A decision on fit and the information required for the next step."],
+          ["On-site advisory consultation", "A designer visits the property, discusses problems and opportunities and gives focused professional guidance.", "Verbal recommendations and, where included, brief written notes or priorities."],
+          ["Focused design workshop", "A longer session dedicated to a specific room, layout problem, material direction or decision set.", "Agreed direction, action list and possibly concept notes, marked plans or a defined follow-on package."],
+          ["Whole-project consultation", "A detailed review of the property, brief, scope, budget, programme, required consultants and delivery route.", "A preliminary project scope, proposal, recommended surveys and next-stage programme."],
+          ["Remote or e-design consultation", "A video meeting supported by photographs, measurements, plans and client-provided information.", "Advice based on supplied information; limitations should be stated where the property has not been surveyed."],
+          ["Commercial briefing session", "A consultation focused on brand, operations, customers, staff, compliance, lease conditions, programme and business disruption.", "A project brief outline and recommended feasibility or design stage."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These labels are not standardised. Two practices may use the same name for different services. Ask how much preparation is included, how long the meeting lasts, whether the designer visits the property, whether written output is provided and whether the consultation fee is credited against a later appointment.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Prepare Before the Consultation",
+      },
+      {
+        type: "paragraph",
+        text: "Preparation does not mean designing the project yourself. It means providing enough reliable information for the designer to use the meeting well. A concise, honest project summary is more valuable than a large folder of disconnected inspiration.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Describe the Property Accurately",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Full location and property type: house, apartment, listed building, new build, commercial unit or another category",
+          "Approximate size and the rooms or floors involved",
+          "Ownership and occupancy status, including whether the property is freehold, leasehold, tenanted, vacant or being purchased",
+          "Known alterations, surveys, planning history, building-control information or landlord approvals",
+          "Existing plans, estate-agent drawings, photographs and videos, clearly marked as approximate where necessary",
+          "Access limitations, parking, lift use, restricted working hours, concierge requirements or neighbour concerns",
+        ],
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Explain What Is Not Working",
+      },
+      {
+        type: "paragraph",
+        text: "A strong brief begins with performance. Instead of saying only that the interior should feel luxurious or modern, explain the daily problems. There may be insufficient storage, poor circulation, glare, dark work surfaces, nowhere to host guests, awkward heating, a lack of privacy or rooms that no longer suit the household. These observations allow the designer to solve the right problem rather than applying a visual style to the wrong layout.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Separate Essentials from Preferences",
+      },
+      {
+        type: "paragraph",
+        text: "Create three lists: essential outcomes, desirable improvements and optional ideas. Essentials may include an accessible bathroom, a home office, a fixed completion date or retention of important furniture. Desirable items might include additional joinery or upgraded finishes. Optional ideas can be tested against budget and programme once the essential scheme is secure.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Prepare a Realistic Budget Conversation",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A designer does not need perfect cost certainty at the first meeting, but needs to understand the client's financial boundary. State whether the figure includes professional fees, construction, furniture, lighting, appliances, window treatments, VAT, consultants, temporary accommodation and contingency. The dedicated Dwell Rich Designz article on " },
+          { text: "interior designer cost London", bold: true, href: "/blog/interior-designer-cost-london/" },
+          { text: " can support the fee discussion without turning this page into a duplicate pricing guide." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: 'Avoid using the consultation to obtain an artificial fixed figure before the scope exists. A more useful question is: "Based on this property and ambition, what information is needed before a reliable cost plan can be prepared?"',
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "5. Collect Inspiration with Explanations",
+      },
+      {
+        type: "paragraph",
+        text: "Images are useful when the client explains why each one matters. A photograph may be relevant because of the lighting, proportion, material, calmness, storage, colour balance or relationship between rooms. Include a small number of not-for-us examples as well. They often reveal boundaries faster than a large mood board of aspirational imagery.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "6. Identify the Decision-Makers",
+      },
+      {
+        type: "paragraph",
+        text: "The designer should know who owns the project, who will use the space, who controls the budget and who can approve decisions. For a family home, each person may have different functional needs. For an investment or commercial project, the owner, operator, landlord, brand team and facilities team may all influence the brief. Unclear authority can delay later approvals, so it should be discussed at the consultation stage.",
+      },
+      {
+        type: "important-box",
+        text: "Bring or send: property address and type; rooms involved; photographs and available plans; a summary of the current problems; essential outcomes; preferred timing; an honest whole-project budget range; inspiration with short explanations; retained furniture or artwork; known permissions or restrictions; and the names of everyone who will approve the project.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Happens During an Interior Design Consultation?",
+      },
+      {
+        type: "paragraph",
+        text: "A professional consultation should feel structured but conversational. The designer will usually begin with the client's goals, then move through the property, constraints, priorities, budget and level of support. For an on-site meeting, the discussion may follow the route through the spaces so that circulation, light, views, storage and existing conditions can be understood together.",
+      },
+      {
+        type: "table",
+        headers: ["Discussion area", "What the designer is trying to understand"],
+        rows: [
+          ["People and use", "Who uses each space, daily routines, accessibility needs, privacy, entertaining, work, children, pets and future changes."],
+          ["Property condition", "Visible constraints, previous alterations, proportions, natural light, existing services, storage, finishes and areas requiring survey."],
+          ["Scope", "Rooms, design packages, construction work, furniture, lighting, joinery, procurement, styling, approvals and site involvement."],
+          ["Design direction", "Desired atmosphere, references, materials, colours, retained items, quality expectations and dislikes."],
+          ["Budget", "Whole-project affordability, priorities, allowances, professional fees, contingency and where value matters most."],
+          ["Programme", "Decision dates, move-in or business deadlines, design time, approvals, lead times, construction and installation."],
+          ["Delivery route", "Designer-only advice, full interior design, architect and contractor team, project management or integrated design-and-build."],
+          ["Risks and next information", "Surveys, permissions, landlord consent, engineering, asbestos, services, procurement lead times and site access."],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Questions a Designer May Ask",
+      },
+      {
+        type: "checklist",
+        items: [
+          "What should feel different when the project is complete?",
+          "Which current problems must be solved rather than hidden?",
+          "How will the household or business use the space in two, five or ten years?",
+          "Which rooms, items or decisions are outside the project scope?",
+          "What must be retained, reused, protected or displayed?",
+          "Which date is genuinely fixed, and what creates that deadline?",
+          "What does the stated budget include and exclude?",
+          "How involved does the client want to be in selections and approvals?",
+          "Who will purchase furniture, finishes and specialist items?",
+          "Is the client seeking design advice only, or responsibility for coordination and delivery?",
+          "Are any other architects, surveyors, engineers, contractors or suppliers already appointed?",
+          "What would make the project unsuccessful even if it looked attractive?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These questions are not an interrogation. They are a way to discover assumptions before those assumptions become design changes or construction variations. A client should also use the meeting to ask equally direct questions about the practice, service boundaries and communication process.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Will the Designer Measure the Property?",
+      },
+      {
+        type: "paragraph",
+        text: "Not necessarily. Some on-site consultations include only observations and approximate discussion; others include a limited check of key dimensions. A full measured survey is a separate technical task in many appointments and may be completed by the design practice or a specialist surveyor. The difference matters because concept advice based on approximate information should not be used for construction or bespoke ordering.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask whether any measurements, marked-up plans or photographs taken during the consultation form part of the formal project record. If the next stage requires accurate drawings, the proposal should state who will survey the property, what will be measured and how concealed or inaccessible conditions will be treated.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Might You Receive After the Consultation?",
+      },
+      {
+        type: "paragraph",
+        text: "The output depends on the service purchased. A short discovery call may lead only to an invitation for a site visit. A paid consultation may include written notes. A whole-project meeting may lead to a detailed fee proposal and a request for surveys. The designer should state the output before the meeting so the client can assess value accurately.",
+      },
+      {
+        type: "table",
+        headers: ["Possible output", "What it should clarify"],
+        rows: [
+          ["Consultation summary", "The client goals, key constraints, priorities and advice discussed."],
+          ["Initial scope outline", "Rooms, work packages, design services, procurement and site involvement likely to be required."],
+          ["Recommended next steps", "Surveys, consultant appointments, permissions, budget work or further design stages."],
+          ["Fee proposal", "Services, deliverables, assumptions, exclusions, fees, expenses, payment stages and validity period."],
+          ["Indicative programme", "Likely sequence and broad timing for briefing, design, approvals, procurement and construction."],
+          ["Information request", "Plans, surveys, title or lease information, appliance data, photographs, technical records and stakeholder input."],
+          ["Focused advice document", "Room-specific recommendations, priorities or an action list where the consultation is a standalone service."],
+          ["Referral or decline", "An honest explanation where another specialist, different budget, later timing or alternative practice would be more appropriate."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A consultation should not create ambiguity about ownership or use of design information. If sketches, layouts or specifications are included, the terms should explain their status, intended use and whether further development is required before implementation.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "From Consultation to a Written Project Brief",
+      },
+      {
+        type: "paragraph",
+        text: "The client brief records what exists, what is desired and what is possible at the current level of information. BIID guidance recommends documenting the brief and confirming it with the client. The project or design brief then develops how those aims will be achieved: the designer's role, the team structure, communication, budget control, permissions, programme and required trades or consultants.",
+      },
+      {
+        type: "paragraph",
+        text: "This distinction is helpful because the first conversation is allowed to be exploratory. The written brief turns that exploration into a controlled reference. It can change as surveys and design work reveal more, but changes should be conscious and recorded rather than assumed.",
+      },
+      {
+        type: "decision-box",
+        text: "Before concept design begins, the client and designer should be able to state the project purpose, included spaces, essential outcomes, quality level, target budget, target programme, decision-makers, required services, known constraints and the information still missing.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How the Consultation Connects to the Full Design Process",
+      },
+      {
+        type: "paragraph",
+        text: "The RIBA Plan of Work organises building projects into eight stages from strategic definition to use, and BIID notes that this structure is also a useful starting point for interior designers. A domestic or commercial interior may use simpler language, but the consultation generally belongs at the strategic-definition and preparation-and-briefing end of the process.",
+      },
+      {
+        type: "table",
+        headers: ["Stage", "Purpose"],
+        rows: [
+          ["1. Consultation and fit", "Understand the client, property, ambition, budget and service requirement."],
+          ["2. Feasibility and surveys", "Confirm existing information, restrictions, technical risks and required consultants."],
+          ["3. Brief and scope", "Agree project outcomes, services, responsibilities, deliverables and decision process."],
+          ["4. Concept design", "Develop layouts, visual direction, key materials and initial cost alignment."],
+          ["5. Spatial and technical coordination", "Coordinate architecture, structure, services, lighting, joinery, finishes and compliance information."],
+          ["6. Procurement and contractor appointment", "Obtain comparable prices, finalise selections and manage lead times."],
+          ["7. Construction and installation", "Build, inspect, coordinate changes and protect design quality."],
+          ["8. Handover and use", "Complete defects, certificates, manuals, client orientation and post-occupancy review."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Not every client needs every stage from the same practice. The consultation should help determine whether the project is best served by a limited advisory package, a full interior design appointment or an integrated architecture, interiors, construction and turnkey route.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Discuss Budget Without Turning the Meeting into a Guess",
+      },
+      {
+        type: "paragraph",
+        text: "Budget is one of the most important consultation topics and one of the easiest to mishandle. The designer needs enough information to test whether the ambition is plausible, while the client needs protection from confident numbers based on incomplete scope. A responsible early conversation uses ranges, allowances, priorities and explicit exclusions.",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Confirm whether the budget includes VAT and professional fees",
+          "Separate construction, specialist packages, furniture, lighting, window treatments, appliances, art and accessories",
+          "Include surveys, engineers, planning or building-control costs where relevant",
+          "Allow for delivery, storage, installation, protection and disposal",
+          "Identify a contingency appropriate to the project and existing-condition risk",
+          "Discuss which outcomes are essential if the budget cannot support every desirable item",
+          "Ask when the first meaningful cost plan can be produced and what design information it requires",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Interior designers may charge fixed fees, hourly rates, a percentage of project cost or a combination. The consultation or subsequent proposal should explain the selected structure, what it covers and how additional services or changes will be charged. For detailed fee comparisons, see our guide to interior designer costs in London.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Planning, Building Regulations and Other Approvals",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A consultation can identify approval questions, but the answer may require property-specific research. Internal design work can involve planning permission, listed-building consent, landlord consent, freeholder approval, Party Wall procedures, building regulations, fire-safety requirements or specialist permissions depending on the property and scope." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "GOV.UK states that building regulations approval is different from planning permission and that many alteration projects may require approval, including certain plumbing, electrical, air-conditioning, window, heating and roof works. The consultation should therefore record whether statutory advice is included, who will obtain approvals and which specialists must be appointed.",
+      },
+      {
+        type: "paragraph",
+        text: "For leasehold apartments, the building's alteration rules, licence-to-alter process, working hours, insurance, contractor requirements and service routes can influence the design. For listed or conservation-sensitive properties, early architectural and planning advice may be appropriate before a concept is developed too far.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Decide Whether the Designer Is the Right Fit",
+      },
+      {
+        type: "paragraph",
+        text: "The consultation is a two-way assessment. A strong portfolio is important, but the client is also choosing a working relationship, communication method and professional process. BIID guidance emphasises the need for trust and clarity about a designer's full scope and capabilities.",
+      },
+      {
+        type: "table",
+        headers: ["Review area", "Questions to ask"],
+        rows: [
+          ["Relevant experience", "Have you delivered projects of a similar property type, scope, quality and complexity?"],
+          ["Service boundaries", "Which services are included in your practice, and which require separate specialists?"],
+          ["Named team", "Who will lead the project and who will attend meetings or site?"],
+          ["Briefing method", "How will our consultation information become a confirmed written brief?"],
+          ["Design deliverables", "Which layouts, drawings, schedules, specifications and visuals are included?"],
+          ["Budget control", "When will costs be tested and how will changes be reported?"],
+          ["Procurement", "Will you advise, purchase as agent, supply products, manage deliveries or only specify?"],
+          ["Communication", "How often will we meet, which platform will hold approvals and who can issue instructions?"],
+          ["Site involvement", "What inspections, contractor coordination and quality reviews are included?"],
+          ["Contract and insurance", "What written appointment, terms, insurance and dispute process apply?"],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Warning Signs During the Consultation",
+      },
+      {
+        type: "checklist",
+        items: [
+          "A guaranteed project price is given before the property and scope have been properly understood",
+          "The designer avoids discussing budget, fees, exclusions or payment terms",
+          "Visual ideas are offered without asking how the space must function",
+          "The practice encourages immediate purchasing before dimensions and responsibilities are confirmed",
+          "Technical, approval or safety questions are dismissed rather than referred to the appropriate professional",
+          "The designer cannot explain what the client will receive after the consultation",
+          "There is no process for recording the brief, approvals or changes",
+          "Every service is described as included, but the proposal does not list deliverables",
+          "The client is pressured to appoint before receiving clear written terms",
+          "The practice claims that a consultation alone replaces surveys, technical design or statutory approval",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Makes a Consultation Valuable?",
+      },
+      {
+        type: "paragraph",
+        text: "The value is not measured only by the number of immediate design suggestions. The most useful consultation may reveal that the project needs a different sequence, a more realistic brief, an additional survey, a narrower first phase or a stronger budget before design begins. Preventing a poor decision can be as valuable as proposing an attractive one.",
+      },
+      {
+        type: "paragraph",
+        text: "A high-quality consultation should leave the client with greater certainty about five things: what the project is trying to achieve, what information is still needed, what level of professional service is appropriate, what the likely next stage is and what decisions should not yet be made. That clarity reduces wasted design time and makes later quotations more comparable.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Interior Design Consultation Checklist for Clients",
+      },
+      {
+        type: "table",
+        headers: ["Preparation area", "What to confirm"],
+        rows: [
+          ["Property information", "Address, property type, size, ownership or lease status, occupancy and known restrictions."],
+          ["Project scope", "Rooms, floors, intended work, retained items and excluded areas."],
+          ["Current problems", "Functional, storage, lighting, circulation, comfort, maintenance or brand issues."],
+          ["Desired outcome", "Essential results, preferred atmosphere, quality expectations and long-term use."],
+          ["Timing", "Target start, required completion, move dates, business disruption and decision availability."],
+          ["Budget", "Whole-project range, inclusions, exclusions, contingency and spending priorities."],
+          ["Reference material", "Plans, photographs, surveys, approvals, quotations, inspiration and product information."],
+          ["Project team", "Decision-makers, existing consultants, contractor, landlord or stakeholder contacts."],
+          ["Questions", "Deliverables, fees, programme, communication, procurement, site involvement and next steps."],
+          ["After the meeting", "Request written confirmation of scope, assumptions, exclusions, required information and proposal timing."],
+        ],
+      },
+      {
+        type: "cta",
+        text: "Planning a residential, commercial, renovation or design-and-build project in London or Surrey? Request an interior design consultation with Dwell Rich Designz to discuss the property, priorities, expected service level and the information needed for a reliable next-step proposal.",
+        href: "/contact/",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq-question",
+        question: "How long does an interior design consultation take?",
+        answer: "The format determines the duration. A discovery call may be brief, while an on-site whole-project consultation or design workshop may require several hours. Ask for the expected duration, preparation requirements and included follow-up in writing.",
+      },
+      {
+        type: "faq-question",
+        question: "Is an interior design consultation free?",
+        answer: "Some practices offer a short introductory call, while detailed advice, site visits or workshops may be paid. Do not assume that consultation means free. Confirm the charge, payment timing, cancellation terms and whether any fee is credited to a later appointment.",
+      },
+      {
+        type: "faq-question",
+        question: "What should I bring to an interior design consultation?",
+        answer: "Provide property details, available plans, photographs, a summary of problems, must-have outcomes, approximate budget, timing, inspiration with explanations, retained items and any known lease, planning or building constraints.",
+      },
+      {
+        type: "faq-question",
+        question: "Will I receive a design during the first consultation?",
+        answer: "Not necessarily. The first meeting commonly focuses on the brief, scope and feasibility. A standalone workshop may include focused recommendations, but complete layouts, specifications or technical drawings normally require a separate design appointment.",
+      },
+      {
+        type: "faq-question",
+        question: "Can an interior designer help before I buy a property?",
+        answer: "Yes, where the practice offers pre-purchase or feasibility advice. The designer may help identify layout opportunities, likely scope and questions requiring survey or specialist input. This should not be treated as a substitute for legal, structural or building survey advice.",
+      },
+      {
+        type: "faq-question",
+        question: "Can the consultation cover planning permission or Building Regulations?",
+        answer: "It can identify likely approval questions and recommend next steps. A definitive answer may require architectural research, drawings, a building-control body or another specialist. The proposal should state who is responsible for statutory advice and applications.",
+      },
+      {
+        type: "faq-question",
+        question: "How honest should I be about my budget?",
+        answer: "Be as clear as possible and explain what the figure includes. BIID guidance notes that openness about project costs and professional fees helps the designer create a realistic proposal and reduces unexpected changes later.",
+      },
+      {
+        type: "faq-question",
+        question: "What if I only need help with one room?",
+        answer: "A focused consultation or room-design package may be suitable. Confirm whether you need advice only, a concept, a shopping list, drawings, procurement or implementation support, because these are different scopes.",
+      },
+      {
+        type: "faq-question",
+        question: "What happens after the consultation?",
+        answer: "The designer may send notes, request more information, recommend surveys, provide a scope and fee proposal, or explain why another service or specialist is more appropriate. The expected output and timescale should be agreed before the meeting.",
+      },
+      {
+        type: "faq-question",
+        question: "How do I compare interior design consultation proposals?",
+        answer: "Compare preparation, meeting format, site attendance, deliverables, follow-up, named designer, fees, expenses, limitations and the path to the next stage. A lower price may provide a shorter or less detailed service, so compare scope rather than the headline figure alone.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Use the Consultation to Create Clarity",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "An " },
+          { text: "interior design consultation", bold: true },
+          { text: " should do more than generate attractive ideas. It should help define the problem, organise the brief, expose missing information, align ambition with budget and establish the right professional route for the property. The client should leave knowing what can be decided now, what requires further investigation and what the next stage will deliver." },
+        ],
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "For clients comparing an " },
+          { text: "interior designer London", bold: true },
+          { text: ", the best consultation is transparent about scope and limitations. It creates a documented foundation for design rather than encouraging early purchases or construction decisions based on assumptions. When the fit is right, the consultation becomes the starting point for a coordinated interior design, renovation or turnkey " },
+          { text: "design-and-build project", bold: true, href: "/process/" },
+          { text: "." },
+        ],
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "To discuss a project with Dwell Rich Designz, " },
+          { text: "request a consultation", bold: true, href: "/contact/" },
+          { text: " with the property location, rooms involved, expected timing, approximate budget and the level of support required. This information allows the team to recommend a focused and proportionate next step." },
         ],
       },
     ],
