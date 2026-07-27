@@ -5,6 +5,10 @@ import homeProject5 from "@/assets/homeProject5.webp";
 import homeProject10 from "@/assets/homeProject10.webp";
 import homeProject15 from "@/assets/homeProject15.webp";
 import homeProject20 from "@/assets/homeProject20.webp";
+import homeProject22 from "@/assets/homeProject22.webp";
+import homeProject23 from "@/assets/homeProject23.jpg";
+import homeProject24 from "@/assets/homeProject24.jpg";
+import homeProject25 from "@/assets/homeProject25.jpg";
 
 export type ContentBlock =
   | { type: "paragraph"; text: string }
@@ -2544,6 +2548,2262 @@ export const blogs: Blog[] = [
       {
         type: "note",
         text: "GOV.UK — Permitted development rights for householders technical guidance: https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance/permitted-development-rights-for-householders-technical-guidance",
+      },
+    ],
+  },
+  {
+    id: "6",
+    slug: "commercial-interior-designers-london",
+    title: "Commercial Interior Designers in London: Fit-Out Planning, Design and Delivery Guide",
+    subtitle:
+      "A practical guide for businesses, landlords, developers and investors planning offices, hospitality venues, retail spaces and other commercial interiors.",
+    description:
+      "Planning a London commercial interior or fit-out? Learn about briefing, approvals, CDM duties, fire safety, budgets, procurement and choosing a design-and-build team.",
+    image: homeProject22,
+    imageAlt:
+      "commercial interior designers in London delivering a completed fit-out",
+    publishedAt: "July 2026",
+    readTime: "16-19 min read",
+    metaTitle:
+      "Commercial Interior Designers London | Fit-Out Guide",
+    metaDescription:
+      "Planning a London commercial interior or fit-out? Learn about briefing, approvals, CDM duties, fire safety, budgets, procurement and choosing a design-and-build team.",
+    primaryKeyword: "commercial interior designers London",
+    author: "Dwell Rich Designz Editorial Team",
+    content: [
+      {
+        type: "paragraph",
+        text: "A successful commercial interior must do more than look impressive on opening day. It needs to support the people who work in it, the customers who visit it, the equipment and services it contains, and the commercial objectives behind the investment. For businesses, landlords, developers and investors comparing commercial interior designers in London, the real question is therefore not simply who can produce attractive visuals. It is who can translate a business case into a coordinated, compliant and buildable space.",
+      },
+      {
+        type: "paragraph",
+        text: "London commercial projects often involve more interfaces than a straightforward domestic refurbishment. The premises may be leasehold, the building may remain occupied, deliveries may be restricted, landlord design guides may apply and existing mechanical, electrical, fire or data systems may need to be adapted rather than replaced. Planning, Building Regulations, health and safety, accessibility and fire-safety responsibilities must be understood alongside brand, layout and finish decisions.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Dwell Rich Designz", bold: true, href: "/about/" },
+          { text: " describes an integrated offer across architecture, interior design, construction, structural coordination, bespoke joinery and turnkey project delivery. That structure is relevant to commercial fit-outs because concept, technical design, procurement and site execution need to remain aligned if the programme, quality and cost plan are to be controlled." },
+        ],
+      },
+      {
+        type: "quick-answer",
+        text: "Before appointing a commercial interior design company, define the business objective, confirm the lease and landlord constraints, survey the existing building, identify the required approvals and create a coordinated scope covering design, services, compliance, procurement and construction. Compare proposals by deliverables, exclusions, risk ownership and programme assumptions - not by the lowest headline fee alone.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Does Commercial Interior Design Include?",
+      },
+      {
+        type: "paragraph",
+        text: "Commercial interior design is the planning and specification of spaces used for business, employment, hospitality, retail, leisure, healthcare, property marketing or other non-domestic purposes. The work may range from a reception refresh to a complete strip-out and fit-out, but a full service usually connects strategic briefing with spatial, technical and material decisions.",
+      },
+      {
+        type: "paragraph",
+        text: "Depending on the premises and appointment, commercial interior design services can include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Measured surveys, existing-condition reviews and feasibility studies.",
+          "Business, operational and user-needs briefing.",
+          "Space planning, circulation, occupancy and furniture layouts.",
+          "Concept design, mood boards, material direction and visualisations.",
+          "Planning, landlord, licence-to-alter and building-control coordination.",
+          "Lighting, power, data, HVAC, ventilation, plumbing and acoustic coordination.",
+          "Fire strategy interfaces, means of escape and specification of relevant finishes.",
+          "Inclusive-design and accessibility considerations.",
+          "Detailed design, reflected ceiling plans, joinery and construction information.",
+          "Furniture, fixtures and equipment schedules and procurement support.",
+          "Tendering, contractor selection, project management and site inspections.",
+          "Fit-out construction, testing, commissioning, snagging and handover.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The precise scope should be written into the appointment. The title commercial interior designer does not automatically mean that every approval, consultant, technical drawing, procurement package or construction activity is included.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Start With the Commercial Brief, Not the Finishes",
+      },
+      {
+        type: "paragraph",
+        text: "The most valuable early work is often invisible in the finished photographs. A robust brief establishes what the project must achieve, which activities the space must support and which constraints cannot be ignored. Without that information, the design team may create a visually coherent scheme that is operationally weak or commercially unrealistic.",
+      },
+      {
+        type: "paragraph",
+        text: "A useful briefing process should test:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Business objective: growth, relocation, repositioning, customer experience, staff retention, leasing value or operational efficiency.",
+          "User groups: employees, visitors, customers, deliveries, maintenance teams and people with different access needs.",
+          "Capacity: current headcount, future growth, peak occupancy and flexible-use requirements.",
+          "Activities: focused work, collaboration, consultations, food service, retail display, meetings, events, storage or specialist equipment.",
+          "Brand expression: what should the environment communicate without becoming a short-lived visual theme?",
+          "Technical requirements: cooling, ventilation, extraction, water, power, data, security, acoustics and lighting levels.",
+          "Programme: lease dates, trading deadlines, phased occupation and procurement lead times.",
+          "Financial limits: total investment, contingency, landlord contributions, professional fees, statutory charges, furniture and technology.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The brief becomes the basis for design decisions and later change control. When a new request is introduced, the team can identify whether it supports the agreed objective, affects approvals or increases cost and programme.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Survey the Premises Before Fixing the Design",
+      },
+      {
+        type: "paragraph",
+        text: "Commercial fit-outs inherit an existing building, and that building may contain undocumented alterations, limited service capacity, structural restrictions or hidden materials. A measured survey alone may not provide enough information for a reliable design or price. The survey strategy should reflect the intended work and the age, use and condition of the property.",
+      },
+      {
+        type: "paragraph",
+        text: "Early investigations may include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Measured and photographic survey of the premises and access routes.",
+          "Review of lease plans, landlord information, existing drawings and operation manuals.",
+          "Mechanical and electrical services assessment, including available capacity.",
+          "Drainage, water pressure, ventilation and extraction checks where relevant.",
+          "Structural review for new openings, heavy equipment, mezzanines or suspended loads.",
+          "Fire-safety information, compartmentation and escape-route review.",
+          "Acoustic surveys where neighbouring uses or privacy are important.",
+          "Condition survey and identification of elements to retain, repair or replace.",
+          "Asbestos information appropriate to the proposed intrusive work.",
+        ],
+      },
+      {
+        type: "important-box",
+        text: "HSE guidance states that a refurbishment or demolition survey must be carried out by a competent surveyor where the work will disturb the building fabric and the survey must access the relevant areas. The project team should not assume that a general management survey is sufficient for intrusive fit-out work.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Understand the Lease, Landlord and Building Rules",
+      },
+      {
+        type: "paragraph",
+        text: "Many London commercial interiors are delivered within leased premises. The tenant may have the right to occupy the unit but not unrestricted authority to alter it. Before developed design, the project team should review the lease, landlord handbook, base-build information and any design standards for the building.",
+      },
+      {
+        type: "paragraph",
+        text: "Items commonly requiring clarification include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Whether a licence to alter is required and what drawings or calculations must be submitted.",
+          "Restrictions on structure, facade, common systems, roof equipment and risers.",
+          "Approved contractors, access procedures, insurance and permit-to-work requirements.",
+          "Working hours, noisy-work windows, loading-bay bookings and waste routes.",
+          "Landlord approval of mechanical, electrical, sprinkler, fire-alarm or security changes.",
+          "Requirements for reinstatement or dilapidations at the end of the lease.",
+          "Responsibility for statutory approvals and fees.",
+          "What the landlord is delivering as part of the base build and what remains tenant work.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These controls can influence the layout, programme and cost. A design should not be presented as ready for construction while key landlord consents remain untested.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Do Commercial Interior Fit-Outs Need Planning Permission?",
+      },
+      {
+        type: "paragraph",
+        text: "Internal fit-out work does not always require planning permission, but the answer depends on the existing lawful use, proposed use, external alterations, listed status, planning conditions and the significance of the work. A material change of use may need planning permission or may follow a permitted-development or prior-approval route, depending on the circumstances.",
+      },
+      {
+        type: "paragraph",
+        text: "Planning Portal explains that buildings in England are grouped into Use Classes and that a change within or between uses can have different planning consequences. GOV.UK guidance also notes that planning permission is commonly required when changing the use of a building or making major changes. The local planning authority should be consulted where the position is uncertain.",
+      },
+      {
+        type: "paragraph",
+        text: "Planning questions may arise when a project involves:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Changing the premises from one business activity to another.",
+          "New shopfronts, signage, extraction equipment, plant or external alterations.",
+          "A listed building or premises within a conservation area.",
+          "Changes that affect opening hours, servicing, noise, odour or customer activity.",
+          "New floorspace, extensions or alterations to access and parking.",
+        ],
+      },
+      {
+        type: "important-box",
+        text: "Planning approval and landlord approval are separate. Receiving one does not remove the need for the other, and neither automatically confirms Building Regulations compliance.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Building Regulations and Dutyholder Coordination",
+      },
+      {
+        type: "paragraph",
+        text: "Building Regulations approval may be required where the fit-out changes the building in relevant ways. GOV.UK advises checking approval before constructing or altering buildings and emphasises that planning permission and Building Regulations are different systems. Commercial work may engage requirements covering structure, fire safety, ventilation, sanitation, energy, access, electrical work and other technical matters.",
+      },
+      {
+        type: "paragraph",
+        text: "England also has dutyholder and competence requirements for design and building work. The client, designers and contractors should understand their roles and ensure that the people carrying out regulated work are competent for the tasks they undertake. The approval route, information requirements and inspection process should be agreed before construction, not treated as a completion-stage formality.",
+      },
+      {
+        type: "decision-box",
+        text: "A beautiful concept drawing is not a technical approval package. The commercial interior designer, architect, engineers, fire adviser, building-control body and contractor may each hold different responsibilities. The appointment and design-responsibility matrix should show who prepares, checks, submits, coordinates and signs off every package.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "CDM Responsibilities for Commercial Clients",
+      },
+      {
+        type: "paragraph",
+        text: "The Construction (Design and Management) Regulations 2015 apply to construction work and place duties on clients, designers and contractors. HSE guidance states that a commercial client must make suitable arrangements for managing the project, allow sufficient time and resources, provide relevant pre-construction information and ensure appropriate dutyholders are appointed where required.",
+      },
+      {
+        type: "paragraph",
+        text: "For a project involving more than one contractor, appointments and coordination become particularly important. A commercial client should not assume that appointing a fit-out contractor removes every client responsibility. The client needs a management structure that allows risks to be addressed during design as well as on site.",
+      },
+      {
+        type: "paragraph",
+        text: "Practical actions include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Define who is the client for CDM purposes and who is authorised to make decisions.",
+          "Appoint competent designers and contractors with adequate organisational capability.",
+          "Provide existing drawings, surveys, asbestos information, landlord rules and known hazards.",
+          "Allow realistic time for design, approvals, procurement, enabling work and commissioning.",
+          "Confirm the principal designer and principal contractor arrangements where applicable.",
+          "Maintain clear design-risk, change-control and information-issue procedures.",
+          "Ensure that the health and safety file and relevant handover information are obtained and retained.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Fire Safety Must Shape the Layout",
+      },
+      {
+        type: "paragraph",
+        text: "Fire safety cannot be added after the furniture plan is complete. Escape distances, exit capacity, fire doors, compartmentation, alarm interfaces, emergency lighting, signage, surface finishes and the needs of people who may require assistance can affect the fundamental arrangement of the space.",
+      },
+      {
+        type: "paragraph",
+        text: "GOV.UK identifies employers, owners, landlords, occupiers and others with control of non-domestic premises as potential responsible persons for workplace fire safety. Where more than one responsible person exists, they must cooperate. The responsible person must arrange a suitable fire risk assessment and appropriate fire-safety measures for the occupied premises.",
+      },
+      {
+        type: "paragraph",
+        text: "The project design and the operational fire risk assessment are connected but not identical. During fit-out, the team should coordinate the building fire strategy, landlord systems, proposed occupancy and use. At handover, the operator must receive enough information to manage the premises safely and update the fire risk assessment for the completed layout.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Accessibility and Inclusive Commercial Design",
+      },
+      {
+        type: "paragraph",
+        text: "An inclusive interior should allow a wide range of people to arrive, enter, navigate, communicate and use the services provided. Building Regulations set minimum access-related requirements in relevant work, while the Equality Act can create a separate duty to make reasonable adjustments. Meeting a minimum technical standard does not automatically mean every user need has been resolved.",
+      },
+      {
+        type: "paragraph",
+        text: "Design considerations can include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Step-free approach and threshold strategy where reasonably achievable.",
+          "Door widths, ironmongery, circulation zones and turning space.",
+          "Accessible reception or service points and varied seating options.",
+          "Clear visual contrast, legible signage and intuitive wayfinding.",
+          "Lighting that supports visibility without excessive glare.",
+          "Acoustic conditions that improve speech clarity and reduce sensory overload.",
+          "Accessible sanitary facilities where required.",
+          "Emergency evacuation arrangements for people with different needs.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Inclusive decisions are most effective when made during concept design. Late adjustments can be more expensive and may compromise the layout.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Types of Commercial Fit-Out",
+      },
+      {
+        type: "table",
+        headers: ["Project Condition", "What It Can Mean for the Brief"],
+        rows: [
+          ["Shell or base-build space", "The unit may have limited finishes and services. The tenant project can require substantial mechanical, electrical, fire, ceiling, floor and partition work before occupation."],
+          ["Category A-style fit-out", "A landlord-oriented finish often providing core services, ceilings, lighting and raised floors or equivalent base provisions. The exact definition varies between buildings and agreements."],
+          ["Category A+ or plug-and-play", "A more usable fitted environment with elements such as meeting rooms, furniture or data. Scope differs widely, so the inventory and condition must be verified."],
+          ["Category B-style fit-out", "A tenant-specific scheme including layouts, finishes, branding, specialist rooms, furniture, technology and operational requirements."],
+          ["Refurbishment in occupation", "Existing premises are upgraded while some or all business activity continues. Phasing, protection, temporary services, dust, noise and safety planning become central."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These labels are useful shorthand but are not universal specifications. The tender or contract documents should state exactly what is retained, removed, supplied, altered, tested and handed over.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Commercial Interior Design and Fit-Out Process",
+      },
+      {
+        type: "table",
+        headers: ["Stage", "Key Output"],
+        rows: [
+          ["1. Discovery", "Clarify business goals, stakeholders, target opening date, brand, budget and decision-making structure."],
+          ["2. Due diligence", "Review lease, landlord requirements, premises condition, surveys, services, planning status and constraints."],
+          ["3. Feasibility", "Test occupancy, layout options, technical risks, approval route, high-level cost and programme."],
+          ["4. Concept design", "Develop space planning, customer or employee journey, look and feel, materials and initial visuals."],
+          ["5. Developed design", "Coordinate partitions, ceilings, lighting, MEP, acoustics, fire, accessibility, furniture and joinery."],
+          ["6. Consents", "Prepare landlord, planning, building-control and other required submissions with supporting information."],
+          ["7. Cost and procurement", "Issue a defined scope, test the cost plan, resolve alternatives and appoint suppliers and contractors."],
+          ["8. Technical design", "Complete coordinated construction information, schedules, specialist details and design responsibilities."],
+          ["9. Construction", "Manage strip-out, enabling works, fit-out, inspections, samples, quality, safety, changes and reporting."],
+          ["10. Testing and commissioning", "Test building services, controls, alarms and specialist systems; record results and resolve defects."],
+          ["11. Handover and aftercare", "Complete snagging, approvals, manuals, warranties, training, asset information and post-occupancy review."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Some stages overlap, especially on fast-track projects. Overlap should be deliberate and risk-managed. Starting construction while major design decisions remain unresolved can create rework, provisional pricing and reduced quality.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Space Planning Should Support Real Behaviour",
+      },
+      {
+        type: "paragraph",
+        text: "A commercial plan should respond to how people actually use the space rather than relying on a generic ratio of desks, tables or customer seats. Interviews, observations, operational data and future-growth scenarios can reveal competing needs that a simple room list misses.",
+      },
+      {
+        type: "paragraph",
+        text: "In an office, the brief may require quiet work, confidential calls, collaboration, team identity and hybrid attendance. In hospitality, the relationship between arrival, service, kitchen, storage, staff routes and customer dwell time may determine the commercial success of the layout. In retail, sightlines, product density, stock handling, security and conversion points matter alongside aesthetics.",
+      },
+      {
+        type: "paragraph",
+        text: "Good space planning balances utilisation with comfort. A plan that maximises nominal capacity can create noise, queues, poor circulation and limited flexibility. A slightly lower density may produce a more valuable operational environment.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Coordinate Lighting, Acoustics and Building Services Early",
+      },
+      {
+        type: "paragraph",
+        text: "Lighting, acoustics and mechanical and electrical services strongly influence the experience of a commercial interior, but they are often hidden in early visualisations. Their routes and equipment can also occupy the same ceiling and wall zones, making coordination essential.",
+      },
+      {
+        type: "paragraph",
+        text: "The design team should consider:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Ambient, task, feature and emergency lighting as related but distinct layers.",
+          "Daylight, glare, screen use, display lighting and control zones.",
+          "Background noise, speech privacy, reverberation and transfer between rooms.",
+          "Heating and cooling loads created by occupancy, equipment and glazing.",
+          "Fresh-air and extraction requirements for the intended use.",
+          "Power, data, audiovisual, access control, security and future flexibility.",
+          "Maintenance access to valves, filters, controls, distribution boards and equipment.",
+          "Testing, commissioning and user training at handover.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A coordinated reflected ceiling plan and services strategy can prevent late conflicts between lights, sprinklers, detectors, grilles, speakers, tracks, acoustic features and access panels.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Choose Materials for Use, Maintenance and Brand",
+      },
+      {
+        type: "paragraph",
+        text: "Commercial materials face repeated use, cleaning, impact and replacement cycles. The specification should consider appearance together with slip resistance, fire performance, acoustic behaviour, durability, repairability, lead time and maintenance. A surface that photographs well but deteriorates quickly is not a premium solution.",
+      },
+      {
+        type: "paragraph",
+        text: "A coherent material palette usually performs better than an excessive collection of finishes. Brand can be expressed through proportion, tone, light, texture, joinery and customer experience rather than relying only on logos or fashionable features. Timeless does not mean neutral; it means the concept can remain credible as the business evolves.",
+      },
+      {
+        type: "paragraph",
+        text: "Samples and mock-ups are particularly useful for high-contact joinery, decorative metalwork, stone, specialist coatings, upholstery and complex lighting. The approved sample should be recorded so the site team has a quality benchmark.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Budgeting and Cost Control",
+      },
+      {
+        type: "paragraph",
+        text: "A reliable commercial fit-out budget includes more than the contractor construction sum. Decision-makers should consider professional services, surveys, statutory fees, landlord-review costs, enabling work, technology, furniture, signage, security, specialist equipment, temporary accommodation, removals, storage, commissioning, tax treatment and contingency.",
+      },
+      {
+        type: "paragraph",
+        text: "The cost plan should evolve with the design. At concept stage, it is an allocation tool rather than a final price. As surveys, specifications and technical information improve, allowances should be replaced with defined quantities and supplier information. This process helps the team protect the elements that create the most business value while adjusting lower-priority items before construction.",
+      },
+      {
+        type: "paragraph",
+        text: "When comparing proposals, ask:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Are all bidders pricing the same drawings, schedules and scope?",
+          "Which items are provisional, excluded or based on assumptions?",
+          "Are professional fees, surveys, approvals and landlord costs separate?",
+          "Does the price include testing, commissioning, manuals and final certification?",
+          "Who owns coordination between construction and specialist packages?",
+          "How will variations be quoted, authorised and reported?",
+          "What contingency is held for existing-building risk?",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Programme Planning and Long-Lead Items",
+      },
+      {
+        type: "paragraph",
+        text: "A target opening date should be tested backwards through construction, approvals, technical design and procurement. Imported finishes, bespoke joinery, switchgear, specialist lighting, HVAC equipment, furniture and technology can require early decisions. A fast site programme cannot recover time lost because a key item was not selected or approved.",
+      },
+      {
+        type: "paragraph",
+        text: "The programme should identify decision dates as well as construction activities. Client sign-off, landlord comments, building-control information, samples and specialist coordination need time. A project can appear active while waiting for one unresolved decision that blocks several packages.",
+      },
+      {
+        type: "paragraph",
+        text: "For occupied buildings, phased delivery may be more practical than a single shutdown. The phasing plan should address temporary routes, service interruptions, fire arrangements, security, dust, noise, public protection and the handover of completed zones.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Choose a Commercial Interior Design Company",
+      },
+      {
+        type: "paragraph",
+        text: "The right team should understand both design quality and delivery risk. Portfolios are useful, but a visually similar project is not enough. Review how the company defines scope, coordinates technical information, manages approvals, controls changes and hands the space over.",
+      },
+      {
+        type: "paragraph",
+        text: "Questions to ask shortlisted commercial interior designers in London include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Which sectors and project conditions are most relevant to your experience?",
+          "Who will lead the project day to day, and who makes technical decisions?",
+          "Which surveys and consultants do you recommend before concept sign-off?",
+          "How do you coordinate landlord, planning, building-control, fire and CDM requirements?",
+          "What is included at concept, developed-design and technical-design stages?",
+          "Can you provide a clear design-responsibility and deliverables schedule?",
+          "How do you create and update the cost plan?",
+          "How are samples, mock-ups, quality inspections and snagging managed?",
+          "What information is delivered at handover?",
+          "Can references confirm how the team performed when changes or problems occurred?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Warning signs include an instant fixed price before surveys, unclear responsibility for approvals, a design fee based only on visualisations, heavy reliance on provisional sums, no written change process and a programme that omits landlord or statutory review periods.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Common Commercial Fit-Out Mistakes",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Signing a lease without testing whether the premises can support the intended use and services.",
+          "Beginning concept design before reviewing landlord rules and reinstatement obligations.",
+          "Assuming internal work never needs planning or Building Regulations approval.",
+          "Treating fire safety and accessibility as late compliance checks.",
+          "Failing to obtain suitable asbestos information before intrusive work.",
+          "Designing to current headcount with no realistic flexibility or growth scenario.",
+          "Selecting finishes before resolving ventilation, power, data and ceiling coordination.",
+          "Comparing quotations with different exclusions and undefined provisional sums.",
+          "Starting construction before long-lead items and technical interfaces are confirmed.",
+          "Opening the premises without complete testing, manuals, training and updated operational risk information.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why an Integrated Commercial Design-and-Build Route Can Help",
+      },
+      {
+        type: "paragraph",
+        text: "Commercial interior projects can become fragmented between designer, architect, engineers, landlord team, cost consultant, specialist suppliers and contractor. Fragmentation is not automatically a problem, but every interface requires ownership. When the design intent, technical packages and construction sequence are managed separately without a strong coordination structure, gaps can appear.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Dwell Rich Designz", bold: true, href: "/about/" },
+          { text: " presents itself as a " },
+          { text: "design-and-build", bold: true, href: "/process/" },
+          { text: " company working across architecture, interior design, construction and bespoke craftsmanship, with services for luxury and commercial developments. For an appropriate London project, an integrated route can connect business briefing, design, technical coordination, procurement and fit-out delivery within one managed framework." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Integration does not replace due diligence or documentation. A professional proposal should still define services, consultants, exclusions, approvals, design responsibility, cost reporting, programme and change control. The value is clearer coordination and continuity from the first brief to the finished premises.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Create a Commercial Interior That Performs After Opening",
+      },
+      {
+        type: "paragraph",
+        text: "The quality of a commercial interior is measured over time. Staff and customers should be able to understand and use the space; building services should perform as intended; materials should tolerate real use; maintenance should be practical; and the environment should continue to support the business rather than becoming an obstacle to it.",
+      },
+      {
+        type: "paragraph",
+        text: "For businesses, landlords and developers comparing commercial interior designers in London, the most useful first step is a structured feasibility and briefing consultation. Bring the lease information, landlord pack, existing drawings, target use, operational requirements, budget range and desired opening date. A coordinated team can then identify the surveys, approvals, design stages, consultant inputs and delivery route needed for a reliable project plan.",
+      },
+      {
+        type: "cta",
+        text: "Book a commercial interior design and fit-out consultation with Dwell Rich Designz.",
+        href: "/contact/",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq-question",
+        question: "What does a commercial interior designer do?",
+        answer: "A commercial interior designer translates business and user requirements into a planned, specified and buildable interior. Depending on the appointment, the work can include surveys, briefing, space planning, concept design, technical coordination, approvals support, furniture and finishes, procurement, site inspections and handover.",
+      },
+      {
+        type: "faq-question",
+        question: "What is the difference between commercial interior design and commercial fit-out?",
+        answer: "Interior design defines how the space should function, look and perform. Fit-out is the construction and installation work that turns the premises into the intended operational environment. On an integrated project, design and fit-out are coordinated but their deliverables and responsibilities should still be clearly stated.",
+      },
+      {
+        type: "faq-question",
+        question: "Does a London office or retail fit-out need planning permission?",
+        answer: "Not every internal fit-out needs planning permission. Permission may be relevant where there is a material change of use, external alteration, signage, plant, extraction, listed-building work or another planning constraint. The specific premises and proposal should be checked with the local planning authority or appointed planning professional.",
+      },
+      {
+        type: "faq-question",
+        question: "Do Building Regulations apply to commercial interiors?",
+        answer: "They can. The required approval depends on the work, but relevant areas can include structure, fire safety, ventilation, sanitation, energy, electrical work and access. Planning permission, landlord consent and Building Regulations are separate requirements.",
+      },
+      {
+        type: "faq-question",
+        question: "What are a commercial client's CDM duties?",
+        answer: "HSE guidance says commercial clients must make suitable arrangements for managing construction work, appoint appropriate competent dutyholders, provide relevant pre-construction information and allow sufficient time and resources. The exact appointments depend on the project structure and number of contractors.",
+      },
+      {
+        type: "faq-question",
+        question: "Is an asbestos survey needed before a commercial fit-out?",
+        answer: "Where intrusive refurbishment will disturb the building fabric, suitable asbestos information is required and a refurbishment or demolition survey may be necessary. HSE advises that this survey be undertaken by a competent surveyor for the areas affected by the work.",
+      },
+      {
+        type: "faq-question",
+        question: "How can a business control commercial fit-out costs?",
+        answer: "Start with surveys and a clear brief, develop a staged cost plan, define the scope and exclusions, identify long-lead items, maintain contingency for existing-building risk and require written approval before variations. Compare proposals against the same drawings and schedules.",
+      },
+      {
+        type: "faq-question",
+        question: "Can Dwell Rich Designz manage commercial design and construction together?",
+        answer: "The company describes integrated architecture, interior design, construction, structural coordination, bespoke joinery and turnkey delivery for luxury and commercial developments. The exact team, statutory roles and deliverables should be confirmed in a project-specific written proposal.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Authoritative Reference Sources",
+      },
+      {
+        type: "note",
+        text: "This article provides general information for commercial projects in England and was prepared in July 2026. Planning, lease, landlord, Building Regulations, fire-safety, accessibility, asbestos and CDM requirements depend on the premises, use, work and project team. Confirm the current position with the relevant authorities, landlord and appointed competent professionals before construction or occupation.",
+      },
+      {
+        type: "note",
+        text: "Dwell Rich Designz - company positioning and services: https://designz.dwell-rich.com/",
+      },
+      {
+        type: "note",
+        text: "Dwell Rich Designz - About: https://designz.dwell-rich.com/about/",
+      },
+      {
+        type: "note",
+        text: "Dwell Rich Designz - Process: https://designz.dwell-rich.com/process/",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Building Regulations approval: https://www.gov.uk/building-regulations-approval",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Design and building work: meeting building requirements: https://www.gov.uk/government/publications/design-and-building-work-meeting-building-requirements",
+      },
+      {
+        type: "note",
+        text: "HSE - Commercial clients: roles and responsibilities under CDM 2015: https://www.hse.gov.uk/construction/cdm/2015/clients.htm",
+      },
+      {
+        type: "note",
+        text: "HSE - Summary of duties under CDM 2015: https://www.hse.gov.uk/construction/cdm/2015/duties.htm",
+      },
+      {
+        type: "note",
+        text: "HSE - Refurbishment and demolition asbestos survey: https://www.hse.gov.uk/asbestos/surveys/refurbishment-and-demolition-survey.htm",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Workplace fire safety responsibilities: https://www.gov.uk/government/publications/fire-safety-risk-assessment-offices-and-premises",
+      },
+      {
+        type: "note",
+        text: "Planning Portal - Use Classes and change of use: https://www.planningportal.co.uk/permission/common-projects/use-classes-and-uses",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - When planning permission is required: https://www.gov.uk/when-you-need-planning-permission",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Building Regulations and Equality Act clarification: https://www.gov.uk/government/publications/equality-act-2010-advice-for-services-providers-offices-shops-and-restaurants",
+      },
+    ],
+  },
+  {
+    id: "7",
+    slug: "residential-design-build-surrey",
+    title: "Residential Design and Build in Surrey: A Complete Guide from Feasibility to Handover",
+    subtitle:
+      "A practical guide for homeowners planning a renovation, extension, refurbishment or bespoke residential transformation in Surrey.",
+    description:
+      "Planning a Surrey renovation, extension or bespoke home? Learn how integrated design and build coordinates feasibility, planning, interiors, construction, cost and handover.",
+    image: homeProject23,
+    imageAlt:
+      "completed residential design and build project in Surrey with integrated kitchen, dining and garden connection",
+    publishedAt: "July 2026",
+    readTime: "16-19 min read",
+    metaTitle:
+      "Residential Design and Build Surrey | Complete Guide",
+    metaDescription:
+      "Planning a Surrey renovation, extension or bespoke home? Learn how integrated design and build coordinates feasibility, planning, interiors, construction, cost and handover.",
+    primaryKeyword: "residential design and build Surrey",
+    author: "Dwell Rich Designz Editorial Team",
+    content: [
+      {
+        type: "paragraph",
+        text: "A successful home project is not created by treating architecture, planning, interiors, engineering, procurement and construction as unrelated tasks. Every decision affects another: the extension geometry influences structure and planning; the lighting design depends on ceiling and electrical coordination; bespoke joinery depends on final dimensions, services and flooring; and the construction programme depends on how quickly specifications and approvals are resolved.",
+      },
+      {
+        type: "paragraph",
+        text: "That is why homeowners researching residential design and build in Surrey often prefer an integrated team. A coordinated design-and-build route can connect the first feasibility conversation to architectural drawings, interior design, technical information, cost planning, construction and final handover. The aim is not simply to reduce the number of companies involved. It is to create clear responsibility for the interfaces where residential projects commonly lose time, quality and budget control.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains how to plan a Surrey renovation, extension, refurbishment or bespoke home transformation; which approvals may be required; how costs and timescales should be developed; and what to examine before appointing a design and build company in Surrey.",
+      },
+      {
+        type: "quick-answer",
+        text: "Residential design and build combines architectural design, planning coordination, interior design, technical development, procurement and construction within one managed delivery framework. For a Surrey homeowner, the best process begins with property due diligence and a realistic brief, confirms the approval route, develops a coordinated design and cost plan, then moves into construction only when responsibilities, specifications and risks are sufficiently clear.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Does Residential Design and Build Mean?",
+      },
+      {
+        type: "paragraph",
+        text: "Traditional residential delivery can involve separate appointments for an architect, structural engineer, interior designer, quantity surveyor, planning consultant, contractor and specialist suppliers. That route can work well when the client has the experience and time to manage interfaces or appoints a capable lead consultant. However, each appointment can have a different scope, programme and definition of completion.",
+      },
+      {
+        type: "paragraph",
+        text: "In a design-and-build model, a single organisation or coordinated group takes responsibility for both design development and construction delivery. The exact arrangement varies. Some providers employ designers and builders directly; others lead a managed consultant and specialist team. The important question is not the label but whether the proposal clearly defines:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Who leads the project and communicates with the homeowner.",
+          "Who prepares architectural, interior and technical information.",
+          "Who appoints and coordinates structural, building-services and specialist consultants.",
+          "Who manages planning, building-control and other approval submissions.",
+          "When the budget is tested and how design changes affect cost.",
+          "Which construction works, fittings, finishes and external works are included.",
+          "Who is responsible for procurement, programme, quality inspections and handover information.",
+        ],
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A professional " },
+          { text: "residential design and build", bold: true, href: "/process/" },
+          { text: " Surrey proposal should still contain detailed scopes, exclusions, deliverables and responsibilities. Integration is valuable only when it is supported by documentation and transparent project controls." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Which Surrey Home Projects Suit an Integrated Route?",
+      },
+      {
+        type: "table",
+        headers: ["Project Type", "Why Integration Can Help"],
+        rows: [
+          ["Whole-home renovation", "Replanning layouts, upgrading services, improving energy performance and delivering a consistent interior across several rooms or floors."],
+          ["Extension and remodelling", "Adding space while reorganising the existing home so the extension and original building work as one composition."],
+          ["Loft conversion plus refurbishment", "Creating a new upper level while coordinating stairs, fire strategy, bedrooms, bathrooms and upgrades below."],
+          ["Period-property transformation", "Improving performance and function while protecting character, proportions and original details."],
+          ["Luxury interior and joinery project", "Coordinating detailed finishes, kitchens, bathrooms, lighting, furniture and bespoke craftsmanship."],
+          ["Pre-purchase feasibility", "Testing whether a prospective property can support the required space, approvals, budget and programme before commitment."],
+          ["Investor or developer residence", "Aligning design quality, market positioning, specification, programme and value objectives for sale or rental."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Smaller cosmetic projects may not require a full integrated service. A useful consultation should identify the proportionate level of design, approvals and project management rather than automatically applying the same process to every home.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Start with Feasibility, Not Finishes",
+      },
+      {
+        type: "paragraph",
+        text: "Homeowners naturally begin with inspiration images, kitchen styles or preferred materials. Those decisions matter, but a reliable project starts by testing the property, constraints, objectives and budget before the design becomes emotionally fixed.",
+      },
+      {
+        type: "paragraph",
+        text: "A feasibility review can examine:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "The existing layout, orientation, levels, access and relationship to neighbouring properties.",
+          "Available drawings, planning history, title information, leases or restrictive covenants where relevant.",
+          "Whether the property is listed, in a conservation area or subject to other local constraints.",
+          "Likely structural implications, drainage routes, services capacity and condition risks.",
+          "Potential extension, loft, outbuilding or internal-remodelling options.",
+          "The probable planning and Building Regulations route.",
+          "A realistic budget range, contingency and target programme.",
+          "Whether the family can remain in occupation and what phasing or temporary arrangements may be required.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Feasibility is not a guarantee of consent or final price. It is a decision-making stage that identifies viable directions and prevents detailed work being invested in an option that conflicts with the property, approval route or budget.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Develop a Brief Around Daily Life",
+      },
+      {
+        type: "paragraph",
+        text: "The best residential brief describes how the home should support the people living in it. A room list is not enough. The design team should understand routines, privacy, storage, entertaining, working from home, accessibility, children, guests, pets, maintenance preferences and future changes.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful briefing questions include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Which spaces currently create frustration, congestion or wasted area?",
+          "What should feel different when the project is complete?",
+          "Which rooms need visual connection, and which need acoustic or physical separation?",
+          "How much concealed and display storage is genuinely required?",
+          "Which items, artworks or pieces of furniture must be retained?",
+          "Is the project intended for long-term occupation, resale, rental or a combination?",
+          "Which qualities are non-negotiable if cost pressure requires prioritisation?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This information allows a bespoke design and build Surrey team to create a home around real use rather than applying a fashionable layout to every property.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Planning Permission and Local Authority Coordination in Surrey",
+      },
+      {
+        type: "paragraph",
+        text: "Some home improvements fall within permitted development rights, while others require a planning application. The answer depends on the property, location, previous alterations and detailed proposal. Permitted development is not a general exemption from design checks, and it does not remove the need for Building Regulations approval where applicable.",
+      },
+      {
+        type: "paragraph",
+        text: "Surrey County Council explains that planning applications for building, extending or converting homes are generally handled by the relevant borough or district council. This means the correct local planning authority must be identified for the property rather than treating Surrey as one planning jurisdiction.",
+      },
+      {
+        type: "paragraph",
+        text: "A residential planning consultant or architectural team may help with property research, pre-application advice, planning drawings, design statements and submission coordination. Projects that may need closer assessment include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Large, prominent or multi-storey extensions.",
+          "Changes affecting the front or street-facing appearance.",
+          "Projects involving listed buildings or homes in conservation areas.",
+          "Material changes to roof form, external materials, windows or access.",
+          "Proposals affected by previous planning conditions or removed permitted development rights.",
+          "New residential units, substantial outbuildings or a material change of use.",
+        ],
+      },
+      {
+        type: "important-box",
+        text: "Planning permission considers the acceptability of development in planning terms. Building Regulations address technical standards such as structure, fire safety, ventilation, sanitation, energy and access. A project may need one, both or neither, depending on the work. Always confirm the current requirements for the specific property and proposal.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Conservation Areas and Listed Buildings",
+      },
+      {
+        type: "paragraph",
+        text: "Surrey includes listed buildings and conservation areas, so heritage checks should happen before external or internal proposals are developed. Work that might be routine in an unlisted house can require additional evidence, sensitive detailing or a separate consent when a listed building is involved.",
+      },
+      {
+        type: "paragraph",
+        text: "A heritage-aware approach does not mean reproducing every historic detail or preventing change. It means understanding which parts of the building contribute to its significance and designing alterations that protect character while improving the home. Early discussions with the relevant authority and experienced professionals can reduce the risk of an attractive concept later requiring major redesign.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Building Regulations and Technical Design",
+      },
+      {
+        type: "paragraph",
+        text: "GOV.UK states that Building Regulations approval is different from planning permission and that a project may need both. Residential alterations can involve requirements relating to structure, fire safety, insulation, ventilation, drainage, electrical work, glazing, stairs and accessibility. The exact scope depends on the project.",
+      },
+      {
+        type: "paragraph",
+        text: "Technical design should convert the approved concept into coordinated information that can be priced and built. Depending on the work, this may include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Existing and proposed plans, sections, elevations and construction details.",
+          "Structural calculations, steel layouts, foundation information and temporary-work assumptions.",
+          "Drainage, heating, ventilation, electrical, lighting and control strategies.",
+          "Insulation, airtightness, moisture and thermal-bridge details.",
+          "Fire-protection measures, escape considerations and detection requirements.",
+          "Window, door, rooflight, ironmongery and joinery schedules.",
+          "Bathroom, kitchen, floor, wall, ceiling and decorative-finish specifications.",
+          "Interfaces between new work and the existing building fabric.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Many cost disputes begin where drawings show the desired appearance but do not define the construction, specification or responsibility behind it. Technical coordination is therefore central to cost certainty and build quality.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Party Wall and Neighbour Considerations",
+      },
+      {
+        type: "paragraph",
+        text: "The Party Wall etc. Act 1996 provides a framework for certain work to party structures, new walls at boundaries and excavations near neighbouring buildings. GOV.UK guidance explains that notice may be required before covered works begin and that the process is separate from planning permission and Building Regulations.",
+      },
+      {
+        type: "paragraph",
+        text: "Not every renovation triggers the Act, but the issue should be reviewed early for extensions, loft works, structural alterations and excavation. Informal neighbour conversations can support good relationships, but they do not replace any formal notice or written agreement required by the legislation. The programme should allow enough time for notices and, where necessary, surveyor appointments and an award.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Interior Design Must Be Integrated Before Construction",
+      },
+      {
+        type: "paragraph",
+        text: "Interior design is not a decorative layer to be added after architectural decisions are complete. The location of furniture, joinery, curtains, artwork and equipment can influence walls, doors, sockets, switches, lighting, heating and ventilation. Bathrooms and kitchens affect drainage, extraction and structure. Floor finishes affect levels, thresholds, underfloor heating and doors.",
+      },
+      {
+        type: "paragraph",
+        text: "A coordinated interior design and build Surrey service can develop:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Furniture layouts and circulation clearances.",
+          "Lighting concepts, switching logic and decorative fittings.",
+          "Kitchen, utility, dressing-room and media joinery.",
+          "Bathroom layouts, sanitaryware, brassware and tile setting-out.",
+          "Colour, flooring, wall, ceiling and textile palettes.",
+          "Window treatments, rugs, furniture, artwork and accessories.",
+          "Room-by-room specifications and procurement schedules.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "When these choices are delayed, the site team may install services in generic positions that conflict with the final design. Early interior coordination reduces unnecessary relocation and supports a more refined result.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Design for Light, Flow and Proportion",
+      },
+      {
+        type: "paragraph",
+        text: "Residential quality depends less on the number of visual features than on how light, proportion, movement and materials work together. A large extension can still feel uncomfortable if circulation cuts through seating, the kitchen dominates every view or daylight creates glare without useful task lighting.",
+      },
+      {
+        type: "paragraph",
+        text: "The design should test:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Views on arrival and movement between principal rooms.",
+          "The balance between open-plan connection and rooms that can close for privacy or noise control.",
+          "Natural-light distribution through the day and across seasons.",
+          "Ceiling heights, door proportions, joinery lines and transitions between old and new.",
+          "Furniture scale before windows, radiators, sockets and lighting points are fixed.",
+          "How external terraces, gardens and landscape relate to internal floor levels and sightlines.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A luxury interior designer Surrey homeowners trust should be able to explain why each spatial decision improves the home, not only show an attractive visualisation.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Budgeting: Build the Whole Project Cost",
+      },
+      {
+        type: "paragraph",
+        text: "The construction quotation is only one part of the financial plan. A whole-project budget may need to include design and consultant fees, surveys, statutory charges, party-wall costs, temporary accommodation, storage, utility work, kitchens, bathrooms, lighting, fitted joinery, furniture, landscaping, security, technology, VAT and contingency.",
+      },
+      {
+        type: "paragraph",
+        text: "At early feasibility, the budget is a range based on incomplete information. As the design develops, allowances should be replaced with measured work, selected products and supplier quotations. The team should track the effect of design decisions rather than waiting for a final tender to reveal that the scheme is unaffordable.",
+      },
+      {
+        type: "paragraph",
+        text: "Useful cost-control practices include:",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Agreeing a total project budget rather than only a construction target.",
+          "Separating essential work, value-creating improvements and optional upgrades.",
+          "Testing cost at concept, developed-design and pre-construction stages.",
+          "Recording assumptions, exclusions and provisional sums.",
+          "Selecting long-lead and high-value items early enough to obtain real prices.",
+          "Maintaining contingency appropriate to the age, condition and survey certainty of the property.",
+          "Requiring written cost and programme approval before variations proceed.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How Long Does a Surrey Design-and-Build Project Take?",
+      },
+      {
+        type: "paragraph",
+        text: "There is no universal duration. A cosmetic refurbishment may take months, while a large extension and whole-house transformation can require a substantial pre-construction period followed by an extended build. The programme depends on surveys, planning route, design complexity, consultant inputs, procurement, access, occupation and unexpected existing conditions.",
+      },
+      {
+        type: "table",
+        headers: ["Stage", "Indicative Allowance", "Purpose"],
+        rows: [
+          ["Discovery and feasibility", "2-5 weeks", "Brief, property review, options, risks, budget and approval strategy."],
+          ["Concept and planning design", "4-10 weeks", "Layout development, appearance, consultations and planning information."],
+          ["Planning determination", "Authority-dependent", "Allow for validation, consultation, decisions and possible revisions; do not assume a guaranteed date."],
+          ["Technical design and Building Regulations", "6-14 weeks", "Structure, details, services, interiors, specifications and approval coordination."],
+          ["Pricing and procurement", "3-8 weeks", "Scope alignment, quotation review, value engineering and appointment."],
+          ["Construction", "Project-dependent", "Site delivery, inspections, selections, changes, testing and snagging."],
+          ["Handover and aftercare", "2-6 weeks plus defects period", "Completion information, training, final works and aftercare."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These allowances are illustrative planning ranges, not promises. A project-specific programme should show decision dates, approval dependencies, procurement lead times and the critical path rather than only the site start and finish.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "A Complete Residential Design-and-Build Process",
+      },
+      {
+        type: "table",
+        headers: ["Stage", "Principal Outcome"],
+        rows: [
+          ["1. Discovery", "Define lifestyle goals, property context, budget, priorities, desired quality and decision-making structure."],
+          ["2. Due diligence", "Review the property, measured information, planning context, condition, access, services and key risks."],
+          ["3. Feasibility", "Test layout and development options, likely consents, high-level cost and programme."],
+          ["4. Concept design", "Develop architecture, space planning, look and feel, major materials and initial visualisations."],
+          ["5. Planning coordination", "Prepare and submit the appropriate planning or lawful-development information where required."],
+          ["6. Developed design", "Coordinate structure, services, lighting, kitchens, bathrooms, joinery, finishes and external interfaces."],
+          ["7. Technical design", "Produce buildable drawings, schedules, details, calculations and Building Regulations information."],
+          ["8. Cost and procurement", "Finalise scope, test quotations, resolve alternatives, appoint the team and order long-lead items."],
+          ["9. Construction", "Manage programme, site coordination, safety, quality, samples, inspections, reporting and approved changes."],
+          ["10. Testing and handover", "Complete commissioning, certification, snagging, manuals, warranties, training and possession."],
+          ["11. Aftercare", "Review performance, close defects and provide continuing support during the agreed period."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Stages can overlap, but overlap should be intentional. Starting work before major design, approval or procurement decisions are resolved transfers uncertainty to the site, where changes are usually more disruptive and expensive.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Living in the Property During Construction",
+      },
+      {
+        type: "paragraph",
+        text: "Remaining in occupation may reduce temporary-accommodation costs, but it can lengthen the programme and introduce practical constraints. Dust, noise, service interruptions, security, working hours, temporary kitchens and bathrooms, protection routes and family safety require a realistic plan.",
+      },
+      {
+        type: "paragraph",
+        text: "For extensive refurbishment, moving out can allow more efficient sequencing and reduce repeated temporary work. The decision should be made during feasibility because it affects preliminaries, phasing, storage, programme and cost. A turnkey design and build services Surrey proposal should state what temporary provisions are included and what remains the homeowner's responsibility.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Compare Design-and-Build Proposals",
+      },
+      {
+        type: "paragraph",
+        text: "The lowest headline price is not necessarily the lowest final cost. Quotations can appear similar while including different design stages, specifications, consultant appointments, provisional sums, site management and handover obligations.",
+      },
+      {
+        type: "table",
+        headers: ["Comparison Area", "Question to Ask"],
+        rows: [
+          ["Scope", "Does the proposal define architecture, interiors, technical design, approvals, construction and aftercare separately?"],
+          ["Information basis", "Which surveys, drawings and schedules were used to calculate the price?"],
+          ["Exclusions", "Are kitchens, bathrooms, lighting, joinery, external works, services or decoration excluded?"],
+          ["Provisional sums", "Which amounts are allowances rather than fixed scope, and how will they be updated?"],
+          ["Consultants", "Who appoints and pays structural, building-services, planning, party-wall and specialist professionals?"],
+          ["Programme", "Does it include approvals, selections, lead times, client decisions and handover?"],
+          ["Change control", "How are variations described, priced and approved before work proceeds?"],
+          ["Quality control", "Who reviews samples, mock-ups, workmanship, testing and snagging?"],
+          ["Handover", "Which certificates, warranties, manuals, drawings and training are provided?"],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Questions to Ask a Design and Build Company in Surrey",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Who will be the day-to-day project lead from feasibility through construction?",
+          "Which services are completed in-house and which are delivered by appointed consultants or specialists?",
+          "How do you establish and update the project budget?",
+          "How will planning, Building Regulations and Party Wall responsibilities be coordinated?",
+          "At what stage are kitchens, bathrooms, lighting, joinery and finishes resolved?",
+          "Can you show examples of technical documentation, reporting and handover information?",
+          "How are site quality, programme and variations recorded?",
+          "What insurance, warranties and contractual arrangements apply?",
+          "How do you protect occupied or retained areas of the property?",
+          "What aftercare is included after practical completion?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The answers should be specific to the proposed project. General assurances such as everything is included are not a substitute for an itemised written scope.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Warning Signs Before Appointment",
+      },
+      {
+        type: "checklist",
+        items: [
+          "A fixed construction price offered before the property and scope have been adequately assessed.",
+          "No clear distinction between concept drawings and construction-ready technical information.",
+          "Unexplained provisional sums or major packages omitted from the headline price.",
+          "Pressure to start demolition before approvals, surveys or critical selections are resolved.",
+          "No named person responsible for coordination between architecture, interiors and construction.",
+          "Planning permission presented as guaranteed.",
+          "Variations discussed verbally without written cost and programme impact.",
+          "No defined process for testing, certificates, snagging, manuals or defects.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Common Mistakes in Surrey Home Projects",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Buying a property or committing to a design before feasibility and planning checks.",
+          "Focusing on added floor area without improving circulation and the existing layout.",
+          "Treating interior design as a late styling exercise rather than part of technical coordination.",
+          "Using online cost-per-square-metre figures as a complete project budget.",
+          "Assuming permitted development means no drawings, checks or approvals are needed.",
+          "Failing to allow time for neighbour, party-wall, authority or landlord processes.",
+          "Approving renders without reviewing materials, samples, maintenance and construction details.",
+          "Ordering products before final dimensions and service requirements are confirmed.",
+          "Starting site work with unresolved scope and relying on variations to finish the design.",
+          "Moving back in before commissioning, completion information and critical defects are resolved.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Residential Project Readiness Checklist",
+      },
+      {
+        type: "table",
+        headers: ["Readiness Area", "What Should Be Clear"],
+        rows: [
+          ["Property information", "Measured survey or reliable existing drawings, ownership or lease information, planning history and relevant reports."],
+          ["Project brief", "Space needs, lifestyle goals, priorities, desired quality, retained items and future plans."],
+          ["Budget", "Whole-project range, funding, tax awareness and an appropriate contingency."],
+          ["Programme", "Target dates, flexibility, occupation plan and decision-making availability."],
+          ["Approvals", "Initial planning, Building Regulations, heritage, Party Wall and other checks."],
+          ["Decision structure", "Named client decision-makers and a clear approval process."],
+          ["Professional team", "Defined lead, consultant roles, construction responsibility and communication route."],
+          ["Procurement", "Strategy for contractor appointment, long-lead items, samples and client-supplied products."],
+          ["Contract and controls", "Written scope, price basis, programme, payment, variations, insurance and defects terms."],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why an Integrated Surrey Design-and-Build Route Can Add Value",
+      },
+      {
+        type: "paragraph",
+        text: "Residential projects become difficult where responsibility falls between disciplines. An architectural drawing may not show the final joinery; an interior layout may not reflect structural zones; a contractor may price an outline scheme without the information needed for certainty; and a supplier may assume that someone else has coordinated power, plumbing or access.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Dwell Rich Designz", bold: true, href: "/about/" },
+          { text: " describes an integrated service across architecture, interior design, development and master planning, construction, turnkey execution and custom craftsmanship. The company also emphasises end-to-end accountability, value-aware planning and detailed delivery for private clients, investors and developers." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For an appropriate Surrey project, this integrated approach can connect feasibility, planning, spatial design, interiors, technical coordination, procurement and construction within one managed framework. The written appointment should still confirm every deliverable and responsibility, but continuity can reduce the gaps that arise when separate packages are developed in isolation.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Plan the Home as One Coordinated Project",
+      },
+      {
+        type: "paragraph",
+        text: "The most successful residential design and build Surrey projects begin with disciplined questions rather than immediate demolition. What is the property capable of? Which constraints need to be resolved? How should the home support daily life? What quality level is affordable across the complete project? Which approvals and technical decisions must be completed before construction?",
+      },
+      {
+        type: "paragraph",
+        text: "Once those foundations are clear, architecture, interior design and construction can develop together. The result is not only a more attractive home. It is a project with better-aligned information, more transparent cost decisions, fewer avoidable site changes and a clearer route from first idea to final handover.",
+      },
+      {
+        type: "cta",
+        text: "Book a residential design and build consultation with Dwell Rich Designz.",
+        href: "/contact/",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq-question",
+        question: "What is residential design and build?",
+        answer: "Residential design and build is a delivery approach that coordinates architectural design, technical development and construction within one managed framework. Depending on the provider, it may also include planning support, interior design, procurement, project management, bespoke joinery and aftercare.",
+      },
+      {
+        type: "faq-question",
+        question: "Why use a design and build company in Surrey?",
+        answer: "An integrated team can reduce gaps between architecture, interiors, consultants, procurement and site delivery. The benefit depends on a clear written scope, competent team and transparent cost and programme controls rather than the design-and-build label alone.",
+      },
+      {
+        type: "faq-question",
+        question: "Does every Surrey renovation need planning permission?",
+        answer: "No. Some internal or external work may not require planning permission, and some householder projects may fall within permitted development rights. The property, proposal, previous alterations and local constraints must be checked. Building Regulations or other consents may still apply.",
+      },
+      {
+        type: "faq-question",
+        question: "Who deals with house planning applications in Surrey?",
+        answer: "Surrey County Council states that applications for building, extending or converting homes are generally handled by the relevant borough or district council. Homeowners should identify the correct local planning authority for the property.",
+      },
+      {
+        type: "faq-question",
+        question: "Is Building Regulations approval the same as planning permission?",
+        answer: "No. Planning permission and Building Regulations are separate systems. Planning addresses whether development is acceptable, while Building Regulations cover technical standards. A project may require both.",
+      },
+      {
+        type: "faq-question",
+        question: "When should interior design begin?",
+        answer: "Interior design should begin during the architectural stages, before technical information and services positions are fixed. Furniture, kitchens, bathrooms, lighting, joinery and finishes affect layouts, structure, power, plumbing, heating, ventilation and procurement.",
+      },
+      {
+        type: "faq-question",
+        question: "How can I control the cost of a Surrey home renovation?",
+        answer: "Create a whole-project budget, complete relevant surveys, test cost as the design develops, define inclusions and provisional sums, select high-value and long-lead items early, maintain contingency and approve changes in writing before work proceeds.",
+      },
+      {
+        type: "faq-question",
+        question: "Can Dwell Rich Designz manage design and construction together?",
+        answer: "The company presents services across architectural drawings, interior design, feasibility and master planning, construction and turnkey execution, plus custom craftsmanship. The exact services, consultants, approvals and construction scope should be confirmed in a project-specific proposal.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Authoritative Reference Sources",
+      },
+      {
+        type: "note",
+        text: "This article provides general information for residential projects in England and was prepared in July 2026. Planning, permitted development, Building Regulations, listed-building, conservation-area, Party Wall and other requirements depend on the property and proposed work. Confirm the current position with the relevant local authority and appointed competent professionals before committing to design, cost or construction.",
+      },
+      {
+        type: "note",
+        text: "Dwell Rich Designz - company positioning and services: https://designz.dwell-rich.com/",
+      },
+      {
+        type: "note",
+        text: "Planning Portal - Do you need permission?: https://www.planningportal.co.uk/permission",
+      },
+      {
+        type: "note",
+        text: "Planning Portal - Common home improvement projects: https://www.planningportal.co.uk/permission/common-projects",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Building Regulations approval: https://www.gov.uk/building-regulations-approval",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Permitted development rights for householders: technical guidance: https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance/permitted-development-rights-for-householders-technical-guidance",
+      },
+      {
+        type: "note",
+        text: "GOV.UK - Party walls and building work: https://www.gov.uk/party-walls-building-works",
+      },
+      {
+        type: "note",
+        text: "Surrey County Council - Local planning applications: https://www.surreycc.gov.uk/planning-building-and-land/planning-applications",
+      },
+      {
+        type: "note",
+        text: "Surrey County Council - Planning and heritage information: https://www.surreycc.gov.uk/planning-building-and-land/planning-applications",
+      },
+    ],
+  },
+  {
+    id: "8",
+    slug: "interior-design-project-management-london",
+    title: "Interior Design Project Management in London",
+    subtitle:
+      "Professional design and project management for residential renovations, extensions and refurbishments across London",
+    description:
+      "A practical guide to interior design project management in London, covering scope, schedule, budget, planning, suppliers and quality control for home renovations.",
+    image: homeProject24,
+    imageAlt:
+      "interior design project management London residential renovation",
+    publishedAt: "July 2026",
+    readTime: "15-18 min read",
+    metaTitle:
+      "Interior Design Project Management in London | Dwell Rich Designz",
+    metaDescription:
+      "Professional interior design project management in London for home renovations, extensions and refurbishments. Plan, coordinate and deliver your project with confidence.",
+    primaryKeyword: "interior design project management London",
+    author: "Ayaan Khan",
+    content: [
+      {
+        type: "quick-answer",
+        text: "Interior design project management in London is the coordination of design, planning, approvals, procurement and construction under a single structured process. A project manager or design-and-build firm controls scope, schedule, budget and quality so homeowners avoid delays, miscommunication and cost overruns.",
+      },
+      {
+        type: "paragraph",
+        text: "Renovating a London home involves more than choosing finishes. You need to coordinate architects, structural engineers, planning consultants, builders, specialist trades, suppliers and inspectors across months of work. Without someone controlling that process, small misalignments turn into expensive delays.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Professional " },
+          { text: "interior design project management London", bold: true },
+          { text: " gives you a single point of responsibility. One team manages every stage from concept through handover so you can focus on decisions that matter rather than chasing trades and resolving clashes." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains how residential project management works in London, what each stage involves, where costs come from and how to choose the right service for your home.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What is interior design project management London",
+      },
+      {
+        type: "paragraph",
+        text: "Interior design project management is the structured coordination of every discipline required to deliver a residential renovation. It covers design development, technical drawings, planning and building regulation approvals, tender or contract administration, procurement, site supervision and final handover.",
+      },
+      {
+        type: "paragraph",
+        text: "In London the process also needs to account for stricter planning constraints, party wall requirements, limited access, conservation areas and the logistical challenges of working in dense urban neighbourhoods.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A project manager does not replace your designer. They work alongside " },
+          { text: "interior designers", bold: true },
+          { text: " and " },
+          { text: "architects", bold: true },
+          { text: " to ensure design intent is translated into built reality within budget and programme." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why London homeowners need professional project management",
+      },
+      {
+        type: "paragraph",
+        text: "London properties present unique challenges that rarely appear in suburban or rural renovations. Period terraces share structural walls. Flats involve freeholder consent and leaseholder obligations. Conservation areas restrict materials, proportions and external alterations. Planning departments apply policy differently across boroughs.",
+      },
+      {
+        type: "paragraph",
+        text: "Without professional management these variables create risk. A builder may start work before party wall notices are served. A design may require planning permission that was never identified. Material lead times may clash with programme milestones.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Common risks without project management",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Scope creep from undefined or shifting design decisions",
+          "Planning applications submitted late or rejected for incomplete information",
+          "Cost overruns from provisional sums becoming final costs",
+          "Programme delays from uncoordinated trade sequencing",
+          "Quality defects from insufficient site supervision",
+          "Party wall disputes or neighbour claims",
+          "Procurement errors from late ordering of long-lead items",
+          "Multiple contractors blaming each other with no single point of accountability",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Core stages of interior design project management London",
+      },
+      {
+        type: "paragraph",
+        text: "A structured project management process follows defined stages. Each stage has a clear purpose and produces deliverables that inform the next.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 1: Brief and feasibility",
+      },
+      {
+        type: "paragraph",
+        text: "Everything begins with understanding what you want to achieve. The brief defines your lifestyle requirements, spatial needs, design preferences, budget range and programme expectations. A feasibility study tests whether the brief is realistic given the property constraints, planning policy and budget.",
+      },
+      {
+        type: "paragraph",
+        text: "In London feasibility often involves checking permitted development rights, conservation area restrictions, party wall implications and access logistics. Starting with a thorough feasibility study prevents expensive redesigns later.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 2: Concept and detailed design",
+      },
+      {
+        type: "paragraph",
+        text: "Concept design establishes the spatial layout, material direction, lighting strategy and overall aesthetic. Detailed design develops these concepts into technical information: floor plans at scale, elevations, sections, joinery details, specifications and finishes schedules.",
+      },
+      {
+        type: "paragraph",
+        text: "Project management during design ensures decisions are made in sequence, costs are tested against budget and technical requirements are resolved before construction begins.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 3: Approvals and procurement",
+      },
+      {
+        type: "paragraph",
+        text: "Before work starts the project manager coordinates planning applications, Building Regulations submissions, party wall notices, freeholder consents and any other statutory requirements. At the same time materials, fixtures and long-lead items are specified and ordered to meet programme dates.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 4: Construction and site management",
+      },
+      {
+        type: "paragraph",
+        text: "During construction the project manager programmes trades, conducts site inspections, reviews quality against specifications, manages variations, processes payments and provides progress updates. This is where most value is protected or lost.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Stage 5: Handover and defects management",
+      },
+      {
+        type: "paragraph",
+        text: "At practical completion the project manager inspects all works, compiles a snagging list, coordinates rectification and issues completion certificates and warranties. A defects liability period typically runs for six to twelve months after handover.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Managing scope in London interior projects",
+      },
+      {
+        type: "paragraph",
+        text: "Scope management is one of the most valuable functions of professional project management. Interior projects are especially prone to scope creep because design decisions evolve as spaces take shape and new possibilities emerge.",
+      },
+      {
+        type: "paragraph",
+        text: "A project manager maintains a clear record of what is included in the contract, what is excluded and what constitutes a variation. Every change is documented with its cost and programme impact before approval.",
+      },
+      {
+        type: "important-box",
+        text: "Never assume a change is minor. In London, moving a single wall can trigger new structural calculations, Building Regulations submissions and planning considerations. Always request a formal variation before proceeding.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Schedule management for London homes",
+      },
+      {
+        type: "paragraph",
+        text: "London renovation programmes are longer than many homeowners expect. Design development and approvals can take three to six months. Construction for a full house refurbishment typically requires six to twelve months depending on scope.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Project management keeps the programme realistic and on track. The project manager identifies the critical path, sequences trades efficiently and manages dependencies between design decisions, approvals, procurement and construction. Working with an experienced " },
+          { text: "design-and-build firm", bold: true, href: "/process/" },
+          { text: " compresses programmes by overlapping design and construction stages where possible." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Budget and cost control",
+      },
+      {
+        type: "paragraph",
+        text: "Cost control in London residential projects requires accurate budgeting from the outset, transparent pricing during design, careful contract administration during construction and disciplined variation management throughout.",
+      },
+      {
+        type: "table",
+        headers: ["Cost stage", "Typical accuracy", "What it covers"],
+        rows: [
+          ["Feasibility estimate", "Plus or minus 25 to 35 percent", "Rough construction cost based on area and specification benchmarks"],
+          ["Concept estimate", "Plus or minus 15 to 20 percent", "Cost plan by trade based on developing design information"],
+          ["Detailed cost plan", "Plus or minus 10 percent", "Measured or priced estimate from complete or near-complete technical information"],
+          ["Tender or contract sum", "Final contract price", "Competitive pricing or negotiated sum based on full specification"],
+          ["Final account", "Actual cost", "Contract sum adjusted for approved variations and completions"],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Planning permissions and compliance",
+      },
+      {
+        type: "paragraph",
+        text: "London boroughs apply planning policy with varying degrees of strictness. What is acceptable in one area may require full planning permission in another. Some boroughs are more restrictive on rear extensions, basement developments, roof alterations and changes to windows and doors.",
+      },
+      {
+        type: "ordered-list",
+        items: [
+          "Check whether your property is in a conservation area or Article 4 direction area",
+          "Confirm permitted development rights have not been removed by a previous condition or planning agreement",
+          "Identify whether the property is listed or curtilage-listed",
+          "Consider neighbour notification requirements for party wall and planning purposes",
+          "Submit applications with complete supporting information to avoid delays",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Supplier and contractor coordination",
+      },
+      {
+        type: "paragraph",
+        text: "Interior projects involve multiple suppliers and specialist trades. Kitchens, bathrooms, joinery, glazing, lighting, flooring, appliances and bespoke furniture all have their own lead times. Missing a single critical delivery date can delay everything downstream.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A project manager builds a procurement schedule that aligns delivery dates with installation sequences. They place orders, confirm delivery dates, manage storage constraints and coordinate with " },
+          { text: "contractors", bold: true },
+          { text: " to ensure each element arrives when the site is ready for it." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Quality control and site supervision",
+      },
+      {
+        type: "paragraph",
+        text: "Quality control means inspecting work at defined stages and ensuring it matches the specification. In London residential projects this typically includes foundation and structural inspections, first fix inspections, second fix inspections and final snagging.",
+      },
+      {
+        type: "paragraph",
+        text: "Without regular site supervision defects go unnoticed until they are covered by subsequent trades. Rectifying hidden defects costs significantly more than catching them early.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Common mistakes homeowners make",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Starting construction before design is fully resolved",
+          "Splitting design and construction under separate contracts without clear coordination",
+          "Setting a budget without including professional fees, VAT, contingency and furnishing",
+          "Ignoring planning and Building Regulations requirements until work has started",
+          "Selecting the cheapest tender without understanding what is included or excluded",
+          "Approving verbal changes without written confirmation of cost and programme impact",
+          "Failing to order long-lead items early enough to meet programme dates",
+          "Not allocating enough budget for furnishing, landscaping and finishing after construction",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to choose the right interior design project management service",
+      },
+      {
+        type: "paragraph",
+        text: "Choosing the right project management service depends on your project scope, budget and how much involvement you want in the process.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Option 1: Appoint a project manager alongside your designer",
+      },
+      {
+        type: "paragraph",
+        text: "A standalone project manager or quantity surveyor works alongside your architect and interior designer. This suits larger projects where you want independent cost and programme oversight.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Option 2: Use a design-and-build firm with integrated project management",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A " },
+          { text: "design-and-build firm", bold: true, href: "/process/" },
+          { text: " provides design, project management and construction under one contract. This streamlines communication, reduces programme risk and gives you a single point of responsibility from concept to completion. For most London homeowners this is the most efficient and lowest-risk approach." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "When to hire project management for a London renovation",
+      },
+      {
+        type: "decision-box",
+        text: "If your project involves structural work, planning applications, multiple trades, a budget above two hundred thousand pounds or a programme longer than four months, professional project management almost always pays for itself through avoided delays, reduced defects and better cost control.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cost of interior design project management in London",
+      },
+      {
+        type: "paragraph",
+        text: "Project management fees in London vary depending on project size, complexity and scope of services. Typical approaches include percentage-based fees, fixed fees or day rates.",
+      },
+      {
+        type: "table",
+        headers: ["Fee model", "Typical range", "Best suited for"],
+        rows: [
+          ["Percentage of construction cost", "8 to 15 percent", "Larger renovations and extensions"],
+          ["Fixed fee", "Agreed at appointment", "Projects with well-defined scope"],
+          ["Day rate", "Three hundred to seven hundred pounds per day", "Advisory or partial project management"],
+        ],
+      },
+      {
+        type: "important-box",
+        text: "Always clarify what is included in the fee. Some project managers cover design coordination only. Others include procurement, site supervision, contract administration and handover. Understand the scope before committing.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Benefits of working with a design-and-build firm for project management",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Working with a " },
+          { text: "design-and-build company in South London", bold: true, href: "/process/" },
+          { text: " or across Greater London combines design, project management and construction under one roof. The benefits include:" },
+        ],
+      },
+      {
+        type: "ordered-list",
+        items: [
+          "Single contract and single point of responsibility for design and construction",
+          "Design developed with construction knowledge from the start",
+          "Programme compression through overlapping design and early works",
+          "Reduced risk of disputes between designers and builders",
+          "Streamlined communication throughout the project",
+          "Consistent quality from concept to completion",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For homeowners who want a clear process, predictable costs and professional delivery, integrated design-and-build project management removes the complexity of managing multiple consultants and contractors separately.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Summary",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Interior design project management London coordinates every discipline required to deliver a residential renovation from brief through handover",
+          "London properties demand professional management due to planning constraints, party wall requirements, conservation restrictions and logistical complexity",
+          "A structured five-stage process protects scope, schedule, budget and quality throughout the project",
+          "Budget accuracy improves as design develops from feasibility estimates through to final account",
+          "Procurement coordination prevents programme delays from misaligned delivery dates",
+          "Quality control through regular site inspections catches defects early when rectification costs are lowest",
+          "Design-and-build firms with integrated project management offer the most efficient and lowest-risk approach for most London homeowners",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Planning a London renovation and want professional project management from concept to completion? Contact Dwell Rich Designz for a consultation about your project.",
+        href: "/contact/",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq-question",
+        question: "What does an interior design project manager do?",
+        answer: "An interior design project manager coordinates all disciplines required to deliver a residential renovation. They manage scope, schedule, budget, procurement, quality control and communication between designers, contractors, suppliers and statutory authorities.",
+      },
+      {
+        type: "faq-question",
+        question: "How much does project management cost for a London renovation?",
+        answer: "Project management fees typically range from 8 to 15 percent of construction cost for percentage-based fees, or are agreed as a fixed fee for well-defined projects. Day rates for advisory services range from three hundred to seven hundred pounds. Always confirm what services are included.",
+      },
+      {
+        type: "faq-question",
+        question: "Do I need project management for a small renovation?",
+        answer: "For minor cosmetic refurbishments involving one or two trades and a short programme you may not need formal project management. For anything involving structural work, planning applications, multiple trades, significant budget or a programme exceeding four months, professional management adds value.",
+      },
+      {
+        type: "faq-question",
+        question: "Is design-and-build better than separate contracts?",
+        answer: "For most London homeowners, design-and-build offers lower risk, shorter programmes and simpler accountability. Separate contracts may suit larger projects where you want independent design oversight, but they require stronger coordination to avoid disputes and delays.",
+      },
+      {
+        type: "faq-question",
+        question: "How long does a typical London interior renovation take?",
+        answer: "Design development and approvals typically take three to six months. Construction for a full house refurbishment takes six to twelve months depending on scope, structural complexity and property access. Basement and extension projects may take twelve to eighteen months.",
+      },
+      {
+        type: "faq-question",
+        question: "Can I manage the project myself?",
+        answer: "You can manage smaller projects yourself if you have the time, knowledge and organisational skills. For larger projects the cost of learning mistakes, chasing trades and resolving delays usually exceeds the cost of professional management.",
+      },
+    ],
+  },
+  {
+    id: "9",
+    slug: "interior-designer-cost-london",
+    title: "How Much Does an Interior Designer Cost in London? Fees, Budgets and What Is Included",
+    subtitle:
+      "A practical guide to fee structures, service levels, procurement charges and budgeting for residential interior design in London.",
+    description:
+      "Compare interior designer costs in London with this practical guide to hourly, fixed, percentage and procurement fees, what is included, and how to budget.",
+    image: homeProject25,
+    imageAlt:
+      "interior designer cost planning and material specification for a London renovation",
+    publishedAt: "July 2026",
+    readTime: "15-18 min read",
+    metaTitle:
+      "Interior Designer Cost London: Fees and Budget Guide",
+    metaDescription:
+      "How much does an interior designer cost in London? Compare hourly, fixed, percentage and procurement fees, what is included, and how to budget.",
+    primaryKeyword: "interior designer cost London",
+    author: "Ayaan Khan",
+    content: [
+      {
+        type: "quick-answer",
+        text: "There is no regulated or universal London rate. Published 2026 market guides show a very wide spectrum: established London hourly rates are often presented around £180-£450, day packages around £500-£1,200, full-service single-room design around £800-£3,000 or more, and whole-home design fees from roughly £5,000-£20,000 and substantially higher for complex luxury work. Percentage and hybrid fees are also common. Treat these as broad market indicators, not a quotation; the written scope, level of service and procurement terms matter more than the headline number.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Asking how much an " },
+          { text: "interior designer cost London", bold: true },
+          { text: " is sensible, but it rarely produces one reliable number. A one-off consultation for a difficult room, a detailed kitchen and bathroom package, and the complete interior design of a renovated townhouse are not the same service. They require different levels of survey work, drawings, sourcing, coordination, site attendance and responsibility." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The most useful way to understand interior design cost is therefore to separate three things: the professional design fee, the products and construction being specified, and any additional services needed to deliver the project. Once the scope is clear, fixed fees, hourly rates, percentage charges and procurement arrangements become much easier to compare.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains the common London fee models, gives cautious market indicators, shows what may or may not be included, and provides a practical checklist for requesting an interior design cost estimate. It is written for residential clients in South London, Central London, North Surrey and Surrey, but the principles apply to most professionally managed UK projects.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why There Is No Single London Interior Design Price",
+      },
+      {
+        type: "paragraph",
+        text: "Interior design is not a standard product. Two properties with the same floor area can demand very different professional input. One may need furniture planning and a finish palette, while the other involves structural coordination, listed-building constraints, bespoke joinery, integrated lighting, new bathrooms, contractor tendering and months of site decisions.",
+      },
+      {
+        type: "paragraph",
+        text: "The designer also needs to decide what professional risk and responsibility is being accepted. Producing a concept presentation is different from issuing dimensioned drawings that trades will build from. Recommending a sofa is different from purchasing, inspecting, storing and arranging installation of a complete furniture package. A lower quotation may simply exclude work that another proposal includes.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "London creates additional variables: leasehold approvals, conservation-area considerations, restricted delivery access, parking controls, high contractor rates, limited storage and the coordination of specialist trades. These conditions do not automatically make every project expensive, but they can increase the time and management needed to achieve a controlled result." },
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "First Separate the Design Fee from the Project Budget",
+      },
+      {
+        type: "paragraph",
+        text: "A professional fee is usually only one part of the total project expenditure. When a client says the budget is £100,000, the team needs to know whether that figure includes the designer, building work, furniture, lighting, window treatments, appliances, VAT, consultant fees and contingency. Without this distinction, both the brief and the quotation may be misleading.",
+      },
+      {
+        type: "table",
+        headers: ["Budget category", "Typical items to clarify"],
+        rows: [
+          ["Professional design fees", "Briefing, measured information, layouts, concepts, drawings, specifications, revisions, meetings and design coordination."],
+          ["Construction and installation", "Demolition, partitions, plastering, flooring, decorating, electrical work, plumbing, heating, installation and contractor preliminaries."],
+          ["Fixtures and products", "Sanitaryware, appliances, lighting, ironmongery, furniture, fabrics, rugs, art and accessories."],
+          ["Bespoke packages", "Kitchens, wardrobes, media units, libraries, bars, stonework, metalwork, specialist glazing and made-to-measure furniture."],
+          ["Third-party consultants", "Architect, structural engineer, party wall surveyor, planning consultant, building control, quantity surveyor, lighting specialist and other disciplines where required."],
+          ["Project allowances", "VAT, delivery, storage, installation, insurance, temporary accommodation, contingency and client changes."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A good proposal should state whether each category is included, excluded, provisional or to be appointed separately. This single exercise prevents many later disputes about what the interior design payment was expected to cover.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "The Main Ways Interior Designers Charge",
+      },
+      {
+        type: "paragraph",
+        text: "The British Institute of Interior Design notes that practices use several pricing approaches and may combine them. Its published survey summary found that a combination of charges was the most common method among respondents, ahead of fixed, hourly and percentage-only models. This reflects the reality that concept work, procurement and long-term project management do not always suit the same calculation.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "1. Initial Consultation or Design Consultation",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "An " },
+          { text: "interior design consultation", bold: true },
+          { text: " is a defined meeting used to understand the property, priorities, budget and likely service level. It may take place online, in a studio or at the property. Some practices treat it as a paid standalone service; others deduct the fee from a later appointment; some offer an introductory call without charge but charge for site advice and written recommendations." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Before booking, ask whether the consultation includes preparation, travel, a written summary, measured information, sketches, supplier recommendations or follow-up time. A cheap meeting that provides no usable output is not necessarily better value than a higher fee that resolves the key decisions.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "2. Hourly Rate",
+      },
+      {
+        type: "paragraph",
+        text: "Hourly pricing is useful when the task is limited or unpredictable. It can suit a layout review, colour and material advice, a second opinion on a kitchen, or additional work outside an agreed fixed scope. The benefit is flexibility. The risk is that the client cannot predict the final figure unless the designer provides an estimate, a cap or regular time reports.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask which activities are timed. Emails, supplier calls, drawing revisions, travel, site meetings and procurement administration may all be chargeable. Also confirm whether different team members have different rates.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "3. Day Rate",
+      },
+      {
+        type: "paragraph",
+        text: "A day rate packages a defined block of professional time. It can work well for clients who have already gathered plans, questions and samples and want a concentrated decision session. The output should be agreed in advance. A design day may create direction, but it is unlikely to replace the surveys, technical drawings and ongoing coordination required for a complete renovation.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "4. Fixed Fee",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "A " },
+          { text: "fixed fee interior design", bold: true },
+          { text: " arrangement is calculated for an agreed scope and set of deliverables. It gives the client more certainty and allows the designer to organise the work around project stages rather than minutes. The proposal should state the number of rooms, layout options, revisions, meetings, site visits, drawings and schedules included." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Fixed does not mean unlimited. If the client adds rooms, changes the approved brief, requests extra options or delays decisions in a way that creates repeated work, the additional service should be priced through a written variation.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "5. Percentage of Project Cost",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "On larger projects, a designer may charge a " },
+          { text: "percentage design fee", bold: true },
+          { text: " of the construction, furnishing or total managed budget. The logic is that responsibility and workload generally increase with the scale and specification of the project. The agreement must define the cost base: estimated or final, including or excluding VAT, and whether client-direct purchases are counted." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A percentage arrangement should also explain how cost increases, reductions, omissions and variations affect the fee. Transparent cost reporting is important so that the client can see how the calculation changes.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "6. Hybrid Fee and Procurement Charges",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Many full-service projects use a hybrid structure: a fixed fee for concept and technical design, an hourly or monthly charge for additional project management, and an agreed margin or fee for " },
+          { text: "procurement fee", bold: true },
+          { text: " arrangements. This can match payment to the real work more accurately, but only when every element is explained clearly." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Procurement may be charged as a percentage, a cost-plus margin, a handling fee, a fixed package or through the retention of part of a trade discount. None of these models is automatically unfair. The important questions are who contracts with the supplier, who carries cancellation or damage risk, what discount is passed to the client, and what administration the fee covers.",
+      },
+      {
+        type: "table",
+        headers: ["Fee model", "Best suited to and points to check"],
+        rows: [
+          ["Consultation", "Early advice or a focused problem. Confirm duration, preparation, written output, travel and whether the fee is credited later."],
+          ["Hourly", "Small, changing or additional tasks. Request an estimated number of hours, reporting frequency and a spending cap."],
+          ["Day rate", "Concentrated decision-making. Agree the agenda, documents required and outputs before the session."],
+          ["Fixed fee", "Clearly defined rooms and deliverables. Check revisions, meetings, site visits, exclusions and variation rates."],
+          ["Percentage", "Larger renovations and managed projects. Define the cost base, when it is recalculated and how reductions or changes are treated."],
+          ["Hybrid/procurement", "Full-service and turnkey projects. Separate design, management, purchasing, margins, delivery and installation responsibilities."],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Indicative London Interior Design Cost Ranges",
+      },
+      {
+        type: "paragraph",
+        text: "Published market guides do not agree on one range because they describe different designers and service levels. A 2026 UK guide places the overall hourly spectrum at approximately £50-£450 and fixed room projects at £500-£10,000 or more. A London-specific 2026 guide presents established London hourly rates around £180-£450, day rates around £500-£1,200, full-service single-room design around £800-£3,000 or more, and whole-home design fees from around £5,000-£20,000 and upwards. Premium practices and complex homes can exceed these figures substantially.",
+      },
+      {
+        type: "table",
+        headers: ["Service level", "Broad market orientation and important caveat"],
+        rows: [
+          ["Introductory call", "May be complimentary, but it normally confirms fit and scope rather than providing developed design advice."],
+          ["Paid consultation", "Often hourly, half-day or day-based. Price depends on seniority, travel and whether written or visual outputs are included."],
+          ["Established London hourly work", "Some current guides cite roughly £180-£450 per hour. Confirm the expected hours and whether junior team rates are lower."],
+          ["Designer-for-a-day service", "Some market guides cite roughly £500-£1,200. The result depends on the preparation and deliverables, not only the time block."],
+          ["Full-service single room", "Some London guides cite approximately £800-£3,000 or more for design fees. Technical kitchens, bathrooms and bespoke rooms may cost more."],
+          ["Whole-flat or whole-home design", "Published guides often start around £5,000-£20,000 and rise considerably with size, detail, procurement and site involvement."],
+          ["Percentage or hybrid project", "Published sources show wide variation. The percentage and the cost base must be stated in writing before it can be compared."],
+        ],
+      },
+      {
+        type: "important-box",
+        text: "Do not publish these figures as Dwell Rich Designz prices unless the company has approved them. Market ranges age quickly and can combine very different services. The strongest conversion approach is to explain the variables, show the service stages, and invite the reader to request a project-specific scope and fee proposal.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Makes an Interior Designer Cost More or Less?",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Project Scope",
+      },
+      {
+        type: "paragraph",
+        text: "A finish refresh is fundamentally different from re-planning a property. The fee increases when the designer must produce more options, coordinate technical information, specify more items, attend more meetings and remain involved for longer.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Property Size and Number of Rooms",
+      },
+      {
+        type: "paragraph",
+        text: "More rooms usually mean more layouts, schedules, products, samples and interfaces. However, room count alone is not enough. A compact but highly detailed kitchen may require more work than several simple bedrooms.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Technical Complexity",
+      },
+      {
+        type: "paragraph",
+        text: "Structural alterations, wet rooms, kitchens, integrated lighting, mechanical systems, audio-visual equipment, home automation and specialist finishes require additional drawings and coordination. Heritage buildings and leasehold apartments may also involve approvals or restrictions that affect the design process.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Level of Bespoke Design",
+      },
+      {
+        type: "paragraph",
+        text: "Off-the-shelf furniture and standard finishes can be selected relatively quickly. Bespoke joinery, custom furniture, stone details, specialist metalwork and made-to-measure lighting require design development, shop-drawing reviews, samples, prototypes and installation coordination.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Number of Revisions and Decision Speed",
+      },
+      {
+        type: "paragraph",
+        text: "The fee is easier to control when the brief is clear and approvals happen at agreed stages. Repeatedly changing a signed-off layout or requesting several parallel schemes creates additional work. A good designer should explain the approval process before design begins.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Procurement and Installation Responsibility",
+      },
+      {
+        type: "paragraph",
+        text: "Selecting products is only one task. Obtaining quotations, placing orders, checking acknowledgements, tracking production, coordinating deliveries, resolving damage and managing installation can become a substantial service. The fee should reflect the responsibility being accepted.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Programme and Site Attendance",
+      },
+      {
+        type: "paragraph",
+        text: "A compressed programme may require more people, faster approvals and additional coordination. A long construction period may require repeated site visits, design responses and reporting. Confirm how many visits are included and how extra attendance is charged.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Location and Access",
+      },
+      {
+        type: "paragraph",
+        text: "Central London apartments may involve concierge procedures, lift protection, restricted hours, parking, consolidation of deliveries and limited storage. These practical conditions affect both construction and procurement planning.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "What Should Be Included in an Interior Design Fee?",
+      },
+      {
+        type: "paragraph",
+        text: 'A title such as "full interior design" has no universal definition. The proposal should list tangible deliverables and responsibilities. The following service levels are useful for comparison.',
+      },
+      {
+        type: "table",
+        headers: ["Service level", "Possible inclusions"],
+        rows: [
+          ["Consultation only", "Brief discussion, property review, verbal advice, priority actions and possibly a written summary."],
+          ["Concept design", "Layout direction, mood imagery, palette, key materials and an initial furniture or lighting approach."],
+          ["Detailed interior design", "Dimensioned plans, elevations, reflected ceiling plans, lighting intent, finishes, sanitaryware, joinery and specification schedules."],
+          ["Procurement service", "Supplier quotations, order administration, payment tracking, production monitoring, delivery, damage resolution and installation planning."],
+          ["Design project management", "Programme, decision schedule, cost reporting, meeting records, coordination, change control, quality reviews and handover support."],
+          ["Integrated design and build", "Architecture, interiors, technical coordination, construction and bespoke packages managed within one joined-up delivery structure."],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The proposal should also state what is not included. Measured surveys, planning applications, structural engineering, quantity surveying, building control fees, contractor supervision, styling, art sourcing and photography may be separate appointments.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Three Illustrative Budget Scenarios",
+      },
+      {
+        type: "important-box",
+        text: "The examples below show how fee structures can work. They are not recommended prices and do not represent Dwell Rich Designz quotations.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Scenario A: One-Room Direction",
+      },
+      {
+        type: "paragraph",
+        text: "A homeowner wants a better living-room layout, lighting direction, colour palette and furniture shortlist but will purchase and manage the work independently. A paid consultation, design day or fixed concept package may be appropriate. Paying for full procurement and site management would add services the client does not need.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Scenario B: Apartment Renovation",
+      },
+      {
+        type: "paragraph",
+        text: "A client is renovating several rooms, including a kitchen and bathroom, and needs layouts, technical drawings, specification, tender information and regular coordination. A fixed staged design fee may provide clarity, with separately defined procurement and site support. If the brief changes, additional work can be agreed through a variation.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Scenario C: High-Specification Whole House",
+      },
+      {
+        type: "paragraph",
+        text: "A substantial home includes architectural changes, bespoke joinery, specialist lighting, custom furniture, premium finishes and a long procurement schedule. A hybrid or percentage arrangement may reflect the scale better than a simple per-room fee. The client should require a clear cost plan, payment schedule, procurement policy and stage-by-stage approval process.",
+      },
+      {
+        type: "decision-box",
+        text: "Where a designer charges 10% of an agreed £150,000 cost base, the calculated professional fee is £15,000 before any separately stated VAT, reimbursable expenses or excluded services. The contract must define exactly what the £150,000 includes and whether the percentage changes when the project value changes.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Compare Two Interior Design Quotations Properly",
+      },
+      {
+        type: "paragraph",
+        text: "The cheapest headline number may not be the lowest final cost. One designer may include surveys, technical drawings, coordination, site visits and procurement, while another may quote only for concept design. Convert each proposal into the same comparison structure before making a decision.",
+      },
+      {
+        type: "table",
+        headers: ["Proposal item", "Questions to ask"],
+        rows: [
+          ["Scope and rooms", "Are the same spaces, work packages and project stages included in each quotation?"],
+          ["Deliverables", "Which plans, elevations, schedules, visuals, specifications and reports will be issued?"],
+          ["Revisions", "How many options and revision rounds are included, and what is the additional rate?"],
+          ["Meetings and visits", "How many online meetings, studio meetings and site visits are included? Is travel charged?"],
+          ["Procurement", "Who buys the items, who holds the supplier contract, what margin applies, and how are trade discounts treated?"],
+          ["Project management", "Does the fee include programme, cost tracking, contractor coordination, site reporting and change control?"],
+          ["Third parties", "Which architect, engineer, surveyor, building control, planning and specialist costs remain separate?"],
+          ["VAT and expenses", "Are VAT, printing, courier, travel, samples, storage, delivery and installation included or additional?"],
+          ["Payment schedule", "Is payment linked to dates, stages, hours, orders or a percentage of project cost?"],
+          ["Cancellation and delay", "What happens if the project pauses, the client delays decisions, or the scope is reduced?"],
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Questions to Ask Before You Sign",
+      },
+      {
+        type: "checklist",
+        items: [
+          "What exact professional service is included in the quoted fee?",
+          "Which drawings and schedules will be detailed enough for pricing and construction?",
+          "How many concepts, options and revisions are included?",
+          "Who will lead the project day to day, and which work will be delegated?",
+          "How are additional hours, visits and scope changes approved?",
+          "Does the fee include procurement, delivery coordination and installation support?",
+          "How are trade discounts, supplier commissions and procurement margins handled?",
+          "Which third-party consultants and statutory fees are excluded?",
+          "Is VAT included, and what reimbursable expenses may be charged?",
+          "What payment is required before work begins, and what are the later payment milestones?",
+          "How will the budget and forecast cost be reported during the project?",
+          "What happens if the project is delayed, paused or cancelled?",
+        ],
+      },
+      {
+        type: "decision-box",
+        text: "A reliable fee proposal starts with a reliable brief. Before asking for a final number, provide the property location, plans or approximate size, required rooms, intended work, desired service level, target budget, timing, approval constraints and examples of the expected finish. Better information produces a more useful quotation.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Keep Interior Design Costs Under Control",
+      },
+      {
+        type: "checklist",
+        items: [
+          "Set a whole-project budget, not only a furniture budget or designer-fee limit",
+          "Agree essential, desirable and optional priorities before concept design",
+          "Choose the right service level. Do not pay for full implementation if you only need professional direction, but do not expect consultation-only fees to cover construction-ready detail",
+          "Approve the brief and layout before developing expensive joinery and finish packages",
+          "Request regular cost updates while decisions can still be changed",
+          "Select long-lead products early enough to avoid premium substitutions and programme disruption",
+          "Limit late changes. A small decision can affect several drawings, orders and trades",
+          "Keep a contingency appropriate to the age, condition and complexity of the property",
+          "Clarify procurement charges and the treatment of trade discounts before any orders are placed",
+          "Use one current set of approved drawings and schedules so that the team is pricing and building the same design",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Is Hiring an Interior Designer Worth the Fee?",
+      },
+      {
+        type: "paragraph",
+        text: "The answer depends on the project and the client. A confident homeowner refreshing a room may only need a consultation. A complex renovation with bespoke work, several contractors and a significant budget may justify detailed design and management because the cost of mistakes, delay and rework is much greater.",
+      },
+      {
+        type: "paragraph",
+        text: "Professional value should be judged by the problems the service solves: better use of space, coordinated technical decisions, a realistic specification, clearer contractor information, controlled procurement, fewer unsuitable purchases and a more consistent finished result. These benefits are real, but a designer should not promise that every fee will be recovered through discounts or an automatic increase in property value.",
+      },
+      {
+        type: "paragraph",
+        text: "The strongest appointment is proportional. The client receives enough expertise and control for the scale of risk, without buying unnecessary services.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Why an Integrated Design-and-Build Service Can Improve Cost Clarity",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "When architecture, interior design, construction and bespoke packages are appointed separately, responsibilities can become fragmented. The interior designer may develop a scheme before the contractor has tested buildability or cost, while construction decisions may later compromise the design intent." },
+        ],
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "An integrated " },
+          { text: "design-and-build service", bold: true, href: "/process/" },
+          { text: " can bring feasibility, technical coordination, interiors, procurement and construction planning into the same conversation earlier. This does not remove the need for a clear contract or cost reporting. It can, however, reduce gaps between what is designed, what is priced and what can be delivered." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Dwell Rich Designz describes its service as an integrated architecture, interior design and construction offer, with turnkey delivery and bespoke joinery across residential and commercial projects. For a client comparing fees, the important step is to request a scope that distinguishes professional design, statutory or third-party services, construction, procurement and client-direct purchases.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "When Should You Contact an Interior Designer?",
+      },
+      {
+        type: "paragraph",
+        text: "Contact the designer before the project is already committed to a layout, contractor price or major product order. Early involvement allows the team to test feasibility, define the brief, organise the budget and identify which consultants or approvals may be required.",
+      },
+      {
+        type: "paragraph",
+        text: "For a complete renovation, the first conversation should ideally happen while the client is still setting priorities and before construction dates are fixed. For a single-room consultation, gather dimensions, photographs, existing plans, inspiration and a realistic budget so the session can focus on decisions rather than basic information collection.",
+      },
+      {
+        type: "cta",
+        text: "Planning a renovation or bespoke interior in London or Surrey? Contact Dwell Rich Designz with your property location, plans or approximate size, required rooms, budget range and preferred completion date. The team can define the appropriate scope and prepare a project-specific proposal rather than relying on a generic cost estimate.",
+        href: "/contact/",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq-question",
+        question: "How much does an interior designer cost in London?",
+        answer: "There is no universal rate. Published market guides show wide ranges based on seniority and scope. Current guides commonly present established London hourly fees around £180-£450, day services around £500-£1,200, full-service single-room design around £800-£3,000 or more, and whole-home design fees from roughly £5,000-£20,000 and upward. A written scope is more reliable than a generic average.",
+      },
+      {
+        type: "faq-question",
+        question: "Can I get a free interior design consultation?",
+        answer: "Some companies offer a short introductory call to confirm project fit. Detailed site advice, layouts, written recommendations or material selection may be a paid professional service. Ask what the free conversation includes before expecting design work.",
+      },
+      {
+        type: "faq-question",
+        question: "Do interior design fees include furniture and building work?",
+        answer: "Usually not unless the proposal explicitly says so. Professional fees, construction, furniture, bespoke joinery, delivery, installation, VAT and consultant costs should be shown as separate categories or clearly identified as included.",
+      },
+      {
+        type: "faq-question",
+        question: "Is a fixed fee better than an hourly rate?",
+        answer: "A fixed fee can be easier to budget for a defined project. Hourly pricing can be efficient for a focused task or changing brief. The better model is the one that matches the service and clearly controls additional work.",
+      },
+      {
+        type: "faq-question",
+        question: "What is an interior design procurement fee?",
+        answer: "It is a charge for obtaining quotations, ordering products, checking acknowledgements, tracking production, coordinating delivery and resolving supplier issues. It may be fixed, percentage-based, cost-plus or connected to trade discounts. The agreement should explain the calculation and purchasing responsibility.",
+      },
+      {
+        type: "faq-question",
+        question: "How much should I budget for interior design?",
+        answer: "Begin with the full project budget, including construction, products, professional fees, tax, delivery and contingency. Then ask the designer to propose a service level appropriate to the project. A percentage rule alone cannot replace a detailed scope.",
+      },
+      {
+        type: "faq-question",
+        question: "Can I hire an interior designer for one room only?",
+        answer: "Yes. A consultation, design day, concept package or full-service single-room appointment may be available. Kitchens and bathrooms often require more technical design than living rooms or bedrooms.",
+      },
+      {
+        type: "faq-question",
+        question: "Do I need both an interior designer and an architect?",
+        answer: "It depends on the work and the professionals appointed. Projects involving architectural changes, planning, structure or statutory coordination may need architectural and engineering input. An integrated practice may coordinate these services, but the appointment must name the responsible disciplines.",
+      },
+      {
+        type: "faq-question",
+        question: "How are interior design payments usually scheduled?",
+        answer: "Payments may be made in advance, monthly, by design stage, by hours used, against procurement orders or as a percentage of the project value. The contract should include the payment dates, deposits, late-payment terms and treatment of additional services.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Ask for Scope Before Asking for the Final Price",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "The most accurate answer to " },
+          { text: "how much does an interior designer cost in London", bold: true },
+          { text: "? begins with the property, project scope and required service. An hourly rate without expected hours, a percentage without a defined cost base, or a fixed fee without deliverables does not allow a fair comparison." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Request a written proposal that separates design, project management, procurement, third-party services, construction and client purchases. Confirm revisions, site visits, VAT, expenses and change procedures. This gives both the client and designer a clear basis for a successful working relationship.",
+      },
+      {
+        type: "rich-text",
+        parts: [
+          { text: "Dwell Rich Designz provides integrated architecture, interior design and construction services for residential and commercial projects, including turnkey delivery and bespoke elements. To receive a relevant fee proposal, share your property information, intended scope, budget range and target programme when " },
+          { text: "booking a consultation", bold: true, href: "/contact/" },
+          { text: "." },
+        ],
       },
     ],
   },
