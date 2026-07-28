@@ -25,6 +25,7 @@ export type ContentBlock =
   | { type: "note"; text: string }
   | { type: "rich-text"; parts: Array<{ text: string; bold?: boolean; href?: string }> };
 
+  
 export interface Blog {
   id: string;
   slug: string;
