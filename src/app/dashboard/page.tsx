@@ -123,7 +123,13 @@ export default function DashboardPage() {
               className="group bg-white border border-gray-100 rounded-2xl overflow-hidden transition-all hover:border-gray-200"
             >
               <div className="relative aspect-[4/3] bg-gray-50 overflow-hidden">
-                {project.mainPic?.url ? (
+                {project.videoThumbnail?.url ? (
+                  <video 
+                    src={project.videoThumbnail.url} 
+                    muted
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : project.mainPic?.url ? (
                   <Image 
                     src={project.mainPic.url} 
                     alt={project.title} 

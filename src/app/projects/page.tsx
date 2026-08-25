@@ -37,14 +37,23 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="relative w-full h-full p-8">
-        {project.mainPic?.url && (
+        {project.videoThumbnail?.url ? (
+          <video
+            src={project.videoThumbnail.url}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+          />
+        ) : project.mainPic?.url ? (
           <Image
             src={project.mainPic.url}
             alt={project.title}
             fill
             className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
           />
-        )}
+        ) : null}
       </div>
 
       <motion.div

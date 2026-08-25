@@ -7,13 +7,14 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],
-    domains: ["images.unsplash.com"],
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'images.squarespace-cdn.com',
-        port: '',
-        pathname: '/**',
       },
     ],
   },

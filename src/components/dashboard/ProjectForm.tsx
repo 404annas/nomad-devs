@@ -63,6 +63,7 @@ export default function ProjectForm({ initialData, onSubmit, isLoading }: Projec
   const [mainPic, setMainPic] = useState<any>(initialData?.mainPic || null);
   const [gallery, setGallery] = useState<any[]>(initialData?.gallery || []);
   const [videos, setVideos] = useState<any[]>(initialData?.videos || []);
+  const [videoThumbnail, setVideoThumbnail] = useState<any>(initialData?.videoThumbnail || null);
 
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -122,6 +123,7 @@ export default function ProjectForm({ initialData, onSubmit, isLoading }: Projec
       setMainPic(initialData.mainPic || null);
       setGallery(initialData.gallery || []);
       setVideos(initialData.videos || []);
+      setVideoThumbnail(initialData.videoThumbnail || null);
     }
   }, [initialData, reset]);
 
@@ -215,6 +217,7 @@ export default function ProjectForm({ initialData, onSubmit, isLoading }: Projec
       mainPic,
       gallery: orderedGallery,
       videos: orderedVideos,
+      videoThumbnail: videoThumbnail,
     });
   };
 
@@ -382,21 +385,49 @@ export default function ProjectForm({ initialData, onSubmit, isLoading }: Projec
             </label>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {videos.map((item, idx) => (
-              <div key={item.publicId} className="relative aspect-video bg-black rounded-xl overflow-hidden group border border-gray-200 flex items-center justify-center">
-                <video src={item.url} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Video className="text-white w-8 h-8" />
+            {videos.map((item, idx) => {
+              const isVideoThumbnail = videoThumbnail?.publicId === item.publicId;
+              return (
+                <div key={item.publicId} className="relative aspect-video bg-black rounded-xl overflow-hidden group border border-gray-200 flex items-center justify-center">
+                  <video src={item.url} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <Video className="text-white w-8 h-8" />
+                  </div>
+                  {isVideoThumbnail && (
+                    <div className="absolute top-2 left-2 px-3 py-1 bg-black/80 text-white text-[10px] font-bold uppercase rounded-full flex items-center gap-1">
+                      <ImageIcon className="w-3 h-3" /> Thumbnail
+                    </div>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (isVideoThumbnail) {
+                        setVideoThumbnail(null);
+                      } else {
+                        setVideoThumbnail({ url: item.url, publicId: item.publicId });
+                      }
+                    }}
+                    className={`absolute bottom-2 left-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase transition-all ${
+                      isVideoThumbnail
+                        ? "bg-white text-black"
+                        : "bg-white/90 text-black opacity-0 group-hover:opacity-100"
+                    }`}
+                  >
+                    {isVideoThumbnail ? "Remove Thumbnail" : "Make it Thumbnail"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (isVideoThumbnail) setVideoThumbnail(null);
+                      removeVideoItem(item.publicId);
+                    }}
+                    className="absolute top-2 right-2 p-1.5 bg-white/90 rounded-full text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <X className="w-3 h-3" />
+                  </button>
                 </div>
-                <button 
-                  type="button"
-                  onClick={() => removeVideoItem(item.publicId)}
-                  className="absolute top-2 right-2 p-1.5 bg-white/90 rounded-full text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
-                >
-                  <X className="w-3 h-3" />
-                </button>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

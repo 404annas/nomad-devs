@@ -9,6 +9,7 @@ interface Project {
   title: string;
   location: string;
   mainPic: { url: string };
+  videoThumbnail?: { url: string; publicId: string } | null;
   category: string;
 }
 
@@ -29,14 +30,23 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
         >
           <Link href={`/projects/${project.slug}`}>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
-              {project.mainPic?.url && (
+              {project.videoThumbnail?.url ? (
+                <video
+                  src={project.videoThumbnail.url}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              ) : project.mainPic?.url ? (
                 <Image
                   src={project.mainPic.url}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-              )}
+              ) : null}
               {/* Modern Overlay */}
               <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>

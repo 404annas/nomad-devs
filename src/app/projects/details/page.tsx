@@ -66,23 +66,42 @@ const ProjectPageContent = () => {
     }
   };
 
-  const allImages = project.gallery.map((g: any) => g.url);
-  const sideImages = allImages.slice(0, 1);
-  const remainingImages = allImages.slice(1);
+  const allImages = project.videoThumbnail?.url && project.mainPic?.url
+    ? [project.mainPic.url, ...project.gallery.map((g: any) => g.url)]
+    : project.gallery.map((g: any) => g.url);
+  const remainingContent = project.content.slice(1);
+  const hasRemainingContent = remainingContent.length > 0 && remainingContent.some((item: any) => {
+    const text = typeof item === 'string' ? item : item.text;
+    return typeof text === 'string' ? text.trim() !== '' : Array.isArray(text) ? text.some((t: string) => t.trim() !== '') : false;
+  });
+
+  const sideImages = hasRemainingContent ? allImages.slice(0, 1) : [];
+  const remainingImages = hasRemainingContent ? allImages.slice(1) : allImages;
 
   return (
     <div className="min-h-screen bg-white text-black">
       <Navbar />
       {/* 1. HERO SECTION */}
       <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[550px] px-4 py-4">
-        <div className="relative w-full h-[650px]">
-          <Image
-            src={project.mainPic.url}
-            alt={project.title}
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="relative w-full h-[650px] bg-black">
+          {project.videoThumbnail?.url ? (
+            <video
+              src={project.videoThumbnail.url}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <Image
+              src={project.mainPic.url}
+              alt={project.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          )}
         </div>
 
         <div className="bg-[#aabebc] flex flex-col items-center justify-center p-4 md:p-0 text-center h-full">
@@ -100,34 +119,36 @@ const ProjectPageContent = () => {
         </div>
       </div>
 
-      {/* 2. CONTENT SECTION */}
-      <div className="max-w-[1300px] mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-start">
-        <div className="text-sm md:text-base leading-7 sm:leading-8 text-black">
-            {project.content.slice(1).map((item: any, index: number) => (
-              <div key={index} className="mb-8 last:mb-0">
-                {typeof item === 'string' ? (
-                  <p className="leading-8 text-black">{item}</p>
-                ) : (
-                  <div>
-                    {item.heading && (
-                      <h3 className="text-[#1a1a1a] font-semibold uppercase tracking-wide mb-3 text-sm flex items-center gap-2">
-                        <span className="w-1 h-4 bg-black/80 block"></span> {item.heading}
-                      </h3>
-                    )}
-                    <p className="leading-relaxed text-gray-700 font-light">{item.text}</p>
-                  </div>
-                )}
+      {/* 2. CONTENT SECTION (only when there are remaining paragraphs) */}
+      {hasRemainingContent && (
+        <div className="max-w-[1300px] mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-start">
+          <div className="text-sm md:text-base leading-7 sm:leading-8 text-black">
+              {remainingContent.map((item: any, index: number) => (
+                <div key={index} className="mb-8 last:mb-0">
+                  {typeof item === 'string' ? (
+                    <p className="leading-8 text-black">{item}</p>
+                  ) : (
+                    <div>
+                      {item.heading && (
+                        <h3 className="text-[#1a1a1a] font-semibold uppercase tracking-wide mb-3 text-sm flex items-center gap-2">
+                          <span className="w-1 h-4 bg-black/80 block"></span> {item.heading}
+                        </h3>
+                      )}
+                      <p className="leading-relaxed text-gray-700 font-light">{item.text}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+          </div>
+          <div className="flex flex-col gap-6 sticky top-24">
+            {sideImages.map((img: string, idx: number) => (
+              <div key={idx} className="relative w-full h-[400px] md:h-[600px] cursor-pointer hover:opacity-95 transition-opacity duration-300" onClick={() => openLightbox(idx)}>
+                <Image src={img} alt="Detail" fill className="object-cover" />
               </div>
             ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-6 sticky top-24">
-          {sideImages.map((img: string, idx: number) => (
-            <div key={idx} className="relative w-full h-[400px] md:h-[600px] cursor-pointer hover:opacity-95 transition-opacity duration-300" onClick={() => openLightbox(idx)}>
-              <Image src={img} alt="Detail" fill className="object-cover" />
-            </div>
-          ))}
-        </div>
-      </div>
+      )}
 
       {/* 3. GALLERY GRID */}
       {remainingImages.length > 0 && (
@@ -136,7 +157,7 @@ const ProjectPageContent = () => {
             <div
               key={idx}
               className="relative w-full h-[400px] md:h-[650px] cursor-pointer hover:opacity-95 transition-opacity"
-              onClick={() => openLightbox(idx + 1)}
+              onClick={() => openLightbox(hasRemainingContent ? idx + 1 : idx)}
             >
               <Image src={img} alt="Gallery" fill className="object-cover" />
             </div>
@@ -145,13 +166,18 @@ const ProjectPageContent = () => {
       )}
 
       {/* 4. VIDEO SECTION */}
-      {project.videos?.length > 0 && (
-        <div className="w-full bg-[#f9f9f9] py-10 flex justify-center">
-          <video controls className="w-full max-w-5xl h-auto" poster={project.mainPic.url}>
-            <source src={project.videos[0].url} type="video/mp4" />
-          </video>
-        </div>
-      )}
+      {project.videos?.length > 0 && (() => {
+        const nonThumbnailVideos = project.videos.filter(
+          (v: any) => !project.videoThumbnail?.publicId || v.publicId !== project.videoThumbnail.publicId
+        );
+        return nonThumbnailVideos.length > 0 ? (
+          <div className="w-full bg-[#f9f9f9] py-10 flex justify-center">
+            <video controls className="w-full max-w-5xl h-auto" poster={project.mainPic.url}>
+              <source src={nonThumbnailVideos[0].url} type="video/mp4" />
+            </video>
+          </div>
+        ) : null;
+      })()}
 
       {/* LIGHTBOX */}
       <AnimatePresence>

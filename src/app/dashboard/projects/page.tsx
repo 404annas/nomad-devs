@@ -109,7 +109,9 @@ export default function ProjectsPage() {
         return (
           <div className="flex items-center gap-4">
             <div className="relative w-10 h-10 rounded-lg overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
-              {project.mainPic?.url ? (
+              {project.videoThumbnail?.url ? (
+                <video src={project.videoThumbnail.url} muted className="w-full h-full object-cover" />
+              ) : project.mainPic?.url ? (
                 <Image src={project.mainPic.url} alt={project.title} fill className="object-cover" />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-[8px] text-gray-400 font-bold uppercase">No Pic</div>
