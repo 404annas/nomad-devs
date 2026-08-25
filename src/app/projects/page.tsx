@@ -106,7 +106,7 @@ export default function ProjectsPage() {
   const { data: allProjects, isLoading } = useQuery({
     queryKey: ["projects"],
     queryFn: async () => {
-      const { data } = await api.get("/projects?limit=100");
+      const { data } = await api.get("/projects?limit=200");
       return data.data;
     },
   });

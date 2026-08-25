@@ -29,7 +29,7 @@ const ProjectPageContent = () => {
   const { data: allProjects } = useQuery({
     queryKey: ["allProjects"],
     queryFn: async () => {
-      const { data } = await api.get("/projects?limit=100");
+      const { data } = await api.get("/projects?limit=200");
       return data.data;
     },
   });
